@@ -1,0 +1,160 @@
+﻿<div id="Page-01" name="pagebreak" description="CLIENT'S/RESIDENT'S NAME">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+
+                    <!--header starts-->
+                    <div class="row briggs-cont-row">
+                        <div class="col-lg-6 col-sm-6 briggs-no-pad">
+                            STATE OF CALIFORNIA-HEALTH AND HUMAN SERVICES AGENCY
+                        </div>
+                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-right">
+                            CALIFORNIA DEPARTMENT OF SOCIAL SERVICES<br>
+                            COMMUNITY CARE LICENSING
+                        </div>
+                        <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-pg-title">
+                            APPRAISAL/NEEDS AND SERVICES PLAN
+                        </div>
+                    </div>
+                    <!--header starts-->
+                    <!--page 1 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad items-container">
+                                <div class="col-lg-5 col-sm-7 col-md-4  item briggs-brd-thin-b item">
+                                    <label class="briggs-f-thin briggs-mrg-thick-t" for="NAME_FULL">CLIENT'S/RESIDENT'S NAME</label>
+                                    <input class="form-control briggs-control briggs-mrg-thick-b" id="NAME_FULL" name="NAME_FULL" ng-model="briggs.NAME_FULL" maxlength="65" type="text">
+                                </div>
+                                <div class="col-lg-3 col-sm-5 col-md-3 briggs-brd-thin-l briggs-no-pad briggs-brd-thin-r briggs-brd-none-r briggs-brd-thin-md-r briggs-brd-thin-b">
+                                    <div class="col-lg-7 col-sm-7 col-md-8 item briggs-brd-thin-r">
+                                        <label class="briggs-f-thin briggs-mrg-thick-t" for="BIRTH_DATE">DATE OF BIRTH</label>
+                                        <input class="form-control briggs-control briggs-date-control briggs-mrg-thick-b" id="BIRTH_DATE" name="BIRTH_DATE" ng-model="briggs.BIRTH_DATE" maxlength="10" type="date">
+                                    </div>
+                                    <div class="col-lg-5 col-sm-5 col-md-4">
+                                        <label class="briggs-f-thin briggs-mrg-thick-t" for="AGE">AGE</label>
+                                        <input class="form-control briggs-control briggs-width-60 briggs-mrg-thick-b" id="AGE" name="AGE" min="0" max="125" ng-model="briggs.AGE" maxlength="3" type="number">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-5 col-sm-12 briggs-no-pad briggs-brd-thin-b item">
+                                    <div class="col-lg-6 col-sm-4 col-md-7 briggs-no-pad">
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                            SEX
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-cntrl-grp">
+                                                <label for="SEX_1">
+                                                    <input type="radio" value="1" id="SEX_1" name="SEX" ng-model="briggs.SEX">
+                                                    MALE
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-cntrl-grp">
+                                                <label for="SEX_2">
+                                                    <input type="radio" value="2" id="SEX_2" name="SEX" ng-model="briggs.SEX">
+                                                    FEMALE
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-8 col-md-5 briggs-brd-thin-l">
+                                        <label class="briggs-f-thin briggs-mrg-thick-t" for="TODAYS_DATE">DATE</label>
+                                        <input class="form-control briggs-control briggs-mrg-auto-lr briggs-date-control briggs-mrg-thick-b" id="TODAYS_DATE" name="TODAYS_DATE" ng-model="briggs.TODAYS_DATE" maxlength="10" type="date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin-b items-container">
+                                <div class="col-lg-4 col-sm-4 col-md-4  item">
+                                    <label class="briggs-f-thin briggs-mrg-thick-t" for="NAME_FACILITY">FACILITY NAME</label>
+                                    <input class="form-control briggs-control briggs-mrg-thick-b" id="NAME_FACILITY" name="NAME_FACILITY" ng-model="briggs.NAME_FACILITY" maxlength="65" type="text">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 col-md-4 item briggs-brd-thin-l briggs-brd-thin-r">
+                                    <label class="briggs-f-thin briggs-mrg-thick-t" for="ADD_FAC">ADDRESS</label>
+                                    <input class="form-control briggs-control briggs-mrg-thick-b" id="ADD_FAC" name="ADD_FAC" ng-model="briggs.ADD_FAC" maxlength="75" type="text">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 col-md-4 briggs-no-pad-r item">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-thick-t">
+                                        CHECK TYPE OF NEEDS AND SERVICES PLAN:
+                                    </div>
+                                    <div class="col-lg-5 col-sm-6 briggs-no-pad ">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="TYPE_NEED_1">
+                                                <input type="radio" value="1" id="TYPE_NEED_1" name="TYPE_NEED" ng-model="briggs.TYPE_NEED">
+                                                ADMISSION
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-5 briggs-no-pad ">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="TYPE_NEED_2">
+                                                <input type="radio" value="2" id="TYPE_NEED_2" name="TYPE_NEED" ng-model="briggs.TYPE_NEED">
+                                                UPDATE
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin-b items-container">
+                                <div class="col-lg-6 col-sm-5 col-md-5 briggs-brd-thin-r item">
+                                    <label class="briggs-f-thin briggs-mrg-thick-t" for="REF_PLACE">PERSON(S) OR AGENCY(IES) REFERRING CLIENT/RESIDENT FOR PLACEMENT</label>
+                                    <input class="form-control briggs-control briggs-mrg-thick-b" id="REF_PLACE" name="REF_PLACE" ng-model="briggs.REF_PLACE" maxlength="100" type="text">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 col-md-4  item">
+                                    <label class="briggs-f-thin briggs-mrg-thick-t" for="LICENSE">FACILITY LICENSE NUMBER</label>
+                                    <input class="form-control briggs-control briggs-mrg-thick-b" id="LICENSE" name="LICENSE" ng-model="briggs.LICENSE" maxlength="40" type="text">
+                                </div>
+                                <div class="col-lg-2 col-sm-3 col-md-3 item briggs-brd-thin-l">
+                                    <label class="briggs-f-thin briggs-mrg-thick-t" for="PHONE_FACILITY">TELEPHONE NUMBER</label>
+                                    <input class="form-control briggs-control briggs-mrg-thick-b briggs-phone-control" id="PHONE_FACILITY" name="PHONE_FACILITY" ng-model="briggs.PHONE_FACILITY" maxlength="20" type="tel">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-f-thick briggs-mrg-t text-justify">
+                                <div class="briggs-col-offs">
+                                    Licensing regulations require that an appraisal of needs be completed for specific clients/residents to identify individual needs and develop a service plan for
+                                    meeting those needs. If the client/resident is accepted for placement the staff person responsible for admission shall jointly develop a needs and services
+                                    plan with the client/resident and/or client's/resident's authorized representative referral agency/person, physician, social worker or other appropriate
+                                    consultant. Additionally, the law requires that the referral agency/person inform the licensee of any dangerous tendencies of the client/resident.
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-t text-justify briggs-brd-thin-b">
+                                <div class="briggs-col-offs briggs-mrg-b">
+                                    <span class="briggs-f-thick">NOTE:</span>
+                                    <em>
+                                        For Residential Care Facilities for the Elderly, this form is not required at the time of admission but must be completed if it is determined that an elderly resident's
+                                        needs have not been met.
+                                    </em>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                <div class="briggs-fl briggs-f-thick briggs-mrg-r">
+                                    BACKGROUND INFORMATION:
+                                </div>
+                                <div class="col-lg-9 col-sm-8 col-md-9 briggs-no-pad text-justify">
+                                    Brief description of client's/resident's medical history/ emotional, behavioral, and physical problems; functional limitations; physical and
+                                    mental; functional capabilities; ability to handle personal cash resources and perform simple homemaking tasks; client's/resident's likes
+                                    and dislikes.
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <textarea id="BACK_INFO" name="BACK_INFO" class="form-control briggs-control briggs-mrg-b briggs-mrg-thin-t" cols="12" rows="25" spellcheck="true" ng-model="briggs.BACK_INFO" maxlength="5250"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!--page 1 ends-->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 1 of 4 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+            <!-- hidden fields starts -->
+            <input type="hidden" name="FORM_NAME" id="FORM_NAME" ng-model="briggs.FORM_NAME">
+            <input type="hidden" name="FORM_REV" id="FORM_REV" ng-model="briggs.FORM_REV">
+            <!-- hidden fields ends -->
+        </div>

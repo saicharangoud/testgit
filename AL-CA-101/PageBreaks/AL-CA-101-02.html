@@ -1,0 +1,233 @@
+﻿<div id="Page-02" name="pagebreak" description="Chest X-ray Results">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+                  
+                    <!--page 2 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-thin-t">
+                                <div class="col-lg-2 col-sm-3 briggs-no-pad-r col-md-3 briggs-mrg-thick-t">
+                                    <div class="briggs-width-25 briggs-fl">
+                                        g.
+                                    </div>
+                                    <div class="briggs-fl">
+                                      <label class="briggs-f-thin" for="CHEXT_XRAY">Chest X-ray Results:</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-9 col-md-9 briggs-no-pad-l briggs-mrg-thick-t">
+                                    <input class="form-control briggs-control briggs-mrg-thin-b" id="CHEXT_XRAY" name="CHEXT_XRAY" ng-model="briggs.CHEXT_XRAY" maxlength="90" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r col-md-12 briggs-mrg-thin-t briggs-brd-thin-b">
+                                <div class="briggs-width-25 briggs-fl">
+                                    h.
+                                </div>
+                                <div class="col-lg-11 briggs-no-pad col-sm-11 briggs-mrg-thin-b">
+                                   <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                       Please Check One of the Following:
+                                   </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                        <div class="col-lg-2 col-sm-3 col-md-3 briggs-no-pad">
+                                            <div class="radio radio-info briggs-cntrl-grp">
+                                                <label for="TB_CHECK_1">
+                                                    <input type="radio" value="1" id="TB_CHECK_1" name="TB_CHECK" ng-model="briggs.TB_CHECK">
+                                                    Active TB Disease
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-3 col-md-3 briggs-no-pad">
+                                            <div class="radio radio-info briggs-cntrl-grp">
+                                                <label for="TB_CHECK_2">
+                                                    <input type="radio" value="2" id="TB_CHECK_2" name="TB_CHECK" ng-model="briggs.TB_CHECK">
+                                                    Latent TB Infection
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 briggs-no-pad">
+                                            <div class="radio radio-info briggs-cntrl-grp">
+                                                <label for="TB_CHECK_3">
+                                                    <input type="radio" value="3" id="TB_CHECK_3" name="TB_CHECK" ng-model="briggs.TB_CHECK">
+                                                    No Evidence of TB Infection or Disease
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  col-md-12 briggs-mrg-thick-t">
+                                <div class="briggs-width-25 briggs-fl briggs-mrg-thin-b briggs-f-thick">
+                                    7.
+                                </div>
+                                <div class="briggs-fl  briggs-f-thick">
+                                    PRIMARY DIAGNOSIS:
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12  col-md-12 briggs-mrg-thin-t">
+                                <div class="briggs-width-25 briggs-col-offs briggs-fl">
+                                    a.
+                                </div>
+                                <div class="briggs-fl">
+                                    <label class="briggs-f-thin" for="TREAT_MED">Treatment/medication (type and dosage)/equipment:</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <textarea id="TREAT_MED" name="TREAT_MED" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="6" spellcheck="true" ng-model="briggs.TREAT_MED" maxlength="720"></textarea>
+                            </div>
+                            <div class="col-lg-12 col-sm-12  col-md-12 ">
+                                <div class="briggs-width-25 briggs-col-offs briggs-fl briggs-mrg-thin-t">
+                                    b.
+                                </div>
+                                <div class="briggs-fl briggs-mrg-thin-t">
+                                    Can patient manage own treatment/medication/equipment?
+                                </div>
+                                <div class="briggs-fl briggs-mrg-thick-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="MAN_EQU_1">
+                                            <input type="radio" value="1" id="MAN_EQU_1" name="MAN_EQU" ng-model="briggs.MAN_EQU">
+                                            Yes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="MAN_EQU_0">
+                                            <input type="radio" value="0" id="MAN_EQU_0" name="MAN_EQU" ng-model="briggs.MAN_EQU">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12  col-md-12 briggs-mrg-thin-t ">
+                                <div class="briggs-width-25 briggs-col-offs briggs-fl">
+                                    c.
+                                </div>
+                                <div class="briggs-fl">
+                                    <label class="briggs-f-thin" for="TYPE_OF_MED">If not, what type of medical supervision is needed?</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thin-b">
+                                <textarea id="TYPE_OF_MED" name="TYPE_OF_MED" class="form-control briggs-control briggs-mrg-thick-b" cols="12" rows="6" spellcheck="true" ng-model="briggs.TYPE_OF_MED" maxlength="840"></textarea>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  col-md-12 briggs-mrg-thick-t">
+                                <div class="briggs-width-25 briggs-fl briggs-mrg-thin-b briggs-f-thick">
+                                    8.
+                                </div>
+                                <div class="briggs-fl  briggs-f-thick">
+                                    SECONDARY DIAGNOSIS(ES):
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12  col-md-12 briggs-mrg-thin-t">
+                                <div class="briggs-width-25 briggs-col-offs briggs-fl">
+                                    a.
+                                </div>
+                                <div class="briggs-fl">
+                                    <label class="briggs-f-thin" for="TYPE_EQUIP">Treatment/medication (type and dosage)/equipment:</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <textarea id="TYPE_EQUIP" name="TYPE_EQUIP" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="6" spellcheck="true" ng-model="briggs.TYPE_EQUIP" maxlength="720"></textarea>
+                            </div>
+                            <div class="col-lg-12 col-sm-12  col-md-12 ">
+                                <div class="briggs-width-25 briggs-col-offs briggs-fl briggs-mrg-thin-t">
+                                    b.
+                                </div>
+                                <div class="briggs-fl briggs-mrg-thin-t">
+                                    Can patient manage own treatment/medication/equipment?
+                                </div>
+                                <div class="briggs-fl briggs-mrg-thick-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="MAN_MED_1">
+                                            <input type="radio" value="1" id="MAN_MED_1" name="MAN_MED" ng-model="briggs.MAN_MED">
+                                            Yes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="MAN_MED_0">
+                                            <input type="radio" value="0" id="MAN_MED_0" name="MAN_MED" ng-model="briggs.MAN_MED">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12  col-md-12 briggs-mrg-thin-t ">
+                                <div class="briggs-width-25 briggs-col-offs briggs-fl">
+                                    c.
+                                </div>
+                                <div class="briggs-fl">
+                                    <label class="briggs-f-thin" for="SEC_SUPER">If not, what type of medical supervision is needed?</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thin-b">
+                                <textarea id="SEC_SUPER" name="SEC_SUPER" class="form-control briggs-control briggs-mrg-thick-b" cols="12" rows="6" spellcheck="true" ng-model="briggs.SEC_SUPER" maxlength="840"></textarea>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  col-md-12 briggs-mrg-thick-t">
+                                <div class="briggs-width-25 briggs-fl briggs-mrg-thin-b briggs-f-thick">
+                                    9.
+                                </div>
+                                <div class="briggs-fl  briggs-f-thick">
+                                    CHECK IF APPLICABLE TO 7 OR 8 ABOVE:
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="radio radio-info briggs-cntrl-grp briggs-col-offs">
+                                    <label for="COG_NINE_1">
+                                        <input type="radio" value="1" id="COG_NINE_1" name="COG_NINE" ng-model="briggs.COG_NINE">
+                                        <span class="briggs-txt-u-l">Mild Cognitive Impairment:</span>
+                                        Refers to people whose cognitive abilities are in a "conditional state" between normal aging and dementia.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thin-b">
+                                <div class="radio radio-info briggs-cntrl-grp briggs-col-offs briggs-mrg-thick-b">
+                                    <label for="COG_NINE_2">
+                                        <input type="radio" value="2" id="COG_NINE_2" name="COG_NINE" ng-model="briggs.COG_NINE">
+                                        <span class="briggs-txt-u-l">Dementia:</span>
+                                        The loss of intellectual function (such as thinking, remembering, 
+                                        reasoning, exercisingjudgement and making decisions) 
+                                        and other cognitive functions, sufficient to interfere with anindividual's ability 
+                                        to perform activities of daily living or to carry out social or occupational activities.
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  col-md-12 briggs-mrg-thick-t">
+                                <div class="briggs-width-25 briggs-fl briggs-mrg-thin-b briggs-f-thick">
+                                    10.
+                                </div>
+                                <div class="briggs-fl  briggs-f-thick">
+                                    CONTAGIOUS/INFECTIOUS DISEASE:
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12  col-md-12 briggs-mrg-thin-t">
+                                <div class="briggs-width-25 briggs-col-offs briggs-fl">
+                                    a.
+                                </div>
+                                <div class="briggs-fl">
+                                    <label class="briggs-f-thin" for="CON_DIS">Treatment/medication (type and dosage)/equipment:</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <textarea id="CON_DIS" name="CON_DIS" class="form-control briggs-control briggs-mrg-thick-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.CON_DIS" maxlength="360"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!--page 2 ends-->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 2 of 7 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>          
+        </div>

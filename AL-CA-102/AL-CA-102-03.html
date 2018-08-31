@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <link href="../../../Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Content/css/main/briggs-main.css" rel="stylesheet" />
+    <link href="../../../Content/css/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../../../Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../Scripts/match-height/jquery.matchHeight-min.js"></script>
+    <script src="../../../Scripts/page/common.js"></script>
+    <title>BRIGGS | RESIDENT APPRAISAL</title>
+</head>
+<body class="test-rows">
+    <!--form starts-->
+    <div class="container">
+        <div id="Page-01" name="pagebreak" description="RESIDENT APPRAISAL">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="HYG_NEED_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="HYG_NEED_1" name="HYG_NEED" ng-model="briggs.HYG_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="HYG_NEED_0">
+                                            <input type="radio" value="0" id="HYG_NEED_0" name="HYG_NEED" ng-model="briggs.HYG_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 briggs-no-pad">
+                                    <div class="col-lg-5 col-sm-8 col-md-6 briggs-no-pad briggs-cntrl-grp">
+                                        Help with dressing, hair care, and personal hygiene (specify)
+                                    </div>
+                                    <div class="col-lg-7 col-sm-4 col-md-6 briggs-no-pad briggs-cntrl-grp">
+                                        <input id="HYG_SPEC" name="HYG_SPEC" class="form-control briggs-control" ng-model="briggs.HYG_SPEC" maxlength="60" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="LAUND_NEED_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="LAUND_NEED_1" name="LAUND_NEED" ng-model="briggs.LAUND_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="LAUND_NEED_0">
+                                            <input type="radio" value="0" id="LAUND_NEED_0" name="LAUND_NEED" ng-model="briggs.LAUND_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 col-md-10 briggs-no-pad briggs-mrg-thin-t">
+                                    Does prospective resident desire and is he/she capable of doing own personal laundry and other household tasks? (specify)
+                                    <input id="LAUND_SPEC" name="LAUND_SPEC" class="form-control briggs-control briggs-cntrl-grp" ng-model="briggs.LAUND_SPEC" maxlength="120" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="ABOUT_NEED_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="ABOUT_NEED_1" name="ABOUT_NEED" ng-model="briggs.ABOUT_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="ABOUT_NEED_0">
+                                            <input type="radio" value="0" id="ABOUT_NEED_0" name="ABOUT_NEED" ng-model="briggs.ABOUT_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 briggs-no-pad">
+                                    <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad briggs-cntrl-grp">
+                                        Help with moving about the facility
+                                    </div>
+                                    <div class="col-lg-9 col-sm-7 col-md-8 briggs-no-pad briggs-cntrl-grp">
+                                        <textarea id="ABOUT_SPEC" name="ABOUT_SPEC" class="form-control briggs-control" spellcheck="true" ng-model="briggs.ABOUT_SPEC" maxlength="140"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="EAT_NEED_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="EAT_NEED_1" name="EAT_NEED" ng-model="briggs.EAT_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="EAT_NEED_0">
+                                            <input type="radio" value="0" id="EAT_NEED_0" name="EAT_NEED" ng-model="briggs.EAT_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 briggs-no-pad">
+                                    <div class="col-lg-7 col-sm-11 col-md-8 briggs-no-pad briggs-cntrl-grp">
+                                        Help with eating (need for adaptive devices or assistance from another person)
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                        <input id="EAT_SPEC" name="EAT_SPEC" class="form-control briggs-control briggs-mrg-thin-b" ng-model="briggs.EAT_SPEC" maxlength="120" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="DIET_NEED_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="DIET_NEED_1" name="DIET_NEED" ng-model="briggs.DIET_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="DIET_NEED_0">
+                                            <input type="radio" value="0" id="DIET_NEED_0" name="DIET_NEED" ng-model="briggs.DIET_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-5 col-md-4 briggs-no-pad briggs-cntrl-grp">
+                                        Special diet/observation of food intake
+                                    </div>
+                                    <div class="col-lg-8 col-sm-7 col-md-8 briggs-no-pad briggs-cntrl-grp">
+                                        <textarea id="DIET_SPEC" name="DIET_SPEC" class="form-control briggs-control" spellcheck="true" ng-model="briggs.DIET_SPEC" maxlength="150"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="TOI_NEED_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="TOI_NEED_1" name="TOI_NEED" ng-model="briggs.TOI_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="TOI_NEED_0">
+                                            <input type="radio" value="0" id="TOI_NEED_0" name="TOI_NEED" ng-model="briggs.TOI_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 briggs-no-pad">
+                                    <div class="col-lg-7 col-sm-11 col-md-9 briggs-no-pad briggs-cntrl-grp">
+                                        Toileting, including assistance equipment, or assistance of another person (specify)
+                                    </div>
+                                    <div class="col-lg-5 col-sm-1 col-md-3 briggs-no-pad briggs-cntrl-grp">
+                                        <input id="TOI_SPEC" name="TOI_SPEC" class="form-control briggs-control" ng-model="briggs.TOI_SPEC" maxlength="45" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="CON_NEED_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="CON_NEED_1" name="CON_NEED" ng-model="briggs.CON_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="CON_NEED_0">
+                                            <input type="radio" value="0" id="CON_NEED_0" name="CON_NEED" ng-model="briggs.CON_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 briggs-no-pad">
+                                    <div class="col-lg-8 col-sm-11 col-md-9 briggs-no-pad briggs-cntrl-grp">
+                                        Continence, bowel or bladder control. Are assistive devices such as a catheter required?
+                                    </div>
+                                    <div class="col-lg-4 col-sm-1 col-md-3 briggs-no-pad briggs-cntrl-grp">
+                                        <input id="CON_SPEC" name="CON_SPEC" class="form-control briggs-control" ng-model="briggs.CON_SPEC" maxlength="30" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="MED_NEED_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="MED_NEED_1" name="MED_NEED" ng-model="briggs.MED_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="MED_NEED_0">
+                                            <input type="radio" value="0" id="MED_NEED_0" name="MED_NEED" ng-model="briggs.MED_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 briggs-no-pad">
+                                    <div class="col-lg-2 col-sm-3 col-md-3 briggs-no-pad briggs-cntrl-grp">
+                                        Help with medication
+                                    </div>
+                                    <div class="col-lg-10 col-sm-9 col-md-9 briggs-no-pad briggs-cntrl-grp">
+                                        <textarea id="MED_SPEC" name="MED_SPEC" class="form-control briggs-control" spellcheck="true" ng-model="briggs.MED_SPEC" maxlength="240"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="NIGHT_NEED_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="NIGHT_NEED_1" name="NIGHT_NEED" ng-model="briggs.NIGHT_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="NIGHT_NEED_0">
+                                            <input type="radio" value="0" id="NIGHT_NEED_0" name="NIGHT_NEED" ng-model="briggs.NIGHT_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 briggs-no-pad">
+                                    <div class="col-lg-8 col-sm-11 col-md-9 briggs-no-pad briggs-cntrl-grp">
+                                        Needs special observation/night supervision (due to confusion, forgetfulness, wandering)
+                                    </div>
+                                    <div class="col-lg-4 col-sm-1 col-md-3 briggs-no-pad briggs-cntrl-grp">
+                                        <input id="NIGHT_SPEC" name="NIGHT_SPEC" class="form-control briggs-control" ng-model="briggs.NIGHT_SPEC" maxlength="45" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="CASH_NEED_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="CASH_NEED_1" name="CASH_NEED" ng-model="briggs.CASH_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="CASH_NEED_0">
+                                            <input type="radio" value="0" id="CASH_NEED_0" name="CASH_NEED" ng-model="briggs.CASH_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-6 col-md-4 briggs-no-pad briggs-cntrl-grp">
+                                        Help in managing own cash resources
+                                    </div>
+                                    <div class="col-lg-8 col-sm-6 col-md-8 briggs-no-pad briggs-cntrl-grp">
+                                        <input id="CASH_SPEC" name="CASH_SPEC" class="form-control briggs-control" ng-model="briggs.CASH_SPEC" maxlength="75" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="PRO_NEED_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="PRO_NEED_1" name="PRO_NEED" ng-model="briggs.PRO_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="PRO_NEED_0">
+                                            <input type="radio" value="0" id="PRO_NEED_0" name="PRO_NEED" ng-model="briggs.PRO_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-6 col-md-4 briggs-no-pad briggs-cntrl-grp">
+                                        Help in participating in activity programs
+                                    </div>
+                                    <div class="col-lg-8 col-sm-6 col-md-8 briggs-no-pad briggs-cntrl-grp">
+                                        <textarea id="PRO_SPEC" name="PRO_SPEC" class="form-control briggs-control" spellcheck="true" ng-model="briggs.PRO_SPEC" maxlength="140"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="ATT_NEED_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="ATT_NEED_1" name="ATT_NEED" ng-model="briggs.ATT_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="ATT_NEED_0">
+                                            <input type="radio" value="0" id="ATT_NEED_0" name="ATT_NEED" ng-model="briggs.ATT_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 briggs-no-pad">
+                                    <div class="col-lg-3 col-sm-4 col-md-3 briggs-no-pad briggs-cntrl-grp">
+                                        Special medical attention
+                                    </div>
+                                    <div class="col-lg-9 col-sm-8 col-md-9 briggs-no-pad briggs-cntrl-grp">
+                                        <textarea id="ATT_SPEC" name="ATT_SPEC" class="form-control briggs-control" spellcheck="true" ng-model="briggs.ATT_SPEC" maxlength="160"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="HEAL_NEED_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="HEAL_NEED_1" name="HEAL_NEED" ng-model="briggs.HEAL_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="HEAL_NEED_0">
+                                            <input type="radio" value="0" id="HEAL_NEED_0" name="HEAL_NEED" ng-model="briggs.HEAL_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-7 col-md-5 briggs-no-pad briggs-cntrl-grp">
+                                        Assistance in incidental health and medical care
+                                    </div>
+                                    <div class="col-lg-8 col-sm-5 col-md-7 briggs-no-pad briggs-cntrl-grp">
+                                        <textarea id="HEAL_SPEC" name="HEAL_SPEC" class="form-control briggs-control" spellcheck="true" ng-model="briggs.HEAL_SPEC" maxlength="150"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="OTHER_NEED_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="OTHER_NEED_1" name="OTHER_NEED" ng-model="briggs.OTHER_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="OTHER_NEED_0">
+                                            <input type="radio" value="0" id="OTHER_NEED_0" name="OTHER_NEED" ng-model="briggs.OTHER_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-6 col-md-5 briggs-no-pad briggs-cntrl-grp">
+                                        Other "Services Needed" not identified above
+                                    </div>
+                                    <div class="col-lg-8 col-sm-6 col-md-7 briggs-no-pad briggs-cntrl-grp">
+                                        <textarea id="OTHER_SPEC" name="OTHER_SPEC" class="form-control briggs-control" spellcheck="true" ng-model="briggs.OTHER_SPEC" maxlength="140"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thick-b">
+                                <div class="col-lg-8 col-sm-12 col-md-10 briggs-no-pad briggs-cntrl-grp">
+                                    Is there any additional information which would assist the facility in determining applicant's suitability for admission?
+                                </div>
+                                <div class="col-lg-1 col-sm-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="ADD_INFO_1">
+                                            <input type="radio" value="1" id="ADD_INFO_1" name="ADD_INFO" ng-model="briggs.ADD_INFO">
+                                            Yes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-pad-thick-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="ADD_INFO_0">
+                                            <input type="radio" value="0" id="ADD_INFO_0" name="ADD_INFO" ng-model="briggs.ADD_INFO">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-cntrl-grp briggs-pad-thick-r">
+                                    If Yes, please attach 
+                                </div>
+                                <div class="briggs-fl briggs-cntrl-grp briggs-pad-thick-r">
+                                    comments
+                                </div>
+                                <div class="briggs-fl briggs-cntrl-grp">
+                                     on separate sheet.
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-f-thick briggs-no-pad-r briggs-brd-thin-b">
+                                <div class="briggs-cntrl-grp">
+                                    TO THE BEST OF MY KNOWLEDGE, I/THE ABOVE PERSON DO/DOES NOT NEED SKILLED NURSING CARE.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- signature region -->
+                        <div class="row briggs-cont-row" name="signature_row" id="signature_row">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin-b">
+                                <div class="col-lg-10 col-sm-9 col-md-10 briggs-no-pad briggs-brd-thin-r">
+                                    <div name="signature_container" id="signature_container">
+                                        <div class="col-lg-12  col-sm-12 briggs-no-pad-r  briggs-mrg-thick-t">
+                                            SIGNATURE OF APPLICANT OR RESPONSIBLE PERSON
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 col-md-12 ">
+                                            <textarea class="form-control briggs-control briggs-cntrl-grp briggs-mrg-thick-b" id="SIGN_A" name="SIGN_A" rows="3" cols="12" spellcheck="true" briggs-signature ng-model="briggs.SIGN_A" maxlength="45"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2  col-sm-3 col-md-2 briggs-no-pad-r ">
+                                    <div class="col-lg-12  col-sm-12 briggs-no-pad briggs-mrg-thick-t">
+                                        DATE COMPLETED
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad-l">
+                                        <div class="briggs-col-offs">
+                                            <input class="form-control briggs-control briggs-date-control briggs-cntrl-grp briggs-mrg-thick-b" id="DATE_SIGN_A" name="DATE_SIGN_A" ng-model="briggs.DATE_SIGN_A" maxlength="10" type="date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row" name="signature_row_1" id="signature_row_1">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="col-lg-10 col-sm-9 col-md-10 briggs-no-pad briggs-brd-thin-r">
+                                    <div name="signature_container_1" id="signature_container_1">
+                                        <div class="col-lg-12  col-sm-12 briggs-no-pad-r  briggs-mrg-thick-t">
+                                            SIGNATURE OF LICENSEE OR DESIGNATED REPRESENTATIVE
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 col-md-12 ">
+                                            <textarea class="form-control briggs-control briggs-cntrl-grp briggs-mrg-thick-b" id="SIGN_B" name="SIGN_B" rows="3" cols="12" spellcheck="true" briggs-signature ng-model="briggs.SIGN_B" maxlength="45"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2  col-sm-3 col-md-2 briggs-no-pad-r ">
+                                    <div class="col-lg-12  col-sm-12 briggs-no-pad briggs-mrg-thick-t">
+                                        DATE COMPLETED
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad-l">
+                                        <div class="briggs-col-offs">
+                                            <input class="form-control briggs-control briggs-date-control briggs-cntrl-grp briggs-mrg-thick-b" id="DATE_SIGN_B" name="DATE_SIGN_B" ng-model="briggs.DATE_SIGN_B" maxlength="10" type="date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of signature region-->
+                    </div>
+                    <!--page 2 ends-->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 3 of 3 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

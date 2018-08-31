@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../../Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Content/css/main/briggs-main.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../../../Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../Scripts/match-height/jquery.matchHeight-min.js"></script>
+    <script src="../../../Scripts/page/common.js"></script>
+    <title>BRIGGS | FALL RISK ASSESSMENT</title>
+</head>
+<body class="test-rows">
+    <!--form starts-->
+    <div class="container briggs-height-auto">
+        <div id="Page-01" name="pagebreak" description="MAHC 10 - FALL RISK ASSESSMENT TOOL">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+
+                    <!--header starts-->
+                    <div class="row briggs-cont-row">
+                        <div class="col-lg-9 col-sm-7 col-md-8 briggs-no-pad">
+                            <div class="col-lg-10 text-right col-sm-8 col-md-9  briggs-pad-thin-r briggs-mrg-thick-t">
+                                <label class="briggs-f-thin" for="DATE_ASS">Date of Assessment:</label>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-md-3 briggs-no-pad briggs-mrg-thick-t">
+                                <input class="form-control briggs-control briggs-date-control" id="DATE_ASS" name="DATE_ASS" ng-model="briggs.DATE_ASS" maxlength="10" type="date">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad briggs-pg-title briggs-title-r briggs-fr  briggs-no-pad briggs-cntrl-grp">
+                            FALL RISK ASSESSMENT
+                        </div>
+                    </div>
+                    <!--header ends-->
+                    <!--page 1 starts-->
+
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-sec-hdr-gray">
+                                <div class="col-lg-9 col-sm-8 col-md-9 briggs-no-pad briggs-brd-thin-r ">
+                                    <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad-r briggs-mrg-thick-t">
+                                        <label for="NAME_LAST" class="briggs-f-thin">Client Name (Last,</label>
+                                        <label for="NAME_FIRST" class="briggs-f-thin">First,</label>
+                                        <label for="NAME_MIDDLE" class="briggs-f-thin">Middle)</label>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-thick-b">
+                                        <div class="col-lg-5 col-sm-5 briggs-no-pad-r">
+                                            <input class="form-control briggs-control" name="NAME_LAST" id="NAME_LAST" ng-model="briggs.NAME_LAST" maxlength="40" type="text" />
+                                        </div>
+                                        <div class="col-lg-5 col-sm-5  ">
+                                            <input class="form-control briggs-control" name="NAME_FIRST" id="NAME_FIRST" ng-model="briggs.NAME_FIRST" maxlength="25" type="text" />
+                                        </div>
+                                        <div class="col-lg-2 col-sm-2 briggs-no-pad-l">
+                                            <input class="form-control briggs-control" name="NAME_MIDDLE" id="NAME_MIDDLE" ng-model="briggs.NAME_MIDDLE" maxlength="10" type="text" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-4 col-md-3 briggs-sec-hdr-gray  ">
+                                    <label for="RECORD_NO" class="briggs-f-thin briggs-mrg-thick-t">Medical Record No.</label>
+                                    <input class="form-control briggs-control briggs-mrg-thick-b" name="RECORD_NO" id="RECORD_NO" ng-model="briggs.RECORD_NO" maxlength="40" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row ">
+                            <div class="col-lg-12 col-sm-12  briggs-header-txt briggs-sec-hdr-black briggs-sec-header briggs-header-txt briggs-txt-w ">
+                                MAHC 10 - FALL RISK ASSESSMENT TOOL
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-sm-12 col-lg-12 text-center briggs-brd-thin-b briggs-sec-hdr-gray">
+                                <div class="briggs-cntrl-grp">
+                                    <span class="briggs-f-thick">REQUIRED CORE ELEMENTS (Assess one point for each core element "yes".)</span> <br />
+                                    <em class="briggs-f-md briggs-f-thick">
+                                        Information may be gathered from medical record, assessment and if applicable, the patient/caregiver.<br />
+                                        Beyond protocols listed below, scoring should be based on your clinical judgment
+                                    </em>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  briggs-no-pad">
+                                <div class="col-lg-6 col-md-6 col-sm-6  briggs-brd-thick-r briggs-no-pad">
+                                    <div class="col-xs-12 briggs-sec-header items-container briggs-brd-thin-b briggs-no-pad">
+                                        <div class="col-md-10 col-sm-9 item  briggs-brd-thin-r">
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 briggs-header-txt item  briggs-sec-hdr-gray ">
+                                            Points
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 briggs-no-pad">
+                                    <div class="col-xs-12 briggs-sec-header briggs-brd-thin-b  items-container briggs-no-pad">
+                                        <div class="col-md-10 col-sm-9 item  briggs-brd-thin-r">
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 briggs-header-txt item  briggs-sec-hdr-gray ">
+                                            Points
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12  briggs-brd-thin-b  briggs-no-pad">
+                                <div class="col-lg-6 col-md-6 col-sm-6 briggs-brd-thick-r briggs-no-pad">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 briggs-no-pad briggs-brd-thin-b items-container">
+                                        <div class="col-md-10 col-sm-9 briggs-brd-thin-r item" id="MAHC_A1" onclick="briggs_populateYes(this.id)">
+                                            <div class="briggs-f-thick briggs-mrg-thick-t">
+                                                Age 65+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 briggs-no- text-center col-sm-3 item ">
+                                            
+                                                <label for="MAHC_A" class="briggs-mrg-thick-t briggs-mrg-thin-l">
+                                                  <!--  <input type="checkbox" id="MAHC_A" name="MAHC_A" value="" onclick="briggs_populateCheckbox(this.id)" ng-model="briggs.MAHC_A" />-->
+                                                    
+													<select name="MAHC_A" id="MAHC_A" onchange="populate_yes_with(this.value)" class="form-control briggs-control briggs-mrg-t briggs-mrg-thick-b" ng-model="briggs.MAHC_A">
+                                                    <option value=" " selected="selected"></option>
+                                                    <option value="1">NO</option>
+                                                    <option value="2" onclick="briggs_populateYes(this.id)">YES</option>
+                                                </select>
+												
+												</label>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 briggs-no-pad briggs-brd-thin-b items-container">
+                                        <div class="col-md-10 col-sm-9 item briggs-brd-thin-r" id="MAHC_B1" onclick="briggs_populateYes(this.id)">
+                                            <div class="briggs-mrg-thick-t briggs-mrg-thick-b">
+                                                <span class="briggs-f-thick">
+                                                    Diagnosis (3 or more co-existing)
+                                                </span><br />
+                                                Includes only documented medical diagnosis.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 text-center item briggs-no-pad">
+                                            
+                                                <label for="MAHC_B" class="briggs-mrg-thick-t briggs-mrg-thin-l">
+                                                  <!--<input type="checkbox" id="MAHC_B" name="MAHC_B" value="" onclick="briggs_populateCheckbox(this.id)" ng-model="briggs.MAHC_B">-->
+                                                    
+													<select name="MAHC_B" id="MAHC_B" onchange="populate_yes_with(this.value)" class="form-control briggs-control briggs-mrg-t briggs-mrg-thick-b" ng-model="briggs.MAHC_B">
+                                                    <option value=" " selected="selected"></option>
+                                                    <option value="1">NO</option>
+                                                    <option value="2" onclick="briggs_populateYes(this.id)">YES</option>
+                                                </select>
+												
+												
+												</label>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 briggs-no-pad briggs-brd-thin-b items-container">
+                                        <div class="col-md-10 col-sm-9 item briggs-brd-thin-r briggs-no-pad" id="MAHC_C1" onclick="briggs_populateYes(this.id)">
+                                            <div class="briggs-mrg-thick-t briggs-mrg-thick-b col-sm-10 col-lg-12 col-md-12">
+                                                <span class="briggs-f-thick">
+                                                    Prior history of falls within 3 months
+                                                </span><br />
+                                                A unintentional change in position resulting in coming
+                                                to rest on the ground or at a lower level.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 item  text-center briggs-no-pad">
+                                            
+                                                <label for="MAHC_C" class="briggs-mrg-thick-t briggs-mrg-thin-l">
+                                                  <!--<input type="checkbox" id="MAHC_C" name="MAHC_C" value="" onclick="briggs_populateCheckbox(this.id)" ng-model="briggs.MAHC_C" />-->
+                                                    
+													<select name="MAHC_C" id="MAHC_C" onchange="populate_yes_with(this.value)" class="form-control briggs-control briggs-mrg-t briggs-mrg-thick-b" ng-model="briggs.MAHC_C">
+                                                    <option value=" " selected="selected"></option>
+                                                    <option value="1">NO</option>
+                                                    <option value="2" onclick="briggs_populateYes(this.id)">YES</option>
+                                                </select>
+												
+												</label>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 briggs-brd-thin-b briggs-no-pad items-container ">
+                                        <div class="col-md-10 col-sm-9 item briggs-no-pad briggs-brd-thin-r" id="MAHC_D1" onclick="briggs_populateYes(this.id)">
+                                            <div class="briggs-mrg-thick-t briggs-mrg-thick-b col-sm-10 col-lg-12 col-md-12">
+                                                <span class="briggs-f-thick">
+                                                    Incontinence
+                                                </span><br />
+                                                Inability to make it to the bathroom or commode in
+                                                timely manner. Includes frequency, urgency, and/or
+                                                nocturia.
+                                            </div>
+                                            <div class="col-sm-12 briggs-mrg-thin-t"></div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 item">
+                                           
+                                                <label for="MAHC_D" class="briggs-mrg-thick-t briggs-mrg-thin-l">
+                                                  <!--<input type="checkbox" id="MAHC_D" name="MAHC_D" value="" onclick="briggs_populateCheckbox(this.id)" ng-model="briggs.MAHC_D" />-->
+                                                    
+												<select name="MAHC_D" id="MAHC_D" onchange="populate_yes_with(this.value)" class="form-control briggs-control briggs-mrg-t briggs-mrg-thick-b" ng-model="briggs.MAHC_D">
+                                                    <option value=" " selected="selected"></option>
+                                                    <option value="1">NO</option>
+                                                    <option value="2" onclick="briggs_populateYes(this.id)">YES</option>
+                                                </select>
+												
+												
+												</label>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 briggs-no-pad items-container briggs-brd-thin-b">
+                                        <div class="col-md-10 col-sm-9 briggs-brd-thin-r item briggs-no-pad" id="MAHC_E1" onclick="briggs_populateYes(this.id)">
+                                            <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t briggs-mrg-thick-b">
+                                                <span class="briggs-f-thick">
+                                                    Visual impairment
+                                                </span><br />
+                                                Includes but not limited to, macular degeneration,
+                                                diabetic retinopathies, visual field loss, age related
+                                                changes, decline in visual acuity, accommodation,
+                                                glare tolerance, depth perception, and night vision or
+                                                not wearing prescribed glasses or having the correct
+                                                prescription.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 item text-center briggs-no-pad">
+                                           
+                                                <label for="MAHC_E" class="briggs-mrg-t briggs-mrg-thin-l">
+                                                 <!--<input type="checkbox" id="MAHC_E" name="MAHC_E" value="" onclick="briggs_populateCheckbox(this.id)" ng-model="briggs.MAHC_E" />-->
+                                                     
+													<select name="MAHC_E" id="MAHC_E" onchange="populate_yes_with(this.value)" class="form-control briggs-control briggs-mrg-t briggs-mrg-thick-b" ng-model="briggs.MAHC_E">
+                                                    <option value=" " selected="selected"></option>
+                                                    <option value="1">NO</option>
+                                                    <option value="2" onclick="briggs_populateYes(this.id)">YES</option>
+                                                </select>
+												
+												</label>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 briggs-no-pad items-container">
+                                        <div class="col-md-10 col-sm-9 item briggs-brd-thin-r" id="MAHC_F1" onclick="briggs_populateYes(this.id)">
+                                            <div class="col-sm-12 col-lg-12 col-md-12 briggs-mrg-thick-t briggs-mrg-thick-b briggs-no-pad">
+                                                <span class="briggs-f-thick">
+                                                    Environmental hazards
+                                                </span><br />
+                                                May include but not limited to, poor illumination,
+                                                equipment tubing, inappropriate footwear, pets, hard
+                                                to reach items, floor surfaces that are uneven or
+                                                cluttered, or outdoor entry and exits.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 item text-center briggs-no-pad">
+                                            
+                                                <label for="MAHC_F" class="briggs-mrg-t briggs-mrg-thin-l">
+                                                  <!--<input type="checkbox" id="MAHC_F" name="MAHC_F" value="" onclick="briggs_populateCheckbox(this.id)" ng-model="briggs.MAHC_F" />-->
+                                                    
+													<select name="MAHC_F" id="MAHC_F" onchange="populate_yes_with(this.value)" class="form-control briggs-control briggs-mrg-t briggs-mrg-thick-b" ng-model="briggs.MAHC_F">
+                                                    <option value=" " selected="selected"></option>
+                                                    <option value="1">NO</option>
+                                                    <option value="2" onclick="briggs_populateYes(this.id)">YES</option>
+                                                </select>
+												
+												
+												</label>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 briggs-no-pad">
+                                    <div class="col-lg-12 col-md-12 col-sm-12  briggs-brd-thin-b items-container briggs-no-pad">
+                                        <div class="col-md-10 col-sm-9 item briggs-no-pad briggs-brd-thin-r" id="MAHC_G1" onclick="briggs_populateYes(this.id)">
+                                            <div class="col-sm-12 col-lg-10 briggs-mrg-thick-t briggs-mrg-thick-b col-md-12">
+                                                <span class="briggs-f-thick">
+                                                    Impaired functional mobility
+                                                </span><br />
+                                                May include patients who need help with IADLs or
+                                                ADLs or have gait or transfer problems, arthritis, pain,
+                                                fear of falling, foot problems, impaired sensation,
+                                                impaired coordination or improper use of assistive
+                                                devices.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 item text-center briggs-no-pad">
+                                            
+                                                <label for="MAHC_G" class="briggs-mrg-thin-l briggs-mrg-thin-t">
+                                                 <!--<input type="checkbox" id="MAHC_G" name="MAHC_G" value="" onclick="briggs_populateCheckbox(this.id)" ng-model="briggs.MAHC_G" />-->
+                                                    
+													<select name="MAHC_G" id="MAHC_G" onchange="populate_yes_with(this.value)" class="form-control briggs-control briggs-mrg-t briggs-mrg-thick-b" ng-model="briggs.MAHC_G">
+                                                    <option value=" " selected="selected"></option>
+                                                    <option value="1">NO</option>
+                                                    <option value="2" onclick="briggs_populateYes(this.id)">YES</option>
+                                                </select>
+												</label>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 briggs-brd-thin-b items-container briggs-no-pad">
+                                        <div class="col-md-10 col-sm-9 item  briggs-brd-thin-r" id="MAHC_H1" onclick="briggs_populateYes(this.id)">
+                                            <div class="col-sm-12 col-lg-10 col-md-12 briggs-no-pad briggs-mrg-thick-t briggs-mrg-b">
+                                                <span class="briggs-f-thick">
+                                                    Poly Pharmacy (4 or more prescriptions - any
+                                                    type)
+                                                </span>
+                                                All PRESCRIPTIONS including prescriptions
+                                                for OTC meds. Drugs highly associated with fall risk
+                                                include but not limited to, sedatives, anti- depressants,
+                                                tranquilizers, narcotics, antihypertensives, cardiac
+                                                meds, corticosteriods, anti-anxiety drugs,
+                                                anticholinergic drugs, and hypoglycemic drugs.
+                                            </div>
+                                            <div class="col-sm-12 briggs-mrg-t"></div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 item text-center briggs-no-pad">
+                                           
+                                                <label for="MAHC_H" class="briggs-mrg-t briggs-mrg-thin-l">
+                                                  <!--  <input type="checkbox" id="MAHC_H" name="MAHC_H" value="" onclick="briggs_populateCheckbox(this.id)" ng-model="briggs.MAHC_H" />-->
+                                                    
+													<select name="MAHC_H" id="MAHC_H" onchange="populate_yes_with(this.value)" class="form-control briggs-control briggs-mrg-t briggs-mrg-thick-b" ng-model="briggs.MAHC_H">
+                                                    <option value=" " selected="selected"></option>
+                                                    <option value="1">NO</option>
+                                                    <option value="2" onclick="briggs_populateYes(this.id)">YES</option>
+                                                </select>
+												
+												</label>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12  briggs-brd-thin-b items-container briggs-no-pad">
+                                        <div class="col-md-10 col-sm-9 item briggs-no-pad briggs-brd-thin-r" id="MAHC_I1" onclick="briggs_populateYes(this.id)">
+                                            <div class="col-sm-10 col-lg-12 col-md-11 briggs-mrg-thick-t briggs-mrg-thick-b">
+                                                <span class="briggs-f-thick">
+                                                    Pain affecting level of function
+                                                </span><br />
+                                                Pain often affects an individual's desire or ability to
+                                                move or pain can be a factor in depression or
+                                                compliance with safety recommendations.
+                                            </div>
+                                            <div class="col-lg-12 col-sm-12"></div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 item text-center briggs-no-pad">
+                                            
+                                                <label for="MAHC_I" class="briggs-mrg-t briggs-mrg-thin-l">
+                                                 <!--   <input type="checkbox" id="MAHC_I" name="MAHC_I" value="" onclick="briggs_populateCheckbox(this.id)" ng-model="briggs.MAHC_I" />-->
+                                                    
+													<select name="MAHC_I" id="MAHC_I" onchange="populate_yes_with(this.value)" class="form-control briggs-control briggs-mrg-t briggs-mrg-thick-b" ng-model="briggs.MAHC_I">
+                                                    <option value=" " selected="selected"></option>
+                                                    <option value="1">NO</option>
+                                                    <option value="2" onclick="briggs_populateYes(this.id)">YES</option>
+                                                </select>
+												
+												</label>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 items-container  briggs-no-pad">
+                                        <div class="col-md-10 col-sm-9 item  briggs-no-pad briggs-brd-thin-r" id="MAHC_J1" onclick="briggs_populateYes(this.id)">
+                                            <div class="col-sm-12 col-lg-11 col-md-11 briggs-mrg-t">
+                                                <div class="briggs-mrg-thin-t">
+                                                    <span class="briggs-f-thick">
+                                                        Cognitive impairment
+                                                    </span>  <br />
+                                                    Could include patients with dementia, Alzheimer's or
+                                                    stroke patients or patients who are confused, use
+                                                    poor judgment, have decreased comprehension,
+                                                    impulsivity, memory deficits. Consider patient's ability
+                                                    to adhere to the plan of care.<br />
+                                                    &nbsp;
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-sm-12"></div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 item text-center briggs-no-pad">
+                                            
+                                                <label for="MAHC_J" class="briggs-mrg-t briggs-mrg-thin-l">
+                                                 <!--   <input type="checkbox" id="MAHC_J" name="MAHC_J" value="" onclick="briggs_populateCheckbox(this.id)" ng-model="briggs.MAHC_J" />-->
+                                                     
+													<select name="MAHC_J" id="MAHC_J" onchange="populate_yes_with(this.value)" class="form-control briggs-control briggs-mrg-t briggs-mrg-thick-b" ng-model="briggs.MAHC_J">
+                                                    <option value=" " selected="selected"></option>
+                                                    <option value="1">NO</option>
+                                                    <option value="2" onclick="briggs_populateYes(this.id)">YES</option>
+                                                </select>
+												
+												</label>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  briggs-no-pad briggs-brd-thick-t briggs-brd-thick-b items-container">
+                                <div class="col-lg-6 col-sm-6 briggs-no-pad  briggs-brd-thick-r item">
+                                    <div class="col-lg-12 col-sm-12 briggs-mrg-t">
+                                        MAHC 10 reprinted with permission from
+                                        <span class="briggs-f-thick">
+                                            <em>Missouri Alliance</em>  for HOME CARE
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 item briggs-no-pad">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad ">
+                                        <div class="col-lg-10 col-md-10 col-sm-9 briggs-no-pad briggs-brd-thin-r">
+                                            <div class="col-lg-10 col-md-10 briggs-mrg-b col-sm-9 item  briggs-no-pad-r briggs-mrg-t">
+                                                <span class="briggs-f-thick">
+                                                    A score of 4 or more is considered at risk
+                                                    for falling
+                                                </span>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-3 item briggs-mrg-t briggs-no-pad briggs-pad-thick-r  text-right">
+                                                <label for="MAHC_TOTAL">TOTAL</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-3 col-md-2 briggs-no-pad">
+                                            <input class="form-control briggs-control briggs-mrg-t briggs-mrg-thick-b briggs-mrg-auto-lr briggs-width-80" name="MAHC_TOTAL" id="MAHC_TOTAL" readonly ng-model="briggs.MAHC_TOTAL" maxlength="2" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-no-pad briggs-mrg-thick-t briggs-cntrl-grp">
+                                    <div class="col-sm-4 ">
+                                        <label for="FALL_RISK_ASSESSMENT_FINDINGS_REVIEWED_YES" class="radio-inline">
+                                            <input name="FALL_RISK_ASSESSMENT_FINDINGS_REVIEWED" id="FALL_RISK_ASSESSMENT_FINDINGS_REVIEWED_YES" value="1" type="radio" ng-model="briggs.FALL_RISK_ASSESSMENT_FINDINGS_REVIEWED">Yes
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="FALL_RISK_ASSESSMENT_FINDINGS_REVIEWED_NO" class="radio-inline">
+                                            <input name="FALL_RISK_ASSESSMENT_FINDINGS_REVIEWED" id="FALL_RISK_ASSESSMENT_FINDINGS_REVIEWED_NO" value="0" type="radio" ng-model="briggs.FALL_RISK_ASSESSMENT_FINDINGS_REVIEWED">No
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="FALL_RISK_ASSESSMENT_FINDINGS_REVIEWED_NA" class="radio-inline">
+                                            <input name="FALL_RISK_ASSESSMENT_FINDINGS_REVIEWED" id="FALL_RISK_ASSESSMENT_FINDINGS_REVIEWED_NA" value="254" type="radio" ng-model="briggs.FALL_RISK_ASSESSMENT_FINDINGS_REVIEWED">N/A
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-9 briggs-no-pad-r briggs-cntrl-grp briggs-mrg-thick-t">
+                                    Fall risk assessment findings were reviewed with the patient and/or caregiver and recommendations
+                                    were given
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-no-pad briggs-mrg-thick-t briggs-cntrl-grp">
+                                    <div class="col-sm-4 ">
+                                        <label for="MEDICATIONS_REVIEWED_YES" class="radio-inline">
+                                            <input name="MEDICATIONS_REVIEWED" id="MEDICATIONS_REVIEWED_YES" value="1" type="radio" ng-model="briggs.MEDICATIONS_REVIEWED">Yes
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="MEDICATIONS_REVIEWED_NO" class="radio-inline">
+                                            <input name="MEDICATIONS_REVIEWED" id="MEDICATIONS_REVIEWED_NO" value="0" type="radio" ng-model="briggs.MEDICATIONS_REVIEWED">No
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="MEDICATIONS_REVIEWED_NA" class="radio-inline">
+                                            <input name="MEDICATIONS_REVIEWED" id="MEDICATIONS_REVIEWED_NA" value="254" type="radio" ng-model="briggs.MEDICATIONS_REVIEWED">N/A
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-9 briggs-no-pad-r briggs-cntrl-grp briggs-mrg-thick-t">
+                                    Medications that may potentiate a fall risk were reviewed: (List medications)
+                                    <div class="col-xs-12 briggs-no-pad-l briggs-mrg-thin-t">
+                                        <input class="form-control briggs-control" id="LIST_MEDICATIONS" name="LIST_MEDICATIONS" ng-model="briggs.LIST_MEDICATIONS" maxlength="70" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-no-pad briggs-mrg-thick-t briggs-cntrl-grp">
+                                    <div class="col-sm-4 ">
+                                        <label for="DEVELOP_FALL_RISK_PLAN_YES" class="radio-inline">
+                                            <input name="DEVELOP_FALL_RISK_PLAN" id="DEVELOP_FALL_RISK_PLAN_YES" value="1" type="radio" ng-model="briggs.DEVELOP_FALL_RISK_PLAN">Yes
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="DEVELOP_FALL_RISK_PLAN_NO" class="radio-inline">
+                                            <input name="DEVELOP_FALL_RISK_PLAN" id="DEVELOP_FALL_RISK_PLAN_NO" value="0" type="radio" ng-model="briggs.DEVELOP_FALL_RISK_PLAN">No
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="DEVELOP_FALL_RISK_PLAN_NA" class="radio-inline">
+                                            <input name="DEVELOP_FALL_RISK_PLAN" id="DEVELOP_FALL_RISK_PLAN_NA" value="254" type="radio" ng-model="briggs.DEVELOP_FALL_RISK_PLAN">N/A
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-9 briggs-no-pad-r briggs-cntrl-grp briggs-mrg-thick-t">
+                                    Using the teach back method the patient and/or caregiver actively partnered with the clinician to
+                                    develop a fall risk safety plan
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-no-pad briggs-mrg-thick-t briggs-cntrl-grp">
+                                    <div class="col-sm-4 ">
+                                        <label for="UNDERSTOOD_PLANS_INTERVENTIONS_GOALS_YES" class="radio-inline">
+                                            <input name="UNDERSTOOD_PLANS_INTERVENTIONS_GOALS" id="UNDERSTOOD_PLANS_INTERVENTIONS_GOALS_YES" value="1" type="radio" ng-model="briggs.UNDERSTOOD_PLANS_INTERVENTIONS_GOALS">Yes
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="UNDERSTOOD_PLANS_INTERVENTIONS_GOALS_NO" class="radio-inline">
+                                            <input name="UNDERSTOOD_PLANS_INTERVENTIONS_GOALS" id="UNDERSTOOD_PLANS_INTERVENTIONS_GOALS_NO" value="0" type="radio" ng-model="briggs.UNDERSTOOD_PLANS_INTERVENTIONS_GOALS">No
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="UNDERSTOOD_PLANS_INTERVENTIONS_GOALS_NA" class="radio-inline">
+                                            <input name="UNDERSTOOD_PLANS_INTERVENTIONS_GOALS" id="UNDERSTOOD_PLANS_INTERVENTIONS_GOALS_NA" value="254" type="radio" ng-model="briggs.UNDERSTOOD_PLANS_INTERVENTIONS_GOALS">N/A
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-9 briggs-no-pad-r briggs-cntrl-grp briggs-mrg-thick-t">
+                                    Patient and/or caregiver were able to explain in their own words what he or she understood about the
+                                    plan's interventions and goals
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-no-pad briggs-mrg-thick-t briggs-cntrl-grp">
+                                    <div class="col-sm-4 ">
+                                        <label for="DEMONSTRATE_PROCESSSES_CLINICIAN_TAUGHT_YES" class="radio-inline">
+                                            <input name="DEMONSTRATE_PROCESSSES_CLINICIAN_TAUGHT" id="DEMONSTRATE_PROCESSSES_CLINICIAN_TAUGHT_YES" value="1" type="radio" ng-model="briggs.DEMONSTRATE_PROCESSSES_CLINICIAN_TAUGHT">Yes
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="DEMONSTRATE_PROCESSSES_CLINICIAN_TAUGHT_NO" class="radio-inline">
+                                            <input name="DEMONSTRATE_PROCESSSES_CLINICIAN_TAUGHT" id="DEMONSTRATE_PROCESSSES_CLINICIAN_TAUGHT_NO" value="0" type="radio" ng-model="briggs.DEMONSTRATE_PROCESSSES_CLINICIAN_TAUGHT">No
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="DEMONSTRATE_PROCESSSES_CLINICIAN_TAUGHT_NA" class="radio-inline">
+                                            <input name="DEMONSTRATE_PROCESSSES_CLINICIAN_TAUGHT" id="DEMONSTRATE_PROCESSSES_CLINICIAN_TAUGHT_NA" value="254" type="radio" ng-model="briggs.DEMONSTRATE_PROCESSSES_CLINICIAN_TAUGHT">N/A
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-9 briggs-no-pad-r briggs-cntrl-grp briggs-mrg-thick-t">
+                                    If applicable, the patient and/or caregiver were able to independently demonstrate processes that the
+                                    clinician taught or reviewed during the visit
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-no-pad briggs-mrg-thick-t briggs-cntrl-grp">
+                                    <div class="col-sm-4 ">
+                                        <label for="COPY_FALL_RISK_PLAN_YES" class="radio-inline">
+                                            <input name="COPY_FALL_RISK_PLAN" id="COPY_FALL_RISK_PLAN_YES" value="1" type="radio" ng-model="briggs.COPY_FALL_RISK_PLAN">Yes
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="COPY_FALL_RISK_PLAN_NO" class="radio-inline">
+                                            <input name="COPY_FALL_RISK_PLAN" id="COPY_FALL_RISK_PLAN_NO" value="0" type="radio" ng-model="briggs.COPY_FALL_RISK_PLAN">No
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="COPY_FALL_RISK_PLAN_NA" class="radio-inline">
+                                            <input name="COPY_FALL_RISK_PLAN" id="COPY_FALL_RISK_PLAN_NA" value="254" type="radio" ng-model="briggs.COPY_FALL_RISK_PLAN">N/A
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-9 briggs-no-pad-r briggs-cntrl-grp briggs-mrg-thick-t">
+                                    Copy of the fall risk care plan was or will be given to the patient/caregiver for their use/reference
+                                </div>
+                            </div>                            
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                <div class="briggs-fl briggs-cntrl-grp briggs-col-offs briggs-pad-r">
+                                    <label class="briggs-f-thin" for="DATE_COPY_FALL_RISK_PLAN">Date:</label>
+                                </div>
+                                <div class="col-lg-2 col-sm-3 briggs-no-pad col-md-2 briggs-cntrl-grp">
+                                    <input class="form-control briggs-control briggs-date-control" id="DATE_COPY_FALL_RISK_PLAN" name="DATE_COPY_FALL_RISK_PLAN" ng-model="briggs.DATE_COPY_FALL_RISK_PLAN" maxlength="10" type="date">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 briggs-no-pad briggs-cntrl-grp">
+                                <span class="col-xs-1">
+                                    <label for="OTHER" class="checkbox-inline">
+                                        <input name="OTHER" id="OTHER" type="checkbox" ng-model="briggs.OTHER">Other:
+                                    </label>
+                                </span>
+                                <span class="col-xs-11 briggs-cntrl-grp">
+                                    <textarea class="form-control briggs-control" name="OTHER_SPECIFY" id="OTHER_SPECIFY" rows="5" spellcheck="true" ng-model="briggs.OTHER_SPECIFY" maxlength="330"></textarea>
+                                </span>
+                            </div>
+                            <div class="col-xs-12 briggs-no-pad briggs-cntrl-grp briggs-brd-thick-b">
+                                <div class="col-lg-1 col-sm-2 col-md-1">
+                                    <label for="OTHER" class="briggs-f-thin">
+                                        Comments:
+                                    </label>
+                                </div>
+                                <span class="col-lg-11 col-sm-10 col-md-11 briggs-mrg-b">
+                                    <textarea class="form-control briggs-control" name="COMMENTS" id="COMMENTS" rows="10" spellcheck="true" ng-model="briggs.COMMENTS" maxlength="840"></textarea>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- signature region -->
+                        <div class="row briggs-cont-row" name="signature_row" id="signature_row"> 
+                                <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad "> 
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-thick-t"> 
+                                        <div class="col-lg-5 col-sm-8 col-md-6 briggs-no-pad-r briggs-cntrl-grp"> 
+                                            <label for="FORM_COMP" class="briggs-f-thin">Person Completing This Form:
+                                            </label> 
+                                        </div> 
+                                        <div class="col-lg-7 col-sm-4 col-md-6 briggs-no-pad briggs-cntrl-grp">     <input class="form-control briggs-control" name="FORM_COMP" id="FORM_COMP" ng-model="briggs.FORM_COMP" maxlength="35" type="text"> 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                                <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad briggs-mrg-thick-t"> 
+                                    <div name="signature_container" id="signature_container"> 
+                                        <div class="col-sm-3 col-lg-2 col-md-2 text-right briggs-pad-thick-lr briggs-cntrl-grp"> 
+                                            <label for="SIGN_A" class="briggs-f-thin">Signature:</label> 
+                                        </div> 
+                                        <div class="col-sm-9 col-lg-10 col-md-10 briggs-no-pad-l briggs-cntrl-grp"> 
+                                            <textarea name="SIGN_A" id="SIGN_A" rows="3" cols="12" class="form-control briggs-control" spellcheck="true" ng-model="briggs.SIGN_A" maxlength="135"></textarea> 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div>                      
+                        <!--end of signature -->
+
+                    </div>
+                    <!--page 1 ends-->
+                    <!--footer starts-->
+                    <div class="col-lg-12  col-sm-12 briggs-pg-footer">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-5 col-md-5  col-sm-6 briggs-no-pad">
+                                <span class="briggs-foot-fcode">Form  3911E-13 </span>
+                                <span class="briggs-foot-cr">7/13</span>
+                                <span class="briggs-foot-cr">&copy; BRIGGS, Des Moines, IA (800) 247-2343</span><br />
+                                <span class="briggs-foot-cr briggs-foot-cr-mr">Unauthorized copying or use violates copyright law. www.BriggsCorp.com</span>
+                            </div>
+                            <div class="col-lg-2 col-sm-2 text-center briggs-no-pad">
+                                <img src="../../../Content/images/briggs-logo.png" alt="">
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-4 briggs-no-pad">
+                                <span class="briggs-foot-fname">FALL RISK ASSESSMENT</span>
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--footer ends-->
+                   
+                </div>
+            </div>
+            <!-- hidden fields starts-->
+            <input type="hidden" name="ACCOUNT_NAME" id="ACCOUNT_NAME" ng-model="briggs.ACCOUNT_NAME" />
+            <input type="hidden" name="ACCOUNT_ADDRESS1" id="ACCOUNT_ADDRESS1" ng-model="briggs.ACCOUNT_ADDRESS1" />
+            <input type="hidden" name="ACCOUNT_CITYSTATEZIP" id="ACCOUNT_CITYSTATEZIP" ng-model="briggs.ACCOUNT_CITYSTATEZIP" />
+            <input type="hidden" name="ACCOUNT_PHONE" id="ACCOUNT_PHONE" briggs-phone ng-model="briggs.ACCOUNT_PHONE" />
+            <input type="hidden" name="ACCOUNT_FAX" id="ACCOUNT_FAX" briggs-phone ng-model="briggs.ACCOUNT_FAX" />
+            <input type="hidden" name="FORM_NAME" id="FORM_NAME" briggs-phone ng-model="briggs.FORM_NAME" />
+            <input type="hidden" name="FORM_REV" id="FORM_REV" ng-model="briggs.FORM_REV" />
+            <!-- hidden fields ends -->
+			
+			<script type="text/javascript">
+			
+			
+			function populate_yes_with(num){
+			
+              var add =0;
+
+                 if(document.getElementById("MAHC_A").selectedIndex == 2){
+                 add=add+1;
+                  }
+
+
+                  if(document.getElementById("MAHC_B").selectedIndex == 2){
+                   add=add+1;
+                      }
+
+
+                 if(document.getElementById("MAHC_C").selectedIndex == 2){
+                 add=add+1;
+                 }
+
+                if(document.getElementById("MAHC_D").selectedIndex == 2){
+                add=add+1;
+                  }
+
+                 if(document.getElementById("MAHC_E").selectedIndex == 2){
+                 add=add+1;
+                  }
+				  
+				  if(document.getElementById("MAHC_F").selectedIndex == 2){
+                 add=add+1;
+                  }
+
+
+                  if(document.getElementById("MAHC_G").selectedIndex == 2){
+                   add=add+1;
+                      }
+
+
+                 if(document.getElementById("MAHC_H").selectedIndex == 2){
+                 add=add+1;
+                 }
+
+                if(document.getElementById("MAHC_I").selectedIndex == 2){
+                add=add+1;
+                  }
+
+                 if(document.getElementById("MAHC_J").selectedIndex == 2){
+                 add=add+1;
+                  }
+				  
+
+                 document.getElementById("MAHC_TOTAL").value=add;
+                    }
+
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+
+        function briggs_populateYes(clickedID) {
+            var x = clickedID.substring(0, 6);
+
+            if (document.getElementById(x).value == 0) {
+                document.getElementById(clickedID).style.background = "#ADD8E6"
+                document.getElementById(x).value = 1;
+                document.getElementById(clickedID.substring(0, clickedID.length - 1)).checked = true;
+            }
+
+            else {
+                document.getElementById(clickedID).style.background = "#FFFFFF"
+                document.getElementById(x).value = 0;
+                document.getElementById(clickedID.substring(0, clickedID.length - 1)).checked = false;
+            }
+
+            document.getElementById("MAHC_TOTAL").value =
+                Number(document.getElementById("MAHC_A").value) +
+                Number(document.getElementById("MAHC_B").value) +
+                Number(document.getElementById("MAHC_C").value) +
+                Number(document.getElementById("MAHC_D").value) +
+                Number(document.getElementById("MAHC_E").value) +
+                Number(document.getElementById("MAHC_F").value) +
+                Number(document.getElementById("MAHC_G").value) +
+                Number(document.getElementById("MAHC_H").value) +
+                Number(document.getElementById("MAHC_I").value) +
+                Number(document.getElementById("MAHC_J").value);
+
+          briggs_triggerchange(x);
+
+        }
+
+        function briggs_populateCheckbox(clickedID) {
+            var x = document.getElementById(clickedID).value;
+            
+            if (x == true)
+            {
+                document.getElementById(clickedID).value = 1;
+                document.getElementById(clickedID + "1").style.background = "#ADD8E6";
+            }
+            else if(x == false)
+            {
+                document.getElementById(clickedID).value = 0;
+                document.getElementById(clickedID + "1").style.background = "#FFFFFF";
+            }
+
+			 document.getElementById("MAHC_TOTAL").value =
+                Number(document.getElementById("MAHC_A").value) +
+                Number(document.getElementById("MAHC_B").value) +
+                Number(document.getElementById("MAHC_C").value) +
+                Number(document.getElementById("MAHC_D").value) +
+                Number(document.getElementById("MAHC_E").value) +
+                Number(document.getElementById("MAHC_F").value) +
+                Number(document.getElementById("MAHC_G").value) +
+                Number(document.getElementById("MAHC_H").value) +
+                Number(document.getElementById("MAHC_I").value) +
+                Number(document.getElementById("MAHC_J").value);
+				
+			briggs_triggerchange(clickedID);
+        }
+
+        function briggs_triggerchange(yElement)
+			{
+                //to trigger angular js to recognize field changes
+             
+                
+                try {
+                    yElement = '#' + yElement;
+             
+					var aElement = angular.element(document.querySelector( yElement ));
+					var prev = angular.element(document.querySelector( yElement )).data('oldvalue');
+					var cur = angular.element(document.querySelector( yElement )).val();
+					if (prev == cur){
+						return;
+					}
+                    angular.element(document.querySelector( yElement )).data('oldvalue',cur); // update old value to new value
+       
+                    angular.element(document.querySelector( '#MAHC_TOTAL' )).triggerHandler('change');
+                    angular.element(document.querySelector( yElement )).triggerHandler('change');
+                    
+                    
+                }
+                catch(err) {
+                    console.log("angular not found to setup briggs_triggerchange() method");
+                }
+                console.log("MAHC_TOTAL  " + document.getElementById("MAHC_TOTAL").value);
+			}
+
+    </script>
+        </div>
+		 
+
+    </div>
+    <!--form ends-->
+   
+
+</body>
+</html>

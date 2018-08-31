@@ -1,0 +1,157 @@
+﻿<div id="Page-07" name="pagebreak" description="Substance Use">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+
+                    <!--header starts-->
+                    <div class="row briggs-cont-row">
+                        <div class="col-lg-12 col-sm-12 briggs-cntrl-grp briggs-no-pad">
+                            <div class="briggs-fl briggs-pad-thick-r">
+                                <label class="briggs-f-thin" for="NAME">Individual Name:</label>
+                            </div>
+                            <div class="col-lg-7 briggs-no-pad col-sm-5 col-md-6 briggs-mrg-thin-b">
+                                <input class="form-control briggs-control" id="NAME" name="NAME" ng-model="briggs.NAME" maxlength="45" type="text">
+                            </div>
+                            <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                <label class="briggs-f-thin" for="DATE_ASSESS">Date of Assessment:</label>
+                            </div>
+                            <div class="briggs-fl">
+                                <input class="form-control briggs-control briggs-date-control" id="DATE_ASSESS" name="DATE_ASSESS" ng-model="briggs.DATE_ASSESS" maxlength="10" type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <!--header ends-->
+                    <!--page 7 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thick-t briggs-pg-title">
+                                Substance Use
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="briggs-col-offs">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin">
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                            <label class="briggs-f-thin" for="SUB_ALC">Alcohol/Drug(s) of choice:</label>
+                                            <input class="form-control briggs-control briggs-mrg-thin-b" id="SUB_ALC" name="SUB_ALC" ng-model="briggs.SUB_ALC" maxlength="110" type="text">
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="DATE_SUB_ALC">
+                                                <em>Date of last use:</em>
+                                            </label>
+                                            <input class="form-control briggs-control briggs-date-control briggs-mrg-thin-b" id="DATE_SUB_ALC" name="DATE_SUB_ALC" ng-model="briggs.DATE_SUB_ALC" maxlength="10" type="date">
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="SUB_SUB">
+                                                Substance use history:
+                                            </label>
+                                            <textarea id="SUB_SUB" name="SUB_SUB" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.SUB_SUB" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="SUB_SOBER">
+                                                How long has the individual been sober/clean?
+                                            </label>
+                                            <textarea id="SUB_SOBER" name="SUB_SOBER" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.SUB_SOBER" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="SUB_TREAT">
+                                                Is individual currently receiving treatment?
+                                            </label>
+                                            <textarea id="SUB_TREAT" name="SUB_TREAT" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.SUB_TREAT" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 col-md-12">
+                                            <div class="briggs-fl briggs-mrg-thin-t">
+                                                Supportive Treatment Group:
+                                            </div>
+                                            <div class="briggs-fl briggs-mrg-thick-l">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="SUB_GROUP_1">
+                                                        <input type="radio" value="1" id="SUB_GROUP_1" name="SUB_GROUP" ng-model="briggs.SUB_GROUP">
+                                                        YES
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="briggs-fl briggs-col-offs">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="SUB_GROUP_0">
+                                                        <input type="radio" value="0" id="SUB_GROUP_0" name="SUB_GROUP" ng-model="briggs.SUB_GROUP">
+                                                        NO
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="SUB_MAIN">
+                                                <em>If yes, what support will be needed to maintain participation?</em>
+                                            </label>
+                                            <textarea id="SUB_MAIN" name="SUB_MAIN" class="form-control briggs-control briggs-mrg-thick-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.SUB_MAIN" maxlength="220"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thick-t briggs-pg-title">
+                                Activities/ Social
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="briggs-col-offs">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin ">
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                            <label class="briggs-f-thin" for="ACT_HOB">
+                                                What are the individual's hobbies or interests and what assistance is needed to in order to engage in those activities?
+                                            </label>
+                                            <textarea id="ACT_HOB" name="ACT_HOB" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.ACT_HOB" maxlength="300"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="ACT_ACT">
+                                                Is the individual interested in individual or group activities (review the Community's group activities with the individual)?
+                                            </label>
+                                            <textarea id="ACT_ACT" name="ACT_ACT" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.ACT_ACT" maxlength="300"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="ACT_ENG">
+                                                What community activities does the individual engage in, and what support will be needed
+                                                to maintain those activities (e.g., spiritual community, peer support group,
+                                                volunteer work, visiting friends/family, library use, shopping, etc.)?
+                                            </label>
+                                            <textarea id="ACT_ENG" name="ACT_ENG" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.ACT_ENG" maxlength="240"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="ACT_RELAT">
+                                                What relationships are important to the
+                                                individual and what support will be needed to maintain those relationships?
+                                            </label>
+                                            <textarea id="ACT_RELAT" name="ACT_RELAT" class="form-control briggs-control briggs-mrg-thick-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.ACT_RELAT" maxlength="400"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thick-t briggs-pg-title">
+                                Goals/Expectations
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="briggs-col-offs">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin briggs-mrg-b">
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                            <label class="briggs-f-thin" for="GOAL_EXP">
+                                                What are the individual's goals and expectations related to living in your Community?
+                                            </label>
+                                            <textarea id="GOAL_EXP" name="GOAL_EXP" class="form-control briggs-control briggs-mrg-thick-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.GOAL_EXP" maxlength="330"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--page 7 ends-->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 7 of 14 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+        </div>

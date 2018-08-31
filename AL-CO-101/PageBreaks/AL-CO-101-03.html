@@ -1,0 +1,168 @@
+﻿<div id="Page-03" name="pagebreak" description="Single Entry Point/Community Center Board (Medicaid clients only)">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+
+                    <!--header starts-->
+                    <div class="row briggs-cont-row">
+                        <div class="col-lg-12 col-sm-12 briggs-cntrl-grp briggs-no-pad">
+                            <div class="briggs-fl briggs-pad-thick-r">
+                                <label class="briggs-f-thin" for="NAME">Individual Name:</label>
+                            </div>
+                            <div class="col-lg-7 briggs-no-pad col-sm-5 col-md-6 briggs-mrg-thin-b">
+                                <input class="form-control briggs-control" id="NAME" name="NAME" ng-model="briggs.NAME" maxlength="45" type="text">
+                            </div>
+                            <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                <label class="briggs-f-thin" for="DATE_ASSESS">Date of Assessment:</label>
+                            </div>
+                            <div class="briggs-fl">
+                                <input class="form-control briggs-control briggs-date-control" id="DATE_ASSESS" name="DATE_ASSESS" ng-model="briggs.DATE_ASSESS" maxlength="10" type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <!--header ends-->
+                    <!--page 3 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thick-t briggs-pg-title">
+                                Single Entry Point/Community Center Board (Medicaid clients only)
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="briggs-col-offs">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin">
+                                        <div class="col-lg-12 col-sm-12 briggs-brd-thin-b briggs-mrg-thick-t">
+                                            <label class="briggs-f-thin" for="COUNTY">
+                                                County:
+                                            </label>
+                                            <input class="form-control briggs-control briggs-mrg-thick-b" id="COUNTY" name="COUNTY" ng-model="briggs.COUNTY" maxlength="110" type="text">
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t briggs-brd-thin-b">
+                                            <label class="briggs-f-thin" for="CASE_MAN">
+                                                Case manager name and phone number
+                                            </label>
+                                            <textarea id="CASE_MAN" name="CASE_MAN" class="form-control briggs-control briggs-mrg-thick-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.CASE_MAN" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                            <label class="briggs-f-thin" for="HOW_LONG">
+                                                How long have they received Home and Community Based Services (HCBS)?
+                                            </label>
+                                            <textarea id="HOW_LONG" name="HOW_LONG" class="form-control briggs-control briggs-mrg-thick-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.HOW_LONG" maxlength="220"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thick-t briggs-pg-title">
+                                Regional Care Collaborative Organization (RCCO)
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="briggs-col-offs">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin">
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                            <label class="briggs-f-thin" for="NAME_RCCO">
+                                                Name of RCCO:
+                                            </label>
+                                            <input class="form-control briggs-control briggs-mrg-thin-b" id="NAME_RCCO" name="NAME_RCCO" ng-model="briggs.NAME_RCCO" maxlength="110" type="text">
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="PHONE_RCCO">
+                                                Phone:
+                                            </label>
+                                            <input class="form-control briggs-phone-control briggs-control briggs-mrg-thick-b" id="PHONE_RCCO" name="PHONE_RCCO" ng-model="briggs.PHONE_RCCO" maxlength="20" type="tel">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thick-t briggs-pg-title">
+                                Personal Care (preferences and abilities)
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="briggs-col-offs">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin briggs-mrg-b">
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                            <label class="briggs-f-thin" for="CARE_BATH">
+                                                Bathing:
+                                            </label>
+                                            <textarea id="CARE_BATH" name="CARE_BATH" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.CARE_BATH" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="CARE_DRESS">
+                                                Dressing:
+                                            </label>
+                                            <textarea id="CARE_DRESS" name="CARE_DRESS" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.CARE_DRESS" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="CARE_TOILET">
+                                                Toileting:
+                                            </label>
+                                            <textarea id="CARE_TOILET" name="CARE_TOILET" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.CARE_TOILET" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="CARE_GROOM">
+                                                Grooming:
+                                            </label>
+                                            <textarea id="CARE_GROOM" name="CARE_GROOM" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.CARE_GROOM" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="CARE_EAT">
+                                                Eating:
+                                            </label>
+                                            <textarea id="CARE_EAT" name="CARE_EAT" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.CARE_EAT" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="CARE_INC">
+                                                Incontinent/continent (i.e., what level of assistance is needed):
+                                            </label>
+                                            <textarea id="CARE_INC" name="CARE_INC" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.CARE_INC" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="CARE_SLEEP">
+                                                Sleep patterns:
+                                            </label>
+                                            <textarea id="CARE_SLEEP" name="CARE_SLEEP" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.CARE_SLEEP" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="CARE_LIVE">
+                                                Living space (e.g., making bed, putting clothing away, clutter, organizing, etc.):
+                                            </label>
+                                            <textarea id="CARE_LIVE" name="CARE_LIVE" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.CARE_LIVE" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="CARE_LAUNDRY">
+                                                Laundry:
+                                            </label>
+                                            <textarea id="CARE_LAUNDRY" name="CARE_LAUNDRY" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.CARE_LAUNDRY" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="CARE_COOK">
+                                                Cooking:
+                                            </label>
+                                            <textarea id="CARE_COOK" name="CARE_COOK" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.CARE_COOK" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="CARE_MONEY">
+                                                Money Management:
+                                            </label>
+                                            <textarea id="CARE_MONEY" name="CARE_MONEY" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.CARE_MONEY" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t briggs-mrg-thick-b">
+                                            Ambulation: REFER TO "ALR COMMUNITY - FALL RISK ASSESSMENT"
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--page 3 ends-->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 3 of 14 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+        </div>

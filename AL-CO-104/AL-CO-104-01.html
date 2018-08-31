@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <link href="../../../Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Content/css/main/briggs-main.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../../../Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../Scripts/match-height/jquery.matchHeight-min.js"></script>
+    <script src="../../../Scripts/page/common.js"></script>
+    <title>BRIGGS | ALR Community - Individual/Family Self-Evaluation</title>
+</head>
+<body class="test-rows">
+    <!--form starts -->
+    <div class="container">
+        <div id="Page-01" name="pagebreak" description="Individual's Name">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+
+                    <!--header starts-->
+                    <div class="row briggs-cont-row">
+                        <div class="col-lg-12 col-sm-12  briggs-pg-title briggs-title-c">
+                            ALR Community - Individual/Family Self-Evaluation
+                        </div>
+                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-b text-center brigss-txt-ash">
+                            Please print legibly
+                        </div>
+                    </div>
+                    <!--header starts-->
+                    <!--page 1 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-t">
+                                <div class="col-lg-10 col-sm-9 col-md-10 briggs-no-pad">
+                                    <div class="col-lg-2 briggs-no-pad col-sm-3 col-md-2">
+                                        <label for="NAME">Individual's Name:</label>
+                                    </div>
+                                    <div class="col-lg-10 briggs-no-pad col-sm-9 col-md-10 briggs-mrg-thin-b">
+                                        <input class="form-control briggs-control" id="NAME" name="NAME" ng-model="briggs.NAME" maxlength="50" type="text" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-no-pad">
+                                    <div class="col-lg-4 briggs-pad-thick-r text-right briggs-no-pad col-sm-4 col-md-4">
+                                        <label for="AGE">Age:</label>
+                                    </div>
+                                    <div class="col-lg-8 briggs-no-pad col-sm-8 col-md-8 briggs-mrg-thin-b">
+                                        <input class="form-control briggs-control briggs-width-60" min="1" max="125" id="AGE" name="AGE" ng-model="briggs.AGE" maxlength="3" type="number" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-t">
+                                <div class="col-lg-3 briggs-no-pad col-sm-5 col-md-4">
+                                    <label for="PRES_LIVE" class="briggs-f-thin">What is your present living arrangement?</label>
+                                </div>
+                                <div class="col-lg-9 briggs-no-pad col-sm-7 col-md-8 briggs-mrg-thin-b">
+                                    <input class="form-control briggs-control" id="PRES_LIVE" name="PRES_LIVE" ng-model="briggs.PRES_LIVE" maxlength="70" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                <label class="briggs-f-thin" for="TYPE_ASSIST">
+                                    What type of assistance do you currently receive?
+                                </label>
+                                <textarea id="TYPE_ASSIST" name="TYPE_ASSIST" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.TYPE_ASSIST" maxlength="240"></textarea>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                <label class="briggs-f-thin" for="CON_MOVE">
+                                    Why are you considering a move to an Assisted Living Residence?
+                                </label>
+                                <textarea id="CON_MOVE" name="CON_MOVE" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.CON_MOVE" maxlength="240"></textarea>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-t">
+                                <div class="col-lg-5 briggs-no-pad col-sm-8 col-md-6">
+                                    <label for="HOW_SOON" class="briggs-f-thin">How soon would you like to move into an Assisted Living Residence?</label>
+                                </div>
+                                <div class="col-lg-7 briggs-no-pad col-sm-4 col-md-6 briggs-mrg-thin-b">
+                                    <input class="form-control briggs-control" id="HOW_SOON" name="HOW_SOON" ng-model="briggs.HOW_SOON" maxlength="45" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-t briggs-f-thick briggs-cntrl-grp">
+                                Which areas of assistance would benefit you?
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-12 col-sm-12 items-container briggs-header-txt briggs-brd-thick-l briggs-brd-thick-t briggs-brd-thick-r briggs-no-pad briggs-sec-header">
+                                    <div class="col-lg-4 col-sm-5 col-md-4 briggs-brd-thick-r item">
+                                        Activity of Daily Living
+                                    </div>
+                                    <div class="col-lg-2 briggs-no-pad col-sm-3 col-md-2 item">
+
+                                    </div>
+                                    <div class="col-lg-6 col-sm-4 col-md-6 item briggs-brd-thick-l">
+                                        Type of Assistance
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 items-container briggs-brd-thick-l briggs-brd-thick-t briggs-brd-thick-r briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-5 col-md-4 text-right briggs-no-pad-l briggs-brd-thick-r item">
+                                        <div class="briggs-mrg-t briggs-mrg-thin-b col-lg-12 col-sm-12 briggs-no-pad">
+                                            Taking medication
+                                        </div>
+                                        <div class="briggs-mrg-thick-b briggs-mrg-thin-t col-lg-12 col-sm-12 briggs-no-pad">
+                                            Any meds taken via injection (shots)?
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 briggs-no-pad col-sm-3 col-md-2 item">
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                            <div class="col-lg-6 col-sm-6 briggs-no-pad text-center">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="ACT_MED_1">
+                                                        <input type="radio" value="1" id="ACT_MED_1" name="ACT_MED" ng-model="briggs.ACT_MED" />
+                                                        Yes
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-sm-6 briggs-no-pad text-center">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="ACT_MED_0">
+                                                        <input type="radio" value="0" id="ACT_MED_0" name="ACT_MED" ng-model="briggs.ACT_MED" />No
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12">
+                                            <div class="col-lg-6 col-sm-6 briggs-no-pad text-center">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="ACT_SHOT_1">
+                                                        <input type="radio" value="1" id="ACT_SHOT_1" name="ACT_SHOT" ng-model="briggs.ACT_SHOT" />
+                                                        Yes
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-sm-6 briggs-no-pad text-center">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="ACT_SHOT_0">
+                                                        <input type="radio" value="0" id="ACT_SHOT_0" name="ACT_SHOT" ng-model="briggs.ACT_SHOT" />No
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-4 col-md-6 item briggs-brd-thick-l">
+                                        <textarea id="ACT_OF_MED" name="ACT_OF_MED" class="form-control briggs-control briggs-mrg-thick-b briggs-mrg-thick-t" cols="12" rows="3" spellcheck="true" ng-model="briggs.ACT_OF_MED" maxlength="110"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 items-container briggs-brd-thick-l briggs-brd-thick-t briggs-brd-thick-r briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-5 col-md-4 text-right briggs-no-pad-l briggs-brd-thick-r item">
+                                        <div class="briggs-mrg-t briggs-mrg-thin-b col-lg-12 col-sm-12 briggs-no-pad">
+                                            <div class="briggs-mrg-t">Preparing meals</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-3 col-md-2 item">
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_MEAL_1">
+                                                    <input type="radio" value="1" id="ACT_MEAL_1" name="ACT_MEAL" ng-model="briggs.ACT_MEAL" />
+                                                    Yes
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_MEAL_0">
+                                                    <input type="radio" value="0" id="ACT_MEAL_0" name="ACT_MEAL" ng-model="briggs.ACT_MEAL" />No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-4 col-md-6 item briggs-brd-thick-l">
+                                        <textarea id="ACT_OF_MEAL" name="ACT_OF_MEAL" class="form-control briggs-control briggs-mrg-thick-b briggs-mrg-thick-t" cols="12" rows="3" spellcheck="true" ng-model="briggs.ACT_OF_MEAL" maxlength="110"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 items-container briggs-brd-thick-l briggs-brd-thick-t briggs-brd-thick-r briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-5 col-md-4 text-right briggs-no-pad-l briggs-brd-thick-r item">
+                                        <div class="briggs-mrg-t briggs-mrg-thin-b col-lg-12 col-sm-12 briggs-no-pad">
+                                            <div class="briggs-mrg-t">Dressing/Undressing</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-3 col-md-2 item">
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_DRESS_1">
+                                                    <input type="radio" value="1" id="ACT_DRESS_1" name="ACT_DRESS" ng-model="briggs.ACT_DRESS" />
+                                                    Yes
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_DRESS_0">
+                                                    <input type="radio" value="0" id="ACT_DRESS_0" name="ACT_DRESS" ng-model="briggs.ACT_DRESS" />No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-4 col-md-6 item briggs-brd-thick-l">
+                                        <textarea id="ACT_OF_DRESS" name="ACT_OF_DRESS" class="form-control briggs-control briggs-mrg-thick-b briggs-mrg-thick-t" cols="12" rows="3" spellcheck="true" ng-model="briggs.ACT_OF_DRESS" maxlength="110"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 items-container briggs-brd-thick-l briggs-brd-thick-t briggs-brd-thick-r briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-5 col-md-4 text-right briggs-no-pad-l briggs-brd-thick-r item">
+                                        <div class="briggs-mrg-t briggs-mrg-thin-b col-lg-12 col-sm-12 briggs-no-pad">
+                                            <div class="briggs-mrg-t">Grooming</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-3 col-md-2 item">
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_GROOM_1">
+                                                    <input type="radio" value="1" id="ACT_GROOM_1" name="ACT_GROOM" ng-model="briggs.ACT_GROOM" />
+                                                    Yes
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_GROOM_0">
+                                                    <input type="radio" value="0" id="ACT_GROOM_0" name="ACT_GROOM" ng-model="briggs.ACT_GROOM" />No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-4 col-md-6 item briggs-brd-thick-l">
+                                        <textarea id="ACT_OF_GROOM" name="ACT_OF_GROOM" class="form-control briggs-control briggs-mrg-thick-b briggs-mrg-thick-t" cols="12" rows="3" spellcheck="true" ng-model="briggs.ACT_OF_GROOM" maxlength="110"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 items-container briggs-brd-thick-l briggs-brd-thick-t briggs-brd-thick-r briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-5 col-md-4 text-right briggs-no-pad-l briggs-brd-thick-r item">
+                                        <div class="briggs-mrg-t briggs-mrg-thin-b col-lg-12 col-sm-12 briggs-no-pad">
+                                            <div class="briggs-mrg-t">Showering/Bathing</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-3 col-md-2 item">
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_SHOW_1">
+                                                    <input type="radio" value="1" id="ACT_SHOW_1" name="ACT_SHOW" ng-model="briggs.ACT_SHOW" />
+                                                    Yes
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_SHOW_0">
+                                                    <input type="radio" value="0" id="ACT_SHOW_0" name="ACT_SHOW" ng-model="briggs.ACT_SHOW" />No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-4 col-md-6 item briggs-brd-thick-l">
+                                        <textarea id="ACT_OF_SHOW" name="ACT_OF_SHOW" class="form-control briggs-control briggs-mrg-thick-b briggs-mrg-thick-t" cols="12" rows="3" spellcheck="true" ng-model="briggs.ACT_OF_SHOW" maxlength="110"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 items-container briggs-brd-thick-l briggs-brd-thick-t briggs-brd-thick-r briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-5 col-md-4 text-right briggs-no-pad-l briggs-brd-thick-r item">
+                                        <div class="briggs-mrg-t briggs-mrg-thin-b col-lg-12 col-sm-12 briggs-no-pad">
+                                            <div class="briggs-mrg-t">Toileting</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-3 col-md-2 item">
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_TOI_1">
+                                                    <input type="radio" value="1" id="ACT_TOI_1" name="ACT_TOI" ng-model="briggs.ACT_TOI" />
+                                                    Yes
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_TOI_0">
+                                                    <input type="radio" value="0" id="ACT_TOI_0" name="ACT_TOI" ng-model="briggs.ACT_TOI" />No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-4 col-md-6 item briggs-brd-thick-l">
+                                        <textarea id="ACT_OF_TOI" name="ACT_OF_TOI" class="form-control briggs-control briggs-mrg-thick-b briggs-mrg-thick-t" cols="12" rows="3" spellcheck="true" ng-model="briggs.ACT_OF_TOI" maxlength="110"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 items-container briggs-brd-thick-l briggs-brd-thick-t briggs-brd-thick-r briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-5 col-md-4 text-right briggs-no-pad-l briggs-brd-thick-r item">
+                                        <div class="briggs-mrg-t briggs-mrg-thin-b col-lg-12 col-sm-12 briggs-no-pad">
+                                            <div class="briggs-mrg-t">Housekeeping</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-3 col-md-2 item">
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_HOUSE_1">
+                                                    <input type="radio" value="1" id="ACT_HOUSE_1" name="ACT_HOUSE" ng-model="briggs.ACT_HOUSE" />
+                                                    Yes
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_HOUSE_0">
+                                                    <input type="radio" value="0" id="ACT_HOUSE_0" name="ACT_HOUSE" ng-model="briggs.ACT_HOUSE" />No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-4 col-md-6 item briggs-brd-thick-l">
+                                        <textarea id="ACT_OF_HOUSE" name="ACT_OF_HOUSE" class="form-control briggs-control briggs-mrg-thick-b briggs-mrg-thick-t" cols="12" rows="3" spellcheck="true" ng-model="briggs.ACT_OF_HOUSE" maxlength="110"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 items-container briggs-brd-thick-l briggs-brd-thick-t briggs-brd-thick-r briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-5 col-md-4 text-right briggs-no-pad-l briggs-brd-thick-r item">
+                                        <div class="briggs-mrg-t briggs-mrg-thin-b col-lg-12 col-sm-12 briggs-no-pad">
+                                            <div class="briggs-mrg-t">Laundry</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-3 col-md-2 item">
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_LAUN_1">
+                                                    <input type="radio" value="1" id="ACT_LAUN_1" name="ACT_LAUN" ng-model="briggs.ACT_LAUN" />
+                                                    Yes
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_LAUN_0">
+                                                    <input type="radio" value="0" id="ACT_LAUN_0" name="ACT_LAUN" ng-model="briggs.ACT_LAUN" />No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-4 col-md-6 item briggs-brd-thick-l">
+                                        <textarea id="ACT_OF_LAUN" name="ACT_OF_LAUN" class="form-control briggs-control briggs-mrg-thick-b briggs-mrg-thick-t" cols="12" rows="3" spellcheck="true" ng-model="briggs.ACT_OF_LAUN" maxlength="110"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 items-container briggs-brd-thick-l briggs-brd-thick-t briggs-brd-thick-r briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-5 col-md-4 text-right briggs-no-pad-l briggs-brd-thick-r item">
+                                        <div class="briggs-mrg-t briggs-mrg-thin-b col-lg-12 col-sm-12 briggs-no-pad">
+                                            <div class="briggs-mrg-t">Transportation</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-3 col-md-2 item">
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_TRAN_1">
+                                                    <input type="radio" value="1" id="ACT_TRAN_1" name="ACT_TRAN" ng-model="briggs.ACT_TRAN" />
+                                                    Yes
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_TRAN_0">
+                                                    <input type="radio" value="0" id="ACT_TRAN_0" name="ACT_TRAN" ng-model="briggs.ACT_TRAN" />No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-4 col-md-6 item briggs-brd-thick-l">
+                                        <textarea id="ACT_OF_TRAN" name="ACT_OF_TRAN" class="form-control briggs-control briggs-mrg-thick-b briggs-mrg-thick-t" cols="12" rows="3" spellcheck="true" ng-model="briggs.ACT_OF_TRAN" maxlength="110"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 items-container briggs-brd-thick-l briggs-brd-thick-t briggs-brd-thick-r briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-5 col-md-4 text-right briggs-no-pad-l briggs-brd-thick-r item">
+                                        <div class="briggs-mrg-t briggs-mrg-thin-b col-lg-12 col-sm-12 briggs-no-pad">
+                                            <div class="briggs-mrg-t">Accessing Community</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-3 col-md-2 item">
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_ACC_1">
+                                                    <input type="radio" value="1" id="ACT_ACC_1" name="ACT_ACC" ng-model="briggs.ACT_ACC" />
+                                                    Yes
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_ACC_0">
+                                                    <input type="radio" value="0" id="ACT_ACC_0" name="ACT_ACC" ng-model="briggs.ACT_ACC" />No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-4 col-md-6 item briggs-brd-thick-l">
+                                        <textarea id="ACT_OF_ACC" name="ACT_OF_ACC" class="form-control briggs-control briggs-mrg-thick-b briggs-mrg-thick-t" cols="12" rows="3" spellcheck="true" ng-model="briggs.ACT_OF_ACC" maxlength="110"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 items-container briggs-brd-thick-l briggs-brd-thick-t briggs-brd-thick-r briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-5 col-md-4 text-right briggs-no-pad-l briggs-brd-thick-r item">
+                                        <div class="briggs-mrg-t briggs-mrg-thin-b col-lg-12 col-sm-12 briggs-no-pad">
+                                            <div class="briggs-mrg-t">Community Involvement</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-3 col-md-2 item">
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_COM_1">
+                                                    <input type="radio" value="1" id="ACT_COM_1" name="ACT_COM" ng-model="briggs.ACT_COM" />
+                                                    Yes
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_COM_0">
+                                                    <input type="radio" value="0" id="ACT_COM_0" name="ACT_COM" ng-model="briggs.ACT_COM" />No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-4 col-md-6 item briggs-brd-thick-l">
+                                        <textarea id="ACT_OF_COM" name="ACT_OF_COM" class="form-control briggs-control briggs-mrg-thick-b briggs-mrg-thick-t" cols="12" rows="3" spellcheck="true" ng-model="briggs.ACT_OF_COM" maxlength="110"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 items-container briggs-brd-thick-l briggs-brd-thick-t briggs-brd-thick-r briggs-brd-thick-b briggs-no-pad briggs-mrg-thick-b">
+                                    <div class="col-lg-4 col-sm-5 col-md-4 text-right briggs-no-pad-l briggs-brd-thick-r item">
+                                        <div class="briggs-mrg-t briggs-mrg-thin-b col-lg-12 col-sm-12 briggs-no-pad">
+                                            <div class="briggs-mrg-t">Employment</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-3 col-md-2 item">
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_EMP_1">
+                                                    <input type="radio" value="1" id="ACT_EMP_1" name="ACT_EMP" ng-model="briggs.ACT_EMP" />
+                                                    Yes
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad text-center briggs-mrg-t">
+                                            <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                                <label for="ACT_EMP_0">
+                                                    <input type="radio" value="0" id="ACT_EMP_0" name="ACT_EMP" ng-model="briggs.ACT_EMP" />No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-4 col-md-6 item briggs-brd-thick-l">
+                                        <textarea id="ACT_OF_EMP" name="ACT_OF_EMP" class="form-control briggs-control briggs-mrg-thick-b briggs-mrg-thick-t" cols="12" rows="3" spellcheck="true" ng-model="briggs.ACT_OF_EMP" maxlength="110"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--page 1 ends-->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 1 of 4 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+            <!-- hidden fields starts -->
+            <input type="hidden" name="FORM_NAME" id="FORM_NAME" ng-model="briggs.FORM_NAME" />
+            <input type="hidden" name="FORM_REV" id="FORM_REV" ng-model="briggs.FORM_REV" />
+            <!-- hidden fields ends -->
+        </div>
+    </div>
+    <!--form ends -->
+</body>
+</html>

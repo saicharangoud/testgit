@@ -1,0 +1,365 @@
+﻿<div id="Page-02" name="pagebreak" description="Individual's Name">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+
+                    <!--page 2 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-t briggs-no-pad-r">
+                                <div class="briggs-fl briggs-pad-thick-r">
+                                    <label for="NAME" class="briggs-f-thin">Individual's Name:</label>
+                                </div>
+                                <div class="col-lg-7 briggs-no-pad col-sm-4 col-md-6 briggs-mrg-thin-b">
+                                    <input class="form-control briggs-control" id="NAME" name="NAME" ng-model="briggs.NAME" maxlength="50" type="text">
+                                </div>
+                                <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                    <label for="DATE_ASSESS" class="briggs-f-thin">Date of Assessment:</label>
+                                </div>
+                                <div class="briggs-fl">
+                                    <input class="form-control briggs-control briggs-date-control" id="DATE_ASSESS" name="DATE_ASSESS" ng-model="briggs.DATE_ASSESS" maxlength="10" type="date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-f-thick briggs-mrg-thin-t">
+                                Physical Health:
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                <label class="briggs-f-thin" for="PHY_SIG">
+                                    Do you have any significant health concerns?
+                                </label>
+                                <textarea id="PHY_SIG" name="PHY_SIG" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="7" spellcheck="true" ng-model="briggs.PHY_SIG" maxlength="600"></textarea>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                <div class="briggs-fl briggs-mrg-thin-t">
+                                    Do you have diet restrictions?
+                                </div>
+                                <div class="briggs-fl briggs-mrg-thick-l">
+                                    <div class="radio radio-info briggs-cntrl-grp ">
+                                        <label for="PHY_DIET_1">
+                                            <input type="radio" value="1" id="PHY_DIET_1" name="PHY_DIET" ng-model="briggs.PHY_DIET">
+                                            Yes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="PHY_DIET_0">
+                                            <input type="radio" value="0" id="PHY_DIET_0" name="PHY_DIET" ng-model="briggs.PHY_DIET">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                <label class="briggs-f-thin briggs-col-offs" for="PHY_D_EX">
+                                    <em>If yes, please explain:</em>
+                                </label>
+                                <textarea id="PHY_D_EX" name="PHY_D_EX" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="4" spellcheck="true" ng-model="briggs.PHY_D_EX" maxlength="360"></textarea>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                <div class="briggs-fl briggs-mrg-thin-t">
+                                    Do you have any difficulty swallowing?
+                                </div>
+                                <div class="briggs-fl briggs-mrg-thick-l">
+                                    <div class="radio radio-info briggs-cntrl-grp ">
+                                        <label for="PHY_SWA_1">
+                                            <input type="radio" value="1" id="PHY_SWA_1" name="PHY_SWA" ng-model="briggs.PHY_SWA">
+                                            Yes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="PHY_SWA_0">
+                                            <input type="radio" value="0" id="PHY_SWA_0" name="PHY_SWA" ng-model="briggs.PHY_SWA">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                <label class="briggs-f-thin briggs-col-offs" for="PHY_S_EX">
+                                    <em>If yes, please explain:</em>
+                                </label>
+                                <textarea id="PHY_S_EX" name="PHY_S_EX" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="4" spellcheck="true" ng-model="briggs.PHY_S_EX" maxlength="360"></textarea>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t briggs-f-thick">
+                                Mobility:
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="col-lg-3 col-sm-4 col-md-4 briggs-no-pad-r briggs-mrg-thin-t">
+                                    Do you utilize any of the following:
+                                </div>
+                                <div class="col-lg-1 col-sm-2 col-md-1 briggs-no-pad">
+                                    <div class="checkbox checkbox-info briggs-cntrl-grp ">
+                                        <label for="MOB_CANE">
+                                            <input type="checkbox" value="1" id="MOB_CANE" name="MOB_CANE" ng-model="briggs.MOB_CANE">
+                                            Cane
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-2 col-md-2 briggs-no-pad">
+                                    <div class="checkbox checkbox-info briggs-cntrl-grp ">
+                                        <label for="MOB_SCOOT">
+                                            <input type="checkbox" value="" id="MOB_SCOOT" name="MOB_SCOOT" ng-model="briggs.MOB_SCOOT">
+                                            Scooter
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-2 col-md-2 briggs-no-pad">
+                                    <div class="checkbox checkbox-info briggs-cntrl-grp ">
+                                        <label for="MOB_WALK">
+                                            <input type="checkbox" value="" id="MOB_WALK" name="MOB_WALK" ng-model="briggs.MOB_WALK">
+                                            Walker
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-2 col-md-2 briggs-no-pad">
+                                    <div class="checkbox checkbox-info briggs-cntrl-grp ">
+                                        <label for="MOB_WHEEL">
+                                            <input type="checkbox" value="1" id="MOB_WHEEL" name="MOB_WHEEL" ng-model="briggs.MOB_WHEEL">
+                                            Wheelchair
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="col-lg-4 col-sm-6 col-md-5 briggs-no-pad-r briggs-mrg-thin-t">
+                                    Are you able to walk independently 150 feet?
+                                </div>
+                                <div class="col-lg-1 col-sm-2 col-md-2 briggs-no-pad">
+                                    <div class="radio radio-info briggs-cntrl-grp ">
+                                        <label for="MOB_FEET_1">
+                                            <input type="radio" value="1" id="MOB_FEET_1" name="MOB_FEET" ng-model="briggs.MOB_FEET">
+                                            Yes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-2 col-md-2 briggs-no-pad">
+                                    <div class="radio radio-info briggs-cntrl-grp ">
+                                        <label for="MOB_FEET_0">
+                                            <input type="radio" value="0" id="MOB_FEET_0" name="MOB_FEET" ng-model="briggs.MOB_FEET">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="col-lg-4 col-sm-6 col-md-5 briggs-no-pad-r briggs-mrg-thin-t">
+                                    Are you able to transfer independently?
+                                    <div class="col-lg-12 col-sm-12 briggs-col-offs briggs-mrg-thin-t briggs-no-pad brigss-txt-ash">
+                                        (e.g., move from bed to standing position or<br>
+                                        from chair to standing position)
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-2 col-md-2 briggs-no-pad">
+                                    <div class="radio radio-info briggs-cntrl-grp ">
+                                        <label for="MOB_IND_1">
+                                            <input type="radio" value="1" id="MOB_IND_1" name="MOB_IND" ng-model="briggs.MOB_IND">
+                                            Yes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-2 col-md-2 briggs-no-pad">
+                                    <div class="radio radio-info briggs-cntrl-grp ">
+                                        <label for="MOB_IND_0">
+                                            <input type="radio" value="0" id="MOB_IND_0" name="MOB_IND" ng-model="briggs.MOB_IND">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="col-lg-4 col-sm-6 col-md-5 briggs-no-pad-r briggs-mrg-thin-t">
+                                    Are you able to go up and down stairs independently?
+                                </div>
+                                <div class="col-lg-1 col-sm-2 col-md-2 briggs-no-pad">
+                                    <div class="radio radio-info briggs-cntrl-grp ">
+                                        <label for="MOB_STAIR_1">
+                                            <input type="radio" value="1" id="MOB_STAIR_1" name="MOB_STAIR" ng-model="briggs.MOB_STAIR">
+                                            Yes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-2 col-md-2 briggs-no-pad">
+                                    <div class="radio radio-info briggs-cntrl-grp ">
+                                        <label for="MOB_STAIR_0">
+                                            <input type="radio" value="0" id="MOB_STAIR_0" name="MOB_STAIR" ng-model="briggs.MOB_STAIR">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t briggs-f-thick">
+                                Cognition/Mental Health:
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                How would you describe your memory? (Check one)
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12">
+                                <div class="radio radio-info briggs-cntrl-grp ">
+                                    <label for="COG_MEM_1">
+                                        <input type="radio" value="1" id="COG_MEM_1" name="COG_MEM" ng-model="briggs.COG_MEM">
+                                        <span class="briggs-f-thick">Good</span>
+                                        memory for present-day events - no difficulty remembering names, places, or scheduled
+                                        appointments. Does not become confused in unfamiliar places.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12">
+                                <div class="radio radio-info briggs-cntrl-grp ">
+                                    <label for="COG_MEM_2">
+                                        <input type="radio" value="2" id="COG_MEM_2" name="COG_MEM" ng-model="briggs.COG_MEM">
+                                        <span class="briggs-f-thick">Fair</span>
+                                        memory for present-day events - little help required for remembering names or appointments. May
+                                        become confused in unfamiliar places.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12">
+                                <div class="radio radio-info briggs-cntrl-grp ">
+                                    <label for="COG_MEM_3">
+                                        <input type="radio" value="3" id="COG_MEM_3" name="COG_MEM" ng-model="briggs.COG_MEM">
+                                        <span class="briggs-f-thick">Poor</span>
+                                        memory for present-day events - require a lot of reminders with names, scheduling and remembering
+                                        appointments. Almost always confused in unfamiliar places.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12">
+                                <div class="radio radio-info briggs-cntrl-grp ">
+                                    <label for="COG_MEM_4">
+                                        <input type="radio" value="4" id="COG_MEM_4" name="COG_MEM" ng-model="briggs.COG_MEM">
+                                        <span class="briggs-f-thick">Extremely Poor</span>
+                                        memory - does not remember familiar people or names. Others must schedule and
+                                        supervise appointments. Always confused in unfamiliar places.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12">
+                                <div class="radio radio-info briggs-cntrl-grp ">
+                                    <label for="COG_MEM_5">
+                                        <input type="radio" value="5" id="COG_MEM_5" name="COG_MEM" ng-model="briggs.COG_MEM">
+                                        <span class="briggs-f-thick">History of Hoarding</span>
+                                        - select this box if you have a history of hoarding.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-mrg-thin-t">
+                                <div class="briggs-fl briggs-mrg-thin-t">
+                                    Do you experience depression?
+                                </div>
+                                <div class="briggs-fl briggs-mrg-thick-l">
+                                    <div class="radio radio-info briggs-cntrl-grp ">
+                                        <label for="COG_DEP_1">
+                                            <input type="radio" value="1" id="COG_DEP_1" name="COG_DEP" ng-model="briggs.COG_DEP">
+                                            Yes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="COG_DEP_0">
+                                            <input type="radio" value="0" id="COG_DEP_0" name="COG_DEP" ng-model="briggs.COG_DEP">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                <div class="briggs-fl briggs-col-offs briggs-mrg-thin-t">
+                                    <em>If yes, is it:</em>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp ">
+                                        <label for="COG_DEP_IS_1">
+                                            <input type="radio" value="1" id="COG_DEP_IS_1" name="COG_DEP_IS" ng-model="briggs.COG_DEP_IS">
+                                            Mild
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="COG_DEP_IS_2">
+                                            <input type="radio" value="2" id="COG_DEP_IS_2" name="COG_DEP_IS" ng-model="briggs.COG_DEP_IS">
+                                            Moderate
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="COG_DEP_IS_3">
+                                            <input type="radio" value="3" id="COG_DEP_IS_3" name="COG_DEP_IS" ng-model="briggs.COG_DEP_IS">
+                                            Severe
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-mrg-thin-t">
+                                <div class="briggs-fl briggs-mrg-thin-t">
+                                    Do you experience anxiety?
+                                </div>
+                                <div class="briggs-fl briggs-mrg-thick-l">
+                                    <div class="radio radio-info briggs-cntrl-grp ">
+                                        <label for="COG_ANX_1">
+                                            <input type="radio" value="1" id="COG_ANX_1" name="COG_ANX" ng-model="briggs.COG_ANX">
+                                            Yes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="COG_ANX_0">
+                                            <input type="radio" value="0" id="COG_ANX_0" name="COG_ANX" ng-model="briggs.COG_ANX">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-mrg-thin-b">
+                                <div class="briggs-fl briggs-col-offs briggs-mrg-thin-t">
+                                    <em>If yes, is it:</em>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="COG_ANX_IS_1">
+                                            <input type="radio" value="1" id="COG_ANX_IS_1" name="COG_ANX_IS" ng-model="briggs.COG_ANX_IS">
+                                            Mild
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="COG_ANX_IS_2">
+                                            <input type="radio" value="2" id="COG_ANX_IS_2" name="COG_ANX_IS" ng-model="briggs.COG_ANX_IS">
+                                            Moderate
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="COG_ANX_IS_3">
+                                            <input type="radio" value="3" id="COG_ANX_IS_3" name="COG_ANX_IS" ng-model="briggs.COG_ANX_IS">
+                                            Severe
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--page 2 ends-->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 2 of 4 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+        </div>

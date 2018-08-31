@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <link href="../../../Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Content/css/main/briggs-main.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../../../Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../Scripts/match-height/jquery.matchHeight-min.js"></script>
+    <script src="../../../Scripts/page/common.js"></script>
+    <title>BRIGGS |  HOSPICE DIAGNOSIS DETERMINATION ASSESSMENT</title>
+</head>
+<body class="test-rows">
+    <!--form starts-->
+    <div class="container">
+        <div id="Page-01" name="pagebreak" description="Patient Name">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+                    <!--header starts-->
+                    <div class="row briggs-cont-row">
+                        <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-pg-title briggs-title-r">
+                            HOSPICE DIAGNOSIS<br />
+                            DETERMINATION ASSESSMENT
+                        </div>
+                    </div>
+                    <!--header ends -->
+                    <!--page 1 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-7 col-sm-5 col-md-6 briggs-no-pad briggs-mrg-t">
+                                <div class="col-lg-2 col-sm-5 col-md-3 briggs-no-pad-r">
+                                    <label class="briggs-f-thin" for="NAME_FULL">Patient Name:</label>
+                                </div>
+                                <div class="col-lg-10 briggs-no-pad-l col-sm-7 col-md-9 briggs-mrg-thin-b">
+                                    <input name="NAME_FULL" id="NAME_FULL" class="form-control briggs-control" ng-model="briggs.NAME_FULL" maxlength="45" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-mrg-t">
+                                <div class="col-lg-2 col-sm-3 col-md-3 briggs-no-pad-l briggs-pad-thick-r text-right">
+                                    <label class="briggs-f-thin" for="RECORD_NO">MR #:</label>
+                                </div>
+                                <div class="col-lg-10 briggs-no-pad-l col-sm-9 col-md-9">
+                                    <input name="RECORD_NO" id="RECORD_NO" class="form-control briggs-control" ng-model="briggs.RECORD_NO" maxlength="40" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-md-3 briggs-no-pad briggs-mrg-t">
+                                <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad-l briggs-pad-thick-r text-right">
+                                    <label class="briggs-f-thin" for="TODAYS_DATE">Date:</label>
+                                </div>
+                                <div class="col-lg-9 briggs-no-pad-l col-sm-9 col-md-9">
+                                    <input name="TODAYS_DATE" id="TODAYS_DATE" class="form-control briggs-control briggs-date-control" ng-model="briggs.TODAYS_DATE" maxlength="10" type="date">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp">
+                                Objective documentation is required to support hospice admission. This worksheet is intended to gather
+                                <em>information on both the <span class="briggs-f-thick">severity</span> and <span class="briggs-f-thick">trajectory</span> of the patient's condition from the medical record and admission </em>
+                                assessment to confirm admission criteria is met and
+                                to determine primary diagnosis and prognosis group.
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-cntrl-grp briggs-f-thick">
+                                <div class="briggs-fl">
+                                    <div class="briggs-fl briggs-pad-thick-r">
+                                        1.
+                                    </div>
+                                    <div class="briggs-fl">
+                                        List all pertinent diagnoses found in the medical record.
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-mrg-l briggs-mrg-r">
+                                    <div class="briggs-fl briggs-pad-thick-r">
+                                        2.
+                                    </div>
+                                    <div class="briggs-fl">
+                                        Complete form.
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-pad-thick-r">
+                                    3.
+                                </div>
+                                <div class="briggs-fl briggs-pad-thick-r">
+                                    Return to this  page
+                                </div>
+                                <div class="briggs-fl briggs-pad-thick-r">
+                                    and designate each
+                                </div>
+                                <div class="briggs-fl briggs-pad-thick-r">
+                                    diagnosis
+                                </div>
+                                <div class="briggs-fl briggs-pad-thick-r">
+                                    appropriately following
+                                </div>
+                                <div class="briggs-fl briggs-pad-thick-r">
+                                    assessment and collaboration  with the attending
+                                </div>
+                                <div class="briggs-fl briggs-pad-thick-r">
+                                    physician/and medical director.
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-f-thick text-center briggs-mrg-thin-t">
+                                <em>Only 1 Diagnosis is marked as primary (first on claim).</em>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-f-clr-red text-center briggs-no-pad briggs-f-thick briggs-mrg-thin-t">
+                                Multiple diagnoses may be directly related to primary diagnosis or indirectly related but equally affecting prognosis.
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-f-clr-lblue text-center briggs-no-pad briggs-f-thick briggs-mrg-thin-t briggs-mrg-thick-b">
+                                All other diagnoses, not determined as affecting prognosis, will be considered unrelated.
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-sec-hdr-gray briggs-brd-thick-t  briggs-no-pad briggs-sm-f-10 briggs-md-f-12">
+                                <div class="col-lg-7 col-sm-8 col-md-7 briggs-no-pad briggs-header-txt items-container">
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad briggs-brd-thin-r item">
+                                        <div class="briggs-mrg-thick-t">DIAGNOSIS PER MEDICAL RECORD</div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-brd-thin-r item">
+                                        <div class="briggs-mrg-thick-t">ICD 10 CODE</div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-brd-thin-r item">
+                                        <div class="col-lg-12 briggs-brd-thin-b col-xs-12 briggs-no-pad">
+                                            ACTIVE SYMPTOMS
+                                        </div>
+                                        <div class="col-lg-6 col-xs-6 briggs-brd-thin-r briggs-no-pad ">
+                                            YES
+                                        </div>
+                                        <div class="col-lg-6 col-xs-6  briggs-no-pad">
+                                            NO
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-4 col-md-5 briggs-no-pad items-container briggs-header-txt">
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-no-pad briggs-brd-thin-r item">
+                                        PRIMARY<br />
+                                        DIAGNOSIS
+                                        <div class="col-sm-12"></div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-no-pad briggs-brd-thin-r briggs-sec-bg-white briggs-f-clr-red item">
+                                        RELATED TO<br />
+                                        PROGNOSIS
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-no-pad briggs-sec-bg-white briggs-f-clr-lblue item">
+                                        UNRELATED<br />
+                                        COMORBIDITY
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thick-t briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-7 col-sm-8 col-md-7 briggs-no-pad">
+                                    <div class="col-lg-6 col-sm-6 col-md-6  briggs-brd-thin-r briggs-pad-thick-lr">
+                                        <input name="P1_DET_A_DIAG" id="P1_DET_A_DIAG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_A_DIAG" maxlength="40" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_A_ICD" id="P1_DET_A_ICD" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" briggs-diagnosis-name-icd10' ng-model="briggs.P1_DET_A_ICD" maxlength="8" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="col-lg-6 col-xs-6 briggs-brd-thin-r briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_A_ACT_1">
+                                                    <input name="P1_DET_A_ACT" value="1" id="P1_DET_A_ACT_1" type="radio" ng-model="briggs.P1_DET_A_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xs-6  briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_A_ACT_0">
+                                                    <input name="P1_DET_A_ACT" value="0" id="P1_DET_A_ACT_0" type="radio" ng-model="briggs.P1_DET_A_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-4 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_A_PRI" id="P1_DET_A_PRI" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_A_PRI" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_A_PROG" id="P1_DET_A_PROG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_A_PROG" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr">
+                                        <input name="P1_DET_A_COM" id="P1_DET_A_COM" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_A_COM" maxlength="15" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-7 col-sm-8 col-md-7 briggs-no-pad">
+                                    <div class="col-lg-6 col-sm-6 col-md-6  briggs-brd-thin-r briggs-pad-thick-lr">
+                                        <input name="P1_DET_B_DIAG" id="P1_DET_B_DIAG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_B_DIAG" maxlength="40" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_B_ICD" id="P1_DET_B_ICD" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" briggs-diagnosis-name-icd10' ng-model="briggs.P1_DET_B_ICD" maxlength="8" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="col-lg-6 col-xs-6 briggs-brd-thin-r briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_B_ACT_1">
+                                                    <input name="P1_DET_B_ACT" value="1" id="P1_DET_B_ACT_1" type="radio" ng-model="briggs.P1_DET_B_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xs-6  briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_B_ACT_0">
+                                                    <input name="P1_DET_B_ACT" value="0" id="P1_DET_B_ACT_0" type="radio" ng-model="briggs.P1_DET_B_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-4 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_B_PRI" id="P1_DET_B_PRI" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_B_PRI" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_B_PROG" id="P1_DET_B_PROG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_B_PROG" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr">
+                                        <input name="P1_DET_B_COM" id="P1_DET_B_COM" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_B_COM" maxlength="15" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12  briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-7 col-sm-8 col-md-7 briggs-no-pad">
+                                    <div class="col-lg-6 col-sm-6 col-md-6  briggs-brd-thin-r briggs-pad-thick-lr">
+                                        <input name="P1_DET_C_DIAG" id="P1_DET_C_DIAG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_C_DIAG" maxlength="40" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_C_ICD" id="P1_DET_C_ICD" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" briggs-diagnosis-name="icd10" briggs-diagnosis-name-icd10' ng-model="briggs.P1_DET_C_ICD" maxlength="8" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="col-lg-6 col-xs-6 briggs-brd-thin-r briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_C_ACT_1">
+                                                    <input name="P1_DET_C_ACT" value="1" id="P1_DET_C_ACT_1" type="radio" ng-model="briggs.P1_DET_C_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xs-6  briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_C_ACT_0">
+                                                    <input name="P1_DET_C_ACT" value="0" id="P1_DET_C_ACT_0" type="radio" ng-model="briggs.P1_DET_C_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-4 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_C_PRI" id="P1_DET_C_PRI" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_C_PRI" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_C_PROG" id="P1_DET_C_PROG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_C_PROG" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr">
+                                        <input name="P1_DET_C_COM" id="P1_DET_C_COM" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_C_COM" maxlength="15" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-7 col-sm-8 col-md-7 briggs-no-pad">
+                                    <div class="col-lg-6 col-sm-6 col-md-6  briggs-brd-thin-r briggs-pad-thick-lr">
+                                        <input name="P1_DET_D_DIAG" id="P1_DET_D_DIAG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_D_DIAG" maxlength="40" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_D_ICD" id="P1_DET_D_ICD" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" briggs-diagnosis-name="icd10" briggs-diagnosis-name-icd10' ng-model="briggs.P1_DET_D_ICD" maxlength="8" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="col-lg-6 col-xs-6 briggs-brd-thin-r briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_D_ACT_1">
+                                                    <input name="P1_DET_D_ACT" value="1" id="P1_DET_D_ACT_1" type="radio" ng-model="briggs.P1_DET_D_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xs-6  briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_D_ACT_0">
+                                                    <input name="P1_DET_D_ACT" value="0" id="P1_DET_D_ACT_0" type="radio" ng-model="briggs.P1_DET_D_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-4 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_D_PRI" id="P1_DET_D_PRI" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_D_PRI" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_D_PROG" id="P1_DET_D_PROG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_D_PROG" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr">
+                                        <input name="P1_DET_D_COM" id="P1_DET_D_COM" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_D_COM" maxlength="15" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-7 col-sm-8 col-md-7 briggs-no-pad">
+                                    <div class="col-lg-6 col-sm-6 col-md-6  briggs-brd-thin-r briggs-pad-thick-lr">
+                                        <input name="P1_DET_E_DIAG" id="P1_DET_E_DIAG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_E_DIAG" maxlength="40" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_E_ICD" id="P1_DET_E_ICD" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" briggs-diagnosis-name="icd10" briggs-diagnosis-name-icd10' ng-model="briggs.P1_DET_E_ICD" maxlength="8" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="col-lg-6 col-xs-6 briggs-brd-thin-r briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_E_ACT_1">
+                                                    <input name="P1_DET_E_ACT" value="1" id="P1_DET_E_ACT_1" type="radio" ng-model="briggs.P1_DET_E_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xs-6  briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_E_ACT_0">
+                                                    <input name="P1_DET_E_ACT" value="0" id="P1_DET_E_ACT_0" type="radio" ng-model="briggs.P1_DET_E_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-4 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_E_PRI" id="P1_DET_E_PRI" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_E_PRI" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_E_PROG" id="P1_DET_E_PROG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_E_PROG" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr">
+                                        <input name="P1_DET_E_COM" id="P1_DET_E_COM" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_E_COM" maxlength="15" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-7 col-sm-8 col-md-7 briggs-no-pad">
+                                    <div class="col-lg-6 col-sm-6 col-md-6  briggs-brd-thin-r briggs-pad-thick-lr">
+                                        <input name="P1_DET_F_DIAG" id="P1_DET_F_DIAG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_F_DIAG" maxlength="40" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_F_ICD" id="P1_DET_F_ICD" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" briggs-diagnosis-name="icd10" briggs-diagnosis-name-icd10' ng-model="briggs.P1_DET_F_ICD" maxlength="8" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="col-lg-6 col-xs-6 briggs-brd-thin-r briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_F_ACT_1">
+                                                    <input name="P1_DET_F_ACT" value="1" id="P1_DET_F_ACT_1" type="radio" ng-model="briggs.P1_DET_F_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xs-6  briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_F_ACT_0">
+                                                    <input name="P1_DET_F_ACT" value="0" id="P1_DET_F_ACT_0" type="radio" ng-model="briggs.P1_DET_F_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-4 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_F_PRI" id="P1_DET_F_PRI" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_F_PRI" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_F_PROG" id="P1_DET_F_PROG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_F_PROG" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr">
+                                        <input name="P1_DET_F_COM" id="P1_DET_F_COM" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_F_COM" maxlength="15" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-7 col-sm-8 col-md-7 briggs-no-pad">
+                                    <div class="col-lg-6 col-sm-6 col-md-6  briggs-brd-thin-r briggs-pad-thick-lr">
+                                        <input name="P1_DET_G_DIAG" id="P1_DET_G_DIAG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_G_DIAG" maxlength="40" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_G_ICD" id="P1_DET_G_ICD" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" briggs-diagnosis-name="icd10" briggs-diagnosis-name-icd10' ng-model="briggs.P1_DET_G_ICD" maxlength="8" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="col-lg-6 col-xs-6 briggs-brd-thin-r briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_G_ACT_1">
+                                                    <input name="P1_DET_G_ACT" value="1" id="P1_DET_G_ACT_1" type="radio" ng-model="briggs.P1_DET_G_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xs-6  briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_G_ACT_0">
+                                                    <input name="P1_DET_G_ACT" value="0" id="P1_DET_G_ACT_0" type="radio" ng-model="briggs.P1_DET_G_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-4 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_G_PRI" id="P1_DET_G_PRI" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_G_PRI" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_G_PROG" id="P1_DET_G_PROG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_G_PROG" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr">
+                                        <input name="P1_DET_G_COM" id="P1_DET_G_COM" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_G_COM" maxlength="15" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-7 col-sm-8 col-md-7 briggs-no-pad">
+                                    <div class="col-lg-6 col-sm-6 col-md-6  briggs-brd-thin-r briggs-pad-thick-lr">
+                                        <input name="P1_DET_H_DIAG" id="P1_DET_H_DIAG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_H_DIAG" maxlength="40" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_H_ICD" id="P1_DET_H_ICD" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" briggs-diagnosis-name="icd10" briggs-diagnosis-name-icd10' ng-model="briggs.P1_DET_H_ICD" maxlength="8" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="col-lg-6 col-xs-6 briggs-brd-thin-r briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_H_ACT_1">
+                                                    <input name="P1_DET_H_ACT" value="1" id="P1_DET_H_ACT_1" type="radio" ng-model="briggs.P1_DET_H_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xs-6  briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_H_ACT_0">
+                                                    <input name="P1_DET_H_ACT" value="0" id="P1_DET_H_ACT_0" type="radio" ng-model="briggs.P1_DET_H_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-4 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_H_PRI" id="P1_DET_H_PRI" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_H_PRI" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_H_PROG" id="P1_DET_H_PROG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_H_PROG" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr">
+                                        <input name="P1_DET_H_COM" id="P1_DET_H_COM" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_H_COM" maxlength="15" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-7 col-sm-8 col-md-7 briggs-no-pad">
+                                    <div class="col-lg-6 col-sm-6 col-md-6  briggs-brd-thin-r briggs-pad-thick-lr">
+                                        <input name="P1_DET_I_DIAG" id="P1_DET_I_DIAG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_I_DIAG" maxlength="40" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_I_ICD" id="P1_DET_I_ICD" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" briggs-diagnosis-name="icd10" briggs-diagnosis-name-icd10' ng-model="briggs.P1_DET_I_ICD" maxlength="8" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="col-lg-6 col-xs-6 briggs-brd-thin-r briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_I_ACT_1">
+                                                    <input name="P1_DET_I_ACT" value="1" id="P1_DET_I_ACT_1" type="radio" ng-model="briggs.P1_DET_I_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xs-6  briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_I_ACT_0">
+                                                    <input name="P1_DET_I_ACT" value="0" id="P1_DET_I_ACT_0" type="radio" ng-model="briggs.P1_DET_I_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-4 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_I_PRI" id="P1_DET_I_PRI" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_I_PRI" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_I_PROG" id="P1_DET_I_PROG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_I_PROG" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr">
+                                        <input name="P1_DET_I_COM" id="P1_DET_I_COM" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_I_COM" maxlength="15" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-7 col-sm-8 col-md-7 briggs-no-pad">
+                                    <div class="col-lg-6 col-sm-6 col-md-6  briggs-brd-thin-r briggs-pad-thick-lr">
+                                        <input name="P1_DET_J_DIAG" id="P1_DET_J_DIAG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_J_DIAG" maxlength="40" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_J_ICD" id="P1_DET_J_ICD" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" briggs-diagnosis-name="icd10" briggs-diagnosis-name-icd10' ng-model="briggs.P1_DET_J_ICD" maxlength="8" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="col-lg-6 col-xs-6 briggs-brd-thin-r briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_J_ACT_1">
+                                                    <input name="P1_DET_J_ACT" value="1" id="P1_DET_J_ACT_1" type="radio" ng-model="briggs.P1_DET_J_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xs-6  briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_J_ACT_0">
+                                                    <input name="P1_DET_J_ACT" value="0" id="P1_DET_J_ACT_0" type="radio" ng-model="briggs.P1_DET_J_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-4 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_J_PRI" id="P1_DET_J_PRI" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_J_PRI" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_J_PROG" id="P1_DET_J_PROG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_J_PROG" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr">
+                                        <input name="P1_DET_J_COM" id="P1_DET_J_COM" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_J_COM" maxlength="15" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-7 col-sm-8 col-md-7 briggs-no-pad">
+                                    <div class="col-lg-6 col-sm-6 col-md-6  briggs-brd-thin-r briggs-pad-thick-lr">
+                                        <input name="P1_DET_K_DIAG" id="P1_DET_K_DIAG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_K_DIAG" maxlength="40" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_K_ICD" id="P1_DET_K_ICD" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" briggs-diagnosis-name="icd10" briggs-diagnosis-name-icd10' ng-model="briggs.P1_DET_K_ICD" maxlength="8" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="col-lg-6 col-xs-6 briggs-brd-thin-r briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_K_ACT_1">
+                                                    <input name="P1_DET_K_ACT" value="1" id="P1_DET_K_ACT_1" type="radio" ng-model="briggs.P1_DET_K_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xs-6  briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_K_ACT_0">
+                                                    <input name="P1_DET_K_ACT" value="0" id="P1_DET_K_ACT_0" type="radio" ng-model="briggs.P1_DET_K_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-4 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_K_PRI" id="P1_DET_K_PRI" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_K_PRI" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_K_PROG" id="P1_DET_K_PROG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_K_PROG" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr">
+                                        <input name="P1_DET_K_COM" id="P1_DET_K_COM" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_K_COM" maxlength="15" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-7 col-sm-8 col-md-7 briggs-no-pad">
+                                    <div class="col-lg-6 col-sm-6 col-md-6  briggs-brd-thin-r briggs-pad-thick-lr">
+                                        <input name="P1_DET_L_DIAG" id="P1_DET_L_DIAG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_L_DIAG" maxlength="40" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_L_ICD" id="P1_DET_L_ICD" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" briggs-diagnosis-name="icd10" briggs-diagnosis-name-icd10' ng-model="briggs.P1_DET_L_ICD" maxlength="8" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="col-lg-6 col-xs-6 briggs-brd-thin-r briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_L_ACT_1">
+                                                    <input name="P1_DET_L_ACT" value="1" id="P1_DET_L_ACT_1" type="radio" ng-model="briggs.P1_DET_L_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xs-6  briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_L_ACT_0">
+                                                    <input name="P1_DET_L_ACT" value="0" id="P1_DET_L_ACT_0" type="radio" ng-model="briggs.P1_DET_L_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-4 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_L_PRI" id="P1_DET_L_PRI" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_L_PRI" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_L_PROG" id="P1_DET_L_PROG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_L_PROG" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr">
+                                        <input name="P1_DET_L_COM" id="P1_DET_L_COM" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_L_COM" maxlength="15" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-7 col-sm-8 col-md-7 briggs-no-pad">
+                                    <div class="col-lg-6 col-sm-6 col-md-6  briggs-brd-thin-r briggs-pad-thick-lr">
+                                        <input name="P1_DET_M_DIAG" id="P1_DET_M_DIAG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_M_DIAG" maxlength="40" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_M_ICD" id="P1_DET_M_ICD" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" briggs-diagnosis-name="icd10" briggs-diagnosis-name-icd10' ng-model="briggs.P1_DET_M_ICD" maxlength="8" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="col-lg-6 col-xs-6 briggs-brd-thin-r briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_M_ACT_1">
+                                                    <input name="P1_DET_M_ACT" value="1" id="P1_DET_M_ACT_1" type="radio" ng-model="briggs.P1_DET_M_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xs-6  briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_M_ACT_0">
+                                                    <input name="P1_DET_M_ACT" value="0" id="P1_DET_M_ACT_0" type="radio" ng-model="briggs.P1_DET_M_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-4 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_M_PRI" id="P1_DET_M_PRI" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_M_PRI" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_M_PROG" id="P1_DET_M_PROG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_M_PROG" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr">
+                                        <input name="P1_DET_M_COM" id="P1_DET_M_COM" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_M_COM" maxlength="15" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thick-b briggs-no-pad">
+                                <div class="col-lg-7 col-sm-8 col-md-7 briggs-no-pad">
+                                    <div class="col-lg-6 col-sm-6 col-md-6  briggs-brd-thin-r briggs-pad-thick-lr">
+                                        <input name="P1_DET_N_DIAG" id="P1_DET_N_DIAG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_N_DIAG" maxlength="40" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_N_ICD" id="P1_DET_N_ICD" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" briggs-diagnosis-name="icd10" briggs-diagnosis-name-icd10' ng-model="briggs.P1_DET_N_ICD" maxlength="8" type="text">
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="col-lg-6 col-xs-6 briggs-brd-thin-r briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_N_ACT_1">
+                                                    <input name="P1_DET_N_ACT" value="1" id="P1_DET_N_ACT_1" type="radio" ng-model="briggs.P1_DET_N_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xs-6  briggs-no-pad text-center">
+                                            <div class="radio radio-info briggs-mrg-thick-b briggs-pain-mont-sec briggs-mrg-thick-l">
+                                                <label for="P1_DET_N_ACT_0">
+                                                    <input name="P1_DET_N_ACT" value="0" id="P1_DET_N_ACT_0" type="radio" ng-model="briggs.P1_DET_N_ACT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-4 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_N_PRI" id="P1_DET_N_PRI" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_N_PRI" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr briggs-brd-thin-r">
+                                        <input name="P1_DET_N_PROG" id="P1_DET_N_PROG" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_N_PROG" maxlength="15" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-thick-lr">
+                                        <input name="P1_DET_N_COM" id="P1_DET_N_COM" class="form-control briggs-control briggs-mrg-t briggs-mrg-b" ng-model="briggs.P1_DET_N_COM" maxlength="15" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                Information received from physician/facility/family, about current condition that has resulted in a referral to hospice. Give a general
+                                review of the past 6 months.
+                                <textarea class="form-control briggs-control briggs-mrg-thin-t briggs-mrg-thick-b" rows="6" cols="12" id="P1_REVIEW" name="P1_REVIEW" spellcheck="true" ng-model="briggs.P1_REVIEW" maxlength="600"></textarea>
+                            </div>
+                            <div class="briggs-cntrl-grp col-sm-12 col-lg-12 briggs-f-clr-red">
+                                (Directions: Check all that Apply)
+                            </div>
+                            <div class="briggs-mrg-thin-b col-sm-12 col-lg-12 briggs-f-thick">
+                                PART I: Decline in Clinical Status Guidelines:
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="checkbox checkbox-info briggs-cntrl-grp briggs-col-offs">
+                                    <label for="P1_I_INC">
+                                        <input name="P1_I_INC" value="" id="P1_I_INC" type="checkbox" ng-model="briggs.P1_I_INC">
+                                        Increasing emergency room visits, hospitalizations/physician's visits related to diagnosis. Explain:
+                                    </label>
+                                    <div class="briggs-col-offs briggs-cntrl-grp">
+                                        <input name="P1_I_INC_EXP" id="P1_I_INC_EXP" class="form-control briggs-control" ng-model="briggs.P1_I_INC_EXP" maxlength="110" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="checkbox checkbox-info briggs-cntrl-grp briggs-col-offs">
+                                    <label for="P1_I_REC">
+                                        <input name="P1_I_REC" value="" id="P1_I_REC" type="checkbox" ng-model="briggs.P1_I_REC">
+                                        Recurrent or intractable infections such as pneumonia, sepsis or upper urinary tract. Explain:
+                                    </label>
+                                    <div class="briggs-col-offs briggs-cntrl-grp">
+                                        <input name="P1_I_REC_EXP" id="P1_I_REC_EXP" class="form-control briggs-control" ng-model="briggs.P1_I_REC_EXP" maxlength="110" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="briggs-cntrl-grp col-sm-12 col-lg-12 briggs-f-thick">
+                                Progressive Nutritional Decline: <em class="briggs-f-thin">(Not related to reversible causes such as depression or diuretics)</em>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="checkbox checkbox-info briggs-cntrl-grp briggs-col-offs">
+                                    <label for="P1_P_WEIGHT">
+                                        <input name="P1_P_WEIGHT" value="" id="P1_P_WEIGHT" type="checkbox" ng-model="briggs.P1_P_WEIGHT">
+                                        Weight Loss or Weight Gain
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-4 col-sm-6 col-md-5 briggs-no-pad">
+                                    <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                        <div class="checkbox checkbox-info briggs-cntrl-grp briggs-col-offs">
+                                            <label for="P1_P_REC">
+                                                <input name="P1_P_REC" value="" id="P1_P_REC" type="checkbox" ng-model="briggs.P1_P_REC">
+                                                Most Recent/Admit Weight:
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 briggs-no-pad briggs-cntrl-grp">
+                                        <input name="P1_P_ADM" id="P1_P_ADM" class="form-control briggs-control" ng-model="briggs.P1_P_ADM" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4 col-md-4 briggs-no-pad briggs-cntrl-grp">
+                                    <div class="briggs-fl briggs-pad-thick-r">
+                                        <label class="briggs-f-thin" for="DATE_P1_WEIGHT">Date of Weight:</label>
+                                    </div>
+                                    <div class="briggs-fl briggs-date-control">
+                                        <input name="DATE_P1_WEIGHT" id="DATE_P1_WEIGHT" class="form-control briggs-control" ng-model="briggs.DATE_P1_WEIGHT" maxlength="10" type="date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-4 col-sm-6 col-md-5 briggs-no-pad">
+                                    <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                        <div class="checkbox checkbox-info briggs-cntrl-grp briggs-col-offs">
+                                            <label for="P1_P_PRIOR">
+                                                <input name="P1_P_PRIOR" value="" id="P1_P_PRIOR" type="checkbox" ng-model="briggs.P1_P_PRIOR">
+                                                Prior Weight:
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="briggs-fl briggs-pad-thick-r briggs-cntrl-grp">
+                                        <label class="briggs-f-thin" for="P1_P_THREE">3 months:</label>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-cntrl-grp">
+                                        <input name="P1_P_THREE" id="P1_P_THREE" class="form-control briggs-control" ng-model="briggs.P1_P_THREE" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad briggs-cntrl-grp">
+                                    <div class="briggs-fl briggs-pad-thick-r">
+                                        <label class="briggs-f-thin" for="P1_P_SIX">6 months:</label>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-2 briggs-no-pad briggs-mrg-r">
+                                        <input name="P1_P_SIX" id="P1_P_SIX" class="form-control briggs-control" ng-model="briggs.P1_P_SIX" maxlength="10" type="text">
+                                    </div>
+                                    <div class="briggs-fl briggs-pad-thick-r briggs-col-offs">
+                                        <label class="briggs-f-thin" for="P1_P_CHNG">% of Change:</label>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-2 briggs-no-pad">
+                                        <input name="P1_P_CHNG" id="P1_P_CHNG" class="form-control briggs-control" min="0" ng-model="briggs.P1_P_CHNG" maxlength="4" type="number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad">
+                                    <div class="briggs-col-offs">
+                                        <div class="checkbox checkbox-info briggs-cntrl-grp briggs-col-offs">
+                                            <label for="P1_P_FACT">
+                                                <input name="P1_P_FACT" value="" id="P1_P_FACT" type="checkbox" ng-model="briggs.P1_P_FACT">
+                                                Factors Related to Weight Change:
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-sm-7 col-md-8 briggs-pad-l briggs-cntrl-grp">
+                                    <input name="P1_P_REL" id="P1_P_REL" class="form-control briggs-control" ng-model="briggs.P1_P_REL" maxlength="80" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="checkbox checkbox-info briggs-cntrl-grp briggs-col-offs">
+                                    <label for="P1_P_MEASUR">
+                                        <input name="P1_P_MEASUR" value="" id="P1_P_MEASUR" type="checkbox" ng-model="briggs.P1_P_MEASUR">
+                                        Decreasing Anthropomorphic Measurement
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad">
+                                    <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                        <div class="checkbox checkbox-info briggs-cntrl-grp briggs-col-offs">
+                                            <label for="P1_P_ARM">
+                                                <input name="P1_P_ARM" value="" id="P1_P_ARM" type="checkbox" ng-model="briggs.P1_P_ARM">
+                                                Rt. Arm:
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-cntrl-grp">
+                                        <input name="P1_P_RIGHT" id="P1_P_RIGHT" class="form-control briggs-control" ng-model="briggs.P1_P_RIGHT" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-7 col-md-6 briggs-no-pad briggs-cntrl-grp">
+                                    <div class="briggs-fl briggs-pad-thick-r">
+                                        <label class="briggs-f-thin" for="P1_P_LEFT">Lt. Arm:</label>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-2 briggs-no-pad briggs-mrg-r">
+                                        <input name="P1_P_LEFT" id="P1_P_LEFT" class="form-control briggs-control" ng-model="briggs.P1_P_LEFT" maxlength="10" type="text">
+                                    </div>
+                                    <div class="briggs-fl briggs-pad-thick-r briggs-col-offs">
+                                        <label class="briggs-f-thin" for="DATE_P1_ARM">Date of Measure:</label>
+                                    </div>
+                                    <div class="briggs-date-control briggs-fl">
+                                        <input name="DATE_P1_ARM" id="DATE_P1_ARM" class="form-control briggs-control" ng-model="briggs.DATE_P1_ARM" maxlength="10" type="date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad">
+                                    <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                        <div class="checkbox checkbox-info briggs-cntrl-grp briggs-col-offs">
+                                            <label for="P1_P_ABD">
+                                                <input name="P1_P_ABD" value="" id="P1_P_ABD" type="checkbox" ng-model="briggs.P1_P_ABD">
+                                                Abdominal Girth:
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-cntrl-grp">
+                                        <input name="P1_P_GIRTH" id="P1_P_GIRTH" class="form-control briggs-control" ng-model="briggs.P1_P_GIRTH" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-7 col-md-6 briggs-no-pad briggs-cntrl-grp">
+                                    <div class="briggs-fl briggs-pad-thick-r">
+                                        <label class="briggs-f-thin" for="P1_P_THIGH">Thigh (Rt. or Lt.):</label>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 briggs-no-pad briggs-mrg-r">
+                                        <input name="P1_P_THIGH" id="P1_P_THIGH" class="form-control briggs-control" ng-model="briggs.P1_P_THIGH" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="checkbox checkbox-info briggs-cntrl-grp briggs-col-offs">
+                                    <label for="P1_P_CHOL">
+                                        <input name="P1_P_CHOL" value="" id="P1_P_CHOL" type="checkbox" ng-model="briggs.P1_P_CHOL">
+                                        Decreasing Albumin or Cholesterol Levels
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad">
+                                    <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                        <div class="checkbox checkbox-info briggs-cntrl-grp briggs-col-offs">
+                                            <label for="P1_P_ALB">
+                                                <input name="P1_P_ALB" value="" id="P1_P_ALB" type="checkbox" ng-model="briggs.P1_P_ALB">
+                                                Albumin Level:
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-cntrl-grp">
+                                        <input name="P1_P_ALVL" id="P1_P_ALVL" class="form-control briggs-control" ng-model="briggs.P1_P_ALVL" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-7 col-md-6 briggs-no-pad briggs-cntrl-grp">
+                                    <div class="briggs-fl briggs-pad-thick-r ">
+                                        <label class="briggs-f-thin" for="DATE_P1_ALB">Date:</label>
+                                    </div>
+                                    <div class="briggs-date-control briggs-fl briggs-mrg-r">
+                                        <input name="DATE_P1_ALB" id="DATE_P1_ALB" class="form-control briggs-control" ng-model="briggs.DATE_P1_ALB" maxlength="10" type="date">
+                                    </div>
+                                    <div class="briggs-fl briggs-pad-thick-r briggs-col-offs">
+                                        <label class="briggs-f-thin" for="P1_P_APAST">Past Level:</label>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 briggs-no-pad ">
+                                        <input name="P1_P_APAST" id="P1_P_APAST" class="form-control briggs-control" ng-model="briggs.P1_P_APAST" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad">
+                                    <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                        <div class="checkbox checkbox-info briggs-cntrl-grp briggs-col-offs">
+                                            <label for="P1_P_PRE">
+                                                <input name="P1_P_PRE" value="" id="P1_P_PRE" type="checkbox" ng-model="briggs.P1_P_PRE">
+                                                Pre-Albumin Level:
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-cntrl-grp">
+                                        <input name="P1_P_PLVL" id="P1_P_PLVL" class="form-control briggs-control" ng-model="briggs.P1_P_PLVL" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-7 col-md-6 briggs-no-pad briggs-cntrl-grp">
+                                    <div class="briggs-fl briggs-pad-thick-r ">
+                                        <label class="briggs-f-thin" for="DATE_P1_PRE">Date:</label>
+                                    </div>
+                                    <div class="briggs-date-control briggs-fl briggs-mrg-r">
+                                        <input name="DATE_P1_PRE" id="DATE_P1_PRE" class="form-control briggs-control" ng-model="briggs.DATE_P1_PRE" maxlength="10" type="date">
+                                    </div>
+                                    <div class="briggs-fl briggs-pad-thick-r briggs-col-offs">
+                                        <label class="briggs-f-thin" for="P1_P_PPAST">Past Level:</label>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 briggs-no-pad ">
+                                        <input name="P1_P_PPAST" id="P1_P_PPAST" class="form-control briggs-control" ng-model="briggs.P1_P_PPAST" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad">
+                                    <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                        <div class="checkbox checkbox-info briggs-cntrl-grp briggs-col-offs">
+                                            <label for="P1_P_CHO">
+                                                <input name="P1_P_CHO" value="" id="P1_P_CHO" type="checkbox" ng-model="briggs.P1_P_CHO">
+                                                Cholesterol Level:
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad briggs-cntrl-grp">
+                                        <input name="P1_P_CLVL" id="P1_P_CLVL" class="form-control briggs-control" ng-model="briggs.P1_P_CLVL" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-7 col-md-6 briggs-no-pad briggs-cntrl-grp">
+                                    <div class="briggs-fl briggs-pad-thick-r ">
+                                        <label class="briggs-f-thin" for="DATE_P1_CHO">Date:</label>
+                                    </div>
+                                    <div class="briggs-date-control briggs-fl briggs-mrg-r">
+                                        <input name="DATE_P1_CHO" id="DATE_P1_CHO" class="form-control briggs-control" ng-model="briggs.DATE_P1_CHO" maxlength="10" type="date">
+                                    </div>
+                                    <div class="briggs-fl briggs-pad-thick-r briggs-col-offs">
+                                        <label class="briggs-f-thin" for="P1_P_CPAST">Past Level:</label>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 briggs-no-pad ">
+                                        <input name="P1_P_CPAST" id="P1_P_CPAST" class="form-control briggs-control" ng-model="briggs.P1_P_CPAST" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="checkbox checkbox-info briggs-cntrl-grp briggs-col-offs">
+                                    <label for="P1_P_DYS">
+                                        <input name="P1_P_DYS" value="" id="P1_P_DYS" type="checkbox" ng-model="briggs.P1_P_DYS">
+                                        Dysphagia leading to recurrent aspiration and/or inadequate oral intake documented by:
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-col-offs">
+                                <div class="checkbox checkbox-info briggs-cntrl-grp briggs-col-offs">
+                                    <label for="P1_P_DEC">
+                                        <input name="P1_P_DEC" value="" id="P1_P_DEC" type="checkbox" ng-model="briggs.P1_P_DEC">
+                                        Decreasing food portions or consumption.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-col-offs">
+                                <div class="checkbox checkbox-info briggs-cntrl-grp briggs-col-offs">
+                                    <label for="P1_P_NUT">
+                                        <input name="P1_P_NUT" value="" id="P1_P_NUT" type="checkbox" ng-model="briggs.P1_P_NUT">
+                                        Has not responded to enteral nutritional support, despite adequate caloric intake due to intolerance or other
+                                        complications supporting not reasonable to expect prolonged life.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-mrg-thick-b">
+                                <div class="col-lg-3 col-sm-4 col-md-3 briggs-no-pad">
+                                    <div class="checkbox checkbox-info briggs-cntrl-grp briggs-col-offs">
+                                        <label for="P1_P_OTHER">
+                                            <input name="P1_P_OTHER" value="" id="P1_P_OTHER" type="checkbox" ng-model="briggs.P1_P_OTHER">
+                                            Other intake pattern issues:
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-sm-8 col-md-9 briggs-pad-l briggs-cntrl-grp">
+                                    <input name="P1_P_ISSUE" id="P1_P_ISSUE" class="form-control briggs-control" ng-model="briggs.P1_P_ISSUE" maxlength="90" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--page 1 ends -->
+                    <!--footer starts -->
+                    <div class="col-lg-12  col-sm-12 briggs-pg-footer">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-5 col-md-5 col-sm-6 briggs-no-pad">
+                                <span class="briggs-foot-fcode">Form 1140E</span>
+                                <span class="briggs-foot-cr">2/17</span>
+                                <span class="briggs-foot-cr">&copy; BRIGGS, Des Moines, IA (800) 247-2343</span><br />
+                                <span class="briggs-foot-cr briggs-foot-cr-mr">Unauthorized copying or use violates copyright law. www.BriggsCorp.com</span>
+                            </div>
+                            <div class="col-lg-2 col-sm-2 col-md-2 briggs-no-pad text-center">
+                                <img src="../../../Content/images/briggs-logo.png" alt="" />
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-4 briggs-no-pad">
+                                <span class="briggs-foot-fname briggs-f-la briggs-foot-title">
+                                    HOSPICE DIAGNOSIS<br />
+                                    DETERMINATION ASSESSMENT
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--footer ends -->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 1 of 6 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+            <!--hidden fields starts-->
+            <input type="hidden" name="ACCOUNT_NAME" id="ACCOUNT_NAME" ng-model="briggs.ACCOUNT_NAME" />
+            <input type="hidden" name="ACCOUNT_ADDRESS1" id="ACCOUNT_ADDRESS1" ng-model="briggs.ACCOUNT_ADDRESS1" />
+            <input type="hidden" name="ACCOUNT_CITYSTATEZIP" id="ACCOUNT_CITYSTATEZIP" ng-model="briggs.ACCOUNT_CITYSTATEZIP" />
+            <input type="hidden" name="ACCOUNT_PHONE" id="ACCOUNT_PHONE" briggs-phone ng-model="briggs.ACCOUNT_PHONE" />
+            <input type="hidden" name="ACCOUNT_FAX" id="ACCOUNT_FAX" briggs-phone ng-model="briggs.ACCOUNT_FAX" />
+            <input type="hidden" name="FORM_NAME" id="FORM_NAME" ng-model="briggs.FORM_NAME" />
+            <input type="hidden" name="FORM_REV" id="FORM_REV" ng-model="briggs.FORM_REV" />
+            <!--hidden fields ends -->
+        </div>
+    </div>
+    <!--form ends-->
+</body>
+</html>

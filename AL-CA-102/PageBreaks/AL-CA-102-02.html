@@ -1,0 +1,554 @@
+﻿<div id="Page-01" name="pagebreak" description="RESIDENT APPRAISAL">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thick-b">
+                                <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thick-b">
+                                    <div class="col-lg-12 col-sm-12 briggs-cntrl-grp">
+                                        <label class="briggs-f-thin" for="SOC_FACT"><span class="briggs-f-thick">SOCIAL FACTORS</span> (Describe likes and dislikes, interests and activities)</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 briggs-cntrl-grp">
+                                    <textarea rows="8" id="SOC_FACT" name="SOC_FACT" class="form-control briggs-control briggs-cntrl-grp" spellcheck="true" ng-model="briggs.SOC_FACT" maxlength="1080"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thick-b">
+                                <div class="briggs-fl briggs-pad-thick-r briggs-f-thick briggs-cntrl-grp">
+                                    BED STATUS
+                                </div>
+                                <div class="col-lg-10 col-sm-9 col-md-10 briggs-f-thick briggs-no-pad briggs-cntrl-grp">
+                                    (An exception must be obtained to admit or retain a resident who will be temporarily bedridden more than 14 days. Permanently
+                                    bedridden residents are prohibited).
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thick-b items-container">
+                                <div class="col-lg-6 col-sm-6 briggs-no-pad item">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-thick-t">
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad">
+                                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="BED_STAT_1" class="briggs-col-offs">
+                                                        <input type="radio" value="1" id="BED_STAT_1" name="BED_STAT" ng-model="briggs.BED_STAT">
+                                                        OUT OF BED ALL DAY
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="BED_STAT_2" class="briggs-col-offs">
+                                                        <input type="radio" value="2" id="BED_STAT_2" name="BED_STAT" ng-model="briggs.BED_STAT">
+                                                        IN BED PART OF THE TIME
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 briggs-no-pad">
+                                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="BED_STAT_3">
+                                                        <input type="radio" value="3" id="BED_STAT_3" name="BED_STAT" ng-model="briggs.BED_STAT">
+                                                        IN BED MOST OF THE TIME
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="BED_STAT_4">
+                                                        <input type="radio" value="4" id="BED_STAT_4" name="BED_STAT" ng-model="briggs.BED_STAT">
+                                                        IN BED ALL OF THE TIME
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 briggs-no-pad briggs-brd-thin-l item">
+                                    <div class="col-lg-12 col-sm-12 briggs-cntrl-grp">
+                                        <label class="briggs-f-thin" for="BED_STAT_COM">COMMENT:</label>
+                                        <textarea rows="3" id="BED_STAT_COM" name="BED_STAT_COM" class="form-control briggs-control briggs-mrg-thin-b" spellcheck="true" ng-model="briggs.BED_STAT_COM" maxlength="180"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-f-thick briggs-brd-thick-b">
+                                <div class="briggs-cntrl-grp">
+                                    TUBERCULOSIS INFORMATION
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin-b">
+                                <div class="col-lg-6 col-sm-6 briggs-no-pad">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-cntrl-grp">
+                                        ANY HISTORY OF TUBERCULOSIS IN APPLICANT'S FAMILY?
+                                    </div>
+                                    <div class="col-lg-4 col-sm-5 col-md-5">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="HIST_TUB_1" class="briggs-col-offs">
+                                                <input type="radio" id="HIST_TUB_1" name="HIST_TUB" value="1" ng-model="briggs.HIST_TUB">Yes
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-md-6">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="HIST_TUB_0">
+                                                <input type="radio" id="HIST_TUB_0" name="HIST_TUB" value="0" ng-model="briggs.HIST_TUB">No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-no-pad briggs-brd-thin-l briggs-brd-thin-r">
+                                    <div class="col-lg-12 col-sm-12 briggs-cntrl-grp">
+                                        <label class="briggs-f-thin" for="TYPE_TUB">DATE OF TB TEST/TYPE OF TEST</label>
+                                        <textarea id="TYPE_TUB" name="TYPE_TUB" class="form-control briggs-control briggs-mrg-thin-b" spellcheck="true" ng-model="briggs.TYPE_TUB" maxlength="90"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="TYPE_TUB_RES_1">
+                                                <input type="radio" value="1" id="TYPE_TUB_RES_1" name="TYPE_TUB_RES" ng-model="briggs.TYPE_TUB_RES">
+                                                POSITIVE
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="TYPE_TUB_RES_2">
+                                                <input type="radio" value="2" id="TYPE_TUB_RES_2" name="TYPE_TUB_RES" ng-model="briggs.TYPE_TUB_RES">
+                                                NEGATIVE
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin-b">
+                                <div class="col-lg-6 col-sm-6 briggs-no-pad">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-cntrl-grp">
+                                        ANY RECENT EXPOSURE TO ANYONE WITH TUBERCULOSIS?
+                                    </div>
+                                    <div class="col-lg-4 col-sm-5 col-md-5">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="REC_TUB_1" class="briggs-col-offs">
+                                                <input type="radio" id="REC_TUB_1" name="REC_TUB" value="1" ng-model="briggs.REC_TUB">YES
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-md-6">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="REC_TUB_0">
+                                                <input type="radio" id="REC_TUB_0" name="REC_TUB" value="0" ng-model="briggs.REC_TUB">NO
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 briggs-no-pad briggs-brd-thin-l briggs-brd-thin-r">
+                                    <div class="col-lg-12 col-sm-12 briggs-cntrl-grp">
+                                        <label class="briggs-f-thin" for="ACT_TUB">ACTION TAKEN (IF POSITIVE)</label>
+                                        <textarea id="ACT_TUB" name="ACT_TUB" class="form-control briggs-control briggs-mrg-thin-b" spellcheck="true" ng-model="briggs.ACT_TUB" maxlength="120"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thin-b">
+                               <div class="briggs-cntrl-grp">
+                                   <label class="briggs-f-thin" for="DET_TUB">GIVE DETAILS</label>
+                                   <textarea id="DET_TUB" name="DET_TUB" class="form-control briggs-control briggs-mrg-thick-b" spellcheck="true" ng-model="briggs.DET_TUB" maxlength="240"></textarea>
+                               </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-brd-thick-b">
+                                <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-cntrl-grp">
+                                    <div class="briggs-fl briggs-pad-thick-r briggs-f-thick briggs-cntrl-grp">
+                                        AMBULATORY STATUS <span class="briggs-f-thin">(this person is</span>
+                                    </div>
+                                    <div class="briggs-fl">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="IS_AMB_1" class="briggs-mrg-thick-l">
+                                                <input type="radio" value="1" id="IS_AMB_1" name="IS_AMB" ng-model="briggs.IS_AMB">
+                                                ambulatory
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="briggs-fl">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="IS_AMB_2" class="briggs-col-offs">
+                                                <input type="radio" value="2" id="IS_AMB_2" name="IS_AMB" ng-model="briggs.IS_AMB">
+                                                nonambulatory)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-cntrl-grp">
+                                Ambulatory means able to demonstrate the mental and physical ability to leave a building without the assistance of a person or the use of a mechanical device
+                                other than a cane. An ambulatory person must be able to do the following:
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad">
+                                    <div class="briggs-col-offs briggs-f-thick briggs-cntrl-grp">
+                                        YES
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad">
+                                    <div class="briggs-f-thick briggs-cntrl-grp">
+                                        NO
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="WALK_AMB_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="WALK_AMB_1" name="WALK_AMB" ng-model="briggs.WALK_AMB">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="WALK_AMB_0">
+                                            <input type="radio" value="0" id="WALK_AMB_0" name="WALK_AMB" ng-model="briggs.WALK_AMB">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 col-md-10 briggs-no-pad briggs-cntrl-grp">
+                                    Able to walk without any physical assistance (e.g., walker, crutches, other person), or able to walk with a cane.
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="FOLLOW_AMB_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="FOLLOW_AMB_1" name="FOLLOW_AMB" ng-model="briggs.FOLLOW_AMB">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="FOLLOW_AMB_0">
+                                            <input type="radio" value="0" id="FOLLOW_AMB_0" name="FOLLOW_AMB" ng-model="briggs.FOLLOW_AMB">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 col-md-10 briggs-no-pad briggs-cntrl-grp">
+                                    Mentally and physically able to follow signals and instructions for evacuation.
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="EVAC_AMB_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="EVAC_AMB_1" name="EVAC_AMB" ng-model="briggs.EVAC_AMB">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="EVAC_AMB_0">
+                                            <input type="radio" value="0" id="EVAC_AMB_0" name="EVAC_AMB" ng-model="briggs.EVAC_AMB">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 col-md-10 briggs-no-pad briggs-cntrl-grp">
+                                    Able to use evacuation routes including stairs if necessary.
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thin-b">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="QUICK_AMB_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="QUICK_AMB_1" name="QUICK_AMB" ng-model="briggs.QUICK_AMB">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="QUICK_AMB_0">
+                                            <input type="radio" value="0" id="QUICK_AMB_0" name="QUICK_AMB" ng-model="briggs.QUICK_AMB">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 col-md-10 briggs-no-pad briggs-cntrl-grp">
+                                    Able to evacuate reasonably quickly (e.g., walk directly the route without hesitation).
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-brd-thick-b">
+                                <div class="briggs-cntrl-grp">
+                                    <span class="briggs-f-thick">FUNCTIONAL CAPABILITIES </span> (Check all items below)
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad">
+                                    <div class="briggs-col-offs briggs-f-thick briggs-cntrl-grp">
+                                        YES
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad">
+                                    <div class="briggs-f-thick briggs-cntrl-grp">
+                                        NO
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="ACT_FUN_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="ACT_FUN_1" name="ACT_FUN" ng-model="briggs.ACT_FUN">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="ACT_FUN_0">
+                                            <input type="radio" value="0" id="ACT_FUN_0" name="ACT_FUN" ng-model="briggs.ACT_FUN">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 col-md-10 briggs-no-pad briggs-cntrl-grp">
+                                    Active, requires no personal help of any kind - able to go up and down stairs easily
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="DIF_FUN_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="DIF_FUN_1" name="DIF_FUN" ng-model="briggs.DIF_FUN">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="DIF_FUN_0">
+                                            <input type="radio" value="0" id="DIF_FUN_0" name="DIF_FUN" ng-model="briggs.DIF_FUN">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 col-md-10 briggs-no-pad briggs-cntrl-grp">
+                                    Active, but has difficulty climbing or descending stairs
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="BRACE_FUN_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="BRACE_FUN_1" name="BRACE_FUN" ng-model="briggs.BRACE_FUN">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="BRACE_FUN_0">
+                                            <input type="radio" value="0" id="BRACE_FUN_0" name="BRACE_FUN" ng-model="briggs.BRACE_FUN">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 col-md-10 briggs-no-pad briggs-cntrl-grp">
+                                    Uses brace or crutch
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="SLOW_FUN_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="SLOW_FUN_1" name="SLOW_FUN" ng-model="briggs.SLOW_FUN">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="SLOW_FUN_0">
+                                            <input type="radio" value="0" id="SLOW_FUN_0" name="SLOW_FUN" ng-model="briggs.SLOW_FUN">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 col-md-10 briggs-no-pad briggs-cntrl-grp">
+                                    Frail or slow
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="WALKER_FUN_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="WALKER_FUN_1" name="WALKER_FUN" ng-model="briggs.WALKER_FUN">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="WALKER_FUN_0">
+                                            <input type="radio" value="0" id="WALKER_FUN_0" name="WALKER_FUN" ng-model="briggs.WALKER_FUN">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-7 col-md-5 briggs-no-pad briggs-cntrl-grp">
+                                    Uses walker. If Yes, can get in and out unassisted?
+                                </div>
+                                <div class="col-lg-1 col-sm-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="WALKER_FUN_IN_1">
+                                            <input type="radio" value="1" id="WALKER_FUN_IN_1" name="WALKER_FUN_IN" ng-model="briggs.WALKER_FUN_IN">
+                                            Yes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="WALKER_FUN_IN_0">
+                                            <input type="radio" value="0" id="WALKER_FUN_IN_0" name="WALKER_FUN_IN" ng-model="briggs.WALKER_FUN_IN">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="WHEEL_FUN_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="WHEEL_FUN_1" name="WHEEL_FUN" ng-model="briggs.WHEEL_FUN">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="WHEEL_FUN_0">
+                                            <input type="radio" value="0" id="WHEEL_FUN_0" name="WHEEL_FUN" ng-model="briggs.WHEEL_FUN">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-7 col-md-5 briggs-no-pad briggs-cntrl-grp">
+                                    Uses wheelchair. If Yes, can get in and out unassisted?
+                                </div>
+                                <div class="col-lg-1 col-sm-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="WHEEL_FUN_IN_1">
+                                            <input type="radio" value="1" id="WHEEL_FUN_IN_1" name="WHEEL_FUN_IN" ng-model="briggs.WHEEL_FUN_IN">
+                                            Yes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="WHEEL_FUN_IN_0">
+                                            <input type="radio" value="0" id="WHEEL_FUN_IN_0" name="WHEEL_FUN_IN" ng-model="briggs.WHEEL_FUN_IN">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="BARS_FUN_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="BARS_FUN_1" name="BARS_FUN" ng-model="briggs.BARS_FUN">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="BARS_FUN_0">
+                                            <input type="radio" value="0" id="BARS_FUN_0" name="BARS_FUN" ng-model="briggs.BARS_FUN">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 col-md-10 briggs-no-pad briggs-cntrl-grp">
+                                    Requires grab bars in bathroom
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-brd-thin-b">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="OTHER_FUN_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="OTHER_FUN_1" name="OTHER_FUN" ng-model="briggs.OTHER_FUN">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="OTHER_FUN_0">
+                                            <input type="radio" value="0" id="OTHER_FUN_0" name="OTHER_FUN" ng-model="briggs.OTHER_FUN">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 col-md-10 briggs-no-pad briggs-cntrl-grp">
+                                    <div class="col-lg-2 col-sm-3 col-md-2 briggs-cntrl-grp briggs-no-pad">
+                                        <label class="briggs-f-thin" for="OTH_FUN"> Other: (Describe)</label>
+                                    </div>
+                                    <div class="col-lg-10 col-sm-9 col-md-10 briggs-no-pad briggs-cntrl-grp">
+                                        <textarea id="OTH_FUN" name="OTH_FUN" class="form-control briggs-control" spellcheck="true" ng-model="briggs.OTH_FUN" maxlength="200"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-brd-thick-b">
+                                <div class="briggs-cntrl-grp">
+                                    <span class="briggs-f-thick">SERVICES NEEDED </span> (Check items and explain)
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad">
+                                    <div class="briggs-col-offs briggs-f-thick briggs-cntrl-grp">
+                                        YES
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad">
+                                    <div class="briggs-f-thick briggs-cntrl-grp">
+                                        NO
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="TRAN_NEED_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="TRAN_NEED_1" name="TRAN_NEED" ng-model="briggs.TRAN_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="TRAN_NEED_0">
+                                            <input type="radio" value="0" id="TRAN_NEED_0" name="TRAN_NEED" ng-model="briggs.TRAN_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 briggs-no-pad">
+                                    <div class="col-lg-6 col-sm-9 col-md-7 briggs-no-pad briggs-cntrl-grp">
+                                        Help in transferring in and out of bed/turning in bed or chair (specify)
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                        <input id="TRAN_SPECg" name="TRAN_SPEC" class="form-control briggs-control briggs-cntrl-grp" ng-model="briggs.TRAN_SPEC" maxlength="110" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad-r">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="BATH_NEED_1" class="briggs-mrg-l">
+                                            <input type="radio" value="1" id="BATH_NEED_1" name="BATH_NEED" ng-model="briggs.BATH_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-pad-thin-l">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="BATH_NEED_0">
+                                            <input type="radio" value="0" id="BATH_NEED_0" name="BATH_NEED" ng-model="briggs.BATH_NEED">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-10 briggs-no-pad">
+                                    <div class="col-lg-2 col-sm-3 col-md-2 briggs-no-pad briggs-cntrl-grp">
+                                        Help with bathing
+                                    </div>
+                                    <div class="col-lg-10 col-sm-9 col-md-10 briggs-no-pad briggs-cntrl-grp briggs-mrg-thick-b">
+                                        <input id="BATH_SPEC" name="BATH_SPEC" class="form-control briggs-control" ng-model="briggs.BATH_SPEC" maxlength="90" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <!--page 2 ends-->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 2 of 3 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+        </div>

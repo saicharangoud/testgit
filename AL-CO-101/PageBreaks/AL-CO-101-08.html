@@ -1,0 +1,240 @@
+﻿<div id="Page-08" name="pagebreak" description="Employment">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+
+                    <!--header starts-->
+                    <div class="row briggs-cont-row">
+                        <div class="col-lg-12 col-sm-12 briggs-cntrl-grp briggs-no-pad">
+                            <div class="briggs-fl briggs-pad-thick-r">
+                                <label class="briggs-f-thin" for="NAME">Individual Name:</label>
+                            </div>
+                            <div class="col-lg-7 briggs-no-pad col-sm-5 col-md-6 briggs-mrg-thin-b">
+                                <input class="form-control briggs-control" id="NAME" name="NAME" ng-model="briggs.NAME" maxlength="45" type="text">
+                            </div>
+                            <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                <label class="briggs-f-thin" for="DATE_ASSESS">Date of Assessment:</label>
+                            </div>
+                            <div class="briggs-fl">
+                                <input class="form-control briggs-control briggs-date-control" id="DATE_ASSESS" name="DATE_ASSESS" ng-model="briggs.DATE_ASSESS" maxlength="10" type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <!--header ends-->
+                    <!--page 8 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thick-t briggs-pg-title">
+                                Employment
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="briggs-col-offs">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin">
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                            <label class="briggs-f-thin" for="EMP_CUR"> Is the individual currently employed? If so, where are they employed?</label>
+                                            <textarea id="EMP_CUR" name="EMP_CUR" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.EMP_CUR" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="EMP_SUP"><em>If so, what support will be needed to maintain employment?</em> </label>
+                                            <textarea id="EMP_SUP" name="EMP_SUP" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.EMP_SUP" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="EMP_SEEK"><em>If not, is there interest in seeking employment, and what support will be needed to assist?</em> </label>
+                                            <textarea id="EMP_SEEK" name="EMP_SEEK" class="form-control briggs-control briggs-mrg-thick-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.EMP_SEEK" maxlength="330"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thick-t briggs-pg-title">
+                                Criminal/Legal History
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="briggs-col-offs">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin">
+                                        <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-t">
+                                            <div class="briggs-fl briggs-mrg-thin-t">
+                                                Does the individual have a criminal history?:
+                                            </div>
+                                            <div class="briggs-fl briggs-mrg-thick-l">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="CRI_HIS_1">
+                                                        <input type="radio" value="1" id="CRI_HIS_1" name="CRI_HIS" ng-model="briggs.CRI_HIS">
+                                                        YES
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="briggs-fl briggs-col-offs">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="CRI_HIS_0">
+                                                        <input type="radio" id="CRI_HIS_0" value="0" name="CRI_HIS" ng-model="briggs.CRI_HIS">
+                                                        NO
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="CRI_DES">
+                                                <em>If yes, describe:</em>
+                                            </label>
+                                            <textarea id="CRI_DES" name="CRI_DES" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.CRI_DES" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="CRI_CUR">
+                                                Is the individual involved in any current legal activity (e.g., divorce, probation, etc.)?
+                                            </label>
+                                            <textarea id="CRI_CUR" name="CRI_CUR" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.CRI_CUR" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="CRI_PROB">
+                                                Are there any parole or probation requirements?
+                                            </label>
+                                            <textarea id="CRI_PROB" name="CRI_PROB" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.CRI_PROB" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-b">
+                                            <div class="briggs-fl briggs-mrg-thin-t">
+                                                Is the individual a registered sex offender?
+                                            </div>
+                                            <div class="briggs-fl briggs-mrg-thick-l">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="CRI_OFF_1">
+                                                        <input type="radio" value="1" id="CRI_OFF_1" name="CRI_OFF" ng-model="briggs.CRI_OFF">
+                                                        YES
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="briggs-fl briggs-col-offs">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="CRI_OFF_0">
+                                                        <input type="radio" value="0" id="CRI_OFF_0" name="CRI_OFF" ng-model="briggs.CRI_OFF">
+                                                        NO
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thick-t briggs-pg-title">
+                                Other
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="briggs-col-offs">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin">
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                            <label class="briggs-f-thin" for="OTHER_INF">
+                                                Other information relevant to pre-admission assessment:
+                                            </label>
+                                            <textarea id="OTHER_INF" name="OTHER_INF" class="form-control briggs-control briggs-mrg-thick-b" cols="12" rows="8" spellcheck="true" ng-model="briggs.OTHER_INF" maxlength="880"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thick-t">
+                                <div class="briggs-col-offs">
+                                    Use of this document does not constitute nor imply compliance with Federal or State rules and regulations. All facilities
+                                    must follow their own internal guidelines and policies for admission. All facilities are responsible for gathering the
+                                    appropriate information required to ensure the facility is able to meet the needs of each individual admitted.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- signature region -->
+                        <div class="row briggs-cont-row" name="signature_row_1" id="signature_row_1">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                <div name="signature_container_1" id="signature_container_1">
+                                    <div class="col-lg-5 col-sm-5 briggs-no-pad col-md-5">
+                                        <div class="briggs-col-offs">
+                                            <textarea id="SIGN_A" name="SIGN_A" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_A" maxlength="60"></textarea>
+                                            <label class="briggs-f-thin" for="SIGN_A">Signature of Individual</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5  col-sm-4 col-md-5">
+                                    <input class="form-control briggs-control" id="NAME_SIGN_A" name="NAME_SIGN_A" ng-model="briggs.NAME_SIGN_A" maxlength="35" type="text">
+                                    <label class="briggs-f-thin" for="NAME_SIGN_A">Printed Name</label>
+                                </div>
+                                <div class="col-lg-2 briggs-no-pad col-sm-2 col-md-2">
+                                    <input class="form-control briggs-control briggs-date-control" id="DATE_SIGN_A" name="DATE_SIGN_A" ng-model="briggs.DATE_SIGN_A" maxlength="10" type="date">
+                                    <label class="briggs-f-thin" for="DATE_SIGN_A">Date</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row" name="signature_row_2" id="signature_row_2">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                <div name="signature_container_2" id="signature_container_2">
+                                    <div class="col-lg-5 col-sm-5 briggs-no-pad col-md-5">
+                                        <div class="briggs-col-offs">
+                                            <textarea id="SIGN_B" name="SIGN_B" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_B" maxlength="60"></textarea>
+                                            <label class="briggs-f-thin" for="SIGN_B">Signature of Legal Representative</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5  col-sm-4 col-md-5">
+                                    <input class="form-control briggs-control" id="NAME_SIGN_B" name="NAME_SIGN_B" ng-model="briggs.NAME_SIGN_B" maxlength="35" type="text">
+                                    <label class="briggs-f-thin" for="NAME_SIGN_B">Printed Name</label>
+                                </div>
+                                <div class="col-lg-2 briggs-no-pad col-sm-2 col-md-2">
+                                    <input class="form-control briggs-control briggs-date-control" id="DATE_SIGN_B" name="DATE_SIGN_B" ng-model="briggs.DATE_SIGN_B" maxlength="10" type="date">
+                                    <label class="briggs-f-thin" for="DATE_SIGN_B">Date</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row" name="signature_row_3" id="signature_row_3">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                <div name="signature_container_3" id="signature_container_3">
+                                    <div class="col-lg-5 col-sm-5 briggs-no-pad col-md-5">
+                                        <div class="briggs-col-offs">
+                                            <textarea id="SIGN_C" name="SIGN_C" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_C" maxlength="60"></textarea>
+                                            <label class="briggs-f-thin" for="SIGN_C">SEP Case Manager (Medicaid only)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5  col-sm-4 col-md-5 briggs-mrg-thin-b">
+                                    <input class="form-control briggs-control" id="NAME_SIGN_C" name="NAME_SIGN_C" ng-model="briggs.NAME_SIGN_C" maxlength="35" type="text">
+                                    <label class="briggs-f-thin" for="NAME_SIGN_C">Printed Name</label>
+                                </div>
+                                <div class="col-lg-2 briggs-no-pad col-sm-2 col-md-2 briggs-mrg-thin-b">
+                                    <input class="form-control briggs-control briggs-date-control" id="DATE_SIGN_C" name="DATE_SIGN_C" ng-model="briggs.DATE_SIGN_C" maxlength="10" type="date">
+                                    <label class="briggs-f-thin" for="DATE_SIGN_C">Date</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row" name="signature_row_4" id="signature_row_4">
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp">
+                                <div name="signature_container_4" id="signature_container_4">
+                                    <div class="col-lg-5 col-sm-5 briggs-no-pad col-md-5">
+                                        <div class="briggs-col-offs">
+                                            <textarea id="SIGN_D" name="SIGN_D" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_D" maxlength="60"></textarea>
+                                            <label class="briggs-f-thin" for="SIGN_D">Signature of ALR Community Representative</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5  col-sm-4 col-md-5 briggs-mrg-thin-b">
+                                    <input class="form-control briggs-control" id="NAME_SIGN_D" name="NAME_SIGN_D" ng-model="briggs.NAME_SIGN_D" maxlength="35" type="text">
+                                    <label class="briggs-f-thin" for="NAME_SIGN_D">Printed Name</label>
+                                </div>
+                                <div class="col-lg-2 briggs-no-pad col-sm-2 col-md-2 briggs-mrg-thin-b">
+                                    <input class="form-control briggs-control briggs-date-control" id="DATE_SIGN_D" name="DATE_SIGN_D" ng-model="briggs.DATE_SIGN_D" maxlength="10" type="date">
+                                    <label class="briggs-f-thin" for="DATE_SIGN_D">Date</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of signature region-->
+
+                    </div>
+                    <!--page 8 ends-->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 8 of 14 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+        </div>

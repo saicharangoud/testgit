@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <link href="../../../Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Content/css/main/briggs-main.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../../../Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../Scripts/match-height/jquery.matchHeight-min.js"></script>
+    <script src="../../../Scripts/page/common.js"></script>
+    <title>BRIGGS | ALR Community Pre-Admission Assessment</title>
+</head>
+<body class="test-rows">
+    <!--form starts -->
+    <div class="container">
+        <div id="Page-05" name="pagebreak" description="Overnight continence support">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+
+                    <!--header starts-->
+                    <div class="row briggs-cont-row">
+                        <div class="col-lg-12 col-sm-12 briggs-cntrl-grp briggs-no-pad">
+                            <div class="briggs-fl briggs-pad-thick-r">
+                                <label class="briggs-f-thin" for="NAME">Individual Name:</label>
+                            </div>
+                            <div class="col-lg-7 briggs-no-pad col-sm-5 col-md-6 briggs-mrg-thin-b">
+                                <input class="form-control briggs-control" id="NAME" name="NAME" ng-model="briggs.NAME" maxlength="45" type="text" />
+                            </div>
+                            <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                <label class="briggs-f-thin" for="DATE_ASSESS">Date of Assessment:</label>
+                            </div>
+                            <div class="briggs-fl">
+                                <input class="form-control briggs-control briggs-date-control" id="DATE_ASSESS" name="DATE_ASSESS" ng-model="briggs.DATE_ASSESS" maxlength="10" type="date" />
+                            </div>
+                        </div>
+                    </div>
+                    <!--header ends-->
+                    <!--page 5 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-t">
+                                <div class="briggs-col-offs">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin briggs-mrg-thick-b">
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                            <label class="briggs-f-thin" for="MED_OVER">
+                                                Overnight continence support:
+                                            </label>
+                                            <textarea id="MED_OVER" name="MED_OVER" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MED_OVER" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-t">
+                                            <div class="col-lg-1 col-md-1 col-sm-1 briggs-no-pad">
+                                                <label class="briggs-f-thin" for="MED_OTHER">Other:</label>
+                                            </div>
+                                            <div class="col-lg-11 col-sm-11 col-md-11 briggs-mrg-thick-b briggs-no-pad">
+                                                <textarea id="MED_OTHER" name="MED_OTHER" class="form-control" cols="12" rows="3" spellcheck="true" ng-model="briggs.MED_OTHER" maxlength="210"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thick-t briggs-pg-title">
+                                External Services
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="briggs-col-offs">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin briggs-mrg-thick-b">
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                            <label class="briggs-f-thin" for="EXT_SERV">
+                                                (e.g., Meals on Wheels, PT, OT, Home Health, Day Center, services provided by family members, etc.):
+                                            </label>
+                                            <textarea id="EXT_SERV" name="EXT_SERV" class="form-control briggs-control briggs-mrg-thick-b" cols="12" rows="4" spellcheck="true" ng-model="briggs.EXT_SERV" maxlength="330"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thick-t briggs-pg-title">
+                                Cognition
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="briggs-col-offs">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin briggs-mrg-b">
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                            <label class="briggs-f-thin" for="COG_CONF">
+                                                Confusion/disorientation (e.g., disoriented to place, person, time, attention span, periods of confusion, etc.):
+                                            </label>
+                                            <textarea id="COG_CONF" name="COG_CONF" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.COG_CONF" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="COG_DEM">
+                                                Dementia diagnosis (if applicable):
+                                            </label>
+                                            <input class="form-control briggs-control" id="COG_DEM" name="COG_DEM" ng-model="briggs.COG_DEM" maxlength="110" type="text" />
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="COG_SLUMS">
+                                                SLUMS test results (refer to SLUMS assessment tool):
+                                            </label>
+                                            <textarea id="COG_SLUMS" name="COG_SLUMS" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.COG_SLUMS" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="COG_WAND">
+                                                History of wandering (explain):
+                                            </label>
+                                            <textarea id="COG_WAND" name="COG_WAND" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.COG_WAND" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="COG_DAY">
+                                                Confusion between day and night:
+                                            </label>
+                                            <textarea id="COG_DAY" name="COG_DAY" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.COG_DAY" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="COG_SUN">
+                                                Sundowner's Syndrome behavior:
+                                            </label>
+                                            <textarea id="COG_SUN" name="COG_SUN" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.COG_SUN" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="COG_INST">
+                                                Able to follow instructions:
+                                            </label>
+                                            <textarea id="COG_INST" name="COG_INST" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.COG_INST" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="COG_COMM">
+                                                Able to communicate needs:
+                                            </label>
+                                            <textarea id="COG_COMM" name="COG_COMM" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.COG_COMM" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="COG_HYG">
+                                                Able to use personal hygiene items safely:
+                                            </label>
+                                            <textarea id="COG_HYG" name="COG_HYG" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.COG_HYG" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="COG_SAFETY">
+                                                Safety risks (e.g., forgets to use walker, not dressing appropriately for weather, etc.):
+                                            </label>
+                                            <textarea id="COG_SAFETY" name="COG_SAFETY" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.COG_SAFETY" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="COG_OTHER">
+                                                Other:
+                                            </label>
+                                            <textarea id="COG_OTHER" name="COG_OTHER" class="form-control briggs-control briggs-mrg-thick-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.COG_OTHER" maxlength="220"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--page 5 ends-->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 5 of 14 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--form ends -->
+</body>
+</html>

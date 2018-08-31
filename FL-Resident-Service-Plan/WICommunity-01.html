@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <link href="../../../Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Content/css/main/briggs-main.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../../../Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../Scripts/match-height/jquery.matchHeight-min.js"></script>
+    <script src="../../../Scripts/page/common.js"></script>
+    <title>BRIGGS | FUNCTIONAL ASSESSMENT</title>
+</head>
+<body class="test-rows">
+    <!--form starts-->
+    <div class="container">
+        <div id="Page-01" name="pagebreak" description="FUNCTION">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+                    <!--header starts-->
+                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                        <img class="img-responsive" src="../../../Content/images/briggs-WIC.png" alt="" />
+                    </div>
+                    <div class="row briggs-cont-row">
+                        <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-pg-title briggs-title-c">
+                            COMMUNITY BASED RESIDENTIAL FACILITY (CBRF)
+                        </div>
+                        <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-pg-title briggs-title-c">
+                            RESIDENT SATISFACTION EVALUATION
+                        </div>
+                    </div></br>
+                    <!--header ends -->
+                    <!--page 1 starts-->
+                    <div class="row briggs-cont-row">                    
+                        <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                            Wisconsin's Administrative Code, DHS 83.35(4), requires that at least <b>annually</b>, the CBRF shall provide the resident and the resident's legal representativethe opportunity to complete an evaluation of the resident's level of satisfaction with the CBRF's services. The evaluation shall be completed on either a department form or a form developed by the CBRF and approved by the department.
+                        </div>
+                    </div></br>
+                    <div class="row briggs-cont-row col-lg-12 col-sm-12 briggs-no-pad">
+                        The resident satisfaction evaluation will be maintained in the resident record as required by DHS 83.42(1)(i)
+                    </div>
+                    <div class="row briggs-cont-row">
+                        <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin-t briggs-mrg-thick-t">                            
+                            <label for="NAME_FAC" class="briggs-f-thin briggs-mrg-thick-t">Name - Facility</label>
+                                <input class="form-control briggs-control briggs-mrg-thick-b" name="NAME_FAC" id="NAME_FAC" type="text" ng-model="briggs.NAME_FAC" />                                                       
+                        </div>
+                    </div>
+                    <div class="row briggs-cont-row">
+                        <div class="col-lg-12 col-sm-12 briggs-no-pad items-container">
+                            <div class="col-lg-8 col-sm-8 col-md-8 briggs-no-pad-l briggs-brd-thin-r briggs-brd-thin-t item briggs-brd-thin-b">
+                                    <label for="NAME_FULL" class="briggs-f-thin briggs-mrg-thick-t">Name - Resident</label>
+                                        <input class="form-control briggs-control briggs-mrg-thick-b" name="NAME_FULL" id="NAME_FULL" type="text" ng-model="briggs.NAME_FULL" />
+                            </div>               
+                            
+                            <div class="col-lg-4 col-sm-4 col-md-4 briggs-pad-l item briggs-brd-thin-t briggs-brd-thin-b">
+                                    <label for="DATE_COMP" class="briggs-f-thin briggs-mrg-thick-t">Date Form Completed</label>
+                                        <input class="form-control briggs-control briggs-mrg-thick-b" name="DATE_COMP" id="DATE_COMP" type="date" ng-model="briggs.DATE_COMP" />
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="row briggs-cont-row col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-thick-t">
+                        1. All facilities must provide or make available to residents certain services . From the following list, please check the services you receive:
+                    </div>
+                    <div class="row briggs-cont-row col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-thick-t">
+                        <div class="col-lg-4 col-sm-4 briggs-no-pad">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="checkbox checkbox-info">
+                                    <label for="ONE_SUP" class="briggs-f-thin">
+                                        <input type="checkbox" id="ONE_SUP" name="ONE_SUP" value="" ng-model="briggs.ONE_SUP" />Supervision
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 briggs-no-pad">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="checkbox checkbox-info">
+                                    <label for="ONE_COM" class="briggs-f-thin">
+                                        <input type="checkbox" id="ONE_COM" name="ONE_COM" value="" ng-model="briggs.ONE_COM" />Help in Communication
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 briggs-no-pad">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="checkbox checkbox-info">
+                                    <label for="ONE_ACC" class="briggs-f-thin">
+                                        <input type="checkbox" id="ONE_ACC" name="ONE_ACC" value="" ng-model="briggs.ONE_ACC" />Access to medical services
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row briggs-cont-row col-lg-12 col-sm-12 briggs-no-pad">
+                        <div class="col-lg-4 col-sm-4 briggs-no-pad">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="checkbox checkbox-info">
+                                    <label for="ONE_LEIS" class="briggs-f-thin">
+                                        <input type="checkbox" id="ONE_LEIS" name="ONE_LEIS" value="" ng-model="briggs.ONE_LEIS" />Leisure time activities
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 briggs-no-pad">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="checkbox checkbox-info">
+                                    <label for="ONE_DECI" class="briggs-f-thin">
+                                        <input type="checkbox" id="ONE_DECI" name="ONE_DECI" value="" ng-model="briggs.ONE_DECI" />Assistance in decision-making
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 briggs-no-pad">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="checkbox checkbox-info">
+                                    <label for="ONE_LIMIT" class="briggs-f-thin">
+                                        <input type="checkbox" id="ONE_LIMIT" name="ONE_LIMIT" value="" ng-model="briggs.ONE_LIMIT" />Limited nursing services
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row briggs-cont-row col-lg-12 col-sm-12 briggs-no-pad">
+                        <div class="col-lg-4 col-sm-4 briggs-no-pad">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="checkbox checkbox-info">
+                                    <label for="ONE_FAM" class="briggs-f-thin">
+                                        <input type="checkbox" id="ONE_FAM" name="ONE_FAM" value="" ng-model="briggs.ONE_FAM" />Family contacts
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 briggs-no-pad">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="checkbox checkbox-info">
+                                    <label for="ONE_INF" class="briggs-f-thin">
+                                        <input type="checkbox" id="ONE_INF" name="ONE_INF" value="" ng-model="briggs.ONE_INF" />Information and Referral
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 briggs-no-pad">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="checkbox checkbox-info">
+                                    <label for="ONE_HELP" class="briggs-f-thin">
+                                        <input type="checkbox" id="ONE_HELP" name="ONE_HELP" value="" ng-model="briggs.ONE_HELP" />Help with independent living skills
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row briggs-cont-row col-lg-12 col-sm-12 briggs-no-pad">
+                        <div class="col-lg-4 col-sm-4 briggs-no-pad">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="checkbox checkbox-info">
+                                    <label for="ONE_HEALTH" class="briggs-f-thin">
+                                        <input type="checkbox" id="ONE_HEALTH" name="ONE_HEALTH" value="" ng-model="briggs.ONE_HEALTH" />Health monitoring
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 briggs-no-pad">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="checkbox checkbox-info">
+                                    <label for="ONE_ACT" class="briggs-f-thin">
+                                        <input type="checkbox" id="ONE_ACT" name="ONE_ACT" value="" ng-model="briggs.ONE_ACT" />Activities in the community
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 briggs-no-pad">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="checkbox checkbox-info">
+                                    <label for="ONE_OPP" class="briggs-f-thin">
+                                        <input type="checkbox" id="ONE_OPP" name="ONE_OPP" value="" ng-model="briggs.ONE_OPP" />Opportunity to socialize with others
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row briggs-cont-row col-lg-12 col-sm-12 briggs-no-pad">
+                        <div class="col-lg-4 col-sm-4 briggs-no-pad">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="checkbox checkbox-info">
+                                    <label for="ONE_MED" class="briggs-f-thin">
+                                        <input type="checkbox" id="ONE_MED" name="ONE_MED" value="" ng-model="briggs.ONE_MED" />Medication monitoring/supervision
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 briggs-no-pad">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="checkbox checkbox-info">
+                                    <label for="ONE_TRAN" class="briggs-f-thin">
+                                        <input type="checkbox" id="ONE_TRAN" name="ONE_TRAN" value="" ng-model="briggs.ONE_TRAN" />Transportation
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 briggs-no-pad">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="checkbox checkbox-info">
+                                    <label for="ONE_SERV" class="briggs-f-thin">
+                                        <input type="checkbox" id="ONE_SERV" name="ONE_SERV" value="" ng-model="briggs.ONE_SERV" />Transition services
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row briggs-cont-row col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin-b briggs-mrg-thin-b">
+                        <div class="col-lg-4 col-sm-4 briggs-no-pad">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="checkbox checkbox-info">
+                                    <label for="ONE_CARE" class="briggs-f-thin">
+                                        <input type="checkbox" id="ONE_CARE" name="ONE_CARE" value="" ng-model="briggs.ONE_CARE" />Help with personal care
+                                    </label>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="row briggs-cont-row col-lg-12 col-sm-12 briggs-no-pad">
+                        List any other services you receive that are not included in the above list:
+                    </div>
+                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                        <textarea id="ONE_OTH_SERV" name="ONE_OTH_SERV" rows="5" cols="50" class="form-control briggs-control" spellcheck="true" ng-model="briggs.ONE_OTH_SERV" maxlength="210"></textarea>
+                    </div>
+                    <div class="row briggs-cont-row col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin-t briggs-mrg-thin-t">
+                        List any other services or activities that you feel you need but are <b>NOT</b> provided or arranged by CBRF
+                    </div>
+                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                        <textarea id="ONE_LIST_NOT" name="ONE_LIST_NOT" rows="5" cols="50" class="form-control briggs-control" spellcheck="true" ng-model="briggs.ONE_LIST_NOT" maxlength="210"></textarea>
+                    </div>
+                    <div class="row briggs-cont-row col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin-t briggs-mrg-thin-t">
+                        2. Overall, I am satisfied with the services provided by this facility
+                    </div>
+                    <div class="col-sm-12 col-lg-12 col-md-12 item  briggs-pad-l">                                    
+                        <div class="briggs-fl briggs-pad-l">
+                            <div class="radio radio-info briggs-cntrl-grp ">
+                                <label for="TWO_1">
+                                    <input name="TWO" type="radio" value="1" id="TWO_1" ng-model="briggs.TWO" />
+                                        Yes
+                                </label>
+                            </div>
+                        </div>
+                        <div class="briggs-fl briggs-pad-thick-lr">
+                            <div class="radio radio-info briggs-cntrl-grp ">
+                                <label for="TWO_2">
+                                    <input name="TWO" type="radio" value="2" id="TWO_2" ng-model="briggs.TWO" />
+                                        Somewhat
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="briggs-fl briggs-pad-thick-lr">
+                            <div class="radio radio-info briggs-cntrl-grp ">
+                                <label for="TWO_0">
+                                    <input name="TWO" type="radio" value="0" id="TWO_0" ng-model="briggs.TWO" />
+                                        No
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="briggs-fl briggs-pad-thick-lr">
+                            <div class="radio radio-info briggs-cntrl-grp ">
+                                <label for="TWO_3">
+                                    <input name="TWO" type="radio" value="3" id="TWO_3" ng-model="briggs.TWO" />
+                                        Don't Know
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="briggs-fl briggs-pad-thick-lr briggs-mrg-thin-t">
+                            Comments:
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                        <textarea id="TWO_COM" name="TWO_COM" rows="5" cols="50" class="form-control briggs-control" spellcheck="true" ng-model="briggs.TWO_COM" maxlength="210"></textarea>
+                    </div>
+                    <div class="row briggs-cont-row col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin-t briggs-mrg-thin-t">
+                        3. The care I receive is the kind of care I desire.
+                    </div>
+                    <div class="col-sm-12 col-lg-12 col-md-12 item  briggs-pad-l">                                    
+                        <div class="briggs-fl briggs-pad-l">
+                            <div class="radio radio-info briggs-cntrl-grp ">
+                                <label for="THREE_1">
+                                    <input name="THREE" type="radio" value="1" id="THREE_1" ng-model="briggs.THREE" />
+                                        Yes
+                                </label>
+                            </div>
+                        </div>
+                        <div class="briggs-fl briggs-pad-thick-lr">
+                            <div class="radio radio-info briggs-cntrl-grp ">
+                                <label for="THREE_2">
+                                    <input name="THREE" type="radio" value="2" id="THREE_2" ng-model="briggs.THREE" />
+                                        Somewhat
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="briggs-fl briggs-pad-thick-lr">
+                            <div class="radio radio-info briggs-cntrl-grp ">
+                                <label for="THREE_0">
+                                    <input name="THREE" type="radio" value="0" id="THREE_0" ng-model="briggs.THREE" />
+                                        No
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="briggs-fl briggs-pad-thick-lr">
+                            <div class="radio radio-info briggs-cntrl-grp ">
+                                <label for="THREE_3">
+                                    <input name="THREE" type="radio" value="3" id="THREE_3" ng-model="briggs.THREE_3" />
+                                        Don't Know
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="briggs-fl briggs-pad-thick-lr briggs-mrg-thin-t">
+                            Comments:
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                        <textarea id="THREE_COM" name="THREE_COM" rows="5" cols="50" class="form-control briggs-control" spellcheck="true" ng-model="briggs.THREE_COM" maxlength="210"></textarea>
+                    </div>
+                    <div class="row briggs-cont-row col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin-t briggs-mrg-thin-t">
+                        4. The facility meets my treatment prefernces (choice of doctors, pharmacy, etc.)
+                    </div>
+                    <div class="col-sm-12 col-lg-12 col-md-12 item  briggs-pad-l">                                    
+                        <div class="briggs-fl briggs-pad-l">
+                            <div class="radio radio-info briggs-cntrl-grp ">
+                                <label for="FOUR_1">
+                                    <input name="FOUR" type="radio" value="1" id="FOUR_1" ng-model="briggs.FOUR" />
+                                        Yes
+                                </label>
+                            </div>
+                        </div>
+                        <div class="briggs-fl briggs-pad-thick-lr">
+                            <div class="radio radio-info briggs-cntrl-grp ">
+                                <label for="FOUR_2">
+                                    <input name="FOUR" type="radio" value="2" id="FOUR_2" ng-model="briggs.FOUR_2" />
+                                        Somewhat
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="briggs-fl briggs-pad-thick-lr">
+                            <div class="radio radio-info briggs-cntrl-grp ">
+                                <label for="FOUR_0">
+                                    <input name="FOUR" type="radio" value="0" id="FOUR_0" ng-model="briggs.FOUR" />
+                                        No
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="briggs-fl briggs-pad-thick-lr">
+                            <div class="radio radio-info briggs-cntrl-grp ">
+                                <label for="FOUR_3">
+                                    <input name="FOUR" type="radio" value="3" id="FOUR_3" ng-model="briggs.FOUR" />
+                                        Don't Know
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="briggs-fl briggs-pad-thick-lr briggs-mrg-thin-t">
+                            Comments:
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                        <textarea id="FOUR_COM" name="FOUR_COM" rows="5" cols="50" class="form-control briggs-control" spellcheck="true" ng-model="briggs.FOUR_COM" maxlength="210"></textarea>
+                    </div>
+                    
+                    
+                    <div class="briggs-brd-thin-b">
+                    </div>
+
+                    
+                    <!--page 1 ends -->
+                    <!--footer starts -->
+                    
+                    <!--footer ends -->
+                    <!--paging-->
+                    
+                    <!--paging-->
+                </div>
+            </div>
+            <!--hidden fields starts-->
+            
+            <!--hidden fields ends -->
+        </div>
+    </div>
+    <!--form ends-->
+</body>
+</html>

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link href="../../../Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Content/css/main/briggs-main.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../../../Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../Scripts/match-height/jquery.matchHeight-min.js"></script>
+    <script src="../../../Scripts/page/common.js"></script>
+    <title>BRIGGS | EMPLOYEE IN-SERVICE/EDUCATIONAL ATTENDANCE RECORD</title>
+</head>
+<body class="test-rows">
+    <!--form starts-->
+    <div class="container">
+        <div id="Page-01" name="pagebreak" description="Topic">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+                    <!--header starts-->
+                    <div class="row briggs-cont-row">
+                        <div class="col-lg-12 col-sm-12 col-md-12 briggs-pg-title briggs-title-c  briggs-no-pad">
+                            EMPLOYEE IN-SERVICE/EDUCATIONAL ATTENDANCE RECORD
+                        </div>
+                    </div>
+                    <div class="row briggs-cont-row">
+                        <!--<div class="col-lg-12 col-sm-12 briggs-no-pad">
+                            <div class="col-lg-9 col-sm-7 col-md-8 briggs-no-pad">
+                                <div class="col-lg-2 col-sm-4 col-md-3 briggs-no-pad briggs-cntrl-grp">
+                                    <label for="EMP_NAME" class="briggs-f-thin">Employee Name:</label>
+                                </div>
+                                <div class="col-lg-10 col-sm-8 col-md-9 briggs-no-pad">
+                                    <input class="form-control briggs-control briggs-cntrl-grp" id="EMP_NAME" name="EMP_NAME" ng-model="briggs.EMP_NAME" maxlength="55" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-3  col-sm-5 col-md-4 briggs-no-pad">
+                                <div class="col-lg-5 col-sm-6  text-right briggs-no-pad briggs-cntrl-grp briggs-pad-l">
+                                    <label for="HIRE_DATE" class="briggs-f-thin briggs-mrg-l briggs-pad-l">Date of Hire:</label>
+                                </div>
+                                <div class="briggs-fl briggs-date-control briggs-no-pad briggs-pad-thick-l briggs-col-offs">
+                                    <input class="form-control briggs-control briggs-date-control briggs-cntrl-grp" id="HIRE_DATE" name="HIRE_DATE" ng-model="briggs.HIRE_DATE" maxlength="10" type="date">
+                                </div>
+                            </div>
+                        </div>-->
+                        <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                            <div class="col-lg-9 col-sm-7 col-md-8 briggs-no-pad">
+                                <div class="col-lg-2 col-sm-4 col-md-3 briggs-no-pad briggs-cntrl-grp">
+                                    <label for="EMP_NAME" class="briggs-f-thin">Employee Name:</label>
+                                </div>
+                                <div class="col-lg-10 col-sm-8 col-md-9 briggs-no-pad">
+                                    <input class="form-control briggs-control briggs-cntrl-grp" id="EMP_NAME" name="EMP_NAME" ng-model="briggs.EMP_NAME" maxlength="55" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-3  col-sm-5 col-md-4 briggs-no-pad">
+                                <div class="col-lg-5 col-sm-5  text-right briggs-no-pad briggs-cntrl-grp briggs-col-offs">
+                                    <label for="HIRE_DATE" class="briggs-f-thin briggs-mrg-l">Date of Hire:</label>
+                                </div>
+                                <div class="briggs-fl briggs-date-control briggs-fr briggs-no-pad briggs-col-offs">
+                                    <input class="form-control briggs-control briggs-date-control briggs-cntrl-grp" id="HIRE_DATE" name="HIRE_DATE" ng-model="briggs.HIRE_DATE" maxlength="10" type="date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                            <div class="col-lg-8 col-sm-7 col-md-8 briggs-no-pad">
+                                <div class="col-lg-2 col-sm-4 col-md-3 briggs-no-pad briggs-cntrl-grp">
+                                    <label for="POSIT" class="briggs-f-thin">Position:</label>
+                                </div>
+                                <div class="col-lg-10 col-sm-8 col-md-9 briggs-no-pad">
+                                    <input class="form-control briggs-control briggs-cntrl-grp" id="POSIT" name="POSIT" ng-model="briggs.POSIT" maxlength="55" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-4  col-sm-5 col-md-4 briggs-no-pad">
+                                <div class="col-lg-4 col-sm-5 col-md-5 briggs-no-pad text-right briggs-cntrl-grp">
+                                    <label for="SS_NO" class="briggs-f-thin">Social Security No.:</label>
+                                </div>
+                                <div class="col-lg-8 col-sm-7 col-md-7 briggs-no-pad">
+                                    <input class="form-control briggs-control briggs-cntrl-grp" id="SS_NO" name="SS_NO" ng-model="briggs.SS_NO" maxlength="12" type="text">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 briggs-mrg-thin-t briggs-no-pad">
+                                <em>Use the convenient check-off list below in addition to making a line item entry to document OSHA standard bloodborne pathogens training.</em>
+                            </div>
+                        </div>
+                    </div>
+                    <!--header ends -->
+                    <!--page starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-sec-header items-container briggs-brd-thin-b briggs-sec-hdr-black briggs-txt-w briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-no-pad item  briggs-header-txt briggs-brd-thin-r-w">
+                                    <div class="briggs-mrg-thick-t">Date</div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad item  briggs-header-txt briggs-brd-thin-r-w">
+                                    <div class="briggs-mrg-thick-t">Time</div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-no-pad item  briggs-header-txt briggs-brd-thin-r-w">
+                                    Topic
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4 briggs-no-pad item  briggs-header-txt">
+                                    Instructor (Name and Title)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_A_DATE" name="P1_A_DATE" ng-model="briggs.P1_A_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-time-control briggs-mrg-auto-lr" id="P1_A_TIME" name="P1_A_TIME" ng-model="briggs.P1_A_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_A_TOPIC" name="P1_A_TOPIC" spellcheck="true" ng-model="briggs.P1_A_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_A_INST" name="P1_A_INST" spellcheck="true" ng-model="briggs.P1_A_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_B_DATE" name="P1_B_DATE" ng-model="briggs.P1_B_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-time-control briggs-mrg-auto-lr" id="P1_B_TIME" name="P1_B_TIME" ng-model="briggs.P1_B_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_B_TOPIC" name="P1_B_TOPIC" spellcheck="true" ng-model="briggs.P1_B_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_B_INST" name="P1_B_INST" spellcheck="true" ng-model="briggs.P1_B_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_C_DATE" name="P1_C_DATE" ng-model="briggs.P1_C_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-time-control" id="P1_C_TIME" name="P1_C_TIME" ng-model="briggs.P1_C_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_C_TOPIC" name="P1_C_TOPIC" spellcheck="true" ng-model="briggs.P1_C_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_C_INST" name="P1_C_INST" spellcheck="true" ng-model="briggs.P1_C_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_D_DATE" name="P1_D_DATE" ng-model="briggs.P1_D_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-time-control" id="P1_D_TIME" name="P1_D_TIME" ng-model="briggs.P1_D_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_D_TOPIC" name="P1_D_TOPIC" spellcheck="true" ng-model="briggs.P1_D_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_D_INST" name="P1_D_INST" spellcheck="true" ng-model="briggs.P1_D_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_E_DATE" name="P1_E_DATE" ng-model="briggs.P1_E_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-time-control" id="P1_E_TIME" name="P1_E_TIME" ng-model="briggs.P1_E_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_E_TOPIC" name="P1_E_TOPIC" spellcheck="true" ng-model="briggs.P1_E_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_E_INST" name="P1_E_INST" spellcheck="true" ng-model="briggs.P1_E_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_F_DATE" name="P1_F_DATE" ng-model="briggs.P1_F_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-time-control" id="P1_F_TIME" name="P1_F_TIME" ng-model="briggs.P1_F_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_F_TOPIC" name="P1_F_TOPIC" spellcheck="true" ng-model="briggs.P1_F_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_F_INST" name="P1_F_INST" spellcheck="true" ng-model="briggs.P1_F_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_G_DATE" name="P1_G_DATE" ng-model="briggs.P1_G_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-time-control" id="P1_G_TIME" name="P1_G_TIME" ng-model="briggs.P1_G_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_G_TOPIC" name="P1_G_TOPIC" spellcheck="true" ng-model="briggs.P1_G_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_G_INST" name="P1_G_INST" spellcheck="true" ng-model="briggs.P1_G_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_H_DATE" name="P1_H_DATE" ng-model="briggs.P1_H_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-time-control" id="P1_H_TIME" name="P1_H_TIME" ng-model="briggs.P1_H_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_H_TOPIC" name="P1_H_TOPIC" spellcheck="true" ng-model="briggs.P1_H_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_H_INST" name="P1_H_INST" spellcheck="true" ng-model="briggs.P1_H_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_I_DATE" name="P1_I_DATE" ng-model="briggs.P1_I_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-time-control" id="P1_I_TIME" name="P1_I_TIME" ng-model="briggs.P1_I_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_I_TOPIC" name="P1_I_TOPIC" spellcheck="true" ng-model="briggs.P1_I_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_I_INST" name="P1_I_INST" spellcheck="true" ng-model="briggs.P1_I_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_J_DATE" name="P1_J_DATE" ng-model="briggs.P1_J_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-time-control" id="P1_J_TIME" name="P1_J_TIME" ng-model="briggs.P1_J_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_J_TOPIC" name="P1_J_TOPIC" spellcheck="true" ng-model="briggs.P1_J_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_J_INST" name="P1_J_INST" spellcheck="true" ng-model="briggs.P1_J_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_K_DATE" name="P1_K_DATE" ng-model="briggs.P1_K_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-time-control" id="P1_K_TIME" name="P1_K_TIME" ng-model="briggs.P1_K_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_K_TOPIC" name="P1_K_TOPIC" spellcheck="true" ng-model="briggs.P1_K_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_K_INST" name="P1_K_INST" spellcheck="true" ng-model="briggs.P1_K_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_L_DATE" name="P1_L_DATE" ng-model="briggs.P1_L_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-time-control" id="P1_L_TIME" name="P1_L_TIME" ng-model="briggs.P1_L_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_L_TOPIC" name="P1_L_TOPIC" spellcheck="true" ng-model="briggs.P1_L_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_L_INST" name="P1_L_INST" spellcheck="true" ng-model="briggs.P1_L_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_M_DATE" name="P1_M_DATE" ng-model="briggs.P1_M_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-time-control" id="P1_M_TIME" name="P1_M_TIME" ng-model="briggs.P1_M_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_M_TOPIC" name="P1_M_TOPIC" spellcheck="true" ng-model="briggs.P1_M_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_M_INST" name="P1_M_INST" spellcheck="true" ng-model="briggs.P1_M_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_N_DATE" name="P1_N_DATE" ng-model="briggs.P1_N_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-time-control" id="P1_N_TIME" name="P1_N_TIME" ng-model="briggs.P1_N_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_N_TOPIC" name="P1_N_TOPIC" spellcheck="true" ng-model="briggs.P1_N_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_N_INST" name="P1_N_INST" spellcheck="true" ng-model="briggs.P1_N_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_O_DATE" name="P1_O_DATE" ng-model="briggs.P1_O_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-time-control" id="P1_O_TIME" name="P1_O_TIME" ng-model="briggs.P1_O_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_O_TOPIC" name="P1_O_TOPIC" spellcheck="true" ng-model="briggs.P1_O_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_O_INST" name="P1_O_INST" spellcheck="true" ng-model="briggs.P1_O_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_P_DATE" name="P1_P_DATE" ng-model="briggs.P1_P_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-time-control" id="P1_P_TIME" name="P1_P_TIME" ng-model="briggs.P1_P_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_P_TOPIC" name="P1_P_TOPIC" spellcheck="true" ng-model="briggs.P1_P_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_P_INST" name="P1_P_INST" spellcheck="true" ng-model="briggs.P1_P_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_Q_DATE" name="P1_Q_DATE" ng-model="briggs.P1_Q_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-time-control" id="P1_Q_TIME" name="P1_Q_TIME" ng-model="briggs.P1_Q_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_Q_TOPIC" name="P1_Q_TOPIC" spellcheck="true" ng-model="briggs.P1_Q_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_Q_INST" name="P1_Q_INST" spellcheck="true" ng-model="briggs.P1_Q_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_R_DATE" name="P1_R_DATE" ng-model="briggs.P1_R_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-time-control" id="P1_R_TIME" name="P1_R_TIME" ng-model="briggs.P1_R_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_R_TOPIC" name="P1_R_TOPIC" spellcheck="true" ng-model="briggs.P1_R_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_R_INST" name="P1_R_INST" spellcheck="true" ng-model="briggs.P1_R_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_S_DATE" name="P1_S_DATE" ng-model="briggs.P1_S_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-time-control" id="P1_S_TIME" name="P1_S_TIME" ng-model="briggs.P1_S_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_S_TOPIC" name="P1_S_TOPIC" spellcheck="true" ng-model="briggs.P1_S_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_S_INST" name="P1_S_INST" spellcheck="true" ng-model="briggs.P1_S_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_T_DATE" name="P1_T_DATE" ng-model="briggs.P1_T_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-time-control" id="P1_T_TIME" name="P1_T_TIME" ng-model="briggs.P1_T_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_T_TOPIC" name="P1_T_TOPIC" spellcheck="true" ng-model="briggs.P1_T_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_T_INST" name="P1_T_INST" spellcheck="true" ng-model="briggs.P1_T_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  items-container briggs-brd-thin-b briggs-no-pad">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-date-control" id="P1_U_DATE" name="P1_U_DATE" ng-model="briggs.P1_U_DATE" maxlength="10" type="date">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <input class="form-control briggs-control briggs-mrg-t briggs-mrg-auto-lr briggs-time-control" id="P1_U_TIME" name="P1_U_TIME" ng-model="briggs.P1_U_TIME" maxlength="8" type="time">
+                                </div>
+                                <div class="col-lg-4 col-sm-4 briggs-pad-thick-lr  briggs-no-pad item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_U_TOPIC" name="P1_U_TOPIC" spellcheck="true" ng-model="briggs.P1_U_TOPIC" maxlength="90"></textarea>
+                                </div>
+                                <div class="col-lg-4 col-sm-3 col-md-4  briggs-pad-thick-lr item   briggs-brd-thin-r">
+                                    <textarea class="form-control briggs-control briggs-cntrl-grp" rows="2" cols="12" id="P1_U_INST" name="P1_U_INST" spellcheck="true" ng-model="briggs.P1_U_INST" maxlength="80"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- signature region -->
+                        
+                            <div class="row briggs-cont-row" name="signature_row" id="signature_row">
+                                <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                    <div class="col-lg-9 col-sm-12 col-md-9 briggs-no-pad briggs-mrg-thin-t">
+                                        <div class="col-lg-5 col-sm-5 col-md-6 briggs-no-pad-r briggs-cntrl-grp">
+                                            <label for="SIGN_A" class="briggs-f-thin">Signature/Title of Person Completing Form:</label>
+                                        </div>
+                                        <div class="col-lg-5 col-sm-5 col-md-4 briggs-no-pad-l" name="signature_container" id="signature_container">
+                                            <textarea class="form-control briggs-control briggs-cntrl-grp" id="SIGN_A" name="SIGN_A" rows="1" spellcheck="true" briggs-signature ng-model="briggs.SIGN_A" maxlength="40"></textarea>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-2 col-md-2 briggs-no-pad-l">
+                                            <input class="form-control briggs-control briggs-cntrl-grp" id="TITLE_SIGN_A" name="TITLE_SIGN_A" ng-model="briggs.TITLE_SIGN_A" maxlength="20" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3  col-sm-4 col-md-3 briggs-no-pad briggs-cntrl-grp">
+                                        <div class="col-lg-3 col-sm-3 col-md-3 briggs-no-pad-r briggs-cntrl-grp">
+                                            <label for="DATE_SIGN_A" class="briggs-f-thin">Date:</label>
+                                        </div>
+                                        <div class="col-lg-9 col-sm-9 col-md-9 briggs-no-pad-l">
+                                            <input class="form-control briggs-control briggs-cntrl-grp briggs-date-control" id="DATE_SIGN_A" name="DATE_SIGN_A" ng-model="briggs.DATE_SIGN_A" maxlength="10" type="date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        <!--end of signature -->
+
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-sec-header items-container briggs-brd-thin-b briggs-sec-hdr-black briggs-txt-w briggs-no-pad briggs-header-txt">
+                                OSHA Bloodborne Pathogens Training-Record corresponding date of in-service for all topics covered.<br />
+                                These items should have a corresponding entry above.
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad items-container">
+                                <div class="col-lg-4 col-sm-4 col-md-4 briggs-no-pad item briggs-brd-thin-r">
+								
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                        <div class="col-lg-5 col-sm-12 col-md-5 ">
+										<div class="radio radio-info briggs-cntrl-grp briggs-title-c">
+                                            <label for="TR_REG">
+                                                <input type="checkbox" id="TR_REG" name="TR_REG" ng-model="briggs.WALK_AMB">
+                                            </label>
+                                        </div>
+                                    </div>
+                                            
+									
+                                        <div class="col-lg-6 col-sm-12 col-md-7 briggs-cntrl-grp">
+                                            <label class="briggs-f-thin" for="TR_REG">Explanation of regs</label>
+                                        </div>
+                                    </div>
+									
+									
+									
+									
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                        <div class="col-lg-5 col-sm-12 col-md-5 ">
+										<div class="radio radio-info briggs-cntrl-grp briggs-title-c">
+										<label for="TR_EPID">
+                                            <input type="checkbox" id="TR_EPID" name="TR_EPID" ng-model="briggs.WALK_AMB">
+											 </label>
+                                        </div>
+										</div>
+                                        <div class="col-lg-7 col-sm-12 col-md-7 briggs-cntrl-grp">
+                                            <label class="briggs-f-thin" for="TR_EPID">Epidemiology & symptoms</label>
+                                        </div>
+                                    </div>
+									
+									
+									
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                        <div class="col-lg-5 col-sm-12 col-md-5">
+										<div class="radio radio-info briggs-cntrl-grp briggs-title-c">
+										 <label for="TR_MODE">
+                                             <input type="checkbox" id="TR_MODE" name="TR_MODE" ng-model="briggs.WALK_AMB">
+											  </label>
+											  </div>
+                                        </div>
+                                        <div class="col-lg-7 col-sm-12 col-md-7 briggs-cntrl-grp briggs-no-pad-r">
+                                            <label class="briggs-f-thin" for="TR_MODE">Modes of transmission</label>
+                                        </div>
+                                    </div>
+									
+									
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                        <div class="col-lg-5 col-sm-12 col-md-5">
+										<div class="radio radio-info briggs-cntrl-grp briggs-title-c">
+										 <label for="TR_PLAN">
+                                            <input type="checkbox" id="TR_PLAN" name="TR_PLAN" ng-model="briggs.WALK_AMB">
+											 </label>
+											 </div>
+                                        </div>
+                                        <div class="col-lg-7 col-sm-12 col-md-7 briggs-cntrl-grp briggs-no-pad-r">
+                                            <label class="briggs-f-thin" for="TR_PLAN">Exposure control plan</label>
+                                        </div>
+                                    </div>
+									
+                                </div>
+								
+								
+								
+                                <div class="col-lg-4 col-sm-4 col-md-4 briggs-no-pad item briggs-brd-thin-r">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-thin-t">
+                                        <div class="col-lg-5 col-sm-12 col-md-5">
+										<div class="radio radio-info briggs-cntrl-grp briggs-title-c">
+										 <label for="TR_REC">
+                                            <input type="checkbox" id="TR_REC" name="TR_REC" ng-model="briggs.WALK_AMB">
+											</label>
+											</div>
+                                        </div>
+                                        <div class="col-lg-7 col-sm-12 col-md-7 briggs-cntrl-grp">
+                                            <label class="briggs-f-thin" for="TR_REC">Recognizing tasks/activities that pose risk</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                        <div class="col-lg-5 col-sm-12 col-md-5">
+										<div class="radio radio-info briggs-cntrl-grp briggs-title-c">
+										 <label for="TR_REDUC">
+                                             <input type="checkbox"  id="TR_REDUC" name="TR_REDUC" ng-model="briggs.WALK_AMB">
+											 </label>
+											 </div>
+                                        </div>
+                                        <div class="col-lg-7 col-sm-12 col-md-7 briggs-cntrl-grp briggs-no-pad-r">
+                                            <label class="briggs-f-thin" for="TR_REDUC">Exposure prevention/reduction methods</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                        <div class="col-lg-5 col-sm-12 col-md-5">
+										<div class="radio radio-info briggs-cntrl-grp briggs-title-c">
+										 <label for="TR_PROT">
+                                           <input type="checkbox"  id="TR_PROT" name="TR_PROT" ng-model="briggs.WALK_AMB">
+										   </label>
+										   </div>
+                                        </div>
+                                        <div class="col-lg-7 col-sm-12 col-md-7 briggs-cntrl-grp briggs-no-pad-r">
+                                            <label class="briggs-f-thin" for="TR_PROT">Personal protective equipment</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                         <div class="col-lg-5 col-sm-12 col-md-5">
+										<div class="radio radio-info briggs-cntrl-grp briggs-title-c">
+										 <label for="TR_HEPB">
+                                          <input type="checkbox" id="TR_HEPB" name="TR_HEPB" ng-model="briggs.WALK_AMB">
+										  </label>
+										  </div>
+                                        </div>
+                                        <div class="col-lg-7 col-sm-8 col-md-7 briggs-cntrl-grp briggs-no-pad-r">
+                                            <label class="briggs-f-thin" for="TR_HEPB">Hepatitis B vaccine</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4 col-md-4 briggs-no-pad item">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-thin-t">
+                                        <div class="col-lg-5 col-sm-12 col-md-5">
+										<div class="radio radio-info briggs-cntrl-grp briggs-title-c">
+										 <label for="TR_RESP">
+                                             <input type="checkbox" id="TR_RESP" name="TR_RESP" ng-model="briggs.WALK_AMB">
+											 </label>
+											 </div>
+                                        </div>
+                                        <div class="col-lg-7 col-sm-8 col-md-7 briggs-cntrl-grp">
+                                            <label class="briggs-f-thin" for="TR_RESP">Reporting/responding to exposure occurrences</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                        <div class="col-lg-5 col-sm-12 col-md-5">
+										<div class="radio radio-info briggs-cntrl-grp briggs-title-c">
+										 <label for="TR_EMP">
+                                            <input type="checkbox"  id="TR_EMP" name="TR_EMP" ng-model="briggs.WALK_AMB">
+											</label>
+											 </div>
+                                        </div>
+                                        <div class="col-lg-7 col-sm-8 col-md-7 briggs-cntrl-grp briggs-no-pad-r">
+                                            <label class="briggs-f-thin" for="TR_EMP">Employer post-exposure evaluation & follow-up responsibilities</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                        <div class="col-lg-5 col-sm-12 col-md-5">
+										<div class="radio radio-info briggs-cntrl-grp briggs-title-c">
+										 <label for="TR_SIGN">
+                                            <input type="checkbox"   id="TR_SIGN" name="TR_SIGN" ng-model="briggs.WALK_AMB">
+											</label>
+											 </div>
+                                        </div>
+                                        <div class="col-lg-7 col-sm-8 col-md-7 briggs-cntrl-grp briggs-no-pad-r">
+                                            <label class="briggs-f-thin" for="TR_SIGN">Signs, labels and/or color coding</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--page ends-->
+                    <!--footer starts-->
+                    <div class="col-lg-12  col-sm-12 briggs-pg-footer">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-6 col-sm-6  briggs-no-pad">
+                                <span class="briggs-foot-fcode">Form 2119E</span>
+                                <span class="briggs-foot-cr">2/92</span>
+                                <span class="briggs-foot-cr">&copy; 1992 BRIGGS, Des Moines, IA (800) 247-2343</span><br />
+                                <span class="briggs-foot-cr briggs-foot-cr-mr">Unauthorized copying or use violates copyright law. www.BriggsCorp.com</span>
+                            </div>
+                            <div class="col-lg-2 col-sm-2 briggs-no-pad">
+                                <img src="../../../Content/images/briggs-logo.png" alt="" />
+                            </div>
+                            <div class="col-lg-4 col-sm-4 briggs-no-pad">
+                                <span class="briggs-foot-fname">
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--footer ends-->
+                </div>
+            </div>
+            <!--hidden fields -->
+            <input type="hidden" name="ACCOUNT_NAME" id="ACCOUNT_NAME" ng-model="briggs.ACCOUNT_NAME" />
+            <input type="hidden" name="ACCOUNT_ADDRESS1" id="ACCOUNT_ADDRESS1" ng-model="briggs.ACCOUNT_ADDRESS1" />
+            <input type="hidden" name="ACCOUNT_CITYSTATEZIP" id="ACCOUNT_CITYSTATEZIP" ng-model="briggs.ACCOUNT_CITYSTATEZIP" />
+            <input type="hidden" name="ACCOUNT_PHONE" id="ACCOUNT_PHONE" briggs-phone ng-model="briggs.ACCOUNT_PHONE" />
+            <input type="hidden" name="FORM_NAME" id="FORM_NAME" ng-model="briggs.FORM_NAME" />
+            <input type="hidden" name="FORM_REV" id="FORM_REV" ng-model="briggs.FORM_REV" />
+            <!--hidden fields ends -->
+        </div>
+    </div>
+
+    <!--form ends-->
+</body>
+</html>

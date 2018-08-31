@@ -1,0 +1,462 @@
+﻿<div id="Page-01" name="pagebreak" description="ALR COMMUNITY - FALL RISK ASSESSMENT">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+
+                    <!--header starts-->
+                    <div class="row briggs-cont-row">
+                        <div class="col-lg-12 col-sm-12  briggs-pg-title briggs-title-c">
+                            ALR COMMUNITY - FALL RISK ASSESSMENT
+                        </div>
+                    </div>
+                    <!--header starts-->
+                    <!--page 1 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-t briggs-no-pad-r">
+                                <div class="briggs-fl briggs-pad-thick-r">
+                                    <label for="NAME" class="briggs-f-thin">Individual's Name:</label>
+                                </div>
+                                <div class="col-lg-8 briggs-no-pad col-sm-6 col-md-7 briggs-mrg-thin-b">
+                                    <input class="form-control briggs-control" id="NAME" name="NAME" ng-model="briggs.NAME" maxlength="50" type="text">
+                                </div>
+                                <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                    <label for="DATE_IND" class="briggs-f-thin">Date:</label>
+                                </div>
+                                <div class="briggs-fl">
+                                    <input class="form-control briggs-control briggs-date-control" id="DATE_IND" name="DATE_IND" ng-model="briggs.DATE_IND" maxlength="10" type="date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-f-thick briggs-mrg-thick-t briggs-cntrl-grp">
+                                Physical Therapy (PT)/Occupational Therapy (OT) Assessment:
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp">
+                                Obtain any PT or OT assessments and review for fall-related information. Enter information as appropriate below.
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-f-thick briggs-brd-thin-b">
+                                <div class="briggs-cntrl-grp briggs-mrg-thick-b">                                    
+                                    Assistive Devices:
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-sec-hdr-gray briggs-brd-thin-b items-container">
+                                <div class="col-lg-3 col-sm-3 briggs-no-pad text-center briggs-brd-thin-r item">
+                                    <div class="briggs-cntrl-grp briggs-assessment-sec">
+                                        Type of Device
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad text-center briggs-brd-thin-r item">
+                                    <div class="briggs-cntrl-grp briggs-mrg-t">
+                                        Does individual<br> have this device?
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-3 briggs-no-pad text-center briggs-brd-thin-r item">
+                                    <div class="briggs-cntrl-grp">
+                                        How reliant is<br> individual on <br>device?
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad text-center briggs-brd-thin-r item">
+                                    <div class="briggs-cntrl-grp">
+                                        Does individual<br> use device when<br> needed?
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad text-center item">
+                                    <div class="briggs-cntrl-grp">
+                                        Does individual<br> use device <br>correctly?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin-b items-container">
+                                <div class="col-lg-3 col-sm-3 briggs-no-pad-r briggs-brd-thin-r item">
+                                    <div class="briggs-cntrl-grp">
+                                        Cane
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad text-center briggs-brd-thin-r item">
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="CANE_HAVE_1">
+                                                <input type="radio" id="CANE_HAVE_1" name="CANE_HAVE" value="1" ng-model="briggs.CANE_HAVE">Yes
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="CANE_HAVE_0">
+                                                <input type="radio" id="CANE_HAVE_0" name="CANE_HAVE" value="0" ng-model="briggs.CANE_HAVE">No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-3 briggs-no-pad briggs-pad-thin-lr briggs-brd-thin-r item">
+                                    <input class="form-control briggs-control briggs-cntrl-grp" id="CANE_HOW" name="CANE_HOW" ng-model="briggs.CANE_HOW" maxlength="25" type="text">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad text-center briggs-brd-thin-r item">
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="CANE_USE_1">
+                                                <input type="radio" id="CANE_USE_1" name="CANE_USE" value="1" ng-model="briggs.CANE_USE">Yes
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="CANE_USE_0">
+                                                <input type="radio" id="CANE_USE_0" name="CANE_USE" value="0" ng-model="briggs.CANE_USE">No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad text-center item">
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="CANE_COR_1">
+                                                <input type="radio" id="CANE_COR_1" name="CANE_COR" value="1" ng-model="briggs.CANE_COR">Yes
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="CANE_COR_0">
+                                                <input type="radio" id="CANE_COR_0" name="CANE_COR" value="0" ng-model="briggs.CANE_COR">No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin-b items-container">
+                                <div class="col-lg-3 col-sm-3 briggs-no-pad-r briggs-brd-thin-r item">
+                                    <div class="briggs-cntrl-grp">
+                                        Scooter
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad text-center briggs-brd-thin-r item">
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="SCOOT_HAVE_1">
+                                                <input type="radio" id="SCOOT_HAVE_1" name="SCOOT_HAVE" value="1" ng-model="briggs.SCOOT_HAVE">Yes
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="SCOOT_HAVE_0">
+                                                <input type="radio" id="SCOOT_HAVE_0" name="SCOOT_HAVE" value="0" ng-model="briggs.SCOOT_HAVE">No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-3 briggs-no-pad briggs-pad-thin-lr briggs-brd-thin-r item">
+                                    <input class="form-control briggs-control briggs-cntrl-grp" id="SCOOT_HOW" name="SCOOT_HOW" ng-model="briggs.SCOOT_HOW" maxlength="25" type="text">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad text-center briggs-brd-thin-r item">
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="SCOOT_USE_1">
+                                                <input type="radio" id="SCOOT_USE_1" name="SCOOT_USE" value="1" ng-model="briggs.SCOOT_USE">Yes
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="SCOOT_USE_0">
+                                                <input type="radio" id="SCOOT_USE_0" name="SCOOT_USE" value="0" ng-model="briggs.SCOOT_USE">No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad text-center item">
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="SCOOT_COR_1">
+                                                <input type="radio" id="SCOOT_COR_1" name="SCOOT_COR" value="1" ng-model="briggs.SCOOT_COR">Yes
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="SCOOT_COR_0">
+                                                <input type="radio" id="SCOOT_COR_0" name="SCOOT_COR" value="0" ng-model="briggs.SCOOT_COR">No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin-b items-container">
+                                <div class="col-lg-3 col-sm-3 briggs-no-pad-r briggs-brd-thin-r item">
+                                    <div class="briggs-cntrl-grp">
+                                        Walker
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad text-center briggs-brd-thin-r item">
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="WALK_HAVE_1">
+                                                <input type="radio" id="WALK_HAVE_1" name="WALK_HAVE" value="1" ng-model="briggs.WALK_HAVE">Yes
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="WALK_HAVE_0">
+                                                <input type="radio" id="WALK_HAVE_0" name="WALK_HAVE" value="0" ng-model="briggs.WALK_HAVE">No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-3 briggs-no-pad briggs-pad-thin-lr briggs-brd-thin-r item">
+                                    <input class="form-control briggs-control briggs-cntrl-grp" id="WALK_HOW" name="WALK_HOW" ng-model="briggs.WALK_HOW" maxlength="25" type="text">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad text-center briggs-brd-thin-r item">
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="WALK_USE_1">
+                                                <input type="radio" id="WALK_USE_1" name="WALK_USE" value="1" ng-model="briggs.WALK_USE">Yes
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="WALK_USE_0">
+                                                <input type="radio" id="WALK_USE_0" name="WALK_USE" value="0" ng-model="briggs.WALK_USE">No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad text-center item">
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="WALK_COR_1">
+                                                <input type="radio" id="WALK_COR_1" name="WALK_COR" value="1" ng-model="briggs.WALK_COR">Yes
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="WALK_COR_0">
+                                                <input type="radio" id="WALK_COR_0" name="WALK_COR" value="0" ng-model="briggs.WALK_COR">No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin-b items-container">
+                                <div class="col-lg-3 col-sm-3 briggs-no-pad-r briggs-brd-thin-r item">
+                                    <div class="briggs-cntrl-grp">
+                                        Wheelchair
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad text-center briggs-brd-thin-r item">
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="WHEEL_HAVE_1">
+                                                <input type="radio" id="WHEEL_HAVE_1" name="WHEEL_HAVE" value="1" ng-model="briggs.WHEEL_HAVE">Yes
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="WHEEL_HAVE_0">
+                                                <input type="radio" id="WHEEL_HAVE_0" name="WHEEL_HAVE" value="0" ng-model="briggs.WHEEL_HAVE">No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-3 briggs-no-pad briggs-pad-thin-lr briggs-brd-thin-r item">
+                                    <input class="form-control briggs-control briggs-cntrl-grp" id="WHEEL_HOW" name="WHEEL_HOW" ng-model="briggs.WHEEL_HOW" maxlength="25" type="text">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad text-center briggs-brd-thin-r item">
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="WHEEL_USE_1">
+                                                <input type="radio" id="WHEEL_USE_1" name="WHEEL_USE" value="1" ng-model="briggs.WHEEL_USE">Yes
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="WHEEL_USE_0">
+                                                <input type="radio" id="WHEEL_USE_0" name="WHEEL_USE" value="0" ng-model="briggs.WHEEL_USE">No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad text-center item">
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="WHEEL_COR_1">
+                                                <input type="radio" id="WHEEL_COR_1" name="WHEEL_COR" value="1" ng-model="briggs.WHEEL_COR">Yes
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="WHEEL_COR_0">
+                                                <input type="radio" id="WHEEL_COR_0" name="WHEEL_COR" value="0" ng-model="briggs.WHEEL_COR">No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin-b items-container">
+                                <div class="col-lg-3 col-sm-3 briggs-no-pad-r briggs-brd-thin-r item">
+                                    <div class="briggs-mrg-thin-t">
+                                        Other: <em>please specify</em>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad-l">
+                                        <input class="form-control briggs-control briggs-mrg-thick-b" id="OTHER_SPEC" name="OTHER_SPEC" ng-model="briggs.OTHER_SPEC" maxlength="25" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad text-center briggs-brd-thin-r item">
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                            <label for="OTHER_HAVE_1">
+                                                <input type="radio" id="OTHER_HAVE_1" name="OTHER_HAVE" value="1" ng-model="briggs.OTHER_HAVE">Yes
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                            <label for="OTHER_HAVE_0">
+                                                <input type="radio" id="OTHER_HAVE_0" name="OTHER_HAVE" value="0" ng-model="briggs.OTHER_HAVE">No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-3 briggs-no-pad briggs-pad-thin-lr briggs-brd-thin-r item">
+                                    <input class="form-control briggs-control briggs-cntrl-grp briggs-mrg-t" id="OTHER_HOW" name="OTHER_HOW" ng-model="briggs.OTHER_HOW" maxlength="25" type="text">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad text-center briggs-brd-thin-r item">
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                            <label for="OTHER_USE_1">
+                                                <input type="radio" id="OTHER_USE_1" name="OTHER_USE" value="1" ng-model="briggs.OTHER_USE">Yes
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                            <label for="OTHER_USE_0">
+                                                <input type="radio" id="OTHER_USE_0" name="OTHER_USE" value="0" ng-model="briggs.OTHER_USE">No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad text-center item">
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                            <label for="OTHER_COR_1">
+                                                <input type="radio" id="OTHER_COR_1" name="OTHER_COR" value="1" ng-model="briggs.OTHER_COR">Yes
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-md-6 briggs-no-pad">
+                                        <div class="radio radio-info briggs-cntrl-grp briggs-mrg-t">
+                                            <label for="OTHER_COR_0">
+                                                <input type="radio" id="OTHER_COR_0" name="OTHER_COR" value="0" ng-model="briggs.OTHER_COR">No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-f-thick briggs-cntrl-grp briggs-mrg-thick-t">
+                                Vision
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                <div class="briggs-col-offs">
+                                    <label class="briggs-f-thin" for="VIS_FALL">
+                                        Does individual have any visual impairment that puts them at risk for falls?
+                                    </label>
+                                    <textarea id="VIS_FALL" name="VIS_FALL" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.VIS_FALL" maxlength="240"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-t briggs-no-pad">
+                                <div class="col-lg-3 col-md-3 col-sm-4 briggs-no-pad-r">
+                                    <label class="briggs-f-thin briggs-col-offs" for="VIS_GLASS">Does individual wear glasses?</label>
+                                </div>
+                                <div class="col-lg-9 col-sm-8 col-md-9 briggs-no-pad-l">
+                                    <input id="VIS_GLASS" name="VIS_GLASS" class="form-control briggs-control briggs-mrg-thin-b" ng-model="briggs.VIS_GLASS" maxlength="80" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-t briggs-no-pad">
+                                <div class="col-lg-5 col-md-6 col-sm-8 briggs-no-pad-r">
+                                    <label class="briggs-f-thin briggs-col-offs" for="VIS_APP">Does individual wear the appropriate glasses to meet their need?</label>
+                                </div>
+                                <div class="col-lg-7 col-sm-4 col-md-6 briggs-no-pad-l">
+                                    <input id="VIS_APP" name="VIS_APP" class="form-control briggs-control briggs-mrg-thin-b" ng-model="briggs.VIS_APP" maxlength="50" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-f-thick briggs-cntrl-grp briggs-mrg-thick-t">
+                                Medication:
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                <div class="briggs-col-offs">
+                                    <label class="briggs-f-thin" for="MED_FALL">
+                                        Does the individual take medications that put them at increased risk for falls?
+                                    </label>
+                                    <textarea id="MED_FALL" name="MED_FALL" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MED_FALL" maxlength="240"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-f-thick briggs-cntrl-grp briggs-mrg-thick-t">
+                                Flat Surfaces:
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                <div class="briggs-col-offs">
+                                    <label class="briggs-f-thin" for="FLAT_TRAN">
+                                        Does the individual transition well between surfaces (e.g., carpet to tile, carpet to rug, etc.)?
+                                    </label>
+                                    <input id="FLAT_TRAN" name="FLAT_TRAN" class="form-control briggs-control briggs-mrg-thin-b" ng-model="briggs.FLAT_TRAN" maxlength="120" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                <div class="briggs-col-offs">
+                                    <label class="briggs-f-thin" for="FLAT_NAV">
+                                        Does the individual navigate objects safely (e.g., furniture, boxes, etc.)?
+                                    </label>
+                                    <textarea id="FLAT_NAV" name="FLAT_NAV" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.FLAT_NAV" maxlength="240"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-f-thick briggs-cntrl-grp briggs-mrg-thick-t">
+                                Stairs (if applicable):
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-t briggs-no-pad">
+                                <div class="col-lg-3 col-md-4 col-sm-5 briggs-no-pad-r">
+                                    <label class="briggs-f-thin briggs-col-offs" for="STAIR_RAIL">Does individual hold onto hand rails?</label>
+                                </div>
+                                <div class="col-lg-9 col-sm-7 col-md-8 briggs-no-pad-l">
+                                    <input id="STAIR_RAIL" name="STAIR_RAIL" class="form-control briggs-control briggs-mrg-thin-b" ng-model="briggs.STAIR_RAIL" maxlength="70" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-t briggs-no-pad">
+                                <div class="col-lg-4 col-md-4 col-sm-5 briggs-no-pad-r">
+                                    <label class="briggs-f-thin briggs-col-offs" for="STAIR_FOOT">Does individual place foot fully on stairs?</label>
+                                </div>
+                                <div class="col-lg-8 col-sm-7 col-md-8 briggs-no-pad-l">
+                                    <input id="STAIR_FOOT" name="STAIR_FOOT" class="form-control briggs-control briggs-mrg-thin-b" ng-model="briggs.STAIR_FOOT" maxlength="70" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-t briggs-no-pad">
+                                <div class="col-lg-3 col-md-4 col-sm-5 briggs-no-pad-r">
+                                    <label class="briggs-f-thin briggs-col-offs" for="STAIR_MISS">Does individual miss stairs?</label>
+                                </div>
+                                <div class="col-lg-9 col-sm-7 col-md-8 briggs-no-pad-l">
+                                    <input id="STAIR_MISS" name="STAIR_MISS" class="form-control briggs-control briggs-mrg-thick-b" ng-model="briggs.STAIR_MISS" maxlength="80" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--page 1 ends-->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 1 of 4 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+            <!-- hidden fields starts -->
+            <input type="hidden" name="FORM_NAME" id="FORM_NAME" ng-model="briggs.FORM_NAME">
+            <input type="hidden" name="FORM_REV" id="FORM_REV" ng-model="briggs.FORM_REV">
+            <!-- hidden fields ends -->
+        </div>

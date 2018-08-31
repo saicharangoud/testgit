@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <link href="../../../Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Content/css/main/briggs-main.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../../../Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../Scripts/match-height/jquery.matchHeight-min.js"></script>
+    <script src="../../../Scripts/page/common.js"></script>
+    <title>BRIGGS | ALR Community Pre-Admission Assessment</title>
+</head>
+<body class="test-rows">
+    <!--form starts -->
+    <div class="container">
+        <div id="Page-04" name="pagebreak" description="Medical">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+
+                    <!--header starts-->
+                    <div class="row briggs-cont-row">
+                        <div class="col-lg-12 col-sm-12 briggs-cntrl-grp briggs-no-pad">
+                            <div class="briggs-fl briggs-pad-thick-r">
+                                <label class="briggs-f-thin" for="NAME">Individual Name:</label>
+                            </div>
+                            <div class="col-lg-7 briggs-no-pad col-sm-5 col-md-6 briggs-mrg-thin-b">
+                                <input class="form-control briggs-control" id="NAME" name="NAME" ng-model="briggs.NAME" maxlength="45" type="text" />
+                            </div>
+                            <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                <label class="briggs-f-thin" for="DATE_ASSESS">Date of Assessment:</label>
+                            </div>
+                            <div class="briggs-fl">
+                                <input class="form-control briggs-control briggs-date-control" id="DATE_ASSESS" name="DATE_ASSESS" ng-model="briggs.DATE_ASSESS" maxlength="10" type="date" />
+                            </div>
+                        </div>
+                    </div>
+                    <!--header ends-->
+                    <!--page 4 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thick-t briggs-pg-title">
+                                Medical
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="briggs-col-offs">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin briggs-mrg-b">
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                            <label class="briggs-f-thin" for="MED_PHY">
+                                                Physician(s):
+                                            </label>
+                                            <textarea id="MED_PHY" name="MED_PHY" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MED_PHY" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 col-md-12">
+                                            <div class="briggs-fl briggs-mrg-thin-t">
+                                                Physician/PA/NPA Evaluation completed and returned:
+                                            </div>
+                                            <div class="briggs-fl briggs-mrg-thick-l">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="MED_NPA_1">
+                                                        <input type="radio" value="1" id="MED_NPA_1" name="MED_NPA" ng-model="briggs.MED_NPA">
+                                                        YES
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="briggs-fl briggs-col-offs">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="MED_NPA_0">
+                                                        <input type="radio" value="0" id="MED_NPA_0" name="MED_NPA" ng-model="briggs.MED_NPA">
+                                                        NO
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-t">
+                                            <div class="briggs-fl briggs-pad-thick-r">
+                                                <label class="briggs-f-thin" for="DATE_PHYSICAL">Date of last physical:</label>
+                                            </div>
+                                            <div class="col-lg-5 col-sm-5 col-md-5 briggs-mrg-thin-b briggs-no-pad-l">
+                                                <input class="form-control briggs-control briggs-date-control" id="DATE_PHYSICAL" name="DATE_PHYSICAL" ng-model="briggs.DATE_PHYSICAL" maxlength="10" type="date" />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MED_ALLER">
+                                                Allergies (medications, food, pets, latex, etc.):
+                                            </label>
+                                            <textarea id="MED_ALLER" name="MED_ALLER" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MED_ALLER" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MED_REACT">
+                                                Reactions due to allergies:
+                                            </label>
+                                            <textarea id="MED_REACT" name="MED_REACT" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MED_REACT" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MED_AUDIT">
+                                                Auditory impairment:
+                                            </label>
+                                            <textarea id="MED_AUDIT" name="MED_AUDIT" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MED_AUDIT" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MED_VIS">
+                                                Visual impairment:
+                                            </label>
+                                            <textarea id="MED_VIS" name="MED_VIS" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MED_VIS" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MED_DENT">
+                                                Wears dentures:
+                                            </label>
+                                            <textarea id="MED_DENT" name="MED_DENT" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MED_DENT" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MED_ALC">
+                                                Use of alcohol/tobacco/marijuana:
+                                            </label>
+                                            <textarea id="MED_ALC" name="MED_ALC" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MED_ALC" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-t briggs-no-pad">
+                                            <div class="col-lg-2 col-md-2 col-sm-3 briggs-no-pad-r">
+                                                <label class="briggs-f-thin" for="MED_SEIZ">Seizure Disorder:</label>
+                                            </div>
+                                            <div class="col-lg-10 col-sm-9 col-md-10 briggs-no-pad-l">
+                                                <textarea id="MED_SEIZ" name="MED_SEIZ" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MED_SEIZ" maxlength="200"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 col-md-12">
+                                            <div class="briggs-fl briggs-mrg-thin-t">
+                                                <em>If yes, is the seizure disorder controlled by medications?</em>
+                                            </div>
+                                            <div class="briggs-fl briggs-mrg-thick-l">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="MED_SEIZURE_1">
+                                                        <input type="radio" value="1" id="MED_SEIZURE_1" name="MED_SEIZURE" ng-model="briggs.MED_SEIZURE">
+                                                        YES
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="briggs-fl briggs-col-offs">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="MED_SEIZURE_0">
+                                                        <input type="radio" value="0" id="MED_SEIZURE_0" name="MED_SEIZURE" ng-model="briggs.MED_SEIZURE">
+                                                        NO
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                            <label class="briggs-f-thin" for="MED_DIAG">
+                                                Diagnoses: (attach if needed)
+                                            </label>
+                                            <textarea id="MED_DIAG" name="MED_DIAG" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MED_DIAG" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MED_DIET">
+                                                Diet (e.g., texture, therapeutic, sodium diabetic, etc.):
+                                            </label>
+                                            <textarea id="MED_DIET" name="MED_DIET" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MED_DIET" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MED_DOS">
+                                                Medications/dosages (attach if needed):
+                                            </label>
+                                            <textarea id="MED_DOS" name="MED_DOS" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MED_DOS" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MED_CHANGE">
+                                                Recent medication changes:
+                                            </label>
+                                            <textarea id="MED_CHANGE" name="MED_CHANGE" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MED_CHANGE" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MED_INDE">
+                                                If the individual requires injectable medication, document if they are able to manage injections independently.
+                                            </label>
+                                            <textarea id="MED_INDE" name="MED_INDE" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MED_INDE" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MED_OXY">
+                                                Able to manage own oxygen (if applicable):
+                                            </label>
+                                            <textarea id="MED_OXY" name="MED_OXY" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MED_OXY" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MED_ORD">
+                                                Court ordered medications:
+                                            </label>
+                                            <textarea id="MED_ORD" name="MED_ORD" class="form-control briggs-control briggs-mrg-thick-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MED_ORD" maxlength="440"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--page 4 ends-->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 4 of 14 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--form starts -->
+</body>
+</html>

@@ -1,0 +1,751 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link href="../../../Content/css/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Content/css/main/briggs-main.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../../../Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../Scripts/match-height/jquery.matchHeight-min.js"></script>
+    <script src="../../../Scripts/page/common.js"></script>
+    <title>BRIGGS | OCCUPATIONAL THERAPY COMPREHENSIVE ADULT ASSESSMENT</title>
+</head>
+<body class="test-rows">
+
+    <!--form starts -->
+    <div class="container">
+        <div id="Page-01" name="pagebreak" description="Name">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 briggs-mrg-t">
+
+                    <div class="row briggs-cont-row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pg-title briggs-title-c">
+                            VAMC
+                            SLUMS Examination
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 text-centre">
+                            Questions about this assessment tool? E-mail<a href="aging@slu.edu"> aging@slu.edu</a>
+                        </div>
+                    </div>
+                    <!--page 1 starts -->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 briggs-mrg-thin-t">
+                                <div class="col-lg-10 col-sm-10 col-md-10 briggs-no-pad">
+                                    <div class="col-lg-1 col-md-1 col-sm-1 briggs-no-pad briggs-mrg-thin-t">
+                                        <label for="NAME" class="briggs-f-thin">
+                                            Name
+                                        </label>
+                                    </div>
+                                    <div class="col-lg-11 col-md-11 col-sm-11 briggs-no-pad briggs-cntrl-grp">
+                                        <input class="form-control briggs-control" id="NAME" name="NAME" ng-model="briggs.NAME" maxlength="75" type="text" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 briggs-no-pad">
+                                    <div class="briggs-fl briggs-mrg-l briggs-mrg-thin-t briggs-pad-thick-r">
+                                        <label for="AGE" class="briggs-f-thin">
+                                            Age
+                                        </label>
+                                    </div>
+                                    <div class="col-lg-8 col-md-1 col-sm-2 briggs-no-pad briggs-cntrl-grp">
+                                        <input min="1" max="125" class="form-control briggs-control briggs-width-50" id="AGE" name="AGE" ng-model="briggs.AGE" maxlength="3" type="number" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 ">
+                                <div class="col-lg-5 col-sm-6 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-4 col-md-4 col-sm-5 briggs-no-pad briggs-cntrl-grp">
+                                        <label for="PAT_ALERT" class="briggs-f-thin">Is the patient alert?</label>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-7 briggs-no-pad briggs-cntrl-grp">
+                                        <input class="form-control briggs-control" id="PAT_ALERT" name="PAT_ALERT" ng-model="briggs.PAT_ALERT" maxlength="35" type="text" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-6 briggs-no-pad">
+                                    <div class="col-lg-3 briggs-pad-thick-r text-right col-md-3 briggs-no-pad col-sm-5 briggs-cntrl-grp">
+                                        <label for="EDU_LVL" class="briggs-f-thin">Level of education</label>
+                                    </div>
+                                    <div class="col-lg-9 col-md-9 col-sm-7 briggs-no-pad briggs-cntrl-grp">
+                                        <input class="form-control briggs-control" id="EDU_LVL" name="EDU_LVL" ng-model="briggs.EDU_LVL" maxlength="50" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 items-container">
+                                <div class="col-lg-1 col-sm-2 item col-md-2 briggs-no-pad-r briggs-brd-blue briggs-brd-thick-l briggs-brd-thick-r briggs-brd-thick-t">
+                                    <div class="briggs-fl briggs-width-50 briggs-mrg-thick-t">
+                                        <select name="ONE" id="ONE" class="form-control briggs-control" ng-model="briggs.ONE">
+                                            <option value="" selected="selected"></option>
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                        </select>
+                                    </div>
+                                    <div class="briggs-fl briggs-mrg-thick-t briggs-pad-thin-l briggs-pad-thin-tb">
+                                        /1
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-sm-10 col-md-10 briggs-no-pad item">
+                                    <div class="col-lg-1 col-sm-1 briggs-pad-thin-tb text-center briggs-mrg-thin-t">
+                                        <span class="briggs-circle">&#10102;</span>
+                                    </div>
+                                    <div class="col-lg-11 col-sm-11 briggs-pad-thin-tb briggs-f-thick briggs-mrg-thick-t">
+                                        <div class="briggs-width-4-pct briggs-fl">
+                                            1.
+                                        </div>
+                                        <div class="briggs-width-96-pct briggs-fl">
+                                            What day of the week is it?
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 items-container">
+                                <div class="col-lg-1 col-sm-2 item col-md-2 briggs-no-pad-r briggs-brd-blue briggs-brd-thick-l briggs-brd-thick-r">
+                                    <div class="briggs-fl briggs-width-50 briggs-mrg-thin-t">
+                                        <select name="TWO" id="TWO" class="form-control briggs-control" ng-model="briggs.TWO">
+                                            <option value="" selected="selected"></option>
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                        </select>
+                                    </div>
+                                    <div class="briggs-fl briggs-pad-thin-l briggs-pad-thin-tb briggs-mrg-thin-t">
+                                        /1
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-sm-10 col-md-10 briggs-no-pad item">
+                                    <div class="col-lg-1 col-sm-1 text-center">
+                                        <span class="briggs-circle">&#10102;</span>
+                                    </div>
+                                    <div class="col-lg-11 col-sm-11 briggs-pad-thin-tb briggs-f-thick briggs-mrg-thin-t">
+                                        <div class="briggs-width-4-pct briggs-fl">
+                                            2.
+                                        </div>
+                                        <div class="briggs-width-96-pct briggs-fl">
+                                            What is the year?
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 items-container">
+                                <div class="col-lg-1 col-sm-2 item col-md-2 briggs-no-pad-r briggs-brd-blue briggs-brd-thick-l briggs-brd-thick-r">
+                                    <div class="briggs-fl briggs-width-50 briggs-mrg-thin-t">
+                                        <select name="THREE" id="THREE" class="form-control briggs-control" ng-model="briggs.THREE">
+                                            <option value="" selected="selected"></option>
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                        </select>
+                                    </div>
+                                    <div class="briggs-fl briggs-pad-thin-l briggs-pad-thin-tb briggs-mrg-thin-t">
+                                        /1
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-sm-10 col-md-10 briggs-no-pad item">
+                                    <div class="col-lg-1 col-sm-1 text-center">
+                                        <span class="briggs-circle">&#10102;</span>
+                                    </div>
+                                    <div class="col-lg-11 col-sm-11 briggs-pad-thin-tb briggs-f-thick briggs-mrg-thin-t">
+                                        <div class="briggs-width-4-pct briggs-fl">
+                                            3.
+                                        </div>
+                                        <div class="briggs-width-96-pct briggs-fl">
+                                            What state are we in?
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 items-container">
+                                <div class="col-lg-1 col-sm-2 item col-md-2 briggs-no-pad-r briggs-brd-blue briggs-brd-thick-l briggs-brd-thick-r">
+
+                                </div>
+                                <div class="col-lg-11 col-sm-10 col-md-10 briggs-no-pad item">
+                                    <div class="col-lg-1 col-sm-1 text-center">
+
+                                    </div>
+                                    <div class="col-lg-11 col-sm-11 briggs-pad-thin-tb  briggs-mrg-thin-t">
+                                        <div class="briggs-width-4-pct briggs-fl briggs-f-thick">
+                                            4.
+                                        </div>
+                                        <div class="briggs-width-96-pct briggs-fl">
+                                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-f-thick">
+                                                Please remember these five objects. I will ask you what they are later.
+                                            </div>
+                                            <div class="col-lg-2 col-sm-2 col-md-2 briggs-no-pad text-center">
+                                                Apple
+                                            </div>
+                                            <div class="col-lg-2 col-sm-2 col-md-2 briggs-no-pad text-center">
+                                                Pen
+                                            </div>
+                                            <div class="col-lg-2 col-sm-2 col-md-2 briggs-no-pad text-center">
+                                                Tie
+                                            </div>
+                                            <div class="col-lg-2 col-sm-2 col-md-2 briggs-no-pad text-center">
+                                                House
+                                            </div>
+                                            <div class="col-lg-2 col-sm-2 col-md-2 briggs-no-pad text-center">
+                                                Car
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 items-container">
+                                <div class="col-lg-1 col-sm-2 item col-md-2 briggs-no-pad-r briggs-brd-blue briggs-brd-thick-l briggs-brd-thick-r">
+
+                                </div>
+                                <div class="col-lg-11 col-sm-10 col-md-10 briggs-no-pad item">
+                                    <div class="col-lg-1 col-sm-1 text-center">
+
+                                    </div>
+                                    <div class="col-lg-11 col-sm-11 briggs-pad-thin-tb briggs-f-thick briggs-mrg-thin-t">
+                                        <div class="briggs-width-4-pct briggs-fl">
+                                            5.
+                                        </div>
+                                        <div class="briggs-width-96-pct briggs-fl">
+                                            You have $100 and you go to the store and buy a dozen apples for $3 and a tricycle for $20.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 items-container">
+                                <div class="col-lg-1 col-sm-2 item col-md-2 briggs-no-pad-r briggs-brd-blue briggs-brd-thick-l briggs-brd-thick-r">
+
+                                </div>
+                                <div class="col-lg-11 col-sm-10 col-md-10 briggs-no-pad item">
+                                    <div class="col-lg-1 col-sm-1 text-center">
+                                        <span class="briggs-circle">&#10102;</span>
+                                    </div>
+                                    <div class="col-lg-11 col-sm-11 briggs-pad-thin-tb briggs-f-thick briggs-mrg-thin-t items-container">
+                                        <div class="briggs-width-4-pct briggs-fl item">
+
+                                        </div>
+                                        <div class="briggs-width-96-pct briggs-fl item">
+                                            How much did you spend?
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 items-container">
+                                <div class="col-lg-1 col-sm-2 item col-md-2 briggs-no-pad-r briggs-brd-blue briggs-brd-thick-l briggs-brd-thick-r">
+                                    <div class="briggs-fl briggs-width-50 briggs-mrg-thin-t">
+                                        <select name="FIVE" id="FIVE" class="form-control briggs-control" ng-model="briggs.FIVE">
+                                            <option value="" selected="selected"></option>
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                    <div class="briggs-fl briggs-pad-thin-l briggs-pad-thin-tb briggs-mrg-thin-t">
+                                        /3
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-sm-10 col-md-10 briggs-no-pad item">
+                                    <div class="col-lg-1 col-sm-1 text-center">
+                                        <span class="briggs-circle">&#10103;</span>
+                                    </div>
+                                    <div class="col-lg-11 col-sm-11 briggs-pad-thin-tb briggs-f-thick briggs-mrg-thin-t items-container">
+                                        <div class="briggs-width-4-pct briggs-fl item">
+
+                                        </div>
+                                        <div class="briggs-width-96-pct briggs-fl item">
+                                            How much do you have left?
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 items-container">
+                                <div class="col-lg-1 col-sm-2 item col-md-2 briggs-no-pad-r briggs-brd-blue briggs-brd-thick-l briggs-brd-thick-r">
+
+                                </div>
+                                <div class="col-lg-11 col-sm-10 col-md-10 briggs-no-pad item">
+                                    <div class="col-lg-1 col-sm-1 text-center">
+
+                                    </div>
+                                    <div class="col-lg-11 col-sm-11 briggs-pad-thin-tb briggs-f-thick briggs-mrg-thin-t">
+                                        <div class="briggs-width-4-pct briggs-fl ">
+                                            6.
+                                        </div>
+                                        <div class="briggs-width-96-pct briggs-fl">
+                                            Please name as many animals as you can in one minute.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 items-container">
+                                <div class="col-lg-1 col-sm-2 item col-md-2 briggs-no-pad-r briggs-brd-blue briggs-brd-thick-l briggs-brd-thick-r">
+                                    <div class="briggs-fl briggs-width-50 briggs-mrg-thin-t briggs-pad-thin-tb">
+                                        <select name="SIX" id="SIX" class="form-control briggs-control" ng-model="briggs.SIX">
+                                            <option value="" selected="selected"></option>
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                    <div class="briggs-fl briggs-pad-thin-l briggs-mrg-thick-t">
+                                        /3
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-sm-10 col-md-10 briggs-no-pad item">
+                                    <div class="col-lg-1 col-sm-1 text-center">
+
+                                    </div>
+                                    <div class="col-lg-11 col-sm-11 briggs-pad-thin-tb briggs-f-thick items-container">
+                                        <div class="briggs-width-4-pct briggs-fl item">
+
+                                        </div>
+                                        <div class="col-lg-11 col-sm-11 briggs-no-pad item">
+                                            <div class="col-lg-3 col-sm-4 col-md-3  briggs-no-pad text-center">
+                                                <div class="briggs-fl briggs-pad-thick-r briggs-col-offs">
+                                                    <span class="briggs-circle">&#x1F10C;</span>
+                                                </div>
+                                                <div class="briggs-fl briggs-f-thin briggs-pad-thick-r briggs-mrg-thin-t briggs-pad-thin-tb">
+                                                    0-4 animals
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-sm-4 col-md-3 briggs-no-pad text-center">
+                                                <div class="briggs-fl briggs-pad-thick-r">
+                                                    <span class="briggs-circle">&#10102;</span>
+                                                </div>
+                                                <div class="briggs-fl briggs-pad-thick-r briggs-f-thin briggs-mrg-thin-t briggs-pad-thin-tb">
+                                                    5-9 animals
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-sm-4 col-md-3 briggs-no-pad text-center">
+                                                <div class="briggs-fl briggs-pad-thick-r">
+                                                    <span class="briggs-circle">&#10103;</span>
+                                                </div>
+                                                <div class="briggs-fl briggs-pad-thick-r briggs-mrg-thin-t briggs-pad-thin-tb">
+                                                    10-14 animals
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-sm-4 col-md-3 briggs-no-pad text-center">
+                                                <div class="briggs-fl briggs-pad-thick-r briggs-col-offs">
+                                                    <span class="briggs-circle">&#10104;</span>
+                                                </div>
+                                                <div class="briggs-fl briggs-pad-thick-r briggs-mrg-thin-t briggs-pad-thin-tb">
+                                                    15+ animals
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 items-container">
+                                <div class="col-lg-1 col-sm-2 item col-md-2 briggs-no-pad-r briggs-brd-blue briggs-brd-thick-l briggs-brd-thick-r">
+                                    <div class="briggs-fl briggs-width-50 briggs-mrg-thin-t">
+                                        <select name="SEVEN" id="SEVEN" class="form-control briggs-control" ng-model="briggs.SEVEN">
+                                            <option value="" selected="selected"></option>
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                    <div class="briggs-fl briggs-pad-thin-l briggs-pad-thin-tb briggs-mrg-thin-t">
+                                        /5
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-sm-10 col-md-10 briggs-no-pad item">
+                                    <div class="col-lg-1 col-sm-1 text-center">
+
+                                    </div>
+                                    <div class="col-lg-11 col-sm-11 briggs-pad-thin-tb briggs-f-thick briggs-mrg-thin-t">
+                                        <div class="briggs-width-4-pct briggs-fl">
+                                            7.
+                                        </div>
+                                        <div class="briggs-width-96-pct briggs-fl">
+                                            What were the five objects I asked you to remember? 1 point for each one correct.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 items-container">
+                                <div class="col-lg-1 col-sm-2 item col-md-2 briggs-no-pad-r briggs-brd-blue briggs-brd-thick-l briggs-brd-thick-r">
+
+                                </div>
+                                <div class="col-lg-11 col-sm-10 col-md-10 briggs-no-pad-l item">
+                                    <div class="col-lg-1 col-sm-1 text-center">
+
+                                    </div>
+                                    <div class="col-lg-11 col-sm-11 briggs-pad-thin-tb briggs-f-thick briggs-mrg-thin-t">
+                                        <div class="briggs-width-4-pct briggs-fl">
+                                            8.
+                                        </div>
+                                        <div class="briggs-width-96-pct briggs-fl">
+                                            I am going to give you a series of numbers and I would like you to give them to me
+                                            backwards. For example, if I say 42, you would say 24.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 items-container">
+                                <div class="col-lg-1 col-sm-2 item col-md-2 briggs-no-pad-r briggs-brd-blue briggs-brd-thick-l briggs-brd-thick-r">
+                                    <div class="briggs-fl briggs-width-50 briggs-mrg-thin-t briggs-pad-thin-tb">
+                                        <select name="EIGHT" id="EIGHT" class="form-control briggs-control" ng-model="briggs.EIGHT">
+                                            <option value="" selected="selected"></option>
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                    </div>
+                                    <div class="briggs-fl briggs-pad-thin-l briggs-mrg-thick-t">
+                                        /2
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-sm-10 col-md-10 briggs-no-pad item">
+                                    <div class="col-lg-1 col-sm-1 text-center">
+
+                                    </div>
+                                    <div class="col-lg-11 col-sm-11 briggs-pad-thin-tb briggs-f-thick items-container">
+                                        <div class="briggs-width-4-pct briggs-fl item">
+
+                                        </div>
+                                        <div class="col-lg-11 col-sm-11 briggs-no-pad item">
+                                            <div class="col-lg-2 col-sm-4 col-md-3 briggs-no-pad text-center">
+                                                <div class="briggs-fl briggs-pad-thick-r briggs-f-thick briggs-col-offs">
+                                                    <span class="briggs-circle">&#x1F10C;</span>
+                                                </div>
+                                                <div class="briggs-fl briggs-pad-thick-r briggs-mrg-thin-t briggs-pad-thin-tb">
+                                                    87
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-sm-4 col-md-3 briggs-no-pad text-center">
+                                                <div class="briggs-fl briggs-pad-thick-r briggs-f-thick">
+                                                    <span class="briggs-circle">&#10102;</span>
+                                                </div>
+                                                <div class="briggs-fl briggs-pad-thick-r briggs-mrg-thin-t briggs-pad-thin-tb">
+                                                    648
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-sm-4 col-md-3 briggs-no-pad text-center">
+                                                <div class="briggs-fl briggs-pad-thick-r briggs-f-thick">
+                                                    <span class="briggs-circle">&#10103;</span>
+                                                </div>
+                                                <div class="briggs-fl briggs-pad-thick-r briggs-mrg-thin-t briggs-pad-thin-tb">
+                                                    8537
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 items-container">
+                                <div class="col-lg-1 col-sm-2 item col-md-2 briggs-no-pad-r briggs-brd-blue briggs-brd-thick-l briggs-brd-thick-r">
+
+                                </div>
+                                <div class="col-lg-11 col-sm-10 col-md-10 briggs-no-pad-l item">
+                                    <div class="col-lg-1 col-sm-1 text-center">
+
+                                    </div>
+                                    <div class="col-lg-10 col-sm-10 briggs-pad-thin-tb briggs-f-thick briggs-mrg-thin-t">
+                                        <div class="briggs-width-4-pct briggs-fl   briggs-mrg-t">
+                                            9.
+                                        </div>
+                                        <div class="col-lg-11 col-sm-11 col-md-9   briggs-no-pad briggs-mrg-t">
+                                            This is a clock face. Please put in the hour markers and the time at
+                                            ten minutes to eleven o'clock.
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-1 col-sm-1 col-md-3 briggs-no-pad">
+                                        <img src="../../../Content/images/briggs-circle.png" alt="" class="briggs-img-inl img-responsive">
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 briggs-no-pad ">
+                                        <div class="col-lg-1 col-sm-1 briggs-no-pad text-center">
+                                            <span class="briggs-circle">❷</span>
+                                        </div>
+
+                                        <div class="col-lg-11 col-sm-11 briggs-pad-thin-tb  items-container briggs-f-thin briggs-mrg-thin-t">
+                                            <div class="briggs-width-4-pct briggs-fl item">
+                                            </div>  <div class="col-lg-3 col-md-3 col-sm-4  briggs-no-pad item">
+                                                Hour markers okay
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 items-container">
+                                <div class="col-lg-1 col-sm-2 item col-md-2 briggs-no-pad-r briggs-brd-blue briggs-brd-thick-l briggs-brd-thick-r">
+                                    <div class="briggs-fl briggs-width-50 briggs-mrg-thin-t">
+                                        <select name="NINE" id="NINE" class="form-control briggs-control" ng-model="briggs.NINE">
+                                            <option value="" selected="selected"></option>
+                                            <option value="0">0</option>
+                                            <option value="2">2</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                    </div>
+                                    <div class="briggs-fl briggs-pad-thin-l briggs-pad-thin-tb briggs-mrg-thin-t">
+                                        /4
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-sm-10 col-md-10 briggs-no-pad item">
+                                    <div class="col-lg-1 col-sm-1 text-center">
+                                        <span class="briggs-circle">❷</span>
+                                    </div>
+                                    <div class="col-lg-11 col-sm-11 briggs-pad-thin-tb briggs-f-thin briggs-mrg-thin-t items-container">
+                                        <div class="briggs-width-4-pct briggs-fl item">
+
+                                        </div>  <div class="col-lg-3 col-md-3 col-sm-4 briggs-no-pad item">
+                                            Time correct
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 items-container">
+                                <div class="col-lg-1 col-sm-2 item col-md-2 briggs-no-pad-r briggs-brd-blue briggs-brd-thick-l briggs-brd-thick-r">
+
+                                </div>
+                                <div class="col-lg-11 col-sm-10 col-md-10 briggs-no-pad item">
+                                    <div class="col-lg-1 col-sm-1 text-center">
+                                        <span class="briggs-circle">❶</span>
+                                    </div>
+                                    <div class="col-lg-11 col-sm-11 briggs-pad-thin-tb briggs-f-thick briggs-mrg-thin-t items-container">
+                                        <div class="briggs-width-4-pct briggs-fl item">
+                                            10.
+                                        </div>
+                                        <div class="briggs-fl item">
+                                            Please place an X in the triangle.
+                                        </div>
+                                        <div class="briggs-fl item">
+                                            <img src="../../../Content/images/briggs-rect.png" alt="" class="briggs-img-inl img-responsive" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 items-container">
+                                <div class="col-lg-1 col-sm-2 item col-md-2 briggs-no-pad-r briggs-brd-blue briggs-brd-thick-l briggs-brd-thick-r">
+                                    <div class="briggs-fl briggs-width-50 briggs-mrg-thin-t">
+                                        <select name="TEN" id="TEN" class="form-control briggs-control" ng-model="briggs.TEN">
+                                            <option value="" selected="selected"></option>
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                    </div>
+                                    <div class="briggs-fl briggs-pad-thin-l briggs-pad-thin-tb briggs-mrg-thin-t">
+                                        /2
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-sm-10 col-md-10 briggs-no-pad item">
+                                    <div class="col-lg-1 col-sm-1 text-center">
+                                        <span class="briggs-circle">❷</span>
+                                    </div>
+                                    <div class="col-lg-11 col-sm-11 briggs-pad-thin-tb briggs-f-thick briggs-mrg-thin-t items-container">
+                                        <div class="briggs-width-4-pct briggs-fl item">
+
+                                        </div>
+                                        <div class="briggs-width-96-pct briggs-fl item">
+                                            Which of the above figures is largest?
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 items-container">
+                                <div class="col-lg-1 col-sm-2 item col-md-2 briggs-no-pad-r briggs-brd-blue briggs-brd-thick-l briggs-brd-thick-r">
+
+                                </div>
+                                <div class="col-lg-11 col-sm-10 col-md-10 briggs-no-pad-l item">
+                                    <div class="col-lg-1 col-sm-1 text-center">
+
+                                    </div>
+                                    <div class="col-lg-11 col-sm-11 briggs-pad-thin-tb  briggs-mrg-thin-t">
+                                        <div class="briggs-width-4-pct briggs-fl">
+                                            11.
+                                        </div>
+                                        <div class="briggs-width-96-pct briggs-fl briggs-f-thick ">
+                                            I am going to tell you a story. Please listen carefully because afterwards, I'm going to ask
+                                            you some questions about it.<div class="briggs-col-offs briggs-f-thin">
+                                                Jill was a very successful stockbroker. She made a lot of money on the stock market. She then met Jack, a devastatingly handsome man. She married him and had three children. They lived in Chicago. She then stopped work and stayed at home to bring up her children. When they were teenagers, she went back to work. She and Jack lived happily ever after.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 items-container">
+                                <div class="col-lg-1 col-sm-2 item col-md-2 briggs-no-pad-r briggs-brd-blue briggs-brd-thick-l briggs-brd-thick-r">
+
+                                </div>
+                                <div class="col-lg-11 col-sm-10 col-md-10 briggs-no-pad item">
+                                    <div class="col-lg-1 col-sm-1 text-center">
+
+                                    </div>
+                                    <div class="col-lg-11 col-sm-11 briggs-pad-thin-tb briggs-f-thick briggs-mrg-thin-t items-container">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-6 briggs-no-pad">
+                                                <div class="briggs-width-4-pct briggs-fl item">
+                                                    <span class="briggs-circle">❷</span>
+                                                </div>
+                                                <div class=" briggs-cntrl-grp briggs-mrg-l briggs-fl item">
+                                                    What was the female's name?
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 briggs-no-pad">
+                                                <div class="briggs-width-4-pct briggs-fl item">
+                                                    <span class="briggs-circle">❷</span>
+                                                </div>
+                                                <div class="briggs-mrg-l briggs-cntrl-grp briggs-fl item">
+                                                    What work did she do?
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 items-container">
+                                <div class="col-lg-1 col-sm-2 item col-md-2 briggs-no-pad-r briggs-brd-blue briggs-brd-thick-b briggs-brd-thick-l briggs-brd-thick-r">
+                                    <div class="briggs-fl briggs-width-50 briggs-mrg-thin-t">
+                                        <select name="ELEVEN" id="ELEVEN" class="form-control briggs-control" ng-model="briggs.ELEVEN">
+                                            <option value="" selected="selected"></option>
+                                            <option value="0">0</option>
+                                            <option value="2">2</option>
+                                            <option value="4">4</option>
+                                            <option value="6">6</option>
+                                            <option value="8">8</option>
+                                        </select>
+                                    </div>
+                                    <div class="briggs-fl briggs-pad-thin-l briggs-pad-thin-tb briggs-mrg-thin-t">
+                                        /8
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-sm-10 col-md-10 briggs-no-pad item">
+                                    <div class="col-lg-1 col-sm-1 text-center">
+
+                                    </div>
+                                    <div class="col-lg-11 col-sm-11 briggs-pad-thin-tb briggs-f-thick briggs-mrg-thin-t items-container">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-6 briggs-no-pad">
+                                                <div class="briggs-width-4-pct briggs-fl item">
+                                                    <span class="briggs-circle">❷</span>
+                                                </div>
+                                                <div class=" briggs-cntrl-grp briggs-mrg-l briggs-fl item">
+                                                    When did she go back to work?
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 briggs-no-pad">
+                                                <div class="briggs-width-4-pct briggs-fl item">
+                                                    <span class="briggs-circle">❷</span>
+                                                </div>
+                                                <div class="briggs-mrg-l briggs-cntrl-grp briggs-fl item">
+                                                    What state did she live in?
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 briggs-mrg-b">
+                                <div class="col-lg-1 col-md-1 col-sm-2 briggs-col-offs briggs-brd-thick-b">
+                                    <select id="TOTAL" name="TOTAL" class="form-control briggs-mrg-thick-b briggs-mrg-thick-t briggs-control" ng-model="briggs.TOTAL">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="11">11</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-3 briggs-mrg-l briggs-no-pad-r briggs-f-thick">
+                                    <div class="briggs-col-offs briggs-mrg-thick-t  briggs-mrg-thick-b"> TOTAL SCORE</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 briggs-sec-hdr-blue briggs-sec-header briggs-header-txt briggs-txt-w">
+                                SCORING
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 briggs-no-pad briggs-sec-clr-lblue">
+                                <div class="col-lg-12 col-md-12 col-sm-12 briggs-f-thick">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 briggs-mrg-thick-t">High School Education</div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 text-right briggs-mrg-thick-t">Less than High School Education</div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="col-lg-1 col-md-2 col-sm-2">27-30</div>
+                                    <div class="col-lg-4 col-md-3 col-sm-2 briggs-no-pad-l">
+
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-4 text-center">
+                                        Normal
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-2">
+                                    </div>
+                                    <div class="col-lg-1 col-md-1 col-sm-2 text-center">25-30</div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="col-lg-1 col-md-2 col-sm-2">27-30</div>
+                                    <div class="col-lg-4 col-md-3 col-sm-2 briggs-no-pad-l">
+
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-4 briggs-no-pad text-center">
+                                        Mild Neurocognitive Disorder
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-2">
+
+                                    </div>
+                                    <div class="col-lg-1 col-md-1 col-sm-2 text-center">25-30</div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12  briggs-brd-thick-b">
+                                    <div class="col-lg-1 col-md-2 col-sm-2 briggs-mrg-thick-b">27-30</div>
+                                    <div class="col-lg-4 col-md-3 col-sm-2 briggs-no-pad-l">
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-4  text-center">
+                                        Dementia
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-2 briggs-no-pad-l">
+
+                                    </div>
+                                    <div class="col-lg-1 col-md-1 col-sm-2  text-center">1-19</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--signature region-->
+                        <div class="row briggs-cont-row" id="signature_row" name="signature_row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 briggs-mrg-t briggs-mrg-b">
+                                <div name="signature_container" id="signature_container">
+                                    <div class="col-lg-9 col-md-8 col-sm-7 briggs-no-pad-l briggs-cntrl-grp">
+                                        <textarea rows="3" cols="12" class="form-control briggs-control" id="SIGN_A" name="SIGN_A" spellcheck="true" briggs-signature ng-model="briggs.SIGN_A" maxlength="65"></textarea>
+                                        <label for="SIGN_A" class="briggs-f-thin">CLINICIAN'S SIGNATURE</label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-date-control briggs-cntrl-grp">
+                                    <input class="form-control briggs-control" id="DATE_SIGN_A" name="DATE_SIGN_A" ng-model="briggs.DATE_SIGN_A" maxlength="10" type="date" />
+                                    <label for="DATE_SIGN_A" class="briggs-f-thin">  DATE</label>
+                                </div>
+                                <div class="briggs-fl briggs-time-control briggs-mrg-l briggs-cntrl-grp">
+                                    <input class="form-control briggs-control" id="TIME_SIGN_A" name="TIME_SIGN_A" ng-model="briggs.TIME_SIGN_A" maxlength="8" type="time" />
+                                    <label for="TIME_SIGN_A" class="briggs-f-thin">  TIME</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 briggs-mrg-b">
+                                SH Tariq, N Tumosa, JT Chibnall, HM Perry III, and JE Morley. The Saint Louis University Mental Status (SLUMS) Examination for detecting mild cognitive impairment and dementia is more sensitive than the Mini-Mental Status Examination (MMSE) - A pilot study. Am J Geriatr Psych 14:900-10, 2006.
+                            </div>
+                        </div>
+                        <!--end of signature region-->
+                    </div>
+                    <!--page 1 ends-->
+                </div>
+            </div>
+            <!--hidden fields starts-->
+            <input type="hidden" name="FORM_NAME" id="FORM_NAME" ng-model="briggs.FORM_NAME" />
+            <input type="hidden" name="FORM_REV" id="FORM_REV" ng-model="briggs.FORM_REV" />
+            <!--hidden fields ends-->
+        </div>
+    </div>
+    <!--form ends-->
+</body>
+</html>

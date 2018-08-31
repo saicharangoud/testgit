@@ -1,0 +1,305 @@
+﻿<div id="Page-01" name="pagebreak" description="ALR Community">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+
+                    <!--header starts-->
+                    <div class="row briggs-cont-row">
+                        <div class="col-lg-12 col-sm-12 col-md-12  briggs-no-pad briggs-pg-title briggs-title-c">
+                            ALR Community Pre-Admission Assessment
+                        </div>
+                    </div>
+                    <!--header ends-->
+                    <!--page 1 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad briggs-mrg-thick-t">
+                                <div class="col-lg-2 col-sm-3 col-md-3">
+                                    <label for="DATE_ASSESS" class="briggs-f-thin">
+                                        Date of assessment:
+                                    </label>
+                                </div>
+                                <div class="briggs-fl briggs-mrg-thin-b">
+                                    <input class="form-control briggs-control briggs-date-control" id="DATE_ASSESS" name="DATE_ASSESS" ng-model="briggs.DATE_ASSESS" maxlength="10" type="date">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad briggs-mrg-thin-t">
+                                <div class="col-lg-2 col-sm-3 col-md-3 briggs-no-pad-r">
+                                    <label for="LOC_ASSESS" class="briggs-f-thin">Location of assessment:</label>
+                                </div>
+                                <div class="col-lg-10 col-sm-9 col-md-9 briggs-no-pad-l briggs-mrg-thin-b">
+                                    <input class="form-control briggs-control" id="LOC_ASSESS" name="LOC_ASSESS" ng-model="briggs.LOC_ASSESS" maxlength="75" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad briggs-mrg-thin-t">
+                                <div class="col-lg-2 col-sm-3 col-md-3 briggs-no-pad-r">
+                                    <label for="NAME" class="briggs-f-thin">Name:</label>
+                                </div>
+                                <div class="col-lg-10 briggs-mrg-thin-b col-sm-9 col-md-9 briggs-no-pad-l">
+                                    <input class="form-control briggs-control" id="NAME" name="NAME" ng-model="briggs.NAME" maxlength="45" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad briggs-mrg-thin-t">
+                                <div class="col-lg-2 col-sm-3 col-md-3 briggs-no-pad-r">
+                                    <label for="NAME_PREF" class="briggs-f-thin">Preferred name:</label>
+                                </div>
+                                <div class="col-lg-10 briggs-mrg-thin-b col-sm-9 col-md-9 briggs-no-pad-l">
+                                    <input class="form-control briggs-control" id="NAME_PREF" name="NAME_PREF" ng-model="briggs.NAME_PREF" maxlength="100" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad briggs-mrg-thin-t">
+                                <div class="col-lg-2 col-sm-3 col-md-3 briggs-no-pad-r">
+                                    <label for="AGE" class="briggs-f-thin">Age:</label>
+                                </div>
+                                <div class="col-lg-10 briggs-mrg-thin-b col-sm-9 col-md-9 briggs-no-pad-l">
+                                    <input class="form-control briggs-control briggs-width-60" id="AGE" name="AGE" min="1" max="125" ng-model="briggs.AGE" maxlength="3" type="number">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad briggs-mrg-thin-t">
+                                <div class="col-lg-2 col-sm-3 col-md-3 briggs-no-pad-r">
+                                    <label for="DATE_BIRTH" class="briggs-f-thin">Resident birth date:</label>
+                                </div>
+                                <div class="col-lg-10 briggs-mrg-thin-b col-sm-9 col-md-9 briggs-no-pad-l">
+                                    <input class="form-control briggs-control briggs-date-control" id="DATE_BIRTH" name="DATE_BIRTH" ng-model="briggs.DATE_BIRTH" maxlength="10" type="date">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad briggs-mrg-thin-t">
+                                <div class="col-lg-2 col-sm-3 col-md-3 briggs-no-pad-r">
+                                    <label for="GENDER" class="briggs-f-thin">Gender (identifies as):</label>
+                                </div>
+                                <div class="col-lg-3 briggs-mrg-thin-b col-sm-4 col-md-4 briggs-no-pad">
+                                    <input class="form-control briggs-control" id="GENDER" name="GENDER" ng-model="briggs.GENDER" maxlength="30" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad briggs-mrg-thin-t">
+                                <div class="col-lg-2 col-sm-3 col-md-3 briggs-no-pad-r">
+                                    <label for="RELAT" class="briggs-f-thin">Relationship status:</label>
+                                </div>
+                                <div class="col-lg-3 briggs-mrg-thin-b col-sm-4 col-md-4 briggs-no-pad">
+                                    <input class="form-control briggs-control" id="RELAT" name="RELAT" ng-model="briggs.RELAT" maxlength="30" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp">
+                                <label for="REASON_ALS" class="briggs-f-thin">Reason individual is interested in admission to the ALS community:</label>
+                                <textarea class="form-control" id="REASON_ALS" name="REASON_ALS" cols="12" rows="4" spellcheck="true" ng-model="briggs.REASON_ALS" maxlength="770"></textarea>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thick-t briggs-pg-title">
+                                Individuals Involved with Pre-Admission Assessment:
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-t briggs-mrg-b">
+                                <div class="briggs-col-offs">
+                                    <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad briggs-brd-thin-b briggs-brd-thin-l briggs-brd-thin-r briggs-brd-thin-t">
+                                        <div class="col-lg-2 col-sm-3 col-md-3 briggs-mrg-t">
+                                            <div class="briggs-mrg-t briggs-pad-thick-t">
+                                                Individual
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10 col-sm-9 col-md-9 briggs-brd-thin-l">
+                                            <div class="briggs-mrg-thin-t">
+                                                <label for="NAME_IND" class="briggs-f-thin">
+                                                    Name(s)
+                                                </label>
+                                                <textarea class="form-control briggs-control briggs-mrg-thick-b" id="NAME_IND" name="NAME_IND" cols="12" rows="3" spellcheck="true" ng-model="briggs.NAME_IND" maxlength="225"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad briggs-brd-thin-b briggs-brd-thin-l briggs-brd-thin-r">
+                                        <div class="col-lg-2 col-sm-3 col-md-3 briggs-mrg-t briggs-pad-thick-t">
+                                            <div class="briggs-mrg-t briggs-pad-thick-t">
+                                                ALR staff
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10 col-sm-9 col-md-9 briggs-brd-thin-l">
+                                            <div class="briggs-mrg-thin-t">
+                                                <label for="NAME_STAFF" class="briggs-f-thin">
+                                                    Name(s)
+                                                </label>
+                                                <textarea class="form-control briggs-control briggs-mrg-thick-b" id="NAME_STAFF" name="NAME_STAFF" cols="12" rows="4" spellcheck="true" ng-model="briggs.NAME_STAFF" maxlength="450"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad briggs-brd-thin-b briggs-brd-thin-r briggs-brd-thin-l">
+                                        <div class="col-lg-2 col-sm-3 col-md-3 briggs-mrg-t">
+                                            <div class="briggs-mrg-t">
+                                                Medical Power of<br> Attorney
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-sm-6 col-md-7 briggs-brd-thin-r briggs-brd-thin-l">
+                                            <div class="briggs-mrg-thin-t">
+                                                <label for="MED_ATT" class="briggs-f-thin">
+                                                    Name, Address and Phone
+                                                </label>
+                                                <textarea class="form-control briggs-control briggs-mrg-thick-b" id="MED_ATT" name="MED_ATT" cols="12" rows="3" spellcheck="true" ng-model="briggs.MED_ATT" maxlength="225"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-3 col-md-2 briggs-no-pad text-center">
+                                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-t">
+                                                <div class="radio radio-info briggs-cntrl-grp briggs-mrg-thick-t">
+                                                    <label for="MED_ATT_IN_1" class="briggs-f-thin briggs-mrg-thin-t">
+                                                        <input type="radio" id="MED_ATT_IN_1" value="1" name="MED_ATT_IN" ng-model="briggs.MED_ATT_IN">In person
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="MED_ATT_IN_2" class="briggs-f-thin">
+                                                        <input type="radio" id="MED_ATT_IN_2" value="2" name="MED_ATT_IN" ng-model="briggs.MED_ATT_IN">By phone
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad briggs-brd-thin-b briggs-brd-thin-r briggs-brd-thin-l">
+                                        <div class="col-lg-2 col-sm-3 col-md-3 briggs-mrg-t">
+                                            <div class="briggs-mrg-t">
+                                                Financial Power of<br> Attorney
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-sm-6 col-md-7 briggs-brd-thin-r briggs-brd-thin-l">
+                                            <div class="briggs-mrg-thin-t">
+                                                <label for="FIN_ATT" class="briggs-f-thin">
+                                                    Name, Address and Phone
+                                                </label>
+                                                <textarea class="form-control briggs-control briggs-mrg-thick-b" id="FIN_ATT" name="FIN_ATT" cols="12" rows="3" spellcheck="true" ng-model="briggs.FIN_ATT" maxlength="225"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-3 col-md-2 briggs-no-pad text-center">
+                                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-t">
+                                                <div class="radio radio-info briggs-cntrl-grp briggs-mrg-thick-t">
+                                                    <label for="FIN_ATT_IN_1" class="briggs-f-thin briggs-mrg-thin-t">
+                                                        <input type="radio" id="FIN_ATT_IN_1" value="1" name="FIN_ATT_IN" ng-model="briggs.FIN_ATT_IN">In person
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="FIN_ATT_IN_2" class="briggs-f-thin">
+                                                        <input type="radio" id="FIN_ATT_IN_2" value="2" name="FIN_ATT_IN" ng-model="briggs.FIN_ATT_IN">By phone
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad briggs-brd-thin-b briggs-brd-thin-r briggs-brd-thin-l">
+                                        <div class="col-lg-2 col-sm-3 col-md-3 briggs-mrg-t">
+                                            <div class="briggs-mrg-t briggs-pad-thick-t">
+                                                Representative Payee
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-sm-6 col-md-7 briggs-brd-thin-r briggs-brd-thin-l">
+                                            <div class="briggs-mrg-thin-t">
+                                                <label for="REP_PAY" class="briggs-f-thin">
+                                                    Name, Address and Phone
+                                                </label>
+                                                <textarea class="form-control briggs-control briggs-mrg-thick-b" id="REP_PAY" name="REP_PAY" cols="12" rows="3" spellcheck="true" ng-model="briggs.REP_PAY" maxlength="225"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-3 col-md-2 briggs-no-pad text-center">
+                                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-t">
+                                                <div class="radio radio-info briggs-cntrl-grp briggs-mrg-thick-t">
+                                                    <label for="REP_PAY_IN_1" class="briggs-f-thin briggs-mrg-thin-t">
+                                                        <input type="radio" id="REP_PAY_IN_1" value="1" name="REP_PAY_IN" ng-model="briggs.REP_PAY_IN">In person
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="REP_PAY_IN_2" class="briggs-f-thin">
+                                                        <input type="radio" id="REP_PAY_IN_2" value="2" name="REP_PAY_IN" ng-model="briggs.REP_PAY_IN">By phone
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad briggs-brd-thin-b briggs-brd-thin-r briggs-brd-thin-l">
+                                        <div class="col-lg-2 col-sm-3 col-md-3 briggs-mrg-thin-t">
+                                            <div class="briggs-mrg-t">
+                                                Single Entry Point or<br> Community Center<br> Board Case Manager
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-sm-6 col-md-7 briggs-brd-thin-r briggs-brd-thin-l">
+                                            <div class="briggs-mrg-thin-t">
+                                                <label for="COM_MAN" class="briggs-f-thin">
+                                                    Name, Address and Phone
+                                                </label>
+                                                <textarea class="form-control briggs-control briggs-mrg-thick-b" id="COM_MAN" name="COM_MAN" cols="12" rows="3" spellcheck="true" ng-model="briggs.COM_MAN" maxlength="225"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-3 col-md-2 briggs-no-pad text-center">
+                                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-t">
+                                                <div class="radio radio-info briggs-cntrl-grp briggs-mrg-thick-t">
+                                                    <label for="COM_MAN_IN_1" class="briggs-f-thin briggs-mrg-thin-t">
+                                                        <input type="radio" id="COM_MAN_IN_1" value="1" name="COM_MAN_IN" ng-model="briggs.COM_MAN_IN">In person
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="COM_MAN_IN_2" class="briggs-f-thin">
+                                                        <input type="radio" id="COM_MAN_IN_2" value="2" name="COM_MAN_IN" ng-model="briggs.COM_MAN_IN">By phone
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad briggs-brd-thin-b briggs-brd-thin-r briggs-brd-thin-l">
+                                        <div class="col-lg-2 col-sm-3 col-md-3 briggs-pad-thick-t briggs-mrg-t">
+                                            <div class="briggs-mrg-t">
+                                                Mental Health Case Manager
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-sm-6 col-md-7 briggs-brd-thin-l briggs-brd-thin-r  item">
+                                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad briggs-cntrl-grp">
+                                                <div class="col-lg-3 col-sm-7 col-md-4  briggs-no-pad briggs-mrg-thin-t">
+                                                    <label for="MEN_MAN" class="briggs-f-thin">
+                                                        Name and Agency, Phone
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-9 col-sm-5 col-md-8 briggs-no-pad briggs-mrg-thin-t">
+                                                    <textarea class="form-control briggs-control" id="MEN_MAN" name="MEN_MAN" cols="12" rows="3" spellcheck="true" ng-model="briggs.MEN_MAN" maxlength="80"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad briggs-cntrl-grp">
+                                                <div class="briggs-fl briggs-pad-thick-r">
+                                                    <label for="DATE_MEN_MAN" class="briggs-f-thin">
+                                                        Release of information obtained (date):
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-7 col-sm-5 col-md-5 briggs-no-pad">
+                                                    <input class="form-control briggs-control briggs-date-control" id="DATE_MEN_MAN" name="DATE_MEN_MAN" ng-model="briggs.DATE_MEN_MAN" maxlength="10" type="date">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-3 col-md-2 briggs-mrg-thin-t briggs-no-pad text-center">
+                                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-t">
+                                                <div class="radio radio-info briggs-cntrl-grp briggs-mrg-thick-t">
+                                                    <label for="MEN_MAN_IN_1" class="briggs-f-thin briggs-mrg-thin-t">
+                                                        <input type="radio" id="MEN_MAN_IN_1" value="1" name="MEN_MAN_IN" ng-model="briggs.MEN_MAN_IN">In person
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                                <div class="radio radio-info briggs-cntrl-grp">
+                                                    <label for="MEN_MAN_IN_2" class="briggs-f-thin">
+                                                        <input type="radio" id="MEN_MAN_IN_2" value="2" name="MEN_MAN_IN" ng-model="briggs.MEN_MAN_IN">By phone
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--page 1 ends-->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 1 of 14 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+        </div>

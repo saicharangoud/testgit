@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+</head>
+<style>
+
+
+</style>
+<body>
+
+<table align="center" style="border:1px solid black;padding:10px 50px 20px 30px;">
+<tr>
+<td align="center">
+<p><b>RESIDENT SERVICE PLANE FOR ASSISTIVE CARE SERVICES</b></p>
+</td>
+</tr> <!--end of the 1st row-->
+
+
+
+
+<tr style="padding-top:20px;">
+<td  style="border:1px solid black;width:100%;">
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tr>
+<td>
+FACILITY:
+</td>
+<td>
+<input type="text" name="faculty" style="width:400px;height:15px">
+</td>
+<td>
+DATE:
+</td>
+<td>
+<input type="text" name="data" style="height:15px">
+</td>
+</tr>
+</table>
+
+
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tr>
+<td>
+RESIDENT NAME:
+</td>
+<td>
+<input type="text" name="resident" style="width:345px;height:15px">
+</td>
+<td style="padding-left:20px;">
+MEDICAID #:
+</td>
+<td>
+<input type="text" name="MEDICAID" style="width:130px;height:15px;">
+</td>
+</tr>
+</table>
+
+
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tr>
+<td>
+Beginning Date of Service plan  
+</td>
+<td>
+<input type="text" name="BeginServiceplan"  style="width:200px;height:15px">
+</td>
+<td style="padding-left:20px;">
+Ending Date of Service plane
+</td>
+<td style="padding-right:25px;">
+<input type="text" name="EndServiceplan" style="width:130px;height:15px;">
+</td>
+</tr>
+</table>
+</td>
+</tr> <!--end of 2nd row-->
+
+<tr>
+</tr><!--space row-->
+
+<tr>
+</tr><!--space row-->
+
+<tr>
+</tr><!--space row-->
+
+<tr>
+</tr><!--space row-->
+
+<tr>
+</tr><!--space row-->
+
+<tr>
+</tr><!--space row-->
+
+
+
+<tr style="padding-top:20px;">
+
+<td  style="border:1px solid black;width:100%;">
+
+<table style="border:1px solid black;width:100%;padding:5px;background-color:#ccc">
+<tr >
+<td>
+<b>ASSISTANCE WITH ACTIVITIES OF DAILY LIVING(ADLs)</b>
+</td>
+</tr>
+</table>
+
+
+
+<table style="border:1px solid black;border-collapse:collapse;width:100%;background-color:#ccc;">
+<tr >
+<td style="padding:5px;">
+<b>ACTIVITY</b>
+</td>
+<td style="border:1px solid black;padding-right:50px;padding-left:5px;">
+<U>SERVICE NEED</U>
+</td>
+<td style="padding-right:170px;">
+
+</td>
+</tr>
+</table>
+
+
+
+
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tr>
+<td>
+<b>AMBULATION</b>
+</td>
+<td>
+<input type="checkbox" class="onechecks" onclick="checkOnlyOne(this.value);" name="group1" >Independent
+ </td>
+ </tr>
+ 
+ <tr>
+ 
+ <td>
+ 
+ </td>
+ <td>
+ <input type="checkbox" class="onechecks" onclick="checkOnlyOne(this.value);" name="group1" >Provide Assistance
+
+ </td>
+</tr>
+
+<tr>
+<td>
+
+</td>
+<td>
+  <input type="checkbox" class="onechecks" onclick="checkOnlyOne(this.value);" name="group1" >Assist with Ambulatory Device
+
+ </td>
+ </tr>
+
+ <tr>
+ <td>
+ 
+ </td>
+ 
+ <td style="padding-left:40px;">
+ <input type="checkbox" name="group1[]" >Wheelchair
+<input type="checkbox" name="group1[]" >Walker
+<input type="checkbox" name="group1[]" >Cane
+
+ </td>
+ 
+ <td style="padding-right:155px;">
+ 
+ </td>
+ 
+</tr>
+</table> <!--Ambulance end-->
+
+
+
+
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tr>
+<td>
+Expected Outcome of Service: 
+</td>
+<td>
+<input type="text" name="outservice"  style="width:575px;height:15px;">
+</td>
+</tr>
+
+<tr>
+<td>
+Comments: 
+</td>
+<td>
+<input type="text" name="comment"  style="width:550px;height:15px">
+</td>
+</tr>
+</table> <!--1st service and comments end-->
+
+
+
+
+<table style="border:1px solid black;width:100%;padding:5px;margin-top:4px;">
+<tbody><tr>
+<td>
+<b>BATHING:</b>
+</td>
+<td>
+<input type="checkbox" name="group1[]">Independent
+</td>
+<td>
+<input type="checkbox" name="group1[]">Tub
+</td>
+</tr>
+
+<tr>
+<td>
+
+</td>
+<td>
+<input type="checkbox" name="group1[]">Provide Supervision
+</td>
+
+<td>
+<input type="checkbox" name="group1[]">Shower
+</td>
+</tr>
+
+<tr>
+<td>
+
+</td>
+
+
+<td>
+<input type="checkbox" name="group1[]">Provide Assistance
+</td>
+
+<td>
+<input type="checkbox" name="group1[]">Morning
+</td>
+</tr>
+
+<tr>
+<td>
+
+</td>
+
+<td>
+<input type="checkbox" name="group1[]">Provide Total Help
+</td>
+
+<td style="padding-right:170px;">
+<input type="checkbox" name="group1[]">Evening
+</td>
+</tr>
+</tbody>
+</table> <!--Bathing ends-->
+
+
+
+
+
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tr>
+<td>
+Expected Outcome of Service: 
+</td>
+<td>
+<input type="text" name="outservice"  style="width:575px;height:15px;">
+</td>
+</tr>
+
+<tr>
+<td>
+Comments: 
+</td>
+<td>
+<input type="text" name="comment"  style="width:550px;height:15px">
+</td>
+</tr>
+</table> <!--2nd service and comments end-->
+
+
+
+
+<table style="border:1px solid black;width:100%;padding:5px;margin-top:4px;">
+<tbody><tr>
+<td>
+<b>DRESSING:</b>
+</td>
+<td>
+Choose<br>
+attire<hr>
+</td>
+<td>
+Put on<br>
+shoes<hr>
+</td>
+<td>
+Dress/<br>
+Undress<hr>
+</td>
+<td>
+
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>
+
+</td>
+<td>
+<input type="checkbox" name="group1[]">
+</td>
+
+<td>
+<input type="checkbox" name="group1[]">
+</td>
+<td>
+<input type="checkbox" name="group1[]">
+</td>
+
+<td>
+Independent
+</td>
+
+</tr>
+
+
+
+
+
+<tr>
+<td>
+
+</td>
+
+
+<td>
+<input type="checkbox" name="group1[]">
+</td>
+
+<td>
+<input type="checkbox" name="group1[]">
+</td>
+<td>
+<input type="checkbox" name="group1[]">
+</td>
+<td>
+Provide Supervision
+</td>
+</tr>
+
+
+
+
+
+
+<tr>
+<td>
+</td>
+<td>
+<input type="checkbox" name="group1[]">
+</td>
+
+<td>
+<input type="checkbox" name="group1[]">
+</td>
+<td>
+<input type="checkbox" name="group1[]">
+</td>
+<td>
+Provide Assistance
+</td>
+</tr>
+
+
+
+
+
+<tr>
+<td>
+</td>
+<td>
+<input type="checkbox" name="group1[]">
+</td>
+
+<td>
+<input type="checkbox" name="group1[]">
+</td>
+
+<td>
+<input type="checkbox" name="group1[]">
+</td>
+<td style="padding-right:150px;">
+Provide Total help
+</td>
+</tr>
+</tbody>
+</table> <!--Dressing end-->
+
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tr>
+<td>
+Expected Outcome of Service: 
+</td>
+<td>
+<input type="text" name="outservice"  style="width:575px;height:15px;">
+</td>
+</tr>
+
+<tr>
+<td>
+Comments: 
+</td>
+<td>
+<input type="text" name="comment"  style="width:550px;height:15px">
+</td>
+</tr>
+</table> <!--3rd service and comments end-->
+
+
+
+<table style="border:1px solid black;width:100%;padding:5px;margin-top:4px;">
+<tbody><tr>
+<td>
+<b>TOILETING:</b>
+</td>
+<td>
+<input type="checkbox" name="group1[]">Independent                    
+</td>
+<td>
+<input type="checkbox" name="group1[]">Adult Brief
+</td>
+<td>
+
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>
+
+</td>
+<td>
+<input type="checkbox" name="group1[]">Supervision/Prompting          
+</td>
+
+<td>
+<input type="checkbox" name="group1[]"> Catheter Care
+</td>
+<td>
+
+</td>
+
+</tr>
+
+
+
+
+
+<tr>
+<td>
+
+</td>
+
+
+<td>
+<input type="checkbox" name="group1[]">Provide Assistance
+</td>
+
+<td>
+<input type="checkbox" name="group1[]">Ostomy
+</td>
+<td>
+
+</td>
+
+</tr>
+
+
+
+
+
+
+<tr>
+<td>
+</td>
+<td>
+<input type="checkbox" name="group1[]">Incontinent
+</td>
+
+<td style="padding-right:190px;">
+Assistance
+</td>
+</tr>
+
+<tr>
+<td>
+
+</td>
+<td colspan="2" style="padding-left:50px;">
+<input type="checkbox" name="group1[]">Bladder
+<input type="checkbox" name="group1[]">Bowel
+</td>
+
+</tr>
+
+
+
+</tbody>
+</table> <!--Toileting End-->
+
+
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tr>
+<td>
+Expected Outcome of Service: 
+</td>
+<td>
+<input type="text" name="outservice"  style="width:575px;height:15px;">
+</td>
+</tr>
+
+<tr>
+<td>
+Comments: 
+</td>
+<td>
+<input type="text" name="comment"  style="width:550px;height:15px">
+</td>
+</tr>
+</table> <!--4th service and comments end-->
+
+
+<table style="border:1px solid black;width:100%;padding:5px;margin-top:4px;">
+<tbody><tr>
+<td>
+<b>EATING:</b>
+</td>
+<td>
+<input type="checkbox" name="group1[]">Independent
+</td>
+<td>
+<input type="checkbox" name="group1[]">Hand Guidance
+</td>
+</tr>
+
+<tr>
+<td>
+
+</td>
+<td>
+<input type="checkbox" name="group1[]">Provide Supervision
+</td>
+
+<td>
+<input type="checkbox" name="group1[]">Cutting Food
+</td>
+</tr>
+
+<tr>
+<td>
+
+</td>
+
+
+<td>
+<input type="checkbox" name="group1[]">Provide Assistance
+</td>
+
+<td>
+<input type="checkbox" name="group1[]">Opening Packages
+</td>
+</tr>
+
+<tr>
+<td>
+
+</td>
+
+<td>
+<input type="checkbox" name="group1[]">Provide Total Help
+</td>
+
+<td style="padding-right:200px;">
+
+</td>
+</tr>
+</tbody></table><!--EATING end-->
+
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tr>
+<td>
+Special deit:
+</td>
+<td>
+<input type="checkbox" name="group1[]">Regular
+</td>
+<td style="padding-right:13px;">
+<input type="checkbox" name="group1[]">Diabetic
+</td>
+
+<td style="padding-right:13px;">
+<input type="checkbox" name="group1[]">No added Salt
+</td>
+
+<td style="padding-right:13px;">
+<input type="checkbox" name="group1[]">Low fat/Low cholesterol
+</td>
+
+<td>
+Others <input type="text" name="outservice"  style="height:15px;">
+</td>
+
+</tr>
+
+<tr>
+<td colspan="2">
+Expected Outcome of Service: 
+</td>
+<td colspan="5">
+<input type="text" name="outservice"  style="width:575px;height:15px;">
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+Comments: 
+</td>
+<td colspan="5">
+<input type="text" name="comment"  style="width:550px;height:15px">
+</td>
+</tr>
+</table> <!--5th service and comments end-->
+
+
+</td>
+
+</tr> <!--end of 2rd row-->
+
+</table>
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+
+<br>
+
+<br>
+
+<br>
+<!--2nd main table--->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table align="center" style="border:1px solid black;padding:10px 50px 20px 30px;">
+
+
+
+
+
+
+
+<tr>
+</tr><!--space row-->
+
+<tr>
+</tr><!--space row-->
+
+<tr>
+</tr><!--space row-->
+
+<tr>
+</tr><!--space row-->
+
+<tr>
+</tr><!--space row-->
+
+<tr>
+</tr><!--space row-->
+
+
+
+<tr style="padding-top:20px;">
+
+<td  style="border:1px solid black;width:100%;">
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tbody><tr>
+<td>
+<b>GROOMIMNG</b>
+</td>
+<td>
+<input type="checkbox" name="group1[]">Independent                    
+</td>
+<td>
+<input type="checkbox" name="group1[]">Teeth
+</td>
+<td>
+
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>
+
+</td>
+<td>
+<input type="checkbox" name="group1[]">Provide Supervision          
+</td>
+
+<td>
+<input type="checkbox" name="group1[]"> Hair
+</td>
+<td>
+
+</td>
+
+</tr>
+
+
+<tr>
+<td>
+
+</td>
+
+
+<td>
+<input type="checkbox" name="group1[]">Provide Assistance
+</td>
+
+<td>
+<input type="checkbox" name="group1[]">Nails
+</td>
+<td>
+
+</td>
+
+</tr>
+
+
+
+<tr>
+<td>
+</td>
+<td>
+<input type="checkbox" name="group1[]">Provide Total Help
+</td>
+
+<td style="padding-right:40px;">
+Other <input type="text" name="other">
+</td>
+</tr>
+
+<tr>
+</tr>
+
+
+
+  
+</tbody>
+</table> <!--GROOMIMNG end-->
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tr>
+<td>
+Expected Outcome of Service: 
+</td>
+</tr>
+<tr>
+<td>
+<input type="text" name="outservice"  style="width:695px;height:15px;">
+</td>
+</tr>
+
+<tr>
+<td>
+Comments: 
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="text" name="comment"  style="width:95%;height:15px">
+</td>
+</tr>
+</table> <!--6th service and comments end-->
+
+
+
+<table style="border:1px solid black;width:100%;padding:5px;margin-top:4px;">
+<tbody><tr>
+<td>
+<b>TRANSFERRING</b>
+</td>
+<td>
+<input type="checkbox" name="group1[]">Independent                    
+</td>
+<td>
+<input type="checkbox" name="group1[]">Provide Total Help
+</td>
+<td>
+
+</td>
+</tr>
+
+
+<tr>
+<td>
+
+</td>
+<td>
+<input type="checkbox" name="group1[]">Provide Supervision          
+</td>
+
+<td>
+
+</td>
+<td>
+
+</td>
+
+</tr>
+
+
+<tr>
+<td>
+
+</td>
+
+
+<td>
+<input type="checkbox" name="group1[]">Provide Assistance
+</td>
+
+<td>
+
+</td>
+<td>
+
+</td>
+
+</tr>
+
+
+
+<tr>
+
+</tr>
+
+<tr>
+</tr>
+  
+</tbody>
+</table>
+<!--TRANSFERRING END-->
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tr>
+<td>
+Expected Outcome of Service: 
+</td>
+</tr>
+<tr>
+<td>
+<input type="text" name="outservice"  style="width:695px;height:15px;">
+</td>
+</tr>
+
+<tr>
+<td>
+Comments: 
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="text" name="comment"  style="width:95%;height:15px">
+</td>
+</tr>
+</table> <!--7th service and comments end-->
+
+
+
+
+
+
+
+<table style="border:1px solid black;width:100%;padding:5px;background-color:#ccc;margin-top:2px;">
+<tr >
+<td>
+<b>ASSISTANCE WITH SELF-ADMINISTERED MEDICATION</b>
+</td>
+</tr>
+</table>
+
+
+
+<table style="border:1px solid black;border-collapse:collapse;width:100%;background-color:#ccc;">
+<tr >
+<td style="padding:5px;">
+<b>ACTIVITY</b>
+</td>
+<td style="border:1px solid black;padding-right:88px;">
+<U>SERVICE NEED</U>
+</td>
+<td style="padding-right:137px;">
+PROVIDER
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+<table style="border:1px solid black;border-collapse:collapse;width:100%;:#ccc;">
+<tr >
+<td style="padding:19px;">
+<b>MEDICATIONS</b>
+</td>
+<td style="border:1px solid black;padding-right:50px;padding-left:5px;">
+
+<table>
+<tr>
+<td>
+<input type="checkbox" name="group1[]">Independent
+</td>
+</tr>
+
+
+<tr>
+<td>
+<input type="checkbox" name="group1[]">Provide Daily Supervision or Assistance
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="checkbox" name="group1[]">Provide Administration
+</td>
+</tr>
+
+</table>
+</td>
+<td style="padding-right:170px;">
+<table>
+<tr>
+<td>
+<input type="checkbox" name="group1[]">Facility Non-Nursing Staff
+</td>
+</tr>
+
+
+<tr>
+<td>
+<input type="checkbox" name="group1[]">Facility Nursing Staff
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+ <!--MEDICATION end-->
+
+
+
+
+<table style="border:1px solid black;width:100%;padding:5px;background-color:#ccc">
+<tr >
+<td>
+<b>ASSISTANCE WITH INSTRUMENTAL ACTIVITIES OF DAILY LIVING(IADLs)</b>
+</td>
+</tr>
+</table>
+
+
+
+<table style="border:1px solid black;border-collapse:collapse;width:100%;background-color:#ccc;">
+<tr >
+<td style="padding:5px;">
+<b>ACTIVITY</b>
+</td>
+<td colspan="2" style="border:1px solid black;padding-right:300px;padding-left:5px;">
+<U>SERVICE NEED</U>
+</td>
+
+</tr>
+</table>
+
+
+
+<table style="border:1px solid black;border-collapse:collapse;width:100%;">
+<tr >
+<td style="padding:5px;">
+<b>MAKING A</b><br>
+<b>TELEPHONE</b><br>
+<b>CALL</b><br>
+
+</td>
+<td colspan="2" style="border:1px solid black;padding-right:332px;padding-left:5px;">
+<input type="checkbox" name="group1[]">Independent  <br>    
+<input type="checkbox" name="group1[]">Supervision/prompting <br>        
+
+<input type="checkbox" name="group1[]">Dail Number <br>       
+    
+</td>
+
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tr>
+<td>
+Expected Outcome of Service: 
+</td>
+<td>
+<input type="text" name="outservice"  style="width:575px;height:15px;">
+</td>
+</tr>
+
+<tr>
+<td>
+Comments: 
+</td>
+<td>
+<input type="text" name="comment"  style="width:550px;height:15px">
+</td>
+</tr>
+</table> <!--8th service and comments end-->
+
+
+
+
+<table style="border:1px solid black;border-collapse:collapse;width:100%;margin-top:2px;">
+<tbody><tr>
+<td style="padding:5px;">
+<b>MANAGING</b><br>
+<b>MONEY</b><br>
+
+</td>
+
+<td colspan="2" style="border:1px solid black;padding-right:160px;padding-left:5px;">
+<input type="checkbox" name="group1[]">Independent  <br>    
+<input type="checkbox" name="group1[]">Provide Assistance<br>        
+
+<input type="checkbox" name="group1[]">Representative Payee or Power of Attorney<br>       
+    
+</td>
+
+</tr>
+</tbody></table><!--Managing money ends-->
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tr>
+<td>
+Expected Outcome of Service: 
+</td>
+</tr>
+<tr>
+<td>
+<input type="text" name="outservice"  style="width:695px;height:15px;">
+</td>
+</tr>
+
+<tr>
+<td>
+Comments: 
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="text" name="comment"  style="width:95%;height:15px">
+</td>
+</tr>
+</table> <!--8th service and comments end-->
+
+
+
+<table style="border:1px solid black;border-collapse:collapse;width:100%;margin-top:2px;">
+<tbody><tr>
+<td style="padding:5px;">
+<b>SHOPPING FOR</b><br>
+<b>PERSONAL</b><br>
+<b>ITEMS</b>
+
+</td>
+
+<td colspan="2" style="border:1px solid black;padding-right:160px;padding-left:5px;">
+<input type="checkbox" name="group1[]">Independent  <br>    
+<input type="checkbox" name="group1[]">Provide Supervision<br>        
+
+<input type="checkbox" name="group1[]">Provide Total Help<br>       
+    
+</td>
+
+</tr>
+</tbody></table><!--shopping for personel ends-->
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tr>
+<td>
+Expected Outcome of Service: 
+</td>
+</tr>
+<tr>
+<td>
+<input type="text" name="outservice"  style="width:695px;height:15px;">
+</td>
+</tr>
+
+<tr>
+<td>
+Comments: 
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="text" name="comment"  style="width:95%;height:15px">
+</td>
+</tr>
+</table> <!--9th service and comments end-->
+
+
+</td>
+
+</tr> <!--end of 2rd row-->
+
+</table>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<table align="center" style="border:1px solid black;padding:10px 50px 20px 30px;">
+
+
+
+
+
+ <!--end of 2nd row-->
+
+<tr>
+</tr><!--space row-->
+
+<tr>
+</tr><!--space row-->
+
+<tr>
+</tr><!--space row-->
+
+<tr>
+</tr><!--space row-->
+
+<tr>
+</tr><!--space row-->
+
+<tr>
+</tr><!--space row-->
+
+
+
+<tr style="padding-top:20px;">
+
+<td  style="border:1px solid black;width:100%;">
+
+<table style="border:1px solid black;border-collapse:collapse;width:100%;">
+<tbody><tr>
+<td style="padding:5px;">
+<b>USING AVAILABLE</b><br>
+<b>TRANSPORTATION</b><br>
+
+</td>
+
+<td colspan="2" style="border:1px solid black;padding-right:160px;padding-left:5px;">
+<input type="checkbox" name="group1[]">Independent  <br>    
+<input type="checkbox" name="group1[]">Provide Supervision<br>        
+
+<input type="checkbox" name="group1[]">Provide Assistance Escort<br>       
+    
+</td>
+
+</tr>
+</tbody>
+</table><!--using available transportation-->
+
+
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tbody><tr>
+<td>
+Expected Outcome of Service: 
+</td>
+</tr>
+<tr>
+<td>
+<input type="text" name="outservice" style="width:695px;height:15px;">
+</td>
+</tr>
+
+<tr>
+<td>
+Comments: 
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="text" name="comment" style="width:95%;height:15px">
+</td>
+</tr>
+</tbody>
+</table><!--3rd table  1st service and comments-->
+
+
+
+<table style="border:1px solid black;width:100%;padding:5px;background-color:#ccc">
+<tbody><tr>
+<td>
+<b>HEALTH SUPPORT</b>
+</td>
+</tr>
+</tbody></table><!--health support-->
+
+
+
+<table style="border:1px solid black;border-collapse:collapse;width:100%;background-color:#ccc;">
+<tbody>
+<tr>
+<td style="padding:5px;">
+<b>ACTIVITY</b>
+</td>
+<td style="border:1px solid black;padding-right:50px;padding-left:5px;padding-right:198.15px;">
+<u>SERVICE NEED</u>
+</td>
+
+</tr>
+</tbody>
+</table><!--HEALTH SUPPORT ND SERVICE NEED-->
+
+
+
+<table style="border:1px solid black;border-collapse:collapse;width:100%;">
+<tr >
+<td style="padding:5px;">
+<b>REMINDING </b><br>
+<b>RESIDENT OF</b><br>
+<b>IMPORTANT TASKS</b><br>
+
+</td>
+<td colspan="2" style="border:1px solid black;padding-right:332px;padding-left:5px;">
+<input type="checkbox" name="group1[]">Independent  <br>    
+<input type="checkbox" name="group1[]">Appointments<br>        
+
+<input type="checkbox" name="group1[]">Daily Tasks <br>       
+<input type="checkbox" name="group1[]">Others<input type="textbox" name="textbox">  
+</td>
+
+</tr>
+</table>
+
+
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tbody><tr>
+<td>
+Expected Outcome of Service: 
+</td>
+</tr>
+<tr>
+<td>
+<input type="text" name="outservice" style="width:695px;height:15px;">
+</td>
+</tr>
+
+<tr>
+<td>
+Comments: 
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="text" name="comment" style="width:95%;height:15px">
+</td>
+</tr>
+</tbody>
+</table><!--3rd table  2nd service and comments-->
+
+
+<table style="border:1px solid black;border-collapse:collapse;width:100%;">
+<tbody><tr>
+<td style="padding:5px;">
+<b>OBSERVING RESIDENT'S </b><br>
+<b>APPEARANCE AND WELL-BEING</b><br>
+
+</td>
+<td colspan="2" style="border:1px solid black;padding-right:332px;padding-left:5px;">
+<input type="checkbox" name="group1[]">Weekly or Less<br>    
+<input type="checkbox" name="group1[]">Daily <br>       
+<input type="checkbox" name="group1[]">Others<input type="textbox" name="textbox">  
+</td>
+
+</tr>
+</tbody>
+</table><!--OBSERVING RESIDENT END-->
+
+
+
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tbody><tr>
+<td>
+Expected Outcome of Service: 
+</td>
+</tr>
+<tr>
+<td>
+<input type="text" name="outservice" style="width:695px;height:15px;">
+</td>
+</tr>
+
+<tr>
+<td>
+Comments: 
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="text" name="comment" style="width:95%;height:15px">
+</td>
+</tr>
+</tbody>
+</table><!--3rd table  3rd service and comments-->
+
+<table style="border:1px solid black;width:100%;padding:5px;background-color:#ccc">
+<tbody><tr>
+<td>
+<b>OTHER SERVICES</b>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table style="border:1px solid black;border-collapse:collapse;width:100%;background-color:#ccc;">
+<tbody>
+<tr>
+<td style="padding:5px;">
+<b>ACTIVITY</b>
+</td>
+<td style="padding-right:50px;padding-left:5px;padding-right:211.15px;">
+<u>SERVICE NEED</u>
+</td>
+
+</tr>
+</tbody>
+</table><!--other services-->
+
+
+<table style="border:1px solid black;border-collapse:collapse;width:100%;">
+<tr >
+<td style="padding:5px;height:67px;width:135px;">
+
+
+</td>
+<td colspan="2" style="border:1px solid black;padding-right:332px;padding-left:5px;">
+
+</td>
+
+</tr>
+</table>
+
+
+
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tbody><tr>
+<td>
+Expected Outcome of Service: 
+</td>
+</tr>
+<tr>
+<td>
+<input type="text" name="outservice" style="width:695px;height:15px;">
+</td>
+</tr>
+
+<tr>
+<td>
+Comments: 
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="text" name="comment" style="width:95%;height:15px">
+</td>
+</tr>
+</tbody>
+</table><!--3rd table  4th service and comments-->
+
+
+
+<table style="border:1px solid black;width:100%;padding:5px;">
+<tbody><tr>
+<td>
+Expected Outcome of Service: 
+</td>
+</tr>
+<tr>
+<td>
+<input type="text" name="outservice" style="width:695px;height:15px;">
+</td>
+</tr>
+
+<tr>
+<td>
+Comments: 
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="text" name="comment" style="width:95%;height:15px">
+</td>
+</tr>
+</tbody>
+</table><!--3rd table  5th service and comments-->
+
+<!--------------------------------------------------------------------------------------------------------------------------->
+
+
+
+</td>
+
+</tr> <!--end of 2rd row-->
+
+<tr>
+<td>
+
+<p>RESIDENT COMMENTS:</p>
+<u><textarea rows="4" cols="50" name="comment" form="usrform" style="width:100%;">
+</textarea></u>
+
+
+</td>
+</tr>
+
+<tr>
+</tr>
+
+<tr>
+</tr>
+<tr>
+</tr>
+
+<tr>
+</tr>
+
+<tr>
+<td>
+<table style="width:100%;padding:5px;">
+<tr>
+<td style="width:30%;padding-top:20px;">
+<hr><p>Facility Administrator or Designee</p>
+</td>
+<td>
+</td>
+<td style="width:10%;">
+<input type="text" name="comment" style="width:100%;height:15px">
+<hr><p>DATE:</p>
+</td>
+
+<td>
+</td>
+<td>
+</td>
+
+<td style="width:20%;padding-top:30px;">
+<hr><p>Resident or <br> Representative:</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td style="width:10%;">
+<input type="text" name="comment" style="width:100%;height:15px">
+<hr><p>DATE:</p>
+</td>
+
+</tr>
+</table>
+
+</td>
+</tr>
+
+
+
+
+
+
+
+</table><!---table 3--->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

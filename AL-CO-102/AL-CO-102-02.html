@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <link href="../../../Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Content/css/main/briggs-main.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../../../Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../Scripts/match-height/jquery.matchHeight-min.js"></script>
+    <script src="../../../Scripts/page/common.js"></script>
+    <title>BRIGGS | ALR COMMUNITY - COOKING ASSESSMENT</title>
+</head>
+<body class="test-rows">
+    <!--form starts -->
+    <div class="container">
+        <div id="Page-02" name="pagebreak" description="Individual's Name">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+
+                    <!--page 2 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-t briggs-no-pad-r">
+                                <div class="briggs-fl briggs-pad-thick-r">
+                                    <label for="NAME#1" class="briggs-f-thin">Individual's Name:</label>
+                                </div>
+                                <div class="col-lg-7 briggs-no-pad col-sm-4 col-md-6 briggs-mrg-thin-b">
+                                    <input class="form-control briggs-control" id="NAME#1" name="NAME" ng-model="briggs.NAME" maxlength="50" type="text" />
+                                </div>
+                                <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                    <label for="DATE_OF" class="briggs-f-thin">Date of Assessment:</label>
+                                </div>
+                                <div class="briggs-fl">
+                                    <input class="form-control briggs-control briggs-date-control" id="DATE_OF" name="DATE_OF" ng-model="briggs.DATE_OF" maxlength="10" type="date" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-t briggs-f-thick">
+                                Other:
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                <label class="briggs-f-thin" for="OTHER">Any other information related to individual's ability to safely cook:</label>
+                                <textarea class="form-control briggs-control" id="OTHER" name="OTHER" cols="12" rows="8" spellcheck="true" ng-model="briggs.OTHER" maxlength="840"></textarea>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t briggs-f-thick">
+                                Use of this document does not constitute nor imply compliance with
+                                Federal or State rules and regulations. All facilities must follow
+                                their own internal guidelines and policies for admission. All facilities
+                                are responsible for gathering the appropriate information required to
+                                ensure the facility is able to meet the needs of each individual admitted.
+                            </div>
+                        </div>
+
+                        <!-- signature region -->
+                        <div class="row briggs-cont-row" name="signature_row_1" id="signature_row_1">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-mrg-t">
+                                <div name="signature_container_1" id="signature_container_1">
+                                    <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad">
+                                        <label for="SIGN_A" class="briggs-f-thin">Signature of person completing Assessment:</label>
+                                    </div>
+                                    <div class="col-lg-9 col-sm-7 col-md-8 briggs-pad-thick-l briggs-mrg-thin-b">
+                                        <textarea class="form-control briggs-control" id="SIGN_A" name="SIGN_A" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_A" maxlength="60"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row" name="signature_row_2" id="signature_row_2">
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp briggs-no-pad-r">
+                                <div name="signature_container_2" id="signature_container_2">
+                                    <div class="briggs-fl briggs-pad-thick-r">
+                                        <label for="SIGN_B" class="briggs-f-thin">Individual's signature:</label>
+                                    </div>
+                                    <div class="col-lg-8 briggs-no-pad col-sm-6 col-md-7 briggs-mrg-thin-b">
+                                        <textarea class="form-control briggs-control" id="SIGN_B" name="SIGN_B" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_B" maxlength="60"></textarea>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                    <label for="DATE_SIGN_A" class="briggs-f-thin">Date:</label>
+                                </div>
+                                <div class="briggs-fl">
+                                    <input class="form-control briggs-control briggs-date-control" id="DATE_SIGN_A" name="DATE_SIGN_A" ng-model="briggs.DATE_SIGN_A" maxlength="10" type="date" />
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of signature region-->
+
+                    </div>
+                    <!--page 2 ends-->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 2 of 3 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--form ends -->
+</body>
+</html>

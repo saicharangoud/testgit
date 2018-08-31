@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <link href="../../../Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Content/css/main/briggs-main.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../../../Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../Scripts/match-height/jquery.matchHeight-min.js"></script>
+    <script src="../../../Scripts/page/common.js"></script>
+    <title>BRIGGS | ALR Community Pre-Admission Assessment</title>
+</head>
+<body class="test-rows">
+    <!--form starts -->
+    <div class="container">
+        <div id="Page-06" name="pagebreak" description="Mental Health">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+
+                    <!--header starts-->
+                    <div class="row briggs-cont-row">
+                        <div class="col-lg-12 col-sm-12 briggs-cntrl-grp briggs-no-pad">
+                            <div class="briggs-fl briggs-pad-thick-r">
+                                <label class="briggs-f-thin" for="NAME">Individual Name:</label>
+                            </div>
+                            <div class="col-lg-7 briggs-no-pad col-sm-5 col-md-6 briggs-mrg-thin-b">
+                                <input class="form-control briggs-control" id="NAME" name="NAME" ng-model="briggs.NAME" maxlength="45" type="text" />
+                            </div>
+                            <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                <label class="briggs-f-thin" for="DATE_ASSESS">Date of Assessment:</label>
+                            </div>
+                            <div class="briggs-fl">
+                                <input class="form-control briggs-control briggs-date-control" id="DATE_ASSESS" name="DATE_ASSESS" ng-model="briggs.DATE_ASSESS" maxlength="10" type="date" />
+                            </div>
+                        </div>
+                    </div>
+                    <!--header ends-->
+                    <!--page 6 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thick-t briggs-pg-title">
+                                Mental Health
+                            </div>
+                            <div class="col-sm-12 col-lg-12">
+                                <div class="briggs-col-offs">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thin briggs-mrg-b">
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                            <label class="briggs-f-thin" for="MEN_RESIST">Has there been any resistance to care or medication administration?</label>
+                                            <input class="form-control briggs-control briggs-mrg-thin-b" id="MEN_RESIST" name="MEN_RESIST" ng-model="briggs.MEN_RESIST" maxlength="110" type="text" />
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-t">
+                                            <div class="col-lg-1 col-md-1 col-sm-2 briggs-no-pad">
+                                                <label for="MEN_EXAMP" class="briggs-f-thin"><em>Examples:</em></label>
+                                            </div>
+                                            <div class="col-lg-11 col-sm-10 col-md-11  briggs-no-pad">
+                                                <textarea id="MEN_EXAMP" name="MEN_EXAMP" class="form-control briggs-mrg-thin-b briggs-control" cols="12" rows="3" spellcheck="true" ng-model="briggs.MEN_EXAMP" maxlength="200"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MEN_RECENT">
+                                                <em>How recent were these incidents?</em>
+                                            </label>
+                                            <input class="form-control briggs-control briggs-mrg-thin-b" id="MEN_RECENT" name="MEN_RECENT" ng-model="briggs.MEN_RECENT" maxlength="110" type="text" />
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MEN_RED">
+                                                <em>Redirection strategies:</em>
+                                            </label>
+                                            <textarea id="MEN_RED" name="MEN_RED" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MEN_RED" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MEN_ACT">
+                                                Has there been any verbal or physically abusive actions towards self or others?
+                                            </label>
+                                            <input class="form-control briggs-control briggs-mrg-thin-b" id="MEN_ACT" name="MEN_ACT" ng-model="briggs.MEN_ACT" maxlength="110" type="text" />
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-t">
+                                            <div class="col-lg-1 col-md-1 col-sm-2 briggs-no-pad">
+                                                <label for="MEN_ACT_EX" class="briggs-f-thin"><em>Examples:</em></label>
+                                            </div>
+                                            <div class="col-lg-11 col-sm-10 col-md-11  briggs-no-pad">
+                                                <textarea id="MEN_ACT_EX" name="MEN_ACT_EX" class="form-control briggs-mrg-thin-b briggs-control" cols="12" rows="3" spellcheck="true" ng-model="briggs.MEN_ACT_EX" maxlength="200"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MEN_ACT_RE">
+                                                <em>How recent were these incidents?</em>
+                                            </label>
+                                            <input class="form-control briggs-control briggs-mrg-thin-b" id="MEN_ACT_RE" name="MEN_ACT_RE" ng-model="briggs.MEN_ACT_RE" maxlength="110" type="text" />
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MEN_ACT_RED">
+                                                <em>Redirection strategies:</em>
+                                            </label>
+                                            <textarea id="MEN_ACT_RED" name="MEN_ACT_RED" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MEN_ACT_RED" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MEN_RUM">
+                                                Does the individual spend an unusual amount of time sorting, rummaging or shopping?
+                                            </label>
+                                            <textarea id="MEN_RUM" name="MEN_RUM" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MEN_RUM" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MEN_HALL">
+                                                Does the individual have hallucinations (visual/auditory), or delusions?
+                                            </label>
+                                            <input class="form-control briggs-control briggs-mrg-thin-b" id="MEN_HALL" name="MEN_HALL" ng-model="briggs.MEN_HALL" maxlength="110" type="text" />
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MEN_DESC_HALL">
+                                                <em>If so, describe them:</em>
+                                            </label>
+                                            <textarea id="MEN_DESC_HALL" name="MEN_DESC_HALL" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MEN_DESC_HALL" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MEN_ACTI">
+                                                Has the individual demonstrated any inappropriate sexual actions?
+                                            </label>
+                                            <textarea id="MEN_ACTI" name="MEN_ACTI" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MEN_ACTI" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MEN_REC">
+                                                <em>How recent were these incidents?</em>
+                                            </label>
+                                            <textarea id="MEN_REC" name="MEN_REC" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MEN_REC" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MEN_PSYC">
+                                                History of psychiatric hospitalizations (i.e., date, reason, location, etc.):
+                                            </label>
+                                            <textarea id="MEN_PSYC" name="MEN_PSYC" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MEN_PSYC" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="DATE_MEN_PSYC">
+                                                Date of last psychiatric hospitalization:
+                                            </label>
+                                            <input class="form-control briggs-control briggs-mrg-thin-b briggs-date-control" id="DATE_MEN_PSYC" name="DATE_MEN_PSYC" ng-model="briggs.DATE_MEN_PSYC" maxlength="10" type="date" />
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="DATE_MEN_EVAL">
+                                                Date of last psychiatric evaluation:
+                                            </label>
+                                            <input class="form-control briggs-control briggs-mrg-thin-b briggs-date-control" id="DATE_MEN_EVAL" name="DATE_MEN_EVAL" ng-model="briggs.DATE_MEN_EVAL" maxlength="10" type="date" />
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MEN_OTHER">
+                                                Other mental health information:
+                                            </label>
+                                            <textarea id="MEN_OTHER" name="MEN_OTHER" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MEN_OTHER" maxlength="220"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="MEN_CUR">
+                                                Currently receiving treatment (if yes, where)?
+                                            </label>
+                                            <textarea id="MEN_CUR" name="MEN_CUR" class="form-control briggs-control briggs-mrg-thick-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.MEN_CUR" maxlength="220"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--page 6 ends-->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 6 of 14 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--form ends -->
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <link href="../../../Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Content/css/main/briggs-main.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../../../Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../Scripts/match-height/jquery.matchHeight-min.js"></script>
+    <script src="../../../Scripts/page/common.js"></script>
+    <title>BRIGGS | ALR Community - Initial Individual Assessment Team Determination</title>
+</head>
+<body class="test-rows">
+    <!--form starts -->
+    <div class="container">
+        <div id="Page-02" name="pagebreak" description="Signatures">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+                    <!--page 2 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-t briggs-no-pad-r">
+                                <div class="briggs-fl briggs-pad-thick-r">
+                                    <label for="NAME" class="briggs-f-thin">Individual's Name:</label>
+                                </div>
+                                <div class="col-lg-7 briggs-no-pad col-sm-4 col-md-6 briggs-mrg-thin-b">
+                                    <input class="form-control briggs-control" id="NAME" name="NAME" ng-model="briggs.NAME" maxlength="45" type="text" />
+                                </div>
+                                <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                    <label for="DATE_DET" class="briggs-f-thin">Date of Determination:</label>
+                                </div>
+                                <div class="briggs-fl">
+                                    <input class="form-control briggs-control briggs-date-control" id="DATE_DET" name="DATE_DET" ng-model="briggs.DATE_DET" maxlength="10" type="date" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-f-thick briggs-mrg-thick-t briggs-cntrl-grp">
+                                Use of this document does not constitute nor imply compliance with Federal or State rules and regulations. All facilities must follow their own internal guidelines and policies for admission. All facilities are responsible for gathering the appropriate information required to ensure the facility is able to meet the needs of each individual admitted.
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-f-thick briggs-cntrl-grp">
+                                Signatures:
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp">
+                                Signatures and titles of determination team members involved in completion of this form:
+                            </div>
+                        </div>
+                        <!-- signature region -->
+                        <div class="row briggs-cont-row" name="signature_row_1" id="signature_row_1">
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp briggs-no-pad">
+                                <div class="col-lg-8 col-sm-7 col-md-7 briggs-no-pad">
+                                    <div name="signature_container_1" id="signature_container_1">
+                                        <div class="col-lg-1 briggs-no-pad-r col-sm-2 col-md-2">
+                                            <label for="SIGN_A" class="briggs-f-thin">Name:</label>
+                                        </div>
+                                        <div class="col-lg-11 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                            <textarea class="form-control briggs-control" id="SIGN_A" name="SIGN_A" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_A" maxlength="55"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-5 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-2 briggs-no-pad-r col-sm-2 col-md-2">
+                                        <label for="TITLE_SIGN_A" class="briggs-f-thin">Title:</label>
+                                    </div>
+                                    <div class="col-lg-10 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                        <input class="form-control briggs-control" id="TITLE_SIGN_A" name="TITLE_SIGN_A" ng-model="briggs.TITLE_SIGN_A" maxlength="45" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row" name="signature_row_2" id="signature_row_2">
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp briggs-no-pad">
+                                <div class="col-lg-8 col-sm-7 col-md-7 briggs-no-pad">
+                                    <div name="signature_container_2" id="signature_container_2">
+                                        <div class="col-lg-1 briggs-no-pad-r col-sm-2 col-md-2">
+                                            <label for="SIGN_B" class="briggs-f-thin">Name:</label>
+                                        </div>
+                                        <div class="col-lg-11 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                            <textarea class="form-control briggs-control" id="SIGN_B" name="SIGN_B" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_B" maxlength="55"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-5 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-2 briggs-no-pad-r col-sm-2 col-md-2">
+                                        <label for="TITLE_SIGN_B" class="briggs-f-thin">Title:</label>
+                                    </div>
+                                    <div class="col-lg-10 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                        <input class="form-control briggs-control" id="TITLE_SIGN_B" name="TITLE_SIGN_B" ng-model="briggs.TITLE_SIGN_B" maxlength="45" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row" name="signature_row_3" id="signature_row_3">
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp briggs-no-pad">
+                                <div class="col-lg-8 col-sm-7 col-md-7 briggs-no-pad">
+                                    <div name="signature_container_3" id="signature_container_3">
+                                        <div class="col-lg-1 briggs-no-pad-r col-sm-2 col-md-2">
+                                            <label for="SIGN_C" class="briggs-f-thin">Name:</label>
+                                        </div>
+                                        <div class="col-lg-11 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                            <textarea class="form-control briggs-control" id="SIGN_C" name="SIGN_C" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_C" maxlength="55"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-5 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-2 briggs-no-pad-r col-sm-2 col-md-2">
+                                        <label for="TITLE_SIGN_C" class="briggs-f-thin">Title:</label>
+                                    </div>
+                                    <div class="col-lg-10 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                        <input class="form-control briggs-control" id="TITLE_SIGN_C" name="TITLE_SIGN_C" ng-model="briggs.TITLE_SIGN_C" maxlength="45" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row" name="signature_row_4" id="signature_row_4">
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp briggs-no-pad">
+                                <div class="col-lg-8 col-sm-7 col-md-7 briggs-no-pad">
+                                    <div name="signature_container_4" id="signature_container_4">
+                                        <div class="col-lg-1 briggs-no-pad-r col-sm-2 col-md-2">
+                                            <label for="SIGN_D" class="briggs-f-thin">Name:</label>
+                                        </div>
+                                        <div class="col-lg-11 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                            <textarea class="form-control briggs-control" id="SIGN_D" name="SIGN_D" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_D" maxlength="55"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-5 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-2 briggs-no-pad-r col-sm-2 col-md-2">
+                                        <label for="TITLE_SIGN_D" class="briggs-f-thin">Title:</label>
+                                    </div>
+                                    <div class="col-lg-10 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                        <input class="form-control briggs-control" id="TITLE_SIGN_D" name="TITLE_SIGN_D" ng-model="briggs.TITLE_SIGN_D" maxlength="45" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row" name="signature_row_5" id="signature_row_5">
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp briggs-no-pad">
+                                <div class="col-lg-8 col-sm-7 col-md-7 briggs-no-pad">
+                                    <div name="signature_container_5" id="signature_container_5">
+                                        <div class="col-lg-1 briggs-no-pad-r col-sm-2 col-md-2">
+                                            <label for="SIGN_E" class="briggs-f-thin">Name:</label>
+                                        </div>
+                                        <div class="col-lg-11 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                            <textarea class="form-control briggs-control" id="SIGN_E" name="SIGN_E" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_E" maxlength="55"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-5 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-2 briggs-no-pad-r col-sm-2 col-md-2">
+                                        <label for="TITLE_SIGN_E" class="briggs-f-thin">Title:</label>
+                                    </div>
+                                    <div class="col-lg-10 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                        <input class="form-control briggs-control" id="TITLE_SIGN_E" name="TITLE_SIGN_E" ng-model="briggs.TITLE_SIGN_E" maxlength="45" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row" name="signature_row_6" id="signature_row_6">
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp briggs-no-pad">
+                                <div class="col-lg-8 col-sm-7 col-md-7 briggs-no-pad">
+                                    <div name="signature_container_6" id="signature_container_6">
+                                        <div class="col-lg-1 briggs-no-pad-r col-sm-2 col-md-2">
+                                            <label for="SIGN_F" class="briggs-f-thin">Name:</label>
+                                        </div>
+                                        <div class="col-lg-11 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                            <textarea class="form-control briggs-control" id="SIGN_F" name="SIGN_F" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_F" maxlength="55"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-5 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-2 briggs-no-pad-r col-sm-2 col-md-2">
+                                        <label for="TITLE_SIGN_F" class="briggs-f-thin">Title:</label>
+                                    </div>
+                                    <div class="col-lg-10 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                        <input class="form-control briggs-control" id="TITLE_SIGN_F" name="TITLE_SIGN_F" ng-model="briggs.TITLE_SIGN_F" maxlength="45" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row" name="signature_row_7" id="signature_row_7">
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp briggs-no-pad">
+                                <div class="col-lg-8 col-sm-7 col-md-7 briggs-no-pad">
+                                    <div name="signature_container_7" id="signature_container_7">
+                                        <div class="col-lg-1 briggs-no-pad-r col-sm-2 col-md-2">
+                                            <label for="SIGN_G" class="briggs-f-thin">Name:</label>
+                                        </div>
+                                        <div class="col-lg-11 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                            <textarea class="form-control briggs-control" id="SIGN_G" name="SIGN_G" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_G" maxlength="55"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-5 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-2 briggs-no-pad-r col-sm-2 col-md-2">
+                                        <label for="TITLE_SIGN_G" class="briggs-f-thin">Title:</label>
+                                    </div>
+                                    <div class="col-lg-10 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                        <input class="form-control briggs-control" id="TITLE_SIGN_G" name="TITLE_SIGN_G" ng-model="briggs.TITLE_SIGN_G" maxlength="45" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row" name="signature_row_8" id="signature_row_8">
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp briggs-no-pad">
+                                <div class="col-lg-8 col-sm-7 col-md-7 briggs-no-pad">
+                                    <div name="signature_container_8" id="signature_container_8">
+                                        <div class="col-lg-1 briggs-no-pad-r col-sm-2 col-md-2">
+                                            <label for="SIGN_H" class="briggs-f-thin">Name:</label>
+                                        </div>
+                                        <div class="col-lg-11 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                            <textarea class="form-control briggs-control" id="SIGN_H" name="SIGN_H" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_H" maxlength="55"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-5 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-2 briggs-no-pad-r col-sm-2 col-md-2">
+                                        <label for="TITLE_SIGN_H" class="briggs-f-thin">Title:</label>
+                                    </div>
+                                    <div class="col-lg-10 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                        <input class="form-control briggs-control" id="TITLE_SIGN_H" name="TITLE_SIGN_H" ng-model="briggs.TITLE_SIGN_H" maxlength="45" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row" name="signature_row_9" id="signature_row_9">
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp briggs-no-pad">
+                                <div class="col-lg-8 col-sm-7 col-md-7 briggs-no-pad">
+                                    <div name="signature_container_9" id="signature_container_9">
+                                        <div class="col-lg-1 briggs-no-pad-r col-sm-2 col-md-2">
+                                            <label for="SIGN_I" class="briggs-f-thin">Name:</label>
+                                        </div>
+                                        <div class="col-lg-11 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                            <textarea class="form-control briggs-control" id="SIGN_I" name="SIGN_I" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_I" maxlength="55"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-5 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-2 briggs-no-pad-r col-sm-2 col-md-2">
+                                        <label for="TITLE_SIGN_I" class="briggs-f-thin">Title:</label>
+                                    </div>
+                                    <div class="col-lg-10 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                        <input class="form-control briggs-control" id="TITLE_SIGN_I" name="TITLE_SIGN_I" ng-model="briggs.TITLE_SIGN_I" maxlength="45" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row" name="signature_row_10" id="signature_row_10">
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp briggs-no-pad">
+                                <div class="col-lg-8 col-sm-7 col-md-7 briggs-no-pad">
+                                    <div name="signature_container_10" id="signature_container_10">
+                                        <div class="col-lg-1 briggs-no-pad-r col-sm-2 col-md-2">
+                                            <label for="SIGN_J" class="briggs-f-thin">Name:</label>
+                                        </div>
+                                        <div class="col-lg-11 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                            <textarea class="form-control briggs-control" id="SIGN_J" name="SIGN_J" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_J" maxlength="55"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-5 col-md-5 briggs-no-pad">
+                                    <div class="col-lg-2 briggs-no-pad-r col-sm-2 col-md-2">
+                                        <label for="TITLE_SIGN_J" class="briggs-f-thin">Title:</label>
+                                    </div>
+                                    <div class="col-lg-10 briggs-no-pad-l col-sm-10 col-md-10 briggs-mrg-thin-b">
+                                        <input class="form-control briggs-control" id="TITLE_SIGN_J" name="TITLE_SIGN_J" ng-model="briggs.TITLE_SIGN_J" maxlength="45" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row" name="signature_row_11" id="signature_row_11">
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp briggs-no-pad-r">
+                                <div name="signature_container_11" id="signature_container_11">
+                                    <div class="briggs-fl briggs-pad-thick-r">
+                                        <label for="SIGN_K" class="briggs-f-thin">Individual's signature:</label>
+                                    </div>
+                                    <div class="col-lg-8 briggs-no-pad col-sm-6 col-md-7 briggs-mrg-thin-b">
+                                        <textarea class="form-control briggs-control" id="SIGN_K" name="SIGN_K" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_K" maxlength="55"></textarea>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                    <label for="DATE_SIGN_K" class="briggs-f-thin">Date:</label>
+                                </div>
+                                <div class="briggs-fl">
+                                    <input class="form-control briggs-control briggs-date-control" id="DATE_SIGN_K" name="DATE_SIGN_K" ng-model="briggs.DATE_SIGN_K" maxlength="10" type="date" />
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of signature region-->
+                    </div>
+                    <!--page 1 ends-->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 2 of 3 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--form ends -->
+</body>
+</html>

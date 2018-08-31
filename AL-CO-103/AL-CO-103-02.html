@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <link href="../../../Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Content/css/main/briggs-main.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../../../Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../Scripts/match-height/jquery.matchHeight-min.js"></script>
+    <script src="../../../Scripts/page/common.js"></script>
+    <title>BRIGGS | ALR COMMUNITY - FALL RISK ASSESSMENT</title>
+</head>
+<body class="test-rows">
+    <!--form starts -->
+    <div class="container">
+        <div id="Page-02" name="pagebreak" description="Physical Therapy (PT)">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+
+                    <!--page 2 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-t briggs-no-pad-r">
+                                <div class="briggs-fl briggs-pad-thick-r">
+                                    <label for="NAME" class="briggs-f-thin">Individual's Name:</label>
+                                </div>
+                                <div class="col-lg-7 briggs-no-pad col-sm-4 col-md-6 briggs-mrg-thin-b">
+                                    <input class="form-control briggs-control" id="NAME" name="NAME" ng-model="briggs.NAME" maxlength="50" type="text" />
+                                </div>
+                                <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                    <label for="DATE_ASSESS" class="briggs-f-thin">Date of Assessment:</label>
+                                </div>
+                                <div class="briggs-fl">
+                                    <input class="form-control briggs-control briggs-date-control" id="DATE_ASSESS" name="DATE_ASSESS" ng-model="briggs.DATE_ASSESS" maxlength="10" type="date" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-t briggs-f-thick">
+                                Other:
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                <div class="briggs-col-offs">
+                                    <label class="briggs-f-thin" for="OTHER_FUR">
+                                        Does individual use furniture or other objects to maintain balance when walking?
+                                    </label>
+                                    <textarea id="OTHER_FUR" name="OTHER_FUR" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.OTHER_FUR" maxlength="240"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-t briggs-no-pad">
+                                <div class="col-lg-3 col-md-4 col-sm-5 briggs-no-pad-r">
+                                    <label class="briggs-f-thin briggs-col-offs" for="OTHER_SHOE">Does individual wear well-fitting shoes?</label>
+                                </div>
+                                <div class="col-lg-9 col-sm-7 col-md-8 briggs-no-pad-l">
+                                    <input id="OTHER_SHOE" name="OTHER_SHOE" class="form-control briggs-control briggs-mrg-thin-b" ng-model="briggs.OTHER_SHOE" maxlength="70" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-t briggs-no-pad">
+                                <div class="col-lg-5 col-md-4 col-sm-5 briggs-no-pad-r">
+                                    <label class="briggs-f-thin briggs-col-offs" for="OTHER_BAL">Does individual have any balance issues?</label>
+                                </div>
+                                <div class="col-lg-7 col-sm-7 col-md-8 briggs-no-pad-l">
+                                    <input id="OTHER_BAL" name="OTHER_BAL" class="form-control briggs-control briggs-mrg-thin-b" ng-model="briggs.OTHER_BAL" maxlength="70" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-t briggs-no-pad">
+                                <div class="col-lg-5 col-md-6 col-sm-7 briggs-no-pad-r">
+                                    <label class="briggs-f-thin briggs-col-offs" for="OTHER_DIZ">Does individual have history or current issues with dizziness?</label>
+                                </div>
+                                <div class="col-lg-7 col-sm-5 col-md-6 briggs-no-pad-l">
+                                    <input id="OTHER_DIZ" name="OTHER_DIZ" class="form-control briggs-control briggs-mrg-thin-b" ng-model="briggs.OTHER_DIZ" maxlength="50" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-t briggs-no-pad">
+                                <div class="col-lg-5 col-md-5 col-sm-6 briggs-no-pad-r">
+                                    <label class="briggs-f-thin briggs-col-offs" for="OTHER_FALL">Is there any particular time of day that falls occur?</label>
+                                </div>
+                                <div class="col-lg-7 col-sm-6 col-md-7 briggs-no-pad-l">
+                                    <input id="OTHER_FALL" name="OTHER_FALL" class="form-control briggs-control briggs-mrg-thin-b" ng-model="briggs.OTHER_FALL" maxlength="60" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                <div class="briggs-col-offs">
+                                    <label class="briggs-f-thin" for="OTHER_NUMB">
+                                        Does individual have any foot issues that may contribute to falls (e.g., numbness)?
+                                    </label>
+                                    <textarea id="OTHER_NUMB" name="OTHER_NUMB" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.OTHER_NUMB" maxlength="360"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-t briggs-f-thick">
+                                History of falls in the past three months:
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                <div class="briggs-fl briggs-cntrl-grp briggs-col-offs">
+                                    None:
+                                </div>
+                                <div class="col-lg-4 col-sm-5 col-md-4 briggs-no-pad briggs-pad-thick-l">
+                                    <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                        <label for="HIS_NONE">
+                                            <input type="checkbox" id="HIS_NONE" name="HIS_NONE" value="" ng-model="briggs.HIS_NONE">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-thin-t briggs-no-pad-r">
+                                <div class="briggs-fl briggs-pad-thick-r">
+                                    <label class="briggs-f-thin briggs-col-offs" for="HIS_NUM">Number in the last three months:</label>
+                                </div>
+                                <div class="col-lg-2 col-sm-3 col-md-3 briggs-no-pad-l">
+                                    <input id="HIS_NUM" name="HIS_NUM" class="form-control briggs-control briggs-mrg-thin-b" ng-model="briggs.HIS_NUM" maxlength="4" type="number" />
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                <div class="briggs-col-offs">
+                                    <label class="briggs-f-thin" for="HIS_LOC">
+                                        Location of falls and time of day:
+                                    </label>
+                                    <textarea id="HIS_LOC" name="HIS_LOC" class="form-control briggs-control briggs-mrg-thick-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.HIS_LOC" maxlength="360"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t briggs-f-thick">
+                                <label for="ANY_INFO">Any other information relevant to fall risk:</label>
+                                <div class="briggs-col-offs">
+                                    <textarea id="ANY_INFO" name="ANY_INFO" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.ANY_INFO" maxlength="600"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t briggs-f-thick">
+                                Interventions:
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                <label class="briggs-f-thin" for="INT_MIN">
+                                    Were any interventions in the past successful in minimizing fall risk?
+                                </label>
+                                <div class="briggs-col-offs">
+                                    <textarea id="INT_MIN" name="INT_MIN" class="form-control briggs-control briggs-mrg-thick-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.INT_MIN" maxlength="360"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t briggs-f-thick">
+                                Conclusion:
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                <label class="briggs-f-thin" for="CON_ALR">
+                                    Can ALR Community develop and implement a care plan that includes specific interventions to minimize falls and keep the resident safe?
+                                </label>
+                                <div class="briggs-col-offs">
+                                    <textarea id="CON_ALR" name="CON_ALR" class="form-control briggs-control briggs-mrg-thick-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.CON_ALR" maxlength="360"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t briggs-f-thick">
+                                Use of this document does not constitute nor imply compliance with Federal or State rules and regulations. All facilities must follow their own internal guidelines and policies for admission. All facilities are responsible for gathering the appropriate information required to ensure the facility is able to meet the needs of each individual admitted.
+                            </div>
+                        </div>
+                        <!-- signature region -->
+                        <div class="row briggs-cont-row" name="signature_row_1" id="signature_row_1">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-mrg-t">
+                                <div name="signature_container_1" id="signature_container_1">
+                                    <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad">
+                                        <label for="SIGN_A" class="briggs-f-thin">Signature of person completing Assessment:</label>
+                                    </div>
+                                    <div class="col-lg-9 col-sm-7 col-md-8 briggs-pad-thick-l briggs-mrg-thin-b">
+                                        <textarea class="form-control briggs-control" id="SIGN_A" name="SIGN_A" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_A" maxlength="60"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row" name="signature_row_2" id="signature_row_2">
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp briggs-no-pad-r">
+                                <div name="signature_container_2" id="signature_container_2">
+                                    <div class="briggs-fl briggs-pad-thick-r">
+                                        <label for="SIGN_B" class="briggs-f-thin">Individual's signature:</label>
+                                    </div>
+                                    <div class="col-lg-8 briggs-no-pad col-sm-6 col-md-7 briggs-mrg-thin-b">
+                                        <textarea class="form-control briggs-control" id="SIGN_B" name="SIGN_B" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_B" maxlength="60"></textarea>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                    <label for="DATE_SIGN_B" class="briggs-f-thin">Date:</label>
+                                </div>
+                                <div class="briggs-fl">
+                                    <input class="form-control briggs-control briggs-date-control" id="DATE_SIGN_B" name="DATE_SIGN_B" ng-model="briggs.DATE_SIGN_B" maxlength="10" type="date" />
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of signature region-->
+                    </div>
+                    <!--page 2 ends-->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 2 of 4 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--form ends -->
+</body>
+</html>

@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <link href="../../../Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Content/css/main/briggs-main.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../../../Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../Scripts/match-height/jquery.matchHeight-min.js"></script>
+    <script src="../../../Scripts/page/common.js"></script>
+    <title>BRIGGS | HOSPICE INTERDISCIPLINARY PLAN OF CARE/PHYSICIAN ORDERS</title>
+</head>
+<body class="test-rows">
+    <!--form starts-->
+    <div class="container">
+        <div id="Page-01" name="pagebreak" description="Patient Name">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+                    <!--header starts-->
+                    <div class="row briggs-cont-row">
+                        <div class="col-lg-12 col-sm-12 briggs-no-pad  briggs-pg-title briggs-title-r">
+                            HOSPICE INTERDISCIPLINARY<br />
+                            PLAN OF CARE/PHYSICIAN ORDERS
+                        </div>
+                    </div>
+                    <!--header ends -->
+                    <!--page 1 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-5 col-sm-5 briggs-no-pad briggs-mrg-t">
+                                <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad-r">
+                                    <label class="briggs-f-thin" for="NAME_FULL">Patient Name:</label>
+                                </div>
+                                <div class="col-lg-9 briggs-no-pad-l col-sm-7 col-md-8 briggs-mrg-thin-b">
+                                    <input name="NAME_FULL" id="NAME_FULL" class="form-control briggs-control" ng-model="briggs.NAME_FULL" maxlength="45" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-3 briggs-no-pad briggs-mrg-t">
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-no-pad-l briggs-pad-thick-r text-right">
+                                    <label class="briggs-f-thin" for="RECORD_NO">ID #:</label>
+                                </div>
+                                <div class="col-lg-10 briggs-no-pad-l col-sm-9 col-md-10">
+                                    <input name="RECORD_NO" id="RECORD_NO" class="form-control briggs-control" ng-model="briggs.RECORD_NO" maxlength="40" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 briggs-no-pad briggs-mrg-t">
+                                <div class="col-lg-2 col-sm-3 col-md-3 briggs-no-pad-l briggs-pad-thick-r text-right">
+                                    <label class="briggs-f-thin" for="HICN_NO">HICN #:</label>
+                                </div>
+                                <div class="col-lg-10 briggs-no-pad-l col-sm-9 col-md-9">
+                                    <input name="HICN_NO" id="HICN_NO" class="form-control briggs-control" ng-model="briggs.HICN_NO" maxlength="20" type="text">
+                                </div>
+                            </div>                           
+                        </div>
+                        
+                        <!-- signature region -->
+                        <div class="row briggs-cont-row" name="signature_row" id="signature_row">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-cntrl-grp">
+                                <div name="signature_container" id="signature_container">
+                                    <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad-r">
+                                        <label class="briggs-f-thin" for="SIGN_A">Signature of Clinician Completing Form:</label>
+                                    </div>
+                                    <div class="col-lg-9 briggs-no-pad-l col-sm-7 col-md-8">
+                                        <textarea class="form-control briggs-control" rows="3" cols="12" id="SIGN_A" name="SIGN_A" spellcheck="true" briggs-signature ng-model="briggs.SIGN_A" maxlength="85"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of signature region -->
+
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-8 col-sm-8 col-md-8 briggs-no-pad briggs-cntrl-grp">
+                                <div class="briggs-fl briggs-mrg-l briggs-pad-thick-r">
+                                    <label class="briggs-f-thin" for="NAME_PHYSICIAN">Attending Physician:</label>
+                                </div>
+                                <div class="col-lg-9 briggs-no-pad col-sm-8 col-md-9">
+                                    <input name="NAME_PHYSICIAN" id="NAME_PHYSICIAN" class="form-control briggs-control" ng-model="briggs.NAME_PHYSICIAN" briggs-physician-name maxlength="55" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-md-4 briggs-no-pad briggs-cntrl-grp">
+                                <div class="col-lg-4 col-sm-5 col-md-5 briggs-no-pad briggs-pad-thick-r text-right">
+                                    <label class="briggs-f-thin" for="BIRTH_DATE">Date of Birth:</label>
+                                </div>
+                                <div class="briggs-fl briggs-date-control">
+                                    <input name="BIRTH_DATE" id="BIRTH_DATE" class="form-control briggs-control" ng-model="briggs.BIRTH_DATE" maxlength="10" type="date">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad briggs-cntrl-grp">
+                                <div class="briggs-fl briggs-pad-thick-r briggs-mrg-l">
+                                    <label class="briggs-f-thin" for="DATE_CARE_START">Start of Care Date:</label>
+                                </div>
+                                <div class="briggs-fl briggs-date-control">
+                                    <input name="DATE_CARE_START" id="DATE_CARE_START" class="form-control briggs-control" ng-model="briggs.DATE_CARE_START" maxlength="10" type="date">
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-sm-7 col-md-8 briggs-no-pad briggs-cntrl-grp">
+                                <div class="col-lg-2 col-sm-4 col-md-3 briggs-no-pad briggs-pad-thick-r text-right">
+                                    <label class="briggs-f-thin" for="CERTIFICATION_PERIOD">Certification Period:</label>
+                                </div>
+                                <div class="col-lg-10 briggs-no-pad-l col-sm-8 col-md-9">
+                                    <input name="CERTIFICATION_PERIOD" id="CERTIFICATION_PERIOD" class="form-control briggs-control" ng-model="briggs.CERTIFICATION_PERIOD" maxlength="45" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-sm-8 col-md-8 briggs-no-pad briggs-cntrl-grp">
+                                <div class="col-lg-3 col-sm-4 col-md-3 briggs-no-pad-r">
+                                    <label class="briggs-f-thin" for="DIAGNOSIS_TERMINAL1">Terminal Diagnosis:</label>
+                                </div>
+                                <div class="col-lg-9 briggs-no-pad col-sm-8 col-md-9">
+                                    <input name="DIAGNOSIS_TERMINAL1" id="DIAGNOSIS_TERMINAL1" class="form-control briggs-control"  ng-model="briggs.DIAGNOSIS_TERMINAL1" maxlength="65" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 briggs-no-pad briggs-cntrl-grp">
+                                <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad-l briggs-pad-thick-r text-right">
+                                    <label class="briggs-f-thin" for="ICD9_CODE1">ICD Code:</label>
+                                </div>
+                                <div class="col-lg-9 briggs-no-pad-l col-sm-7 col-md-8">
+                                    <input name="ICD9_CODE1" id="ICD9_CODE1" class="form-control briggs-control"  ng-model="briggs.ICD9_CODE1" maxlength="8" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-sm-8 col-md-8 briggs-no-pad briggs-cntrl-grp">
+                                <div class="col-lg-3 col-sm-4 col-md-3 briggs-no-pad-r">
+                                    <label class="briggs-f-thin" for="DIAGNOSIS_SECONDARY2">Secondary Diagnosis:</label>
+                                </div>
+                                <div class="col-lg-9 briggs-no-pad col-sm-8 col-md-9">
+                                    <input name="DIAGNOSIS_SECONDARY2" id="DIAGNOSIS_SECONDARY2" class="form-control briggs-control"  ng-model="briggs.DIAGNOSIS_SECONDARY2" maxlength="65" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 briggs-no-pad briggs-cntrl-grp">
+                                <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad-l briggs-pad-thick-r text-right">
+                                    <label class="briggs-f-thin" for="ICD9_CODE2">ICD Code:</label>
+                                </div>
+                                <div class="col-lg-9 briggs-no-pad-l col-sm-7 col-md-8">
+                                    <input name="ICD9_CODE2" id="ICD9_CODE2" class="form-control briggs-control"  ng-model="briggs.ICD9_CODE2" maxlength="8" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-sm-8 col-md-8 briggs-no-pad briggs-cntrl-grp">
+                                <div class="col-lg-3 col-sm-4 col-md-3 briggs-no-pad-r">
+                                    <label class="briggs-f-thin" for="DIAGNOSIS_SECONDARY3">Secondary Diagnosis:</label>
+                                </div>
+                                <div class="col-lg-9 briggs-no-pad col-sm-8 col-md-9">
+                                    <input name="DIAGNOSIS_SECONDARY3" id="DIAGNOSIS_SECONDARY3" class="form-control briggs-control"  ng-model="briggs.DIAGNOSIS_SECONDARY3" maxlength="65" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 briggs-no-pad briggs-cntrl-grp">
+                                <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad-l briggs-pad-thick-r text-right">
+                                    <label class="briggs-f-thin" for="ICD9_CODE3">ICD Code:</label>
+                                </div>
+                                <div class="col-lg-9 briggs-no-pad-l col-sm-7 col-md-8">
+                                    <input name="ICD9_CODE3" id="ICD9_CODE3" class="form-control briggs-control" ng-model="briggs.ICD9_CODE3" maxlength="8" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="briggs-fl briggs-cntrl-grp">
+                                    Hospice Admission Status:
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="HOSPICE_ADMISSION_STATUS_1">
+                                            <input name="HOSPICE_ADMISSION_STATUS" value="1" id="HOSPICE_ADMISSION_STATUS_1" type="radio" ng-model="briggs.HOSPICE_ADMISSION_STATUS">Routine Home Care
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="HOSPICE_ADMISSION_STATUS_2">
+                                            <input name="HOSPICE_ADMISSION_STATUS" value="2" id="HOSPICE_ADMISSION_STATUS_2" type="radio" ng-model="briggs.HOSPICE_ADMISSION_STATUS">Inpatient Respite
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="HOSPICE_ADMISSION_STATUS_3">
+                                            <input name="HOSPICE_ADMISSION_STATUS" value="3" id="HOSPICE_ADMISSION_STATUS_3" type="radio" ng-model="briggs.HOSPICE_ADMISSION_STATUS">Continuous Home Care
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="HOSPICE_ADMISSION_STATUS_4">
+                                            <input name="HOSPICE_ADMISSION_STATUS" value="4" id="HOSPICE_ADMISSION_STATUS_4" type="radio" ng-model="briggs.HOSPICE_ADMISSION_STATUS">General Inpatient Care
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="col-lg-1 col-sm-2 col-md-2 briggs-no-pad-r briggs-cntrl-grp">
+                                    Resides at:
+                                </div>
+                                <div class="col-lg-11 col-sm-10 briggs-no-pad">
+                                    <div class="col-lg-1 briggs-no-pad col-sm-2 col-md-1">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="RESIDES_AT_1">
+                                                <input name="RESIDES_AT" value="1" id="RESIDES_AT_1" type="radio" ng-model="briggs.RESIDES_AT">Home
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 briggs-no-pad col-sm-3 col-md-2">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="RESIDES_AT_2">
+                                                <input name="RESIDES_AT" value="2" id="RESIDES_AT_2" type="radio" ng-model="briggs.RESIDES_AT">Nursing Home
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 briggs-no-pad col-sm-3 col-md-2">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="RESIDES_AT_3">
+                                                <input name="RESIDES_AT" value="3" id="RESIDES_AT_3" type="radio" ng-model="briggs.RESIDES_AT">Assisted Living
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 briggs-no-pad col-sm-3 col-md-3">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="RESIDES_AT_4">
+                                                <input name="RESIDES_AT" value="4" id="RESIDES_AT_4" type="radio" ng-model="briggs.RESIDES_AT">Residential Hospice
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-1 briggs-no-pad col-sm-2 col-md-1">
+                                        <div class="radio radio-info briggs-cntrl-grp">
+                                            <label for="RESIDES_AT_5">
+                                                <input name="RESIDES_AT" value="5" id="RESIDES_AT_5" type="radio" ng-model="briggs.RESIDES_AT">Other
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 briggs-no-pad-l col-sm-10 col-md-3 briggs-cntrl-grp">
+                                        <input name="OTHER_RESIDES_AT_SPECIFY" id="OTHER_RESIDES_AT_SPECIFY" class="form-control briggs-control" ng-model="briggs.OTHER_RESIDES_AT_SPECIFY" maxlength="35" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-3 col-md-3 briggs-no-pad">
+                                <div class="radio radio-info briggs-cntrl-grp briggs-mrg-l">
+                                    DNR:
+                                    <label for="HOSPICE25_Yes" class="radio-inline briggs-mrg-thick-l">
+                                        <input name="HOSPICE25" value="1" id="HOSPICE25_Yes" type="radio" ng-model="briggs.HOSPICE25">Yes
+                                    </label>
+                                    <label for="HOSPICE25_No" class="radio-inline">
+                                        <input name="HOSPICE25" value="2" id="HOSPICE25_No" type="radio" ng-model="briggs.HOSPICE25">No
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-3 briggs-no-pad briggs-cntrl-grp">
+                                <div class="col-lg-2 col-sm-2 col-md-2 briggs-no-pad-l briggs-pad-thick-r text-right">
+                                    <label class="briggs-f-thin" for="DIET">Diet:</label>
+                                </div>
+                                <div class="col-lg-10 briggs-no-pad-l col-sm-10 col-md-10">
+                                    <input name="DIET" id="DIET" class="form-control briggs-control" ng-model="briggs.DIET" maxlength="40" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-md-3 briggs-no-pad">
+                                <div class="briggs-cntrl-grp radio  briggs-mrg-l">
+                                    Allergies:
+                                    <label for="HOSPICE27_NKA" class="briggs-mrg-l">
+                                        <input name="HOSPICE27" value="1" id="HOSPICE27_NKA" type="radio" ng-model="briggs.HOSPICE27">NKA
+                                    </label>
+                                    <label for="HOSPICE27_Yes" class="briggs-mrg-l">
+                                        <input name="HOSPICE27" value="2" id="HOSPICE27_Yes" type="radio" ng-model="briggs.HOSPICE27">Yes, list
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-2  col-md-3 briggs-no-pad-l briggs-cntrl-grp">
+                                <textarea class="form-control briggs-control briggs-mrg-thick-b" rows="3" cols="12" id="ALLERGIES_LIST" name="ALLERGIES_LIST" spellcheck="true" ng-model="briggs.ALLERGIES_LIST" maxlength="75"></textarea>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-sec-hdr-black briggs-sec-header briggs-txt-w">
+                                <div class="col-lg-6 col-sm-6 briggs-brd-thick-r-w briggs-f-thick">
+                                    ACTIVITY LEVEL
+                                </div>
+                                <div class="col-lg-6 col-sm-6 briggs-f-thick">
+                                    SAFETY MEASURES
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad items-container ">
+                                <div class="col-lg-6 col-sm-6 briggs-brd-thick-r briggs-no-pad">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-thin-t briggs-mrg-thin-b">
+                                        <div class="col-lg-4 col-sm-6 col-md-4">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="A_INDEPENDENT">
+                                                    <input name="A_INDEPENDENT" value="" id="A_INDEPENDENT" type="checkbox" ng-model="briggs.A_INDEPENDENT">Independent/UAL
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-md-4">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="A_MINIMAL_ASSIST">
+                                                    <input name="A_MINIMAL_ASSIST" value="" id="A_MINIMAL_ASSIST" type="checkbox" ng-model="briggs.A_MINIMAL_ASSIST">Minimal assist
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-md-4">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="A_MAXIXMUM_ASSIST">
+                                                    <input name="A_MAXIXMUM_ASSIST" value="" id="A_MAXIXMUM_ASSIST" type="checkbox" ng-model="briggs.A_MAXIXMUM_ASSIST">Maximum assist
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-3 col-md-4">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="A_BEDBOUND">
+                                                    <input name="A_BEDBOUND" value="" id="A_BEDBOUND" type="checkbox" ng-model="briggs.A_BEDBOUND">Bedbound
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-12 briggs-sec-hdr-black briggs-txt-w briggs-header-txt briggs-sec-header">
+                                        FUNCTIONAL LIMITATIONS
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-thin-t briggs-mrg-thin-b">
+                                        <div class="col-lg-5 col-sm-7 col-md-6 briggs-no-pad-r">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="FL_INCONTINENT">
+                                                    <input name="FL_INCONTINENT" value="" id="FL_INCONTINENT" type="checkbox" ng-model="briggs.FL_INCONTINENT">Incontinent bowel/bladder
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-5 col-md-3 briggs-no-pad-r">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="FL_DYSPHAGIA">
+                                                    <input name="FL_DYSPHAGIA" value="" id="FL_DYSPHAGIA" type="checkbox" ng-model="briggs.FL_DYSPHAGIA">Dysphagia
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-4 col-md-3 briggs-no-pad-r">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="FL_AMPUTATION">
+                                                    <input name="FL_AMPUTATION" value="" id="FL_AMPUTATION" type="checkbox" ng-model="briggs.FL_AMPUTATION">Amputation
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-3 col-md-3 briggs-no-pad-r">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="FL_PARALYSIS">
+                                                    <input name="FL_PARALYSIS" value="" id="FL_PARALYSIS" type="checkbox" ng-model="briggs.FL_PARALYSIS">Paralysis
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-3 col-md-2 briggs-no-pad-r">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="FL_HEMI">
+                                                    <input name="FL_HEMI" value="" id="FL_HEMI" type="checkbox" ng-model="briggs.FL_HEMI">Hemi
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-3 col-md-2 briggs-no-pad-r">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="FL_PARA">
+                                                    <input name="FL_PARA" value="" id="FL_PARA" type="checkbox" ng-model="briggs.FL_PARA">Para
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-3 col-md-4 briggs-no-pad-r">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="FL_QUAD">
+                                                    <input name="FL_QUAD" value="" id="FL_QUAD" type="checkbox" ng-model="briggs.FL_QUAD">Quad
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-4 col-md-4 briggs-no-pad-r">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="FL_SPEECH">
+                                                    <input name="FL_SPEECH" value="" id="FL_SPEECH" type="checkbox" ng-model="briggs.FL_SPEECH">Speech/Language
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-4 col-md-3 briggs-no-pad-r">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="FL_CONTRACTURE">
+                                                    <input name="FL_CONTRACTURE" value="" id="FL_CONTRACTURE" type="checkbox" ng-model="briggs.FL_CONTRACTURE">Contracture
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9 col-sm-8 col-md-7 briggs-no-pad-r">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="FL_DYSPNEA">
+                                                    <input name="FL_DYSPNEA" value="" id="FL_DYSPNEA" type="checkbox" ng-model="briggs.FL_DYSPNEA">Dyspnea with minimal exertion
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad-r">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="FL_HEARING">
+                                                    <input name="FL_HEARING" value="" id="FL_HEARING" type="checkbox" ng-model="briggs.FL_HEARING">Hearing deficit
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9 col-sm-7 col-md-12 briggs-no-pad">
+                                            <div class="col-lg-2 col-sm-4 col-md-2 briggs-no-pad-r">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="FL_OTHER">
+                                                        <input name="FL_OTHER" value="" id="FL_OTHER" type="checkbox" ng-model="briggs.FL_OTHER">Other:
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-10  col-sm-8 col-md-10 briggs-cntrl-grp">
+                                                <input name="FL_OTHER_SPECIFY" id="FL_OTHER_SPECIFY" class="form-control briggs-control" ng-model="briggs.FL_OTHER_SPECIFY" maxlength="35" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 col-md-4 briggs-no-pad-r">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="FL_PRIMARY_LANGUAGE">
+                                                        <input name="FL_PRIMARY_LANGUAGE" value="" id="FL_PRIMARY_LANGUAGE" type="checkbox" ng-model="briggs.FL_PRIMARY_LANGUAGE">Primary language:
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8 briggs-no-pad-l  col-sm-6 col-md-8 briggs-cntrl-grp">
+                                                <input name="FL_PRIMARY_LANG_SPECIFY" id="FL_PRIMARY_LANG_SPECIFY" class="form-control briggs-control" ng-model="briggs.FL_PRIMARY_LANG_SPECIFY" maxlength="40" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-12 briggs-sec-hdr-black briggs-txt-w briggs-header-txt briggs-sec-header">
+                                        MENTAL STATUS
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-thin-t briggs-mrg-thin-b">
+                                        <div class="col-lg-3 col-sm-6 col-md-4">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="MS_ALERT">
+                                                    <input name="MS_ALERT" value="" id="MS_ALERT" type="checkbox" ng-model="briggs.MS_ALERT">Alert/Oriented
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-6 col-md-4">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="MS_LETHARGIC">
+                                                    <input name="MS_LETHARGIC" value="" id="MS_LETHARGIC" type="checkbox" ng-model="briggs.MS_LETHARGIC">Lethargic
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-6 col-md-4">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="MS_CONFUSED">
+                                                    <input name="MS_CONFUSED" value="" id="MS_CONFUSED" type="checkbox" ng-model="briggs.MS_CONFUSED">Confused
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-4 col-md-4">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="MS_UNRESPONSIVE">
+                                                    <input name="MS_UNRESPONSIVE" value="" id="MS_UNRESPONSIVE" type="checkbox" ng-model="briggs.MS_UNRESPONSIVE">Unresponsive
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-3 col-md-2">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="MS_OTHER">
+                                                    <input name="MS_OTHER" value="" id="MS_OTHER" type="checkbox" ng-model="briggs.MS_OTHER">Other:
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10  briggs-no-pad-l  col-sm-9 col-md-6 briggs-cntrl-grp">
+                                            <input name="MS_OTHER_SPECIFY" id="MS_OTHER_SPECIFY" class="form-control briggs-control" ng-model="briggs.MS_OTHER_SPECIFY" maxlength="45" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 briggs-no-pad">
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-thin-t briggs-mrg-thin-b">
+                                        <div class="col-lg-4 col-sm-6 col-md-5">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="SM_OXYGEN">
+                                                    <input name="SM_OXYGEN" value="" id="SM_OXYGEN" type="checkbox" ng-model="briggs.SM_OXYGEN">Oxygen/Electrical
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-md-5">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="SM_FALL">
+                                                    <input name="SM_FALL" value="" id="SM_FALL" type="checkbox" ng-model="briggs.SM_FALL">Fall precautions
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-md-5 briggs-no-pad-r">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="SM_ENVIR">
+                                                    <input name="SM_ENVIR" value="" id="SM_ENVIR" type="checkbox" ng-model="briggs.SM_ENVIR">Environmental barriers
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-md-5">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="SM_ASSIST_DEVICES">
+                                                    <input name="SM_ASSIST_DEVICES" value="" id="SM_ASSIST_DEVICES" type="checkbox" ng-model="briggs.SM_ASSIST_DEVICES">Assistive devices
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-sm-12 col-md-12">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="SM_SLOW_CHANGES">
+                                                    <input name="SM_SLOW_CHANGES" value="" id="SM_SLOW_CHANGES" type="checkbox" ng-model="briggs.SM_SLOW_CHANGES">Slow position changes
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-3 col-md-2">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="SM_OTHER">
+                                                    <input name="SM_OTHER" value="" id="SM_OTHER" type="checkbox" ng-model="briggs.SM_OTHER">Other:
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10  briggs-no-pad-l  col-sm-9 col-md-10 briggs-cntrl-grp">
+                                            <input name="SM_OTHER_SPECIFY" id="SM_OTHER_SPECIFY" class="form-control briggs-control" ng-model="briggs.SM_OTHER_SPECIFY" maxlength="55" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-12 briggs-sec-hdr-black briggs-txt-w briggs-header-txt briggs-sec-header">
+                                        EQUIPMENT
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-thin-t briggs-mrg-thin-b">
+                                        <div class="col-lg-3 col-sm-4 col-md-4">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="E_BED_RAILS">
+                                                    <input name="E_BED_RAILS" value="" id="E_BED_RAILS" type="checkbox" ng-model="briggs.E_BED_RAILS" briggs-medication-route maxlength="10">Bed/Rails
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-4 col-md-4">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="E_COMMODE">
+                                                    <input name="E_COMMODE" value="" id="E_COMMODE" type="checkbox" ng-model="briggs.E_COMMODE" briggs-medication-dose maxlength="25">Commode
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-4 col-md-4 briggs-no-pad-r">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="E_WHEELCHAIR">
+                                                    <input name="E_WHEELCHAIR" value="" id="E_WHEELCHAIR" type="checkbox" ng-model="briggs.E_WHEELCHAIR">Wheelchair
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad-r">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="E_OVERBED_TABLE">
+                                                    <input name="E_OVERBED_TABLE" value="" id="E_OVERBED_TABLE" type="checkbox" ng-model="briggs.E_OVERBED_TABLE">Overbed table
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-4 col-md-4">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="E_WALKER">
+                                                    <input name="E_WALKER" value="" id="E_WALKER" type="checkbox" ng-model="briggs.E_WALKER">Walker/Cane
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9 col-sm-3 col-md-4">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="E_OXYGEN">
+                                                    <input name="E_OXYGEN" value="" id="E_OXYGEN" type="checkbox" ng-model="briggs.E_OXYGEN">Oxygen
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-3 col-md-2">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="E_OTHER">
+                                                    <input name="E_OTHER" value="" id="E_OTHER" type="checkbox" ng-model="briggs.E_OTHER">Other:
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10  briggs-no-pad-l  col-sm-9 col-md-10 briggs-cntrl-grp">
+                                            <input name="E_OTHER_SPECIFY" id="E_OTHER_SPECIFY" class="form-control briggs-control" ng-model="briggs.E_OTHER_SPECIFY" maxlength="50" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-12 briggs-sec-hdr-black briggs-txt-w briggs-f-thick briggs-sec-header">
+                                        <div class="briggs-col-offs">PAIN (Current Level)</div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-12 briggs-mrg-thick-t briggs-mrg-thin-b">
+                                        Choose the appropriate response
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-t">
+                                        <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad-r">
+                                            <label class="briggs-f-thin" for="PAIN_LOCATION">Location (specify):</label>
+                                        </div>
+                                        <div class="col-lg-9 briggs-no-pad-l col-sm-7 col-md-8">
+                                            <input name="PAIN_LOCATION" id="PAIN_LOCATION" class="form-control briggs-control" ng-model="briggs.PAIN_LOCATION" maxlength="40" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-sm-12 col-lg-12 briggs-sec-hdr-black briggs-txt-w briggs-header-txt briggs-sec-header">
+                                SERVICES
+                            </div>
+                            <div class="col-sm-12 col-lg-12 briggs-mrg-thick-t briggs-mrg-thick-b">
+                                Interdisciplinary group (IDG) services and frequency as recommended by IDG (The IDG reviews and updates the P.O.C. at least every 2
+                                weeks).
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-sm-12 col-md-12 col-lg-12 briggs-no-pad briggs-sec-hdr-gray briggs-sec-header briggs-brd-thin-t">
+                                <div class="col-lg-6 col-sm-6 briggs-no-pad briggs-header-txt briggs-brd-thin-r">
+                                    <div class="col-lg-9 col-sm-9 briggs-no-pad briggs-brd-thin-r">
+                                        Services & Frequency
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 briggs-no-pad">
+                                        Declines
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 briggs-no-pad briggs-header-txt">
+                                    <div class="col-lg-9 col-sm-9 briggs-no-pad briggs-brd-thin-r">
+                                        Services & Frequency
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 briggs-no-pad">
+                                        Declines
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 briggs-no-pad  briggs-brd-thin-t">
+                                <div class="col-lg-6 col-sm-6 briggs-no-pad briggs-brd-thin-r">
+                                    <div class="col-lg-9 col-sm-9 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="briggs-fl briggs-mrg-thick-t briggs-mrg-l briggs-pad-thick-r">
+                                            <label class="briggs-f-thin" for="FREQ_SKILLED_NURSING">Skilled Nursing</label>
+                                        </div>
+                                        <div class="col-lg-2 briggs-no-pad col-sm-2 col-md-2 briggs-cntrl-grp briggs-mrg-thick-t">
+                                            <input name="FREQ_SKILLED_NURSING" id="FREQ_SKILLED_NURSING" class="form-control briggs-control" min="0" ng-model="briggs.FREQ_SKILLED_NURSING" maxlength="3" type="number">
+                                        </div>
+                                        <div class="briggs-fl briggs-mrg-thick-t briggs-pad-thick-l ">
+                                            x wk and prn
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3">
+                                        <input name="DECLINES_SKILLED_NURSING" id="DECLINES_SKILLED_NURSING" class="form-control briggs-control briggs-cntrl-grp briggs-mrg-thick-t" ng-model="briggs.DECLINES_SKILLED_NURSING" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 briggs-no-pad ">
+                                    <div class="col-lg-9 col-sm-9 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="briggs-fl briggs-mrg-thick-t briggs-mrg-l briggs-pad-thick-r">
+                                            <label class="briggs-f-thin" for="FREQ_CLERGY">Chaplain/Clergy</label>
+                                        </div>
+                                        <div class="col-lg-2 briggs-no-pad col-sm-2 col-md-2 briggs-cntrl-grp briggs-mrg-thick-t">
+                                            <input name="FREQ_CLERGY" id="FREQ_CLERGY" class="form-control briggs-control" min="0" ng-model="briggs.FREQ_CLERGY" maxlength="3" type="number">
+                                        </div>
+                                        <div class="briggs-fl briggs-mrg-thick-t briggs-pad-thick-l">
+                                            wk/prn
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3">
+                                        <input name="DECLINES_CLERGY" id="DECLINES_CLERGY" class="form-control briggs-control briggs-cntrl-grp briggs-mrg-thick-t" ng-model="briggs.DECLINES_CLERGY" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 briggs-no-pad">
+                                <div class="col-lg-6 col-sm-6 briggs-no-pad briggs-brd-thin-r">
+                                    <div class="col-lg-9 col-sm-9 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="briggs-fl briggs-mrg-thin-t briggs-mrg-l briggs-pad-thick-r">
+                                            <label class="briggs-f-thin" for="FREQ_MEDICAL_SOCIAL_WORKER">Medical Social Worker</label>
+                                        </div>
+                                        <div class="col-lg-2 briggs-no-pad col-sm-2 col-md-2 briggs-cntrl-grp">
+                                            <input name="FREQ_MEDICAL_SOCIAL_WORKER" id="FREQ_MEDICAL_SOCIAL_WORKER" class="form-control briggs-control" min="0" ng-model="briggs.FREQ_MEDICAL_SOCIAL_WORKER" maxlength="3" type="number">
+                                        </div>
+                                        <div class="briggs-fl briggs-mrg-thin-t briggs-pad-thick-l">
+                                            x wk/prn
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3">
+                                        <input name="DECLINES_MEDICAL_SOCIAL_WORKER" id="DECLINES_MEDICAL_SOCIAL_WORKER" class="form-control briggs-control briggs-cntrl-grp" ng-model="briggs.DECLINES_MEDICAL_SOCIAL_WORKER" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 briggs-no-pad ">
+                                    <div class="col-lg-9 col-sm-9 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="briggs-fl briggs-mrg-thin-t briggs-mrg-l briggs-pad-thick-r">
+                                            <label class="briggs-f-thin" for="FREQ_VOLUNTEER">Volunteer</label>
+                                        </div>
+                                        <div class="col-lg-2 briggs-no-pad col-sm-2 col-md-2 briggs-cntrl-grp">
+                                            <input name="FREQ_VOLUNTEER" id="FREQ_VOLUNTEER" class="form-control briggs-control" min="0" ng-model="briggs.FREQ_VOLUNTEER" maxlength="3" type="number">
+                                        </div>
+                                        <div class="briggs-fl briggs-mrg-thin-t briggs-pad-thick-l">
+                                            wk/prn
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3">
+                                        <input name="DECLINNES_VOLUNTEER" id="DECLINNES_VOLUNTEER" class="form-control briggs-control briggs-cntrl-grp" ng-model="briggs.DECLINNES_VOLUNTEER" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 briggs-no-pad">
+                                <div class="col-lg-6 col-sm-6 briggs-no-pad briggs-brd-thin-r">
+                                    <div class="col-lg-9 col-sm-9 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="briggs-fl briggs-mrg-thin-t briggs-mrg-l briggs-pad-thick-r">
+                                            <label class="briggs-f-thin" for="FREQ_AIDE_HOMEMAKER">Aide/Homemaker</label>
+                                        </div>
+                                        <div class="col-lg-2 briggs-no-pad col-sm-2 col-md-2 briggs-cntrl-grp">
+                                            <input name="FREQ_AIDE_HOMEMAKER" id="FREQ_AIDE_HOMEMAKER" class="form-control briggs-control" min="0" ng-model="briggs.FREQ_AIDE_HOMEMAKER" maxlength="3" type="number">
+                                        </div>
+                                        <div class="briggs-fl briggs-mrg-thin-t briggs-pad-thick-l">
+                                            x wk/prn
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3">
+                                        <input name="DECLINES_AIDE_HOMEMAKER" id="DECLINES_AIDE_HOMEMAKER" class="form-control briggs-control briggs-cntrl-grp" ng-model="briggs.DECLINES_AIDE_HOMEMAKER" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 briggs-no-pad ">
+                                    <div class="col-lg-9 col-sm-9 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="briggs-fl briggs-mrg-thin-t briggs-mrg-l briggs-pad-thick-r">
+                                            <label class="briggs-f-thin" for="FREQ_DIETITIAN">Dietitian</label>
+                                        </div>
+                                        <div class="col-lg-2 briggs-no-pad col-sm-2 col-md-2 briggs-cntrl-grp">
+                                            <input name="FREQ_DIETITIAN" id="FREQ_DIETITIAN" class="form-control briggs-control" min="0" ng-model="briggs.FREQ_DIETITIAN" maxlength="3" type="number">
+                                        </div>
+                                        <div class="briggs-fl briggs-mrg-thin-t briggs-pad-thick-l">
+                                            prn
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3">
+                                        <input name="DECLINES_DIETATIAN" id="DECLINES_DIETATIAN" class="form-control briggs-control briggs-cntrl-grp" ng-model="briggs.DECLINES_DIETATIAN" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 briggs-no-pad briggs-brd-thick-b">
+                                <div class="col-lg-6 col-sm-6 briggs-no-pad briggs-brd-thin-r">
+                                    <div class="col-lg-9 col-sm-9 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="briggs-fl briggs-mrg-thin-t briggs-mrg-l briggs-pad-thick-r">
+                                            <label class="briggs-f-thin" for="FREQ_THERAPY">Therapy (PT, OT, ST)</label>
+                                        </div>
+                                        <div class="col-lg-2 briggs-no-pad col-sm-2 col-md-2 briggs-cntrl-grp briggs-mrg-thick-b">
+                                            <input name="FREQ_THERAPY" id="FREQ_THERAPY" class="form-control briggs-control" min="0" ng-model="briggs.FREQ_THERAPY" maxlength="3" type="number">
+                                        </div>
+                                        <div class="briggs-fl briggs-mrg-thin-t briggs-pad-thick-l">
+                                            x wk/prn
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3">
+                                        <input name="DECLINES_THERAPY" id="DECLINES_THERAPY" class="form-control briggs-control briggs-cntrl-grp" ng-model="briggs.DECLINES_THERAPY" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 briggs-no-pad ">
+                                    <div class="col-lg-9 col-sm-9 briggs-no-pad briggs-brd-thin-r">
+                                        <div class="col-lg-2 col-sm-3 col-md-2 briggs-mrg-thin-t">
+                                            <label class="briggs-f-thin" for="FREQ_OTHER">Other:</label>
+                                        </div>
+                                        <div class="col-lg-10  briggs-no-pad-l  col-sm-9 col-md-10 briggs-cntrl-grp briggs-mrg-thick-b">
+                                            <input name="FREQ_OTHER" id="FREQ_OTHER" class="form-control briggs-control" ng-model="briggs.FREQ_OTHER" maxlength="45" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3">
+                                        <input name="DECLINES_OTHER" id="DECLINES_OTHER" class="form-control briggs-control briggs-cntrl-grp" ng-model="briggs.DECLINES_OTHER" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t briggs-mrg-thin-b">
+                                <span class="briggs-f-thick">Dear Physician</span> - Please review the following "<span class="briggs-f-thick">hospice routine orders</span>". If you do not want a particular item, draw a line through it.
+                                Record additional orders where indicated. If you have any questions, please call us. Thank you.
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                <div class="col-lg-1 briggs-cntrl-grp col-md-1 col-sm-1">
+                                    ORDERS:
+                                </div>
+                                <div class="col-lg-11 col-md-11 col-sm-11">
+                                    <div class="col-lg-12 col-sm-12">
+                                        <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                            <label for="HOSPICE_ADMIT_ROUTINE">
+                                                <input name="HOSPICE_ADMIT_ROUTINE" value="" id="HOSPICE_ADMIT_ROUTINE" type="checkbox" ng-model="briggs.HOSPICE_ADMIT_ROUTINE">
+                                                Admit to hospice for routine home care
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12">
+                                        <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                            <label for="HOSPICE_CARE_SERIVCES">
+                                                <input name="HOSPICE_CARE_SERIVCES" value="" id="HOSPICE_CARE_SERIVCES" type="checkbox" ng-model="briggs.HOSPICE_CARE_SERIVCES">
+                                                Continue with hospice care/services
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                        <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                            <label for="INTERDISCIPLINARY_GROUP">
+                                                <input name="INTERDISCIPLINARY_GROUP" value="" id="INTERDISCIPLINARY_GROUP" type="checkbox" ng-model="briggs.INTERDISCIPLINARY_GROUP">
+                                                Interdisciplinary group to determine equipment and supply needs based on assessment for comfort and symptom control
+                                                (may include but not limited to: hospital bed, special mattress, bedside commode, overbed table, shower chair, wheelchair
+                                                walker, suction machine, etc.).
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                        <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                            <label for="ASSESS_EVALUATION">
+                                                <input name="ASSESS_EVALUATION" value="" id="ASSESS_EVALUATION" type="checkbox" ng-model="briggs.ASSESS_EVALUATION">
+                                                Assess and evaluate cardiac, respiratory, GI, GU, pain, mobility, skin, nutrition/hydration, comfort level and symptom
+                                                management, disease progression, safety and family/caregiver needs
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                        <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                            <label for="INSTRUCT_CARE">
+                                                <input name="INSTRUCT_CARE" value="" id="INSTRUCT_CARE" type="checkbox" ng-model="briggs.INSTRUCT_CARE">
+                                                Instruct on care of terminally ill, medications, safety, nutritional needs, pain and symptom control based on assessment
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                        <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                            <label for="ASSESS_EVALUATE_MEDS">
+                                                <input name="ASSESS_EVALUATE_MEDS" value="" id="ASSESS_EVALUATE_MEDS" type="checkbox" ng-model="briggs.ASSESS_EVALUATE_MEDS">
+                                                Assess and evaluate current medications
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                        <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                            <label for="MED_ADMIN">
+                                                <input name="MED_ADMIN" value="" id="MED_ADMIN" type="checkbox" ng-model="briggs.MED_ADMIN">
+                                                Medications to be administered by licensed staff, patient and/or family member/caregiver per medication profile and current
+                                                orders
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                        <div class="col-lg-1 col-sm-2 col-md-1">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="OTHER_ORDERS">
+                                                    <input name="OTHER_ORDERS" value="" id="OTHER_ORDERS" type="checkbox" ng-model="briggs.OTHER_ORDERS">Other:
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-11 col-sm-10  col-md-11 briggs-no-pad-r briggs-pad-l briggs-cntrl-grp">
+                                            <textarea class="form-control briggs-control briggs-mrg-thick-b" rows="3" cols="12" id="OTHER_ORDERS_SPECIFY" name="OTHER_ORDERS_SPECIFY" spellcheck="true" ng-model="briggs.OTHER_ORDERS_SPECIFY" maxlength="300"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--page 1 ends -->
+                    <!--footer starts -->
+                    <div class="col-lg-12  col-sm-12 briggs-pg-footer">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-5 col-md-5 col-sm-6 briggs-no-pad">
+                                <span class="briggs-foot-fcode">Form 3475R/2P</span>
+                                <span class="briggs-foot-cr">Rev. 11/12</span>
+                                <span class="briggs-foot-cr">&copy; BRIGGS, Des Moines, IA (800) 247-2343</span><br />
+                                <span class="briggs-foot-cr briggs-foot-cr-mr">Unauthorized copying or use violates copyright law. www.BriggsCorp.com</span>
+                            </div>
+                            <div class="col-lg-2 col-sm-1 col-md-2 briggs-no-pad text-center">
+                                <img src="../../../Content/images/briggs-logo.png" alt="" />
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-5 briggs-no-pad">
+                                <span class="briggs-foot-fname briggs-f-la briggs-foot-title">
+                                    HOSPICE INTERDISCIPLINARY<br />
+                                    PLAN OF CARE/PHYSICIAN ORDERS
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--footer ends -->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 1 of 2 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+            <!--hidden fields starts-->
+            <input type="hidden" name="ACCOUNT_NAME" id="ACCOUNT_NAME" ng-model="briggs.ACCOUNT_NAME" />
+            <input type="hidden" name="ACCOUNT_ADDRESS1" id="ACCOUNT_ADDRESS1" ng-model="briggs.ACCOUNT_ADDRESS1" />
+            <input type="hidden" name="ACCOUNT_CITYSTATEZIP" id="ACCOUNT_CITYSTATEZIP" ng-model="briggs.ACCOUNT_CITYSTATEZIP" />
+            <input type="hidden" name="ACCOUNT_PHONE" id="ACCOUNT_PHONE" briggs-phone ng-model="briggs.ACCOUNT_PHONE" />
+            <input type="hidden" name="ACCOUNT_FAX" id="ACCOUNT_FAX" briggs-phone ng-model="briggs.ACCOUNT_FAX" />
+            <input type="hidden" name="FORM_NAME" id="FORM_NAME" ng-model="briggs.FORM_NAME" />
+            <input type="hidden" name="FORM_REV" id="FORM_REV" ng-model="briggs.FORM_REV" />
+            <!--hidden fields ends -->
+        </div>
+    </div>
+    <!--form ends-->
+</body>
+</html>

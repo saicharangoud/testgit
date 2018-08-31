@@ -1,0 +1,5 @@
+﻿--new validation message--
+messageid: line:95 column:219 type:error
+Attribute “priggs-zipcode” not allowed on element “input” at this point.
+          <input class="form-control briggs-control briggs-zip-control briggs-mrg-thick-b" id="ZIP_FAC" name="ZIP_FAC" priggs-zipcode ng-model="briggs.ZIP_FAC" maxlength="10" type="text" />
+     

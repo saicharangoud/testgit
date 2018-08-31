@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <link href="../../../Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Content/css/main/briggs-main.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../../../Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../Scripts/match-height/jquery.matchHeight-min.js"></script>
+    <script src="../../../Scripts/page/common.js"></script>
+    <title>BRIGGS | INDIVIDUAL PARTICIPATION RECORD</title>
+</head>
+<body class="test-rows">
+
+    <!--form starts-->
+    <div class="container">
+        <div id="Page-01" name="pagebreak" description="Birthdate">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 briggs-mrg-t">
+                    <!--header starts-->
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12 briggs-pg-title briggs-title-c briggs-mrg-t briggs-no-pad-r">
+                            INDIVIDUAL PARTICIPATION RECORD
+                        </div>
+                    </div>
+                    <!--header ends-->
+                    <!--page 1 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-thick-t">
+                                <div class="col-lg-3  col-sm-4 col-md-3 briggs-no-pad">
+                                    <div class="col-lg-3 col-sm-4 col-md-4 briggs-no-pad-r briggs-cntrl-grp">
+                                        <label for="DATE_BIRTH" class="briggs-f-thin">Birthdate</label>
+                                    </div>
+                                    <div class="col-lg-9 col-sm-8 col-md-8 briggs-pad-l briggs-no-pad-r">
+                                        <input class="form-control briggs-control briggs-cntrl-grp briggs-date-control" id="DATE_BIRTH" name="DATE_BIRTH" ng-model="briggs.DATE_BIRTH" maxlength="10" type="date">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3  col-sm-5 col-md-3 briggs-no-pad ">
+                                    <div class="col-lg-5 col-sm-5 col-md-6 briggs-no-pad-l briggs-pad-thick-r text-right briggs-cntrl-grp">
+                                        <label for="DATE_ADMISSION" class="briggs-f-thin">Admission date</label>
+                                    </div>
+                                    <div class="col-lg-7 col-sm-7 col-md-6 briggs-no-pad">
+                                        <input class="form-control briggs-control briggs-cntrl-grp briggs-date-control" id="DATE_ADMISSION" name="DATE_ADMISSION" ng-model="briggs.DATE_ADMISSION" maxlength="10" type="date">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3  col-sm-3 col-md-3 briggs-no-pad">
+                                    <div class="col-lg-3 col-sm-5 col-md-4 briggs-no-pad-l briggs-pad-thick-r text-right briggs-cntrl-grp">
+                                        <label for="RELIGION_IND" class="briggs-f-thin">Religion</label>
+                                    </div>
+                                    <div class="col-lg-9 col-sm-7 col-md-8 briggs-no-pad-l">
+                                        <input class="form-control briggs-control briggs-cntrl-grp" id="RELIGION_IND" name="RELIGION_IND" ng-model="briggs.RELIGION_IND" maxlength="25" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3  col-sm-12 col-md-3 briggs-no-pad-r ">
+                                    <div class="col-lg-5 col-sm-2 col-md-6 briggs-no-pad briggs-cntrl-grp">
+                                        <label for="VOTE_REG" class="briggs-f-thin">Voter registration</label>
+                                    </div>
+                                    <div class="col-lg-7 col-sm-10 col-md-6 briggs-no-pad-l briggs-pad-thick-l">
+                                        <input class="form-control briggs-control briggs-cntrl-grp" id="VOTE_REG" name="VOTE_REG" ng-model="briggs.VOTE_REG" maxlength="25" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-brd-thick-t briggs-mrg-thin-t">
+                                <div class="briggs-fl briggs-cntrl-grp briggs-f-thick">
+                                    PHYSICIAN ORDERS:
+                                </div>
+
+                                <div class="col-lg-3 col-sm-3  briggs-no-pad-r">
+                                    <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                        <label for="PO_ACT" class="checkbox-inline">
+                                            <input id="PO_ACT" value="" type="checkbox" name="PO_ACT" ng-model="briggs.PO_ACT">Overall activity plan
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-3 col-md-2 briggs-no-pad-r ">
+                                    <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                        <label for="PO_ALC" class="checkbox-inline">
+                                            <input id="PO_ALC" value="" type="checkbox" name="PO_ALC" ng-model="briggs.PO_ALC">Alcohol
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-3   col-md-2">
+                                    <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                        <label for="PO_MEDS" class="checkbox-inline">
+                                            <input id="PO_MEDS" value="" type="checkbox" name="PO_MEDS" ng-model="briggs.PO_MEDS">Pass with meds
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="col-lg-4 col-sm-5 col-md-4  briggs-no-pad-r">
+                                    <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                        <label for="PO_DIET" class="checkbox-inline">
+                                            <input id="PO_DIET" value="" type="checkbox" name="PO_DIET" ng-model="briggs.PO_DIET">May have regular diet at special events
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-3   briggs-no-pad">
+                                    <div class="checkbox checkbox-info briggs-cntrl-grp briggs-col-offs">
+                                        <label for="PO_VOL" class="checkbox-inline">
+                                            <input id="PO_VOL" value="" type="checkbox" name="PO_VOL" ng-model="briggs.PO_VOL">Resident volunteer
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-sm-2  col-md-1 briggs-no-pad-r">
+                                    <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                        <label for="PO_OTH" class="checkbox-inline">
+                                            <input id="PO_OTH" value="" type="checkbox" name="PO_OTH" ng-model="briggs.PO_OTH">Other
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-2 col-md-4 briggs-no-pad">
+                                    <input class="form-control briggs-control briggs-cntrl-grp" id="PO_OTHER" name="PO_OTHER" ng-model="briggs.PO_OTHER" maxlength="35" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12  briggs-brd-thick-t briggs-mrg-thin-t">
+                                <div class="briggs-cntrl-grp">
+                                    <span class="briggs-f-thick">INSTRUCTIONS:</span>
+                                    As resident participates in group activities, write the corresponding alpha code in the appropriate date. The quality of participation
+                                    may be designated by circling the code if the resident was an active participant. Identify independent activities and frequency in the space provided
+                                    (i.e., reading 1 hr./dy; family visits 2x/wk, etc.). Record activity related short term goals and/or approaches (from the overall plan of care) in the
+                                    space provided to ensure follow through.
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-brd-thick-b">
+                                <div class="col-lg-3 col-sm-4 briggs-no-pad-r briggs-mrg-thick-b ">
+                                    <div class="briggs-col-offs">
+                                        <span class="briggs-f-thick">P</span> = Physically stimulating<br />
+                                        <span class="briggs-f-thick">O</span> = Community outings<br />
+                                        <span class="briggs-f-thick">K</span> = Intergenerational<br />
+                                        <span class="briggs-f-thick">E</span> = Esteem building
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-4 briggs-no-pad-r briggs-mrg-thick-b">
+                                    <span class="briggs-f-thick">V</span> = Service related/volunteer<br />
+                                    <span class="briggs-f-thick">C</span> = Creative<br />
+                                    <span class="briggs-f-thick">R</span> = Religious<br />
+                                    <span class="briggs-f-thick">S</span> = Special events
+                                </div>
+                                <div class="col-lg-6 col-sm-4 briggs-no-pad briggs-mrg-thick-b">
+                                    <div class="col-lg-12 col-sm-12">
+                                        <div class="briggs-fl briggs-pad-thin-r">
+                                            <span class="briggs-f-thick">I</span>
+                                        </div>
+                                        <div class="briggs-fl briggs-pad-thick-r">
+                                            =
+                                        </div>
+                                        <div class="col-lg-11 col-sm-10 briggs-no-pad ">
+                                            Intellectually stimulating/educational
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12">
+                                        <div class="briggs-fl briggs-pad-thin-r">
+                                            <span class="briggs-f-thick">M</span>
+                                        </div>
+                                        <div class="briggs-fl briggs-pad-thick-r">
+                                            =
+                                        </div>
+                                        <div class="col-lg-11 col-sm-10 briggs-no-pad">
+                                            Resident Council meeting<br />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-cntrl-grp">
+                                        <div class="col-lg-2 col-sm-4 col-md-3 briggs-cntrl-grp">
+                                            <label for="INST_OTH">OTHER:</label>                                          
+                                        </div>
+                                        <div class="col-lg-10 briggs-no-pad-l col-sm-8 col-md-9  briggs-cntrl-grp">                                           
+                                            <textarea class="form-control briggs-control" id="INST_OTH" name="INST_OTH" spellcheck="true" ng-model="briggs.INST_OTH" maxlength="120"></textarea>
+                                        </div>                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-sm-12 briggs-mrg-t briggs-mrg-thick-b">
+                                <div class="briggs-fl briggs-cntrl-grp briggs-pad-thick-r">
+                                    <label class="briggs-f-thin" for="MONTH">Month</label>
+                                </div>
+                                <div class="col-lg-2 col-sm-3 col-md-2 briggs-no-pad">
+                                   <!--   <input class="form-control briggs-control briggs-cntrl-grp" id="MONTH" name="MONTH" type="text" ng-model="briggs.MONTH"> -->
+									
+									
+                                                  
+													<select name="MONTH" id="MONTH" class="form-control briggs-control briggs-cntrl-grp  briggs-mrg-thick-b" ng-model="briggs.MAHC_A">
+                                                    <option value="" selected="selected"></option>
+                                                    <option value="1">January</option>
+													<option value="2">February</option>
+													<option value="3">March</option>
+													<option value="4">April</option>
+													<option value="5">May</option>
+													<option value="6">June</option>
+													<option value="7">July</option>
+													<option value="8">August</option>
+													<option value="9">September</option>
+													<option value="10">October</option>
+													<option value="11">November</option>
+													<option value="12">December</option>
+													
+                                                </select>
+												
+						
+                                </div>
+                                <div class="briggs-fl briggs-cntrl-grp briggs-pad-thick-r briggs-col-offs">
+                                    <label class="briggs-f-thin" for="YEAR">Year</label>
+                                </div>
+                                <div class="col-lg-1 col-sm-2 col-md-1 briggs-no-pad">
+                                    <input class="form-control briggs-control briggs-cntrl-grp" id="YEAR" name="YEAR" min="2000" type="number" ng-model="briggs.YEAR">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-sec-hdr-black briggs-sec-header items-container briggs-txt-w">
+                                <div class="col-lg-5 col-sm-5 briggs-brd-thin-r-w briggs-no-pad briggs-header-txt">
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r-w briggs-no-pad">
+                                        SUNDAY
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r-w briggs-no-pad">
+                                        MONDAY
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4  briggs-no-pad">
+                                        TUESDAY
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-5 briggs-brd-thin-r-w briggs-no-pad briggs-header-txt">
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r-w briggs-no-pad">
+                                        WEDNESDAY
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r-w briggs-no-pad">
+                                        THURSDAY
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4  briggs-no-pad">
+                                        FRIDAY
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad briggs-header-txt">
+                                    SATURDAY
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad items-container briggs-brd-thin-b">
+                                <div class="col-lg-5 col-sm-5 briggs-brd-thin-r briggs-no-pad ">
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_A_SUN" min="0" max="31" name="CODE_A_SUN" type="number" ng-model="briggs.CODE_A_SUN">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_A_SUN" class="checkbox-inline">
+                                                        <input id="ACT_A_SUN" value="" type="checkbox" name="ACT_A_SUN" ng-model="briggs.ACT_A_SUN">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_A_SUN" name="INDE_A_SUN" spellcheck="true" ng-model="briggs.INDE_A_SUN" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_A_MON" name="CODE_A_MON" max="31" min="0" type="number" ng-model="briggs.CODE_A_MON">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_A_MON" class="checkbox-inline">
+                                                        <input id="ACT_A_MON" value="" type="checkbox" name="ACT_A_MON" ng-model="briggs.ACT_A_MON">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_A_MON" name="INDE_A_MON" spellcheck="true" ng-model="briggs.INDE_A_MON" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4  briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_A_TUE" name="CODE_A_TUE" max="31" min="0" type="number" ng-model="briggs.CODE_A_TUE">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_A_TUE" class="checkbox-inline">
+                                                        <input id="ACT_A_TUE" value="" type="checkbox" name="ACT_A_TUE" ng-model="briggs.ACT_A_TUE">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_A_TUE" name="INDE_A_TUE" spellcheck="true" ng-model="briggs.INDE_A_TUE" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-5 briggs-brd-thin-r briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_A_WED" name="CODE_A_WED" max="31" min="0" type="number" ng-model="briggs.CODE_A_WED">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12   briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_A_WED">
+                                                        <input id="ACT_A_WED" value="" type="checkbox" name="ACT_A_WED" ng-model="briggs.ACT_A_WED">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_A_WED" name="INDE_A_WED" spellcheck="true" ng-model="briggs.INDE_A_WED" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_A_THU" name="CODE_A_THU" max="31" min="0" type="number" ng-model="briggs.CODE_A_THU">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_A_THU" class="checkbox-inline">
+                                                        <input id="ACT_A_THU" value="" type="checkbox" name="ACT_A_THU" ng-model="briggs.ACT_A_THU">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_A_THU" name="INDE_A_THU" spellcheck="true" ng-model="briggs.INDE_A_THU" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4  briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_A_FRI" name="CODE_A_FRI" max="31" min="0" type="number" ng-model="briggs.CODE_A_FRI">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12 briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_A_FRI" class="checkbox-inline">
+                                                        <input id="ACT_A_FRI" value="" type="checkbox" name="ACT_A_FRI" ng-model="briggs.ACT_A_FRI">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_A_FRI" name="INDE_A_FRI" spellcheck="true" ng-model="briggs.INDE_A_FRI" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad">
+                                    <div class="col-sm-12 briggs-no-pad">
+                                        <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                            <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_A_SAT" name="CODE_A_SAT" max="31" min="0" type="number" ng-model="briggs.CODE_A_SAT">
+                                        </div>
+                                        <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="ACT_A_SAT" class="checkbox-inline">
+                                                    <input id="ACT_A_SAT" value="" type="checkbox" name="ACT_A_SAT" ng-model="briggs.ACT_A_SAT">
+                                                    Active<br />
+                                                    Participant
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                        <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_A_SAT" name="INDE_A_SAT" spellcheck="true" ng-model="briggs.INDE_A_SAT" maxlength="75"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad items-container briggs-brd-thin-b">
+                                <div class="col-lg-5 col-sm-5 briggs-brd-thin-r briggs-no-pad ">
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_B_SUN" name="CODE_B_SUN" max="31" min="0" type="number" ng-model="briggs.CODE_B_SUN">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_B_SUN" class="checkbox-inline">
+                                                        <input id="ACT_B_SUN" value="" type="checkbox" name="ACT_B_SUN" ng-model="briggs.ACT_B_SUN">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_B_SUN" name="INDE_B_SUN" spellcheck="true" ng-model="briggs.INDE_B_SUN" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_B_MON" name="CODE_B_MON" max="31" min="0" type="number" ng-model="briggs.CODE_B_MON">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_B_MON" class="checkbox-inline">
+                                                        <input id="ACT_B_MON" value="" type="checkbox" name="ACT_B_MON" ng-model="briggs.ACT_B_MON">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_B_MON" name="INDE_B_MON" spellcheck="true" ng-model="briggs.INDE_B_MON" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4  briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_B_TUE" name="CODE_B_TUE" max="31" min="0" type="number" ng-model="briggs.CODE_B_TUE">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_B_TUE" class="checkbox-inline">
+                                                        <input id="ACT_B_TUE" value="" type="checkbox" name="ACT_B_TUE" ng-model="briggs.ACT_B_TUE">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_B_TUE" name="INDE_B_TUE" spellcheck="true" ng-model="briggs.INDE_B_TUE" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-5 briggs-brd-thin-r briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_B_WED" name="CODE_B_WED" max="31" min="0" type="number" ng-model="briggs.CODE_B_WED">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12   briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_B_WED">
+                                                        <input id="ACT_B_WED" value="" type="checkbox" name="ACT_B_WED" ng-model="briggs.ACT_B_WED">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_B_WED" name="INDE_B_WED" spellcheck="true" ng-model="briggs.INDE_B_WED" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_B_THU" name="CODE_B_THU" max="31" min="0" type="number" ng-model="briggs.CODE_B_THU">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_B_THU" class="checkbox-inline">
+                                                        <input id="ACT_B_THU" value="" type="checkbox" name="ACT_B_THU" ng-model="briggs.ACT_B_THU">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_B_THU" name="INDE_B_THU" spellcheck="true" ng-model="briggs.INDE_B_THU" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4  briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_B_FRI" name="CODE_B_FRI" max="31" min="0" type="number" ng-model="briggs.CODE_B_FRI">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12 briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_B_FRI" class="checkbox-inline">
+                                                        <input id="ACT_B_FRI" value="" type="checkbox" name="ACT_B_FRI" ng-model="briggs.ACT_B_FRI">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_B_FRI" name="INDE_B_FRI" spellcheck="true" ng-model="briggs.INDE_B_FRI" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad">
+                                    <div class="col-sm-12 briggs-no-pad">
+                                        <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                            <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_B_SAT" name="CODE_B_SAT" max="31" min="0" type="number" ng-model="briggs.CODE_B_SAT">
+                                        </div>
+                                        <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="ACT_B_SAT" class="checkbox-inline">
+                                                    <input id="ACT_B_SAT" value="" type="checkbox" name="ACT_B_SAT" ng-model="briggs.ACT_B_SAT">
+                                                    Active<br />
+                                                    Participant
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                        <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_B_SAT" name="INDE_B_SAT" spellcheck="true" ng-model="briggs.INDE_B_SAT" maxlength="75"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad items-container briggs-brd-thin-b">
+                                <div class="col-lg-5 col-sm-5 briggs-brd-thin-r briggs-no-pad ">
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_C_SUN" name="CODE_C_SUN" max="31" min="0" type="number" ng-model="briggs.CODE_C_SUN">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_C_SUN" class="checkbox-inline">
+                                                        <input id="ACT_C_SUN" value="" type="checkbox" name="ACT_C_SUN" ng-model="briggs.ACT_C_SUN">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_C_SUN" name="INDE_C_SUN" spellcheck="true" ng-model="briggs.INDE_C_SUN" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_C_MON" name="CODE_C_MON" max="31" min="0" type="number" ng-model="briggs.CODE_C_MON">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_C_MON" class="checkbox-inline">
+                                                        <input id="ACT_C_MON" value="" type="checkbox" name="ACT_C_MON" ng-model="briggs.ACT_C_MON">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_C_MON" name="INDE_C_MON" spellcheck="true" ng-model="briggs.INDE_C_MON" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4  briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_C_TUE" name="CODE_C_TUE" max="31" min="0" type="number" ng-model="briggs.CODE_C_TUE">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_C_TUE" class="checkbox-inline">
+                                                        <input id="ACT_C_TUE" value="" type="checkbox" name="ACT_C_TUE" ng-model="briggs.ACT_C_TUE">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_C_TUE" name="INDE_C_TUE" spellcheck="true" ng-model="briggs.INDE_C_TUE" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-5 briggs-brd-thin-r briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_C_WED" name="CODE_C_WED" max="31" min="0" type="number" ng-model="briggs.CODE_C_WED">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12   briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_C_WED">
+                                                        <input id="ACT_C_WED" value="" type="checkbox" name="ACT_C_WED" ng-model="briggs.ACT_C_WED">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_C_WED" name="INDE_C_WED" spellcheck="true" ng-model="briggs.INDE_C_WED" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_C_THU" name="CODE_C_THU" max="31" min="0" type="number" ng-model="briggs.CODE_C_THU">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_C_THU" class="checkbox-inline">
+                                                        <input id="ACT_C_THU" value="" type="checkbox" name="ACT_C_THU" ng-model="briggs.ACT_C_THU">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_C_THU" name="INDE_C_THU" spellcheck="true" ng-model="briggs.INDE_C_THU" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4  briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_C_FRI" name="CODE_C_FRI" max="31" min="0" type="number" ng-model="briggs.CODE_C_FRI">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12 briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_C_FRI" class="checkbox-inline">
+                                                        <input id="ACT_C_FRI" value="" type="checkbox" name="ACT_C_FRI" ng-model="briggs.ACT_C_FRI">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_C_FRI" name="INDE_C_FRI" spellcheck="true" ng-model="briggs.INDE_C_FRI" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad">
+                                    <div class="col-sm-12 briggs-no-pad">
+                                        <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                            <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_C_SAT" name="CODE_C_SAT" max="31" min="0" type="number" ng-model="briggs.CODE_C_SAT">
+                                        </div>
+                                        <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="ACT_C_SAT" class="checkbox-inline">
+                                                    <input id="ACT_C_SAT" value="" type="checkbox" name="ACT_C_SAT" ng-model="briggs.ACT_C_SAT">
+                                                    Active<br />
+                                                    Participant
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                        <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_C_SAT" name="INDE_C_SAT" spellcheck="true" ng-model="briggs.INDE_C_SAT" maxlength="75"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad items-container briggs-brd-thin-b">
+                                <div class="col-lg-5 col-sm-5 briggs-brd-thin-r briggs-no-pad ">
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_D_SUN" name="CODE_D_SUN" max="31" min="0" type="number" ng-model="briggs.CODE_D_SUN">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_D_SUN" class="checkbox-inline">
+                                                        <input id="ACT_D_SUN" value="" type="checkbox" name="ACT_D_SUN" ng-model="briggs.ACT_D_SUN">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_D_SUN" name="INDE_D_SUN" spellcheck="true" ng-model="briggs.INDE_D_SUN" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_D_MON" name="CODE_D_MON" max="31" min="0" type="number" ng-model="briggs.CODE_D_MON">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_D_MON" class="checkbox-inline">
+                                                        <input id="ACT_D_MON" value="" type="checkbox" name="ACT_D_MON" ng-model="briggs.ACT_D_MON">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_D_MON" name="INDE_D_MON" spellcheck="true" ng-model="briggs.INDE_D_MON" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4  briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_D_TUE" name="CODE_D_TUE" max="31" min="0" type="number" ng-model="briggs.CODE_D_TUE">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_D_TUE" class="checkbox-inline">
+                                                        <input id="ACT_D_TUE" value="" type="checkbox" name="ACT_D_TUE" ng-model="briggs.ACT_D_TUE">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_D_TUE" name="INDE_D_TUE" spellcheck="true" ng-model="briggs.INDE_D_TUE" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-5 briggs-brd-thin-r briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_D_WED" name="CODE_D_WED" max="31" min="0" type="number" ng-model="briggs.CODE_D_WED">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12   briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_D_WED">
+                                                        <input id="ACT_D_WED" value="" type="checkbox" name="ACT_D_WED" ng-model="briggs.ACT_D_WED">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_D_WED" name="INDE_D_WED" spellcheck="true" ng-model="briggs.INDE_D_WED" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_D_THU" name="CODE_D_THU" max="31" min="0" type="number" ng-model="briggs.CODE_D_THU">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_D_THU" class="checkbox-inline">
+                                                        <input id="ACT_D_THU" value="" type="checkbox" name="ACT_D_THU" ng-model="briggs.ACT_D_THU">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_D_THU" name="INDE_D_THU" spellcheck="true" ng-model="briggs.INDE_D_THU" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4  briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_D_FRI" name="CODE_D_FRI" max="31" min="0" type="number" ng-model="briggs.CODE_D_FRI">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12 briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_D_FRI" class="checkbox-inline">
+                                                        <input id="ACT_D_FRI" value="" type="checkbox" name="ACT_D_FRI" ng-model="briggs.ACT_D_FRI">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_D_FRI" name="INDE_D_FRI" spellcheck="true" ng-model="briggs.INDE_D_FRI" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad">
+                                    <div class="col-sm-12 briggs-no-pad">
+                                        <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                            <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_D_SAT" name="CODE_D_SAT" max="31" min="0" type="number" ng-model="briggs.CODE_D_SAT">
+                                        </div>
+                                        <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="ACT_D_SAT" class="checkbox-inline">
+                                                    <input id="ACT_D_SAT" value="" type="checkbox" name="ACT_D_SAT" ng-model="briggs.ACT_D_SAT">
+                                                    Active<br />
+                                                    Participant
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                        <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_D_SAT" name="INDE_D_SAT" spellcheck="true" ng-model="briggs.INDE_D_SAT" maxlength="75"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad items-container briggs-brd-thick-b">
+                                <div class="col-lg-5 col-sm-5 briggs-brd-thin-r briggs-no-pad ">
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_E_SUN" name="CODE_E_SUN" max="31" min="0" type="number" ng-model="briggs.CODE_E_SUN">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_E_SUN" class="checkbox-inline">
+                                                        <input id="ACT_E_SUN" value="" type="checkbox" name="ACT_E_SUN" ng-model="briggs.ACT_E_SUN">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_E_SUN" name="INDE_E_SUN" spellcheck="true" ng-model="briggs.INDE_E_SUN" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_E_MON" name="CODE_E_MON" max="31" min="0" type="number" ng-model="briggs.CODE_E_MON">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_E_MON" class="checkbox-inline">
+                                                        <input id="ACT_E_MON" value="" type="checkbox" name="ACT_E_MON" ng-model="briggs.ACT_E_MON">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_E_MON" name="INDE_E_MON" spellcheck="true" ng-model="briggs.INDE_E_MON" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4  briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_E_TUE" name="CODE_E_TUE" max="31" min="0" type="number" ng-model="briggs.CODE_E_TUE">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_E_TUE" class="checkbox-inline">
+                                                        <input id="ACT_E_TUE" value="" type="checkbox" name="ACT_E_TUE" ng-model="briggs.ACT_E_TUE">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_E_TUE" name="INDE_E_TUE" spellcheck="true" ng-model="briggs.INDE_E_TUE" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-sm-5 briggs-brd-thin-r briggs-no-pad">
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_E_WED" name="CODE_E_WED" max="31" min="0" type="number" ng-model="briggs.CODE_E_WED">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12   briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_E_WED">
+                                                        <input id="ACT_E_WED" value="" type="checkbox" name="ACT_E_WED" ng-model="briggs.ACT_E_WED">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_E_WED" name="INDE_E_WED" spellcheck="true" ng-model="briggs.INDE_E_WED" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 briggs-brd-thin-r briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_E_THU" name="CODE_E_THU" max="31" min="0" type="number" ng-model="briggs.CODE_E_THU">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_E_THU" class="checkbox-inline">
+                                                        <input id="ACT_E_THU" value="" type="checkbox" name="ACT_E_THU" ng-model="briggs.ACT_E_THU">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_E_THU" name="INDE_E_THU" spellcheck="true" ng-model="briggs.INDE_E_THU" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4  briggs-no-pad">
+                                        <div class="col-sm-12 briggs-no-pad">
+                                            <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                                <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_E_FRI" name="CODE_E_FRI" max="31" min="0" type="number" ng-model="briggs.CODE_E_FRI">
+                                            </div>
+                                            <div class="col-lg-8 col-sm-12 col-md-12 briggs-no-pad briggs-pad-thin-l">
+                                                <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                    <label for="ACT_E_FRI" class="checkbox-inline">
+                                                        <input id="ACT_E_FRI" value="" type="checkbox" name="ACT_E_FRI" ng-model="briggs.ACT_E_FRI">
+                                                        Active<br />
+                                                        Participant
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                            <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_E_FRI" name="INDE_E_FRI" spellcheck="true" ng-model="briggs.INDE_E_FRI" maxlength="75"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 briggs-no-pad">
+                                    <div class="col-sm-12 briggs-no-pad">
+                                        <div class="col-lg-4 col-sm-6 briggs-pad-thin-lr briggs-brd-thin-r briggs-brd-thin-b">
+                                            <input class="form-control briggs-control briggs-mrg-thick-t briggs-mrg-thick-b" id="CODE_E_SAT" name="CODE_E_SAT" max="31" min="0" type="number" ng-model="briggs.CODE_E_SAT">
+                                        </div>
+                                        <div class="col-lg-8 col-sm-12 col-md-12  briggs-no-pad briggs-pad-thin-l">
+                                            <div class="checkbox checkbox-info briggs-cntrl-grp">
+                                                <label for="ACT_E_SAT" class="checkbox-inline">
+                                                    <input id="ACT_E_SAT" value="" type="checkbox" name="ACT_E_SAT" ng-model="briggs.ACT_E_SAT">
+                                                    Active<br />
+                                                    Participant
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-pad-thin-lr briggs-mrg-thick-b">
+                                        <textarea class="form-control briggs-control" rows="5" cols="12" id="INDE_E_SAT" name="INDE_E_SAT" spellcheck="true" ng-model="briggs.INDE_E_SAT" maxlength="75"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="briggs-fl briggs-mrg-l briggs-mrg-t briggs-pad-thick-r">
+                                <label class="briggs-f-thin" for="TOTAL_NO">
+                                    Total no. group activities attended for month
+                                </label>
+                            </div>
+                            <div class="col-lg-1 col-sm-1 col-md-1 briggs-no-pad briggs-mrg-t">
+                                <input class="form-control briggs-control" id="TOTAL_NO" name="TOTAL_NO" min="0" ng-model="briggs.TOTAL_NO" maxlength="3" type="number">
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp">
+                                <label for="IND_ACT">INDEPENDENT ACTIVITIES <span class="briggs-f-thin">(include frequency)</span> </label>
+                                <textarea class="form-control briggs-control" rows="4" cols="12" id="IND_ACT" name="IND_ACT" spellcheck="true" ng-model="briggs.IND_ACT" maxlength="360"></textarea>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-cntrl-grp">
+                                <label for="ACT_PLAN">ACTIVITY PLAN <span class="briggs-f-thin">(STG's and/or approaches)</span> </label>
+                                <textarea class="form-control briggs-control briggs-mrg-thick-b" rows="4" cols="12" id="ACT_PLAN" name="ACT_PLAN" spellcheck="true" ng-model="briggs.ACT_PLAN" maxlength="360"></textarea>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 briggs-f-md  briggs-brd-thick-t  items-container col-sm-12 briggs-no-pad">
+                                <div class="col-sm-5 col-lg-6 col-md-6 item briggs-brd-thin-r briggs-no-pad ">
+                                    <div class="col-sm-5 col-lg-5  briggs-mrg-thick-b briggs-mrg-thick-t">
+                                        <label for="NAME_LAST" class="briggs-f-thin">
+                                            NAME-Last
+                                        </label>
+                                        <input name="NAME_LAST" id="NAME_LAST" class="form-control briggs-control" ng-model="briggs.NAME_LAST" maxlength="40" type="text">
+                                    </div>
+                                    <div class="col-sm-4 col-lg-5 briggs-no-pad-l   briggs-mrg-thick-b briggs-mrg-thick-t">
+                                        <label for="NAME_FIRST" class="briggs-f-thin"> First</label>
+                                        <input name="NAME_FIRST" id="NAME_FIRST" class="form-control briggs-control" ng-model="briggs.NAME_FIRST" maxlength="25" type="text">
+                                    </div>
+                                    <div class="col-sm-3 col-lg-2 briggs-no-pad-l  briggs-mrg-thick-b briggs-mrg-thick-t">
+                                        <label for="NAME_MIDDLE" class="briggs-f-thin"> Middle</label>
+                                        <input name="NAME_MIDDLE" id="NAME_MIDDLE" class="form-control briggs-control" ng-model="briggs.NAME_MIDDLE" maxlength="10" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-lg-2 col-md-2 item  briggs-no-pad briggs-brd-thin-r">
+                                    <div class="col-lg-12  col-sm-12  briggs-mrg-thick-t">
+                                        <label for="NAME_PHYSICIAN" class="briggs-f-thin">
+                                            Attending Physician
+                                        </label>
+                                        <input name="NAME_PHYSICIAN" id="NAME_PHYSICIAN" class="form-control briggs-control briggs-mrg-thick-b" ng-model="briggs.NAME_PHYSICIAN" briggs-physician-name maxlength="55" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 col-lg-2 item briggs-no-pad briggs-brd-thin-r">
+                                    <div class="col-lg-12  col-sm-12  briggs-mrg-thick-t briggs-mrg-thick-b">
+                                        <label for="RECORD_NO" class="briggs-f-thin">
+                                            Record No.
+                                        </label>
+                                        <input name="RECORD_NO" id="RECORD_NO" class="form-control briggs-control" ng-model="briggs.RECORD_NO" maxlength="40" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 col-lg-2 col-md-2 item briggs-no-pad">
+                                    <div class="col-lg-12  col-sm-12  briggs-mrg-thick-t briggs-mrg-thick-b">
+                                        <label for="ROOM" class="briggs-f-thin">
+                                            Room/Bed
+                                        </label>
+                                        <input name="ROOM" id="ROOM" class="form-control briggs-control" ng-model="briggs.ROOM" maxlength="15" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--page 1 ends-->
+                    <!--footer starts-->
+                    <div class="col-lg-12  col-sm-12 col-md-12 briggs-pg-footer">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-5 col-sm-6 col-md-5 briggs-no-pad">
+                                <span class="briggs-foot-fcode">CFS 4-6E</span>
+                                <span class="briggs-foot-cr">Rev. 5/00</span>
+                                <span class="briggs-foot-cr">&copy; 1992 BRIGGS, Des Moines, IA (800) 247-2343</span><br />
+                                <span class="briggs-foot-cr briggs-foot-cr-mr">Unauthorized copying or use violates copyright law. www.BriggsCorp.com</span>
+                            </div>
+                            <div class="col-lg-2 col-sm-2 col-md-2 briggs-no-pad text-center">
+                                <img src="../../../Content/images/briggs-logo.png" alt="" />
+                            </div>
+                            <div class="col-lg-5 col-sm-4 col-md-5 briggs-no-pad">
+                                <span class="briggs-foot-fname briggs-f-la">PARTICIPATION RECORD</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--footer ends -->
+                    
+                </div>
+            </div>
+            <!--hidden fields-->
+            <input type="hidden" name="ACCOUNT_NAME" id="ACCOUNT_NAME" ng-model="briggs.ACCOUNT_NAME" />
+            <input type="hidden" name="ACCOUNT_ADDRESS1" id="ACCOUNT_ADDRESS1" ng-model="briggs.ACCOUNT_ADDRESS1" />
+            <input type="hidden" name="ACCOUNT_CITYSTATEZIP" id="ACCOUNT_CITYSTATEZIP" ng-model="briggs.ACCOUNT_CITYSTATEZIP" />
+            <input type="hidden" name="ACCOUNT_PHONE" id="ACCOUNT_PHONE" briggs-phone ng-model="briggs.ACCOUNT_PHONE" />
+            <input type="hidden" name="ACCOUNT_FAX" id="ACCOUNT_FAX" briggs-phone ng-model="briggs.ACCOUNT_FAX" />
+            <input type="hidden" name="FORM_NAME" id="FORM_NAME" ng-model="briggs.FORM_NAME" />
+            <input type="hidden" name="FORM_REV" id="FORM_REV" ng-model="briggs.FORM_REV" />
+            <!--hidden fields ends-->
+        </div>
+    </div>
+    <!--form ends-->
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <link href="../../../Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Content/css/main/briggs-main.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../../../Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../Scripts/match-height/jquery.matchHeight-min.js"></script>
+    <script src="../../../Scripts/page/common.js"></script>
+    <title>BRIGGS | ALR Community - Individual/Family Self-Evaluation</title>
+</head>
+<body class="test-rows">
+    <!--form starts -->
+    <div class="container">
+        <div id="Page-03" name="pagebreak" description="Individual's Name">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+
+                    <!--page 3 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-t briggs-no-pad-r">
+                                <div class="briggs-fl briggs-pad-thick-r">
+                                    <label for="NAME" class="briggs-f-thin">Individual's Name:</label>
+                                </div>
+                                <div class="col-lg-7 briggs-no-pad col-sm-4 col-md-6 briggs-mrg-thin-b">
+                                    <input class="form-control briggs-control" id="NAME" name="NAME" ng-model="briggs.NAME" maxlength="50" type="text">
+                                </div>
+                                <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                    <label for="DATE_ASSESS" class="briggs-f-thin">Date of Assessment:</label>
+                                </div>
+                                <div class="briggs-fl">
+                                    <input class="form-control briggs-control briggs-date-control" id="DATE_ASSESS" name="DATE_ASSESS" ng-model="briggs.DATE_ASSESS" maxlength="10" type="date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-mrg-thin-t">
+                                <div class="briggs-fl briggs-mrg-thin-t">
+                                    Do you take medications for depression or anxiety?
+                                </div>
+                                <div class="briggs-fl briggs-mrg-thick-l">
+                                    <div class="radio radio-info briggs-cntrl-grp ">
+                                        <label for="COG_MED_1">
+                                            <input type="radio" value="1" id="COG_MED_1" name="COG_MED" ng-model="briggs.COG_MED" />
+                                            Yes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="COG_MED_0">
+                                            <input type="radio" value="0" id="COG_MED_0" name="COG_MED" ng-model="briggs.COG_MED" />
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <label class="briggs-f-thin" for="COG_DEP_ANX">
+                                    Comments regarding depression or anxiety:
+                                </label>
+                                <textarea id="COG_DEP_ANX" name="COG_DEP_ANX" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="4" spellcheck="true" ng-model="briggs.COG_DEP_ANX" maxlength="360"></textarea>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                <div class="briggs-fl briggs-mrg-thin-t">
+                                    Do you have a history of any of the following?
+                                </div>
+                                <div class="briggs-fl briggs-mrg-thick-l">
+                                    <div class="radio radio-info briggs-cntrl-grp ">
+                                        <label for="COG_HIS_1">
+                                            <input type="radio" value="1" id="COG_HIS_1" name="COG_HIS" ng-model="briggs.COG_HIS" />
+                                            Suicidal/self-abuse
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="COG_HIS_2">
+                                            <input type="radio" value="2" id="COG_HIS_2" name="COG_HIS" ng-model="briggs.COG_HIS" />
+                                            Substance abuse
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thin-t">
+                                <label class="briggs-f-thin briggs-col-offs" for="COG_SUI">
+                                    <em>If yes, please explain:</em>
+                                </label>
+                                <textarea id="COG_SUI" name="COG_SUI" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="6" spellcheck="true" ng-model="briggs.COG_SUI" maxlength="720"></textarea>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t briggs-f-thick">
+                                General Information:
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                <div class="briggs-fl briggs-mrg-thin-t">
+                                    Is anyone assisting you with bill paying or managing your finances?
+                                </div>
+                                <div class="briggs-fl briggs-mrg-thick-l">
+                                    <div class="radio radio-info briggs-cntrl-grp ">
+                                        <label for="GEN_BILL_1">
+                                            <input type="radio" value="1" id="GEN_BILL_1" name="GEN_BILL" ng-model="briggs.GEN_BILL" />
+                                            Yes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="GEN_BILL_0">
+                                            <input type="radio" value="0" id="GEN_BILL_0" name="GEN_BILL" ng-model="briggs.GEN_BILL" />
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-col-offs briggs-mrg-thin-b">
+                                <em>If yes, please provide name and phone number: (If PoA or Conservator, please provide documentation)</em>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t briggs-no-pad-r">
+                                <div class="briggs-fl briggs-pad-thick-r briggs-col-offs">
+                                    <label for="NAME_BILL" class="briggs-f-thin">Name:</label>
+                                </div>
+                                <div class="col-lg-8 briggs-no-pad col-sm-6 col-md-8 briggs-mrg-thin-b">
+                                    <input class="form-control briggs-control" id="NAME_BILL" name="NAME_BILL" ng-model="briggs.NAME_BILL" maxlength="60" type="text">
+                                </div>
+                                <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                    <label for="PHONE_BILL" class="briggs-f-thin">Phone:</label>
+                                </div>
+                                <div class="briggs-fl">
+                                    <input class="form-control briggs-control briggs-phone-control" id="PHONE_BILL" name="PHONE_BILL" ng-model="briggs.PHONE_BILL" maxlength="20" type="tel">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                <label class="briggs-f-thin" for="GEN_EXT">
+                                    Are you receiving any external services such as home care, physical therapy, adult day services, etc.?
+                                </label>
+                                <textarea id="GEN_EXT" name="GEN_EXT" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="6" spellcheck="true" ng-model="briggs.GEN_EXT" maxlength="600"></textarea>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r">
+                                <div class="briggs-fl briggs-mrg-thin-t">
+                                    Are you currently receiving Medicaid benefits?
+                                </div>
+                                <div class="briggs-fl briggs-mrg-thick-l">
+                                    <div class="radio radio-info briggs-cntrl-grp ">
+                                        <label for="GEN_MEDI_1">
+                                            <input type="radio" value="1" id="GEN_MEDI_1" name="GEN_MEDI" ng-model="briggs.GEN_MEDI" />
+                                            Yes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="GEN_MEDI_0">
+                                            <input type="radio" value="0" id="GEN_MEDI_0" name="GEN_MEDI" ng-model="briggs.GEN_MEDI" />
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-thin-t">
+                                <div class="col-lg-3 col-sm-4 col-md-3">
+                                    <label for="NAME_CASE" class="briggs-f-thin briggs-col-offs"><em>If yes, Case Manager name:</em></label>
+                                </div>
+                                <div class="col-lg-9 briggs-no-pad-l col-sm-8 col-md-9 briggs-mrg-thin-b">
+                                    <input class="form-control briggs-control" id="NAME_CASE" name="NAME_CASE" ng-model="briggs.NAME_CASE" maxlength="75" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-thin-t">
+                                <div class="col-lg-3 col-sm-4 col-md-3">
+                                    <label for="NAME_AGENCY" class="briggs-f-thin briggs-col-offs">Case management agency:</label>
+                                </div>
+                                <div class="col-lg-9 briggs-no-pad-l col-sm-8 col-md-9 briggs-mrg-thin-b">
+                                    <input class="form-control briggs-control" id="NAME_AGENCY" name="NAME_AGENCY" ng-model="briggs.NAME_AGENCY" maxlength="75" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-thin-t">
+                                <div class="col-lg-3 col-sm-4 col-md-3">
+                                    <label for="GEN_CON" class="briggs-f-thin briggs-col-offs">Contact information:</label>
+                                </div>
+                                <div class="col-lg-9 briggs-no-pad-l col-sm-8 col-md-9 briggs-mrg-thin-b">
+                                    <input class="form-control briggs-control" id="GEN_CON" name="GEN_CON" ng-model="briggs.GEN_CON" maxlength="80" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-10 col-sm-12 briggs-no-pad-r briggs-mrg-thin-t">
+                                <div class="col-lg-3 col-sm-4 col-md-3 briggs-no-pad briggs-mrg-thin-t">
+                                    Do you currently use tobacco?
+                                </div>
+                                <div class="briggs-fl">
+                                    <div class="radio radio-info briggs-cntrl-grp ">
+                                        <label for="GEN_TOB_1">
+                                            <input type="radio" value="1" id="GEN_TOB_1" name="GEN_TOB" ng-model="briggs.GEN_TOB" />
+                                            Yes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="GEN_TOB_0">
+                                            <input type="radio" value="0" id="GEN_TOB_0" name="GEN_TOB" ng-model="briggs.GEN_TOB" />
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 col-sm-12 briggs-no-pad-r">
+                                <div class="col-lg-3 col-sm-4 col-md-3 briggs-no-pad briggs-mrg-thin-t">
+                                    Do you currently use marijuana?
+                                </div>
+                                <div class="briggs-fl">
+                                    <div class="radio radio-info briggs-cntrl-grp ">
+                                        <label for="GEN_MARI_1">
+                                            <input type="radio" value="1" id="GEN_MARI_1" name="GEN_MARI" ng-model="briggs.GEN_MARI" />
+                                            Yes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs">
+                                    <div class="radio radio-info briggs-cntrl-grp">
+                                        <label for="GEN_MARI_0">
+                                            <input type="radio" value="0" id="GEN_MARI_0" name="GEN_MARI" ng-model="briggs.GEN_MARI" />
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-thick-t">
+                                <label class="briggs-f-thin" for="GEN_ADD">
+                                    Is there any additional information you would like us to know?
+                                </label>
+                                <textarea id="GEN_ADD" name="GEN_ADD" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="8" spellcheck="true" ng-model="briggs.GEN_ADD" maxlength="1440"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- signature region -->
+                        <div class="row briggs-cont-row" id="signature_row_1" name="signature_row_1">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad-r briggs-mrg-thin-t">
+                                <div name="signature_container_1" id="signature_container_1">
+                                    <div class="col-lg-3 col-sm-5 briggs-no-pad col-md-4">
+                                        <label for="SIGN_A" class="briggs-f-thin">Signature of person completing evaluation:</label>
+                                    </div>
+                                    <div class="col-lg-9 briggs-no-pad-l col-sm-7 col-md-8 briggs-mrg-thin-b">
+                                        <textarea id="SIGN_A" name="SIGN_A" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_A" maxlength="60"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row briggs-cont-row" id="signature_row_2" name="signature_row_2">
+                            <div class="col-lg-12 col-sm-12 briggs-mrg-t briggs-no-pad-r">
+                                <div name="signature_container_2" id="signature_container_2">
+                                    <div class="briggs-fl briggs-pad-thick-r">
+                                        <label for="SIGN_B" class="briggs-f-thin">Individual's Signature:</label>
+                                    </div>
+                                    <div class="col-lg-8 briggs-no-pad col-sm-6 col-md-7 briggs-mrg-thin-b">
+                                        <textarea id="SIGN_B" name="SIGN_B" class="form-control briggs-control briggs-mrg-thin-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.SIGN_B" maxlength="60"></textarea>
+                                    </div>
+                                </div>
+                                <div class="briggs-fl briggs-col-offs briggs-pad-thick-r">
+                                    <label for="DATE_SIGN_B" class="briggs-f-thin">Date:</label>
+                                </div>
+                                <div class="briggs-fl">
+                                    <input class="form-control briggs-control briggs-date-control" id="DATE_SIGN_B" name="DATE_SIGN_B" ng-model="briggs.DATE_SIGN_B" maxlength="10" type="date">
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of signature region-->
+
+                    </div>
+                    <!--page 3 ends-->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 3 of 4 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--form ends -->
+</body>
+</html>

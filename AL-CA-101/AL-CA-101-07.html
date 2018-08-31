@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <link href="../../../Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Content/css/main/briggs-main.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../../../Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../Scripts/match-height/jquery.matchHeight-min.js"></script>
+    <script src="../../../Scripts/page/common.js"></script>
+    <title>BRIGGS | PHYSICIAN'S REPORT FOR RESIDENTIAL CARE FACILITIES FOR THE ELDERLY (RCFE)</title>
+</head>
+<body class="test-rows">
+    <!--form starts -->
+    <div class="container">
+        <div id="Page-07" name="pagebreak" description="PHYSICIAN'S NAME AND ADDRESS (PRINT)">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 briggs-mrg-t">
+
+
+                    <!--page 7 starts-->
+                    <div class="briggs-content-box briggs-box-square briggs-no-pad">
+                        <div class="row briggs-cont-row">
+                            <div class="col-lg-12 col-sm-12 briggs-no-pad briggs-mrg-thin-t briggs-brd-thin-b">
+                                <div class="col-lg-4 col-sm-6 briggs-no-pad-r col-md-5 briggs-mrg-thick-t">
+                                    <div class="briggs-width-25 briggs-fl briggs-f-thick">
+                                        20.
+                                    </div>
+                                    <div class="briggs-fl">
+                                        <label for="PHY_NAME_ADD">PHYSICIAN'S NAME AND ADDRESS (PRINT)</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-sm-6 col-md-7 briggs-no-pad-l briggs-mrg-thick-t">
+                                    <textarea id="PHY_NAME_ADD" name="PHY_NAME_ADD" class="form-control briggs-control briggs-mrg-thick-b" cols="12" rows="3" spellcheck="true" ng-model="briggs.PHY_NAME_ADD" maxlength="120"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad briggs-brd-thin-b">
+                                <div class="col-lg-2 col-sm-3 col-md-3 briggs-brd-thin-r">
+                                    <div class="briggs-width-25 briggs-fl briggs-mrg-thick-t briggs-f-thick">
+                                        21.
+                                    </div>
+                                    <div class="col-lg-10 col-sm-9 col-md-9 briggs-mrg-thick-t briggs-no-pad">
+                                        <label for="PHONE_PHY">TELEPHONE</label>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                        <input class="form-control briggs-phone-control briggs-control briggs-mrg-thick-b" id="PHONE_PHY" name="PHONE_PHY" ng-model="briggs.PHONE_PHY" maxlength="20" type="tel">
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-sm-9 col-md-9">
+                                    <div class="briggs-width-25 briggs-fl briggs-mrg-thick-t briggs-f-thick">
+                                        22.
+                                    </div>
+                                    <div class="col-lg-10 col-sm-9 col-md-9 briggs-mrg-thick-t briggs-no-pad">
+                                        <label for="LENGTH_TIME">LENGTH OF TIME RESIDENT HAS BEEN YOUR PATIENT</label>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                        <input class="form-control briggs-control briggs-mrg-thick-b" id="LENGTH_TIME" name="LENGTH_TIME" ng-model="briggs.LENGTH_TIME" maxlength="75" type="text">
+                                    </div>
+                                </div>                                
+                            </div>                            
+                        </div>
+
+                        <!-- signature region -->
+                        <div class="row briggs-cont-row" id="signature_row" name="signature_row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 briggs-no-pad briggs-brd-thin-b">
+                                <div class="col-lg-10 col-sm-9 col-md-10 briggs-brd-thin-r">
+                                    <div name="signature_container" id="signature_container">
+                                        <div class="briggs-width-25 briggs-fl briggs-mrg-thick-t briggs-f-thick">
+                                            23.
+                                        </div>
+                                        <div class="col-lg-10 col-sm-9 col-md-9 briggs-mrg-thick-t briggs-no-pad">
+                                            <label for="SIGN_B">PHYSICIAN'S SIGNATURE</label>
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 briggs-no-pad col-md-12">
+                                            <textarea id="SIGN_B" name="SIGN_B" class="form-control briggs-control briggs-mrg-thick-b" cols="12" rows="3" spellcheck="true" briggs-signature ng-model="briggs.SIGN_B" maxlength="45"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-3 col-md-2">
+                                    <div class="briggs-width-25 briggs-fl briggs-mrg-thick-t briggs-f-thick">
+                                        24.
+                                    </div>
+                                    <div class="col-lg-10 col-sm-9 col-md-9 briggs-mrg-thick-t briggs-no-pad">
+                                        <label for="DATE_SIGN_B">DATE</label>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 briggs-no-pad">
+                                        <input class="form-control briggs-date-control briggs-mrg-auto-lr briggs-control briggs-mrg-thick-b" id="DATE_SIGN_B" name="DATE_SIGN_B" ng-model="briggs.DATE_SIGN_B" maxlength="10" type="date">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <!--page 7 ends-->
+                    <!--paging-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 briggs-pad-thick briggs-f-thick briggs-cntrl-grp text-center">
+                            --- Page 7 of 7 ---
+                        </div>
+                    </div>
+                    <!--paging-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--form ends -->
+</body>
+</html>
